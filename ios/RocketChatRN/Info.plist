@@ -14,7 +14,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
-	<string>$(PRODUCT_NAME)</string>
+	<string>MatterChat</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -36,6 +36,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>rocketchat</string>
+				<string>matterchat</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>rocketchat</string>
