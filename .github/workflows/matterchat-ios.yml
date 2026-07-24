@@ -29,12 +29,15 @@ jobs:
         working-directory: ios
         run: |
           set -o pipefail
+          # Ad-hoc signing (CODE_SIGN_IDENTITY=-) instead of CODE_SIGNING_ALLOWED=NO: the app's
+          # MMKV storage needs the App Group entitlement; unsigned builds strip entitlements and
+          # crash at launch ("multi-process MMKV without groupDir"). Ad-hoc needs no Apple account.
           # NOTE: no -sdk flag — it would force the Watch App target onto the iOS SDK
           # ("no such module 'WatchKit'"); the destination alone selects SDKs per target.
           xcodebuild -workspace RocketChat.xcworkspace -scheme RocketChat \
             -configuration Debug \
             -destination 'platform=iOS Simulator,name=iPhone 16' \
-            -derivedDataPath build CODE_SIGNING_ALLOWED=NO | tail -80
+            -derivedDataPath build CODE_SIGN_IDENTITY="-" | tail -80
       - name: Package artifact
         run: |
           APP=$(find ios/build/Build/Products -name "*.app" -maxdepth 3 | head -1)
