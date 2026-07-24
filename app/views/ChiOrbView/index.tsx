@@ -50,6 +50,11 @@ const ChiOrbView = (): React.ReactElement => {
 			if (msg?.type === 'chi:navigate' && msg.rid) {
 				// @ts-ignore upstream nav types are looser than this call
 				navigation.navigate('RoomView', { rid: msg.rid, t: msg.t || 'c', name: msg.name });
+			} else if (msg?.type === 'chi:close') {
+				// tapping the dimmed area above the Chi sheet dismisses the screen
+				if (navigation.canGoBack()) {
+					navigation.goBack();
+				}
 			}
 		} catch {
 			// non-JSON messages are not ours
@@ -60,7 +65,7 @@ const ChiOrbView = (): React.ReactElement => {
 		<View style={styles.container}>
 			<WebView
 				style={styles.webview}
-				source={{ uri: `${server}/omnis-widgets/chi-window.html` }}
+				source={{ uri: `${server}/omnis-widgets/chi-mobile.html` }}
 				injectedJavaScriptBeforeContentLoaded={inject}
 				onMessage={onMessage}
 				allowsInlineMediaPlayback
