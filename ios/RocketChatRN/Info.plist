@@ -36,10 +36,10 @@
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
 			<string>rocketchat</string>
-				<string>matterchat</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>rocketchat</string>
+				<string>matterchat</string>
 			</array>
 		</dict>
 	</array>
