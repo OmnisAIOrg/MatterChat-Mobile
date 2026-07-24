@@ -1,0 +1,42 @@
+name: MatterChat iOS (simulator build)
+# Proves the fork builds + produces a Simulator .app artifact — NO signing, NO Apple account.
+# TestFlight later = swap the xcodebuild step for the fastlane lane + App Store Connect key.
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [matterchat]
+    paths-ignore: ["docs/**", "**.md"]
+concurrency: { group: matterchat-ios, cancel-in-progress: true }
+jobs:
+  simulator:
+    runs-on: macos-15
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - name: JS deps (pnpm via corepack)
+        run: |
+          npm i -g corepack
+          corepack enable
+          COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack pnpm install --frozen-lockfile || COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack pnpm install
+      - name: Pods
+        working-directory: ios
+        run: |
+          bundle install || true
+          (bundle exec pod install || pod install)
+      - name: Build for Simulator (unsigned)
+        working-directory: ios
+        run: |
+          set -o pipefail
+          xcodebuild -workspace RocketChatRN.xcworkspace -scheme RocketChatRN \
+            -configuration Debug -sdk iphonesimulator \
+            -destination 'generic/platform=iOS Simulator' \
+            -derivedDataPath build CODE_SIGNING_ALLOWED=NO | tail -80
+      - name: Package artifact
+        run: |
+          APP=$(find ios/build/Build/Products -name "*.app" -maxdepth 3 | head -1)
+          echo "app: $APP"
+          ditto -c -k --keepParent "$APP" MatterChat-Simulator.app.zip
+      - uses: actions/upload-artifact@v4
+        with: { name: MatterChat-Simulator, path: MatterChat-Simulator.app.zip, retention-days: 14 }
