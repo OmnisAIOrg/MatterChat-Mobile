@@ -16,6 +16,7 @@ import { isIOS } from '../lib/methods/helpers';
 import { type TNavigation } from './stackType';
 import RoomView from '../views/RoomView';
 import RoomsListView from '../views/RoomsListView';
+import ChiOrbView from '../views/ChiOrbView';
 import RoomActionsView from '../views/RoomActionsView';
 import RoomInfoView from '../views/RoomInfoView';
 import ReportUserView from '../views/ReportUserView';
@@ -122,6 +123,7 @@ const AddChannelTeamViewScreen = AddChannelTeamView as any;
 const AddExistingChannelViewScreen = AddExistingChannelView as any;
 const CannedResponseDetailScreen = CannedResponseDetail as any;
 const JitsiMeetViewScreen = JitsiMeetView as any;
+const ChiOrbViewScreen = ChiOrbView as any;
 const ChangeAvatarViewScreen = ChangeAvatarView as any;
 const UserNotificationPrefViewScreen: ComponentType<StaticScreenProps<undefined>> = UserNotificationPrefView as any;
 const SettingsViewScreen: ComponentType<StaticScreenProps<undefined>> = SettingsView as any;
@@ -200,6 +202,11 @@ const ChatsStack = createNativeStackNavigator({
 		JitsiMeetView: createNativeStackScreen({
 			screen: JitsiMeetViewScreen,
 			options: { headerShown: false, animation: isIOS ? 'default' : 'none' }
+		}),
+		ChiOrbView: createNativeStackScreen({
+			screen: ChiOrbViewScreen,
+			// full-bleed voice surface; fade in like a Siri-style overlay
+			options: { headerShown: false, animation: 'fade' }
 		})
 	}
 }).with(({ Navigator }) => {

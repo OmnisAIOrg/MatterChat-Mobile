@@ -19,6 +19,7 @@ import { goRoom } from '../../lib/methods/helpers/goRoom';
 import { events, logEvent } from '../../lib/methods/helpers/log';
 import { getUserSelector } from '../../selectors/login';
 import { useTheme } from '../../theme';
+import ChiFab from './components/ChiFab';
 import Container from './components/Container';
 import ListHeader from './components/ListHeader';
 import SectionHeader from './components/SectionHeader';
@@ -153,6 +154,7 @@ const RoomsListViewWithProvider = () => (
 	<RoomsSearchProvider>
 		<Container>
 			<RoomsListView />
+			<ChiFab />
 		</Container>
 	</RoomsSearchProvider>
 );
