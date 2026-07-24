@@ -54,6 +54,18 @@ pre_install do |installer|
 end
 
 post_install do |installer|
+  # Xcode 26 clang rejects fmt 9.x's consteval format-string checking
+  # ("call to consteval function ... is not a constant expression").
+  # Compiling fmt with FMT_CONSTEVAL defined empty disables that check — the
+  # community-standard fix until RN bumps its Folly/fmt pin.
+  installer.pods_project.targets.each do |target|
+    if target.name == 'fmt'
+      target.build_configurations.each do |config|
+        config.build_settings['OTHER_CPLUSPLUSFLAGS'] ||= ['$(inherited)']
+        config.build_settings['OTHER_CPLUSPLUSFLAGS'] << '-DFMT_CONSTEVAL='
+      end
+    end
+  end
   # https://github.com/facebook/react-native/blob/main/packages/react-native/scripts/react_native_pods.rb#L197-L202
   react_native_post_install(
     installer,
