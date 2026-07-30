@@ -6,9 +6,15 @@ import { type Subscription } from 'rxjs';
 import { appStart } from '../../../actions/app';
 import { selectServerRequest, serverInitAdd } from '../../../actions/server';
 import { hideActionSheetRef } from '../../../containers/ActionSheet';
+import Avatar from '../../../containers/Avatar';
 import Button from '../../../containers/Button';
+import { CustomIcon } from '../../../containers/CustomIcon';
 import * as List from '../../../containers/List';
 import ServerItem from '../../../containers/ServerItem';
+import Status from '../../../containers/Status/Status';
+import Navigation from '../../../lib/navigation/appNavigation';
+import { getUserSelector } from '../../../selectors/login';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import { RootEnum, type TServerModel } from '../../../definitions';
 import I18n from '../../../i18n';
 import { TOKEN_KEY } from '../../../lib/constants/keys';
@@ -37,6 +43,8 @@ const ServersList = () => {
 	const server = useAppSelector(state => state.server.server);
 	const isMasterDetail = useMasterDetail();
 	const { colors } = useTheme();
+	// reskin: the sheet doubles as the workspace/account sheet — profile card + shortcuts
+	const user = useAppSelector(state => getUserSelector(state));
 
 	useLayoutEffect(() => {
 		const init = () => {
@@ -126,6 +134,38 @@ const ServersList = () => {
 				borderColor: colors.strokeLight
 			}}
 			testID='rooms-list-header-servers-list'>
+			{/* reskin: profile card — the sheet is the workspace/account switcher (design §1a) */}
+			{user?.username ? (
+				<TouchableOpacity
+					onPress={() => {
+						close();
+						setTimeout(() => Navigation.navigate('ProfileStackNavigator', { screen: 'ProfileView' }), 300);
+					}}
+					testID='workspace-sheet-profile'
+					style={{
+						flexDirection: 'row',
+						alignItems: 'center',
+						gap: 12,
+						paddingHorizontal: 16,
+						paddingVertical: 14,
+						borderBottomWidth: 1,
+						borderColor: colors.strokeLight
+					}}>
+					<Avatar text={user.username} size={44} />
+					<View style={{ flex: 1 }}>
+						<Text style={{ fontSize: 16, fontWeight: '800', color: colors.fontTitlesLabels }} numberOfLines={1}>
+							{user.name || user.username}
+						</Text>
+						<View style={{ flexDirection: 'row', alignItems: 'center', gap: 5, marginTop: 2 }}>
+							<Status size={10} status={user.status || 'online'} />
+							<Text style={{ fontSize: 13, color: colors.fontSecondaryInfo }} numberOfLines={1}>
+								@{user.username}
+							</Text>
+						</View>
+					</View>
+					<CustomIcon name='chevron-right' size={22} color={colors.fontSecondaryInfo} />
+				</TouchableOpacity>
+			) : null}
 			<View style={[styles.serversListContainerHeader, styles.serverHeader, { borderColor: colors.strokeLight }]}>
 				<Text style={[styles.serverHeaderText, { color: colors.fontSecondaryInfo }]}>{I18n.t('Workspaces')}</Text>
 			</View>

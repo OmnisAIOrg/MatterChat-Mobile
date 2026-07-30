@@ -117,6 +117,92 @@ const UrlImage = ({ image, hasContent }: { image: string; hasContent: boolean })
 	);
 };
 
+// reskin (§2a): CasePro links get a branded case card instead of the generic preview.
+// Client-side only — renders the same server-provided URL metadata with CasePro treatment.
+const CASEPRO_HOSTS = ['crm.omnisai.io', 'crm.stg-omnisai.io'];
+const isCaseProUrl = (u?: string): boolean => {
+	if (!u) {
+		return false;
+	}
+	try {
+		return CASEPRO_HOSTS.includes(new URL(u).hostname);
+	} catch {
+		return false;
+	}
+};
+
+const caseProStyles = StyleSheet.create({
+	card: {
+		borderRadius: 12,
+		borderWidth: 1,
+		borderLeftWidth: 3,
+		overflow: 'hidden',
+		padding: 12,
+		gap: 6
+	},
+	badgeRow: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		gap: 6
+	},
+	badge: {
+		fontSize: 10,
+		fontWeight: '800',
+		letterSpacing: 0.8,
+		paddingHorizontal: 7,
+		paddingVertical: 2.5,
+		borderRadius: 6,
+		overflow: 'hidden'
+	},
+	title: {
+		fontSize: 15,
+		...sharedStyles.textBold
+	},
+	description: {
+		fontSize: 13,
+		...sharedStyles.textRegular
+	},
+	open: {
+		fontSize: 13,
+		fontWeight: '700',
+		marginTop: 2
+	}
+});
+
+const CaseProCard = ({ url, onPress, onLongPress }: { url: IUrl; onPress: () => void; onLongPress: () => void }) => {
+	'use memo';
+
+	const { colors } = useTheme();
+	return (
+		<MessageActionTouchable
+			onPress={onPress}
+			onLongPress={onLongPress}
+			style={[
+				caseProStyles.card,
+				{ backgroundColor: colors.surfaceTint, borderColor: colors.strokeLight, borderLeftColor: colors.strokeHighlight }
+			]}>
+			<>
+				<View style={caseProStyles.badgeRow}>
+					<Text style={[caseProStyles.badge, { backgroundColor: colors.statusBackgroundInfo, color: colors.statusFontInfo }]}>
+						CASEPRO
+					</Text>
+				</View>
+				{url.title ? (
+					<Text style={[caseProStyles.title, { color: colors.fontTitlesLabels }]} numberOfLines={2}>
+						{url.title}
+					</Text>
+				) : null}
+				{url.description ? (
+					<Text style={[caseProStyles.description, { color: colors.fontSecondaryInfo }]} numberOfLines={2}>
+						{url.description}
+					</Text>
+				) : null}
+				<Text style={[caseProStyles.open, { color: colors.fontInfo }]}>Open in CasePro →</Text>
+			</>
+		</MessageActionTouchable>
+	);
+};
+
 const Url = ({ url }: { url: IUrl }) => {
 	'use memo';
 
@@ -159,6 +245,10 @@ const Url = ({ url }: { url: IUrl }) => {
 
 	if (!url || url?.ignoreParse || !API_Embed) {
 		return null;
+	}
+
+	if (isCaseProUrl(url.url)) {
+		return <CaseProCard url={url} onPress={onPress} onLongPress={onLongPress} />;
 	}
 
 	return (
