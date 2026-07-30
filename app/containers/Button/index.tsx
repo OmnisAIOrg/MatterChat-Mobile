@@ -1,5 +1,5 @@
 import { type FC } from 'react';
-import { type StyleProp, StyleSheet, Text, type TextStyle, type ViewStyle } from 'react-native';
+import { Platform, type StyleProp, StyleSheet, Text, type TextStyle, type ViewStyle } from 'react-native';
 import { RectButton, type RectButtonProps } from 'react-native-gesture-handler';
 
 import { useTheme } from '../../theme';
@@ -23,10 +23,10 @@ interface IButtonProps extends Omit<RectButtonProps, 'children' | 'enabled'> {
 const styles = StyleSheet.create({
 	container: {
 		marginBottom: 12,
-		borderRadius: 4
+		borderRadius: 14
 	},
 	normalButton: {
-		paddingVertical: 14,
+		height: 48,
 		paddingHorizontal: 16,
 		justifyContent: 'center'
 	},
@@ -35,8 +35,20 @@ const styles = StyleSheet.create({
 		paddingVertical: 8,
 		alignSelf: 'center'
 	},
+	primaryShadow: {
+		...Platform.select({
+			ios: {
+				shadowOpacity: 0.28,
+				shadowRadius: 8,
+				shadowOffset: { width: 0, height: 4 }
+			},
+			android: {
+				elevation: 4
+			}
+		})
+	},
 	text: {
-		...sharedStyles.textMedium,
+		...sharedStyles.textBold,
 		...sharedStyles.textAlignCenter
 	},
 	smallText: {
@@ -67,8 +79,8 @@ const Button: FC<IButtonProps> = ({
 	const isPrimary = type === 'primary';
 	const isDisabled = disabled || loading;
 
-	const defaultBackgroundColor = isPrimary ? colors.buttonBackgroundPrimaryDefault : colors.buttonBackgroundSecondaryDefault;
-	const disabledBackgroundColor = isPrimary ? colors.buttonBackgroundPrimaryDisabled : colors.buttonBackgroundSecondaryDisabled;
+	const defaultBackgroundColor = isPrimary ? colors.buttonBackgroundPrimaryDefault : colors.surfaceLight;
+	const disabledBackgroundColor = colors.surfaceNeutral;
 
 	const resolvedBackgroundColor = backgroundColor || defaultBackgroundColor;
 	const resolvedTextColor = color || (isPrimary ? colors.fontWhite : colors.fontDefault);
@@ -77,6 +89,10 @@ const Button: FC<IButtonProps> = ({
 		small ? styles.smallButton : styles.normalButton,
 		styles.container,
 		{ backgroundColor: isDisabled ? disabledBackgroundColor : resolvedBackgroundColor },
+		!isPrimary && !isDisabled ? { borderWidth: 1.5, borderColor: colors.strokeLight } : {},
+		isPrimary && !isDisabled && !backgroundColor
+			? [styles.primaryShadow, { shadowColor: colors.buttonBackgroundPrimaryDefault }]
+			: {},
 		isDisabled && backgroundColor ? styles.disabled : {},
 		style
 	];

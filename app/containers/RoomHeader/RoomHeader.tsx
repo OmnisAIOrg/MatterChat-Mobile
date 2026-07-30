@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		flexShrink: 1,
-		...sharedStyles.textSemibold
+		...sharedStyles.textBold,
+		fontWeight: '800'
 	},
 	subtitle: {
 		flexShrink: 1,

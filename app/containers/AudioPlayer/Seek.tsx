@@ -119,12 +119,12 @@ const Seek = ({ currentTime, duration, loaded = false, onChangeTime }: ISeek) =>
 				<AnimatedTextInput
 					defaultValue={DEFAULT_TIME_LABEL}
 					editable={false}
-					style={[styles.duration, { color: colors.fontDefault }]}
+					style={[styles.duration, { color: colors.fontSecondaryInfo }]}
 					animatedProps={timeLabelAnimatedProps}
 				/>
 				<View style={styles.seek} onLayout={onLayout}>
 					<View style={[styles.line, { backgroundColor: colors.strokeLight }]}>
-						<Animated.View style={[styles.line, styleLine, { backgroundColor: colors.buttonBackgroundPrimaryDefault }]} />
+						<Animated.View style={[styles.line, styleLine, { backgroundColor: colors.strokeHighlight }]} />
 					</View>
 					<GestureDetector gesture={panGesture}>
 						<Animated.View hitSlop={SEEK_HIT_SLOP} style={[styles.thumbSeek, { backgroundColor: thumbColor }, styleThumb]} />

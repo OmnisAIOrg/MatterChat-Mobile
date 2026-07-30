@@ -56,8 +56,8 @@ const styles = StyleSheet.create({
 	title: {
 		flex: 1,
 		flexShrink: 1,
-		fontSize: 16,
-		...sharedStyles.textMedium
+		fontSize: 15,
+		...sharedStyles.textSemibold
 	},
 	subtitle: {
 		fontSize: 14,
@@ -77,7 +77,7 @@ const ListTitle = ({ title, color, styleTitle, translateTitle, numberOfLines }: 
 	switch (typeof title) {
 		case 'string':
 			return (
-				<Text numberOfLines={numberOfLines} style={[styles.title, styleTitle, { color: color || colors.fontDefault }]}>
+				<Text numberOfLines={numberOfLines} style={[styles.title, styleTitle, { color: color || colors.fontTitlesLabels }]}>
 					{translateTitle && title ? I18n.t(title) : title}
 				</Text>
 			);
@@ -209,7 +209,9 @@ const Content = memo(
 				{right || showActionIndicator ? (
 					<View style={[styles.rightContainer, rightContainerStyle]}>
 						{right ? right() : null}
-						{showActionIndicator ? <Icon name='chevron-right' style={styles.actionIndicator} /> : null}
+						{showActionIndicator ? (
+							<Icon name='chevron-right' color={colors.fontSecondaryInfo} style={styles.actionIndicator} />
+						) : null}
 					</View>
 				) : null}
 			</View>

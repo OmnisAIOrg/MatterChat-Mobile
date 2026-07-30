@@ -55,6 +55,8 @@ export interface IWrapperProps {
 	teamMain: boolean;
 	showAvatar: boolean;
 	sourceType: IOmnichannelSource;
+	// reskin: unread rows get a tinted surface highlight
+	unreadHighlight?: boolean;
 }
 
 export interface ITypeIconProps {

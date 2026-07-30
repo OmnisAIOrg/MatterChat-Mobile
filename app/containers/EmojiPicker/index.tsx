@@ -48,13 +48,15 @@ const EmojiPicker = ({
 		/>
 	);
 
+	// TabView paints the active tab with strokeHighlight (kept for the underline);
+	// the active category icon itself uses fontInfo for contrast on light surfaces
 	const renderTabItem = (tab: Route, color: string) => (
 		<CustomIcon
 			accessible
 			accessibilityLabel={tab?.accessibilityLabel}
 			size={24}
 			name={tab.title as TIconsName}
-			color={color}
+			color={color === colors.strokeHighlight ? colors.fontInfo : color}
 			style={styles.tabEmoji}
 			testID={`emoji-picker-tab-${tab.title}`}
 		/>

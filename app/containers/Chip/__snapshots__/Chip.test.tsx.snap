@@ -43,14 +43,15 @@ exports[`Story Snapshots: ChipFullWidth should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": undefined,
         },
         undefined,
@@ -91,7 +92,7 @@ exports[`Story Snapshots: ChipFullWidth should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }
@@ -147,14 +148,15 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": 192,
         },
         undefined,
@@ -175,7 +177,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             },
@@ -188,7 +190,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderRadius={9}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -215,7 +217,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             }
@@ -248,7 +250,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }
@@ -262,7 +264,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#2F343D",
+              "color": "#26312A",
               "fontSize": 16,
             },
             [
@@ -330,14 +332,15 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": 192,
         },
         undefined,
@@ -358,7 +361,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             },
@@ -371,7 +374,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderRadius={9}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -398,7 +401,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             }
@@ -431,7 +434,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }
@@ -445,7 +448,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#2F343D",
+              "color": "#26312A",
               "fontSize": 16,
             },
             [
@@ -513,14 +516,15 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": 192,
         },
         undefined,
@@ -559,7 +563,7 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }
@@ -573,7 +577,7 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#2F343D",
+              "color": "#26312A",
               "fontSize": 16,
             },
             [
@@ -641,14 +645,15 @@ exports[`Story Snapshots: ChipWithoutAvatarAndIcon should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": 192,
         },
         undefined,
@@ -687,7 +692,7 @@ exports[`Story Snapshots: ChipWithoutAvatarAndIcon should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }
@@ -743,14 +748,15 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
     style={
       [
         {
-          "borderRadius": 4,
+          "borderRadius": 999,
           "justifyContent": "center",
           "marginHorizontal": 4,
           "maxWidth": 192,
-          "paddingHorizontal": 4,
+          "minHeight": 44,
+          "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#E4E7EA",
+          "backgroundColor": "#ECEFEB",
           "maxWidth": 192,
         },
         undefined,
@@ -771,7 +777,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             },
@@ -784,7 +790,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderRadius={9}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -811,7 +817,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderRadius": 9,
               "height": 28,
               "width": 28,
             }
@@ -844,7 +850,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#26312A",
               },
             ]
           }

@@ -10,14 +10,14 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		height: 56,
 		borderWidth: 1,
-		borderRadius: 4
+		borderRadius: 14
 	},
 	playPauseButton: {
 		alignItems: 'center',
-		marginLeft: 16,
-		height: 32,
-		width: 32,
-		borderRadius: 4,
+		marginLeft: 12,
+		height: 40,
+		width: 40,
+		borderRadius: 20,
 		justifyContent: 'center'
 	},
 	seekContainer: {
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
 		marginHorizontal: 12,
 		fontVariant: ['tabular-nums'],
 		fontSize: 14,
-		...sharedStyles.textRegular
+		...sharedStyles.textSemibold
 	},
 	thumbSeek: {
 		height: THUMB_SEEK_SIZE,
@@ -50,16 +50,16 @@ const styles = StyleSheet.create({
 		position: 'absolute'
 	},
 	containerPlaybackSpeed: {
-		width: 36,
+		width: 38,
 		height: 24,
-		borderRadius: 4,
+		borderRadius: 12,
 		marginRight: 16,
 		justifyContent: 'center',
 		alignItems: 'center',
 		overflow: 'hidden'
 	},
 	playbackSpeedText: {
-		fontSize: 14,
+		fontSize: 13,
 		...sharedStyles.textBold
 	}
 });

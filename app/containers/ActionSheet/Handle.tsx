@@ -18,12 +18,13 @@ export const Handle = forwardRef<View, { onPress: () => void }>(({ onPress }, re
 			ref={ref as Ref<ComponentType>}
 			onPress={onPress}
 			style={styles.handle}
+			hitSlop={{ top: 16 }}
 			testID='action-sheet-handle'
 			accessible
 			accessibilityRole='button'
 			accessibilityLabel={i18n.t('A11y_close_action_sheet')}
 			accessibilityHint={i18n.t('A11y_close_action_sheet_hint')}>
-			<View style={[styles.handleIndicator, { backgroundColor: themes[theme].fontSecondaryInfo }]} />
+			<View style={[styles.handleIndicator, { backgroundColor: themes[theme].strokeLight }]} />
 		</RectButton>
 	);
 });

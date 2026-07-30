@@ -7,9 +7,10 @@ import Avatar from '../Avatar';
 
 const styles = StyleSheet.create({
 	pressable: {
-		paddingHorizontal: 4,
+		paddingHorizontal: 8,
 		marginHorizontal: 4,
-		borderRadius: 4,
+		minHeight: 44,
+		borderRadius: 999,
 		justifyContent: 'center',
 		maxWidth: 192
 	},
@@ -50,7 +51,7 @@ const Chip = ({ avatar, text, onPress, testID, style, fullWidth }: IChip) => {
 			style={({ pressed }) => [
 				styles.pressable,
 				{
-					backgroundColor: pressed ? colors.surfaceNeutral : colors.buttonBackgroundSecondaryDefault,
+					backgroundColor: pressed ? colors.fontTitlesLabels : colors.surfaceNeutral,
 					maxWidth: fullWidth ? undefined : styles.pressable.maxWidth
 				},
 				style
@@ -58,17 +59,19 @@ const Chip = ({ avatar, text, onPress, testID, style, fullWidth }: IChip) => {
 			disabled={!onPress}
 			onPress={() => onPress?.()}
 			android_ripple={{
-				color: colors.surfaceNeutral
+				color: colors.fontTitlesLabels
 			}}>
-			<View style={styles.container}>
-				{avatar ? <Avatar text={avatar} size={28} style={styles.avatar} /> : null}
-				<View style={[styles.textContainer, fullWidth && { maxWidth: undefined }]}>
-					<Text style={[styles.name, { color: colors.fontDefault }]} numberOfLines={1}>
-						{text}
-					</Text>
+			{({ pressed }) => (
+				<View style={styles.container}>
+					{avatar ? <Avatar text={avatar} size={28} style={styles.avatar} /> : null}
+					<View style={[styles.textContainer, fullWidth && { maxWidth: undefined }]}>
+						<Text style={[styles.name, { color: pressed ? colors.surfaceLight : colors.fontDefault }]} numberOfLines={1}>
+							{text}
+						</Text>
+					</View>
+					{onPress ? <CustomIcon name='close' size={16} color={pressed ? colors.surfaceLight : colors.fontDefault} /> : null}
 				</View>
-				{onPress ? <CustomIcon name='close' size={16} /> : null}
-			</View>
+			)}
 		</Pressable>
 	);
 };

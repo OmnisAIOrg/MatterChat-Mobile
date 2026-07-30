@@ -23,11 +23,12 @@ export default StyleSheet.create({
 	},
 	title: {
 		flex: 1,
-		fontSize: 17,
-		...sharedStyles.textMedium
+		fontSize: 16,
+		...sharedStyles.textBold
 	},
 	alert: {
-		...sharedStyles.textSemibold
+		...sharedStyles.textSemibold,
+		fontWeight: '800'
 	},
 	row: {
 		flex: 1,
@@ -44,7 +45,7 @@ export default StyleSheet.create({
 		justifyContent: 'center'
 	},
 	date: {
-		fontSize: 13,
+		fontSize: 12,
 		marginLeft: 4,
 		...sharedStyles.textRegular
 	},
@@ -56,7 +57,7 @@ export default StyleSheet.create({
 	},
 	markdownText: {
 		flex: 1,
-		fontSize: 14,
+		fontSize: 15,
 		...sharedStyles.textRegular
 	},
 	avatar: {

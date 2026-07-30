@@ -15,7 +15,7 @@ const testsForTheme = theme => {
 				unread: 1
 			})
 		).toEqual({
-			backgroundColor: themes[theme].fontAnnotation,
+			backgroundColor: themes[theme].badgeBackgroundLevel2,
 			color: themes[theme].fontWhite
 		});
 	});

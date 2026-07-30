@@ -26,7 +26,7 @@ export const HeaderBackButton = ({ ...props }: HeaderBackButtonProps) => {
 	return (
 		<RNHeaderBackButton
 			accessibilityLabel={I18n.t('Back')}
-			tintColor={colors.fontDefault}
+			tintColor={colors.fontInfo}
 			style={styles.container}
 			testID='header-back'
 			{...props}

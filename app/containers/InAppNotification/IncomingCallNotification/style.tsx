@@ -11,10 +11,15 @@ export const useStyle = () => {
 			paddingHorizontal: 24,
 			paddingVertical: 18,
 			marginHorizontal: 10,
-			borderWidth: StyleSheet.hairlineWidth,
-			borderRadius: 4,
+			borderWidth: 1,
+			borderRadius: 16,
 			backgroundColor: colors.surfaceLight,
 			borderColor: colors.strokeLight,
+			shadowColor: '#0A140C',
+			shadowOffset: { width: 0, height: 12 },
+			shadowOpacity: 0.16,
+			shadowRadius: 16,
+			elevation: 12,
 			flex: 1
 		},
 		small: {
@@ -30,12 +35,12 @@ export const useStyle = () => {
 			marginRight: 8,
 			alignItems: 'center',
 			justifyContent: 'center',
-			borderRadius: 4,
+			borderRadius: 10,
 			width: 36,
 			height: 36
 		},
 		cancelButton: {
-			borderRadius: 4,
+			borderRadius: 10,
 			backgroundColor: colors.buttonBackgroundDangerDefault,
 			marginRight: 8,
 			flex: 2,
@@ -47,7 +52,7 @@ export const useStyle = () => {
 			color: 'white'
 		},
 		acceptButton: {
-			borderRadius: 4,
+			borderRadius: 10,
 			backgroundColor: colors.buttonBackgroundSuccessDefault,
 			flex: 2,
 			alignItems: 'center',

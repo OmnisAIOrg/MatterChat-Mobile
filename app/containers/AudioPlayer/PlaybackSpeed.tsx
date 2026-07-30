@@ -7,6 +7,8 @@ import { AUDIO_PLAYBACK_SPEED, AVAILABLE_SPEEDS } from './constants';
 import { useUserPreferences } from '../../lib/methods/userPreferences';
 import NativeButton from '../NativeButton';
 
+const PLAYBACK_SPEED_HIT_SLOP = { top: 10, right: 10, bottom: 10, left: 10 };
+
 const PlaybackSpeed = () => {
 	const [playbackSpeed, setPlaybackSpeed] = useUserPreferences<number>(AUDIO_PLAYBACK_SPEED, AVAILABLE_SPEEDS[1]);
 	const { colors } = useTheme();
@@ -23,8 +25,9 @@ const PlaybackSpeed = () => {
 			accessible
 			accessibilityLabel={i18n.t('Playback_speed', { playbackSpeed: `${playbackSpeed} x` })}
 			onPress={onPress}
-			style={[styles.containerPlaybackSpeed, { backgroundColor: colors.buttonBackgroundSecondaryDefault }]}>
-			<Text style={[styles.playbackSpeedText, { color: colors.buttonFontSecondary }]}>{playbackSpeed}x</Text>
+			hitSlop={PLAYBACK_SPEED_HIT_SLOP}
+			style={[styles.containerPlaybackSpeed, { backgroundColor: colors.surfaceNeutral }]}>
+			<Text style={[styles.playbackSpeedText, { color: colors.fontInfo }]}>{playbackSpeed}x</Text>
 		</NativeButton>
 	);
 };

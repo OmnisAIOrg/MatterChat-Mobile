@@ -133,7 +133,7 @@ const ActionSheet = memo(
 					detents={detents}
 					maxHeight={maxHeight}
 					backgroundColor={colors.surfaceLight}
-					cornerRadius={16}
+					cornerRadius={24}
 					dimmed
 					grabber={false}
 					draggable={!disableContentPanning}

@@ -12,11 +12,18 @@ import { ALERT_DISPLAY_TYPE_PREFERENCES_KEY } from '../lib/constants/keys';
 const styles = StyleSheet.create({
 	toast: {
 		maxWidth: 300,
-		padding: 10
+		paddingVertical: 10,
+		paddingHorizontal: 18,
+		borderRadius: 999,
+		shadowColor: '#000000',
+		shadowOffset: { width: 0, height: 8 },
+		shadowOpacity: 0.25,
+		shadowRadius: 12,
+		elevation: 8
 	},
 	text: {
-		fontSize: 14,
-		...sharedStyles.textRegular,
+		fontSize: 15,
+		...sharedStyles.textSemibold,
 		...sharedStyles.textAlignCenter
 	}
 });

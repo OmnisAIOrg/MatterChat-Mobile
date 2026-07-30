@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { memo, useContext, useEffect } from 'react';
+import { memo, useContext, useEffect, useMemo, useState } from 'react';
 import { BackHandler, FlatList, RefreshControl } from 'react-native';
 import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { shallowEqual } from 'react-redux';
@@ -21,6 +21,7 @@ import { getUserSelector } from '../../selectors/login';
 import { useTheme } from '../../theme';
 import ChiFab from './components/ChiFab';
 import Container from './components/Container';
+import HomeFilters, { type THomeFilter } from './components/HomeFilters';
 import ListHeader from './components/ListHeader';
 import SectionHeader from './components/SectionHeader';
 import RoomsSearchProvider, { RoomsSearchContext } from './contexts/RoomsSearchProvider';
@@ -49,6 +50,30 @@ const RoomsListView = memo(function RoomsListView() {
 	const { bottom } = useSafeAreaInsets();
 	const getItemLayout = useGetItemLayout();
 	const { subscriptions, loading } = useSubscriptions();
+	// Reskin: Home filter chips — pure client-side filters over the subscribed rooms.
+	// Grouped lists mix section-header strings into `subscriptions`; when a filter is
+	// active we drop non-room entries so the filtered list renders flat.
+	const [homeFilter, setHomeFilter] = useState<THomeFilter>('all');
+	const filteredSubscriptions = useMemo(() => {
+		if (homeFilter === 'all') {
+			return subscriptions;
+		}
+		return subscriptions.filter((s: any) => {
+			if (!s?.rid) {
+				return false;
+			}
+			switch (homeFilter) {
+				case 'unreads':
+					return (s.alert || s.unread) && !s.hideUnreadStatus;
+				case 'channels':
+					return s.t === 'c' || s.t === 'p';
+				case 'matters':
+					return !!s.teamMain;
+				default:
+					return true;
+			}
+		});
+	}, [subscriptions, homeFilter]);
 	const subscribedRoom = useAppSelector(state => state.room.subscribedRoom);
 	const changingServer = useAppSelector(state => state.server.changingServer);
 	const { refreshing, onRefresh } = useRefresh({ searching });
@@ -129,24 +154,27 @@ const RoomsListView = memo(function RoomsListView() {
 	}
 
 	return (
-		<FlatList
-			data={searchEnabled ? searchResults : subscriptions}
-			extraData={searchEnabled ? searchResults : subscriptions}
-			keyExtractor={item => `${item.rid}-${searchEnabled}`}
-			style={[styles.list, { backgroundColor: colors.surfaceRoom }]}
-			contentContainerStyle={{ paddingBottom: bottom }}
-			renderItem={renderItem}
-			ListHeaderComponent={ListHeader}
-			ListFooterComponent={searching ? () => <ActivityIndicator /> : undefined}
-			getItemLayout={getItemLayout}
-			removeClippedSubviews={isIOS}
-			keyboardShouldPersistTaps='always'
-			initialNumToRender={INITIAL_NUM_TO_RENDER}
-			refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.fontSecondaryInfo} />}
-			windowSize={9}
-			onEndReachedThreshold={0.5}
-			keyboardDismissMode={isIOS ? 'on-drag' : 'none'}
-		/>
+		<>
+			{searchEnabled ? null : <HomeFilters active={homeFilter} onChange={setHomeFilter} />}
+			<FlatList
+				data={searchEnabled ? searchResults : filteredSubscriptions}
+				extraData={searchEnabled ? searchResults : filteredSubscriptions}
+				keyExtractor={item => `${item.rid}-${searchEnabled}`}
+				style={[styles.list, { backgroundColor: colors.surfaceRoom }]}
+				contentContainerStyle={{ paddingBottom: bottom }}
+				renderItem={renderItem}
+				ListHeaderComponent={ListHeader}
+				ListFooterComponent={searching ? () => <ActivityIndicator /> : undefined}
+				getItemLayout={getItemLayout}
+				removeClippedSubviews={isIOS}
+				keyboardShouldPersistTaps='always'
+				initialNumToRender={INITIAL_NUM_TO_RENDER}
+				refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.fontSecondaryInfo} />}
+				windowSize={9}
+				onEndReachedThreshold={0.5}
+				keyboardDismissMode={isIOS ? 'on-drag' : 'none'}
+			/>
+		</>
 	);
 });
 

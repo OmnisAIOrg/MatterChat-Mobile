@@ -18,9 +18,9 @@ export default StyleSheet.create({
 		flex: 1
 	},
 	title: {
-		fontSize: 16,
+		fontSize: 15,
 		lineHeight: 22,
-		...sharedStyles.textMedium
+		...sharedStyles.textSemibold
 	},
 	subtitle: {
 		fontSize: 14,
@@ -33,9 +33,9 @@ export default StyleSheet.create({
 		paddingBottom: 8
 	},
 	handleIndicator: {
-		width: 40,
-		height: 4,
-		borderRadius: 4,
+		width: 36,
+		height: 4.5,
+		borderRadius: 2.5,
 		margin: 8
 	},
 	backdrop: {
@@ -45,12 +45,12 @@ export default StyleSheet.create({
 		marginHorizontal: 16,
 		paddingHorizontal: 14,
 		justifyContent: 'center',
-		borderRadius: 4,
+		borderRadius: 14,
 		marginBottom: 12
 	},
 	text: {
 		fontSize: 16,
-		...sharedStyles.textMedium,
+		...sharedStyles.textBold,
 		...sharedStyles.textAlignCenter
 	},
 	rightContainer: {

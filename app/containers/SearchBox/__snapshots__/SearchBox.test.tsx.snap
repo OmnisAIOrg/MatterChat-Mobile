@@ -4,7 +4,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FDFDFC",
     }
   }
   testID="searchbox"
@@ -49,38 +49,54 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
             autoCorrect={false}
             blurOnSubmit={true}
             keyboardAppearance="light"
+            onBlur={[Function]}
             onChangeText={[Function]}
+            onFocus={[Function]}
             placeholder="Search"
-            placeholderTextColor="#9EA2A8"
+            placeholderTextColor="#8FA096"
             returnKeyType="search"
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#16211A",
                 },
                 [
                   {
                     "backgroundColor": "transparent",
-                    "borderRadius": 4,
-                    "borderWidth": 1,
+                    "borderRadius": 16,
+                    "borderWidth": 1.5,
                     "fontFamily": "Inter",
                     "fontSize": 16,
                     "fontWeight": "400",
+                    "minHeight": 54,
                     "paddingHorizontal": 16,
                     "paddingVertical": 14,
                     "textAlign": "left",
                   },
-                  undefined,
                   {
-                    "paddingRight": 45,
-                  },
-                  {
-                    "backgroundColor": "#FFFFFF",
-                    "borderColor": "#9EA2A8",
-                    "color": "#1F2329",
+                    "paddingLeft": 45,
                   },
                   {},
-                  undefined,
+                  {
+                    "backgroundColor": "#FDFDFC",
+                    "borderColor": "#E1E7E1",
+                    "color": "#16211A",
+                  },
+                  {},
+                  {},
+                  [
+                    {
+                      "borderRadius": 14,
+                      "borderWidth": 0,
+                      "fontSize": 15,
+                      "height": 42,
+                      "minHeight": 42,
+                      "paddingVertical": 0,
+                    },
+                    {
+                      "backgroundColor": "#ECEFEB",
+                    },
+                  ],
                 ],
                 {
                   "textAlign": "auto",
@@ -91,13 +107,12 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
             value=""
           />
           <Text
-            accessible={false}
             allowFontScaling={false}
             selectable={false}
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#5C6B61",
                   "fontSize": 20,
                 },
                 [
@@ -109,7 +124,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                       "position": "absolute",
                     },
                     {
-                      "right": 12,
+                      "left": 12,
                     },
                   ],
                 ],

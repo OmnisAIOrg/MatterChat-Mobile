@@ -27,7 +27,7 @@ const Avatar = memo(
 		serverVersion,
 		text,
 		size = 25,
-		borderRadius = 4,
+		borderRadius = Math.round(size * 0.32),
 		type = SubscriptionType.DIRECT,
 		avatarExternalProviderUrl,
 		roomAvatarExternalProviderUrl,

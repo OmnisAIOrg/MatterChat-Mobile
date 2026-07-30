@@ -11,6 +11,14 @@ const styles = StyleSheet.create({
 		marginTop: 16,
 		// override the default margin bottom of the FormTextInput
 		marginBottom: 16
+	},
+	input: {
+		minHeight: 42,
+		height: 42,
+		borderRadius: 14,
+		borderWidth: 0,
+		paddingVertical: 0,
+		fontSize: 15
 	}
 });
 
@@ -34,12 +42,13 @@ const SearchBox = ({ onChangeText, onSubmitEditing, testID }: TextInputProps) =>
 				returnKeyType='search'
 				underlineColorAndroid='transparent'
 				containerStyle={styles.inputContainer}
+				inputStyle={[styles.input, { backgroundColor: colors.surfaceNeutral }]}
 				onChangeText={internalOnChangeText}
 				onSubmitEditing={onSubmitEditing}
 				value={text}
 				testID={testID}
 				onClearInput={() => internalOnChangeText('')}
-				iconRight={'search'}
+				iconLeft={'search'}
 			/>
 		</View>
 	);

@@ -29,7 +29,7 @@ export const Drawer = forwardRef<KeyboardFocus, IHeaderButtonCommon>(
 				iconName='hamburguer'
 				onPress={onPress}
 				testID={testID}
-				color={colors.fontDefault}
+				color={colors.fontInfo}
 				{...props}
 			/>
 		);
@@ -46,6 +46,7 @@ Drawer.displayName = 'HeaderButton.Drawer';
 
 export const CloseModal = memo(({ testID, onPress, ...props }: IHeaderButtonCommon) => {
 	const { dispatch } = useNavigation();
+	const { colors } = useTheme();
 	return (
 		<Container left>
 			<Item
@@ -56,40 +57,53 @@ export const CloseModal = memo(({ testID, onPress, ...props }: IHeaderButtonComm
 					dispatch(StackActions.pop());
 				}}
 				testID={testID}
+				color={colors.fontInfo}
 				{...props}
 			/>
 		</Container>
 	);
 });
 
-export const CancelModal = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => (
-	<Container left>
-		{isIOS ? (
-			<Item title={I18n.t('Cancel')} onPress={onPress} testID={testID} {...props} />
-		) : (
-			<Item iconName='close' onPress={onPress} testID={testID} {...props} />
-		)}
-	</Container>
-));
+export const CancelModal = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => {
+	const { colors } = useTheme();
+	return (
+		<Container left>
+			{isIOS ? (
+				<Item title={I18n.t('Cancel')} onPress={onPress} testID={testID} color={colors.fontInfo} {...props} />
+			) : (
+				<Item iconName='close' onPress={onPress} testID={testID} color={colors.fontInfo} {...props} />
+			)}
+		</Container>
+	);
+});
 
 // Right
-export const More = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => (
-	<Container>
-		<Item iconName='kebab' onPress={onPress} testID={testID} {...props} />
-	</Container>
-));
+export const More = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => {
+	const { colors } = useTheme();
+	return (
+		<Container>
+			<Item iconName='kebab' onPress={onPress} testID={testID} color={colors.fontInfo} {...props} />
+		</Container>
+	);
+});
 
-export const Download = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => (
-	<Container>
-		<Item iconName='download' onPress={onPress} testID={testID} {...props} />
-	</Container>
-));
+export const Download = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => {
+	const { colors } = useTheme();
+	return (
+		<Container>
+			<Item iconName='download' onPress={onPress} testID={testID} color={colors.fontInfo} {...props} />
+		</Container>
+	);
+});
 
-export const Preferences = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => (
-	<Container>
-		<Item iconName='settings' onPress={onPress} testID={testID} {...props} />
-	</Container>
-));
+export const Preferences = memo(({ onPress, testID, ...props }: IHeaderButtonCommon) => {
+	const { colors } = useTheme();
+	return (
+		<Container>
+			<Item iconName='settings' onPress={onPress} testID={testID} color={colors.fontInfo} {...props} />
+		</Container>
+	);
+});
 
 export const Legal = memo(
 	({ navigation, testID, onPress = () => navigation?.navigate('LegalView'), ...props }: IHeaderButtonCommon) => (

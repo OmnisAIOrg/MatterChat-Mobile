@@ -69,10 +69,12 @@ export default StyleSheet.create({
 	},
 	emojiPickerContainer: { flex: 1 },
 	input: {
-		height: 32,
+		height: 42,
+		minHeight: 42,
+		fontSize: 15,
 		borderWidth: 0,
 		paddingVertical: 0,
-		borderRadius: 4
+		borderRadius: 14
 	},
 	textInputContainer: {
 		marginBottom: 0

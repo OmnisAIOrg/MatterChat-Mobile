@@ -13,8 +13,11 @@ const styles = StyleSheet.create({
 		paddingHorizontal: PADDING_HORIZONTAL
 	},
 	title: {
-		fontSize: 16,
-		...sharedStyles.textRegular
+		fontSize: 11,
+		letterSpacing: 1.1,
+		textTransform: 'uppercase',
+		...sharedStyles.textBold,
+		fontWeight: '800'
 	}
 });
 
@@ -31,7 +34,10 @@ const ListHeader = memo(({ title, translateTitle = true, numberOfLines }: IListH
 
 	return (
 		<View style={styles.container}>
-			<Text accessibilityRole='header' style={[styles.title, { color: themes[theme].fontHint }]} numberOfLines={numberOfLines}>
+			<Text
+				accessibilityRole='header'
+				style={[styles.title, { color: themes[theme].fontSecondaryInfo }]}
+				numberOfLines={numberOfLines}>
 				{translateTitle ? I18n.t(title) : title}
 			</Text>
 		</View>

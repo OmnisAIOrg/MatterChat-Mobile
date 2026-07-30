@@ -19,12 +19,12 @@ exports[`Story Snapshots: CustomButton should match snapshot 1`] = `
     [
       {
         "backgroundColor": "purple",
-        "borderRadius": 4,
+        "borderRadius": 14,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "padding": 10,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
       },
       {
         "cursor": undefined,
@@ -41,7 +41,7 @@ exports[`Story Snapshots: CustomButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -63,7 +63,7 @@ exports[`Story Snapshots: CustomButton should match snapshot 1`] = `
         {
           "backgroundColor": "transparent",
           "fontFamily": "Inter",
-          "fontWeight": "500",
+          "fontWeight": "700",
           "textAlign": "center",
         },
         [
@@ -97,12 +97,12 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#D1EBFE",
-        "borderRadius": 4,
+        "backgroundColor": "#ECEFEB",
+        "borderRadius": 14,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
       },
       {
         "cursor": undefined,
@@ -119,7 +119,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -135,13 +135,13 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#FFFFFF",
+          "color": "#A6B2A8",
           "fontSize": 16,
         },
         {
           "backgroundColor": "transparent",
           "fontFamily": "Inter",
-          "fontWeight": "500",
+          "fontWeight": "700",
           "textAlign": "center",
         },
         undefined,
@@ -171,12 +171,12 @@ exports[`Story Snapshots: DisabledLoadingButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#D1EBFE",
-        "borderRadius": 4,
+        "backgroundColor": "#ECEFEB",
+        "borderRadius": 14,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
       },
       {
         "cursor": undefined,
@@ -193,7 +193,7 @@ exports[`Story Snapshots: DisabledLoadingButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -234,12 +234,12 @@ exports[`Story Snapshots: LoadingButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#D1EBFE",
-        "borderRadius": 4,
+        "backgroundColor": "#ECEFEB",
+        "borderRadius": 14,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
       },
       {
         "cursor": undefined,
@@ -256,7 +256,7 @@ exports[`Story Snapshots: LoadingButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -297,12 +297,19 @@ exports[`Story Snapshots: PrimaryButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#156FF5",
-        "borderRadius": 4,
+        "backgroundColor": "#2FA44A",
+        "borderRadius": 14,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
+        "shadowColor": "#2FA44A",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.28,
+        "shadowRadius": 8,
       },
       {
         "cursor": undefined,
@@ -319,7 +326,7 @@ exports[`Story Snapshots: PrimaryButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -341,7 +348,7 @@ exports[`Story Snapshots: PrimaryButton should match snapshot 1`] = `
         {
           "backgroundColor": "transparent",
           "fontFamily": "Inter",
-          "fontWeight": "500",
+          "fontWeight": "700",
           "textAlign": "center",
         },
         undefined,
@@ -371,12 +378,14 @@ exports[`Story Snapshots: SecondaryButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#E4E7EA",
-        "borderRadius": 4,
+        "backgroundColor": "#FDFDFC",
+        "borderColor": "#E1E7E1",
+        "borderRadius": 14,
+        "borderWidth": 1.5,
+        "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "paddingVertical": 14,
       },
       {
         "cursor": undefined,
@@ -393,7 +402,7 @@ exports[`Story Snapshots: SecondaryButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,
@@ -409,13 +418,13 @@ exports[`Story Snapshots: SecondaryButton should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#2F343D",
+          "color": "#26312A",
           "fontSize": 16,
         },
         {
           "backgroundColor": "transparent",
           "fontFamily": "Inter",
-          "fontWeight": "500",
+          "fontWeight": "700",
           "textAlign": "center",
         },
         undefined,
@@ -446,11 +455,18 @@ exports[`Story Snapshots: SmallButton should match snapshot 1`] = `
     [
       {
         "alignSelf": "center",
-        "backgroundColor": "#156FF5",
-        "borderRadius": 4,
+        "backgroundColor": "#2FA44A",
+        "borderRadius": 14,
         "marginBottom": 12,
         "paddingHorizontal": 12,
         "paddingVertical": 8,
+        "shadowColor": "#2FA44A",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.28,
+        "shadowRadius": 8,
       },
       {
         "cursor": undefined,
@@ -467,7 +483,7 @@ exports[`Story Snapshots: SmallButton should match snapshot 1`] = `
         "backgroundColor": "black",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
-        "borderRadius": 4,
+        "borderRadius": 14,
         "borderTopLeftRadius": undefined,
         "borderTopRightRadius": undefined,
         "bottom": 0,

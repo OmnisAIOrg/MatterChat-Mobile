@@ -7,8 +7,8 @@ import { useTheme } from '../../theme';
 
 const styles = StyleSheet.create({
 	unreadNumberContainerNormal: {
-		paddingVertical: 3,
-		paddingHorizontal: 5,
+		paddingVertical: 4,
+		paddingHorizontal: 7,
 		alignItems: 'center',
 		justifyContent: 'center',
 		marginLeft: 10
@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'center'
 	},
 	unreadText: {
-		fontSize: 13,
-		...sharedStyles.textSemibold
+		fontSize: 12,
+		...sharedStyles.textBold
 	},
 	textSmall: {
 		fontSize: 10
@@ -103,11 +103,11 @@ const UnreadBadge = memo(
 		}
 		text = text.toString();
 
-		let minWidth = 21;
+		let minWidth = 22;
 		if (small) {
 			minWidth = 11 + text.length * 5;
 		}
-		const borderRadius = 10.5 * fontScale;
+		const borderRadius = 11 * fontScale;
 		const testId = getTestId(userMentions, groupMentions, text);
 
 		return (

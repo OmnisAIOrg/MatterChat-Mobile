@@ -48,10 +48,11 @@ const styles = StyleSheet.create({
 	input: {
 		...sharedStyles.textRegular,
 		fontSize: 16,
+		minHeight: 54,
 		paddingHorizontal: 16,
 		paddingVertical: 14,
-		borderWidth: 1,
-		borderRadius: 4
+		borderWidth: 1.5,
+		borderRadius: 16
 	},
 	inputIconLeft: {
 		paddingLeft: 45
@@ -120,10 +121,13 @@ export const FormTextInput = ({
 	placeholder,
 	accessibilityLabel,
 	showErrorMessage = true,
+	onFocus,
+	onBlur,
 	...inputProps
 }: IRCTextInputProps): ReactElement => {
 	const { colors } = useTheme();
 	const [showPassword, setShowPassword] = useState(false);
+	const [focused, setFocused] = useState(false);
 	const showClearInput = onClearInput && value && value.length > 0;
 	const inputError = getInputError(error);
 	// iOS 26 surfaces a system "Save Password?" sheet asynchronously after any
@@ -170,12 +174,22 @@ export const FormTextInput = ({
 								secureTextEntry || iconRight || showClearInput ? styles.inputIconRight : {},
 								{
 									backgroundColor: colors.surfaceLight,
-									borderColor: colors.strokeMedium,
+									borderColor: colors.strokeLight,
 									color: colors.fontTitlesLabels
 								},
+								focused
+									? {
+											borderColor: colors.strokeHighlight,
+											shadowColor: '#2FA44A',
+											shadowOffset: { width: 0, height: 0 },
+											shadowOpacity: 0.12,
+											shadowRadius: 3,
+											elevation: 0
+									  }
+									: {},
 								inputError
 									? {
-											borderColor: colors.buttonBackgroundDangerDefault
+											borderColor: colors.strokeError
 									  }
 									: {},
 								inputStyle
@@ -190,6 +204,14 @@ export const FormTextInput = ({
 							placeholder={placeholder}
 							value={value}
 							placeholderTextColor={colors.fontAnnotation}
+							onFocus={e => {
+								setFocused(true);
+								onFocus?.(e);
+							}}
+							onBlur={e => {
+								setFocused(false);
+								onBlur?.(e);
+							}}
 							{...inputProps}
 							{...(suppressIOSCredentialOffer && { textContentType: 'none', autoComplete: 'off' })}
 						/>

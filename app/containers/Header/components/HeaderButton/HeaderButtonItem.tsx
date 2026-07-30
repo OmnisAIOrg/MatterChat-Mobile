@@ -1,5 +1,5 @@
 import { memo, type ReactElement } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { CustomIcon, type TIconsName } from '../../../CustomIcon';
@@ -29,15 +29,10 @@ const styles = StyleSheet.create({
 		padding: 6
 	},
 	title: {
-		...Platform.select({
-			android: {
-				fontSize: 14
-			},
-			default: {
-				fontSize: 17
-			}
-		}),
-		...sharedStyles.textRegular
+		fontSize: 15,
+		lineHeight: 22,
+		...sharedStyles.textBold,
+		fontWeight: '800'
 	}
 });
 
@@ -67,7 +62,7 @@ const Item = memo(
 					{iconName ? (
 						<CustomIcon name={iconName} size={24} color={color} {...props} />
 					) : (
-						<Text style={[styles.title, { color: color || colors.fontDefault }]} {...props}>
+						<Text style={[styles.title, { color: color || colors.fontInfo }]} {...props}>
 							{title}
 						</Text>
 					)}

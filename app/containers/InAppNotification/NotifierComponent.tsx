@@ -28,7 +28,7 @@ export interface INotifierComponent {
 	isMasterDetail: boolean;
 }
 
-const AVATAR_SIZE = 48;
+const AVATAR_SIZE = 42;
 const BUTTON_HIT_SLOP = { top: 12, right: 12, bottom: 12, left: 12 };
 
 const styles = StyleSheet.create({
@@ -38,8 +38,13 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		marginHorizontal: 10,
-		borderWidth: StyleSheet.hairlineWidth,
-		borderRadius: 4
+		borderWidth: 1,
+		borderRadius: 16,
+		shadowColor: '#0A140C',
+		shadowOffset: { width: 0, height: 12 },
+		shadowOpacity: 0.16,
+		shadowRadius: 16,
+		elevation: 12
 	},
 	content: {
 		flexDirection: 'row',
@@ -50,17 +55,24 @@ const styles = StyleSheet.create({
 		marginRight: 10
 	},
 	avatar: {
-		marginRight: 10
+		marginRight: 12
 	},
 	roomName: {
-		fontSize: 17,
+		fontSize: 16,
 		lineHeight: 20,
-		...sharedStyles.textMedium
+		...sharedStyles.textBold
 	},
 	message: {
-		fontSize: 14,
-		lineHeight: 17,
+		fontSize: 15,
+		lineHeight: 19,
 		...sharedStyles.textRegular
+	},
+	closeButton: {
+		width: 32,
+		height: 32,
+		borderRadius: 10,
+		alignItems: 'center',
+		justifyContent: 'center'
 	},
 	small: {
 		width: '50%',
@@ -118,13 +130,16 @@ const NotifierComponent = memo(({ notification, isMasterDetail }: INotifierCompo
 					<Text style={[styles.roomName, { color: themes[theme].fontTitlesLabels }]} numberOfLines={1}>
 						{title}
 					</Text>
-					<Text style={[styles.message, { color: themes[theme].fontTitlesLabels }]} numberOfLines={1}>
+					<Text style={[styles.message, { color: themes[theme].fontDefault }]} numberOfLines={1}>
 						{text}
 					</Text>
 				</View>
 			</Touch>
-			<Touch onPress={hideNotification} hitSlop={BUTTON_HIT_SLOP}>
-				<CustomIcon name='close' size={20} />
+			<Touch
+				onPress={hideNotification}
+				hitSlop={BUTTON_HIT_SLOP}
+				style={[styles.closeButton, { backgroundColor: theme === 'light' ? '#EAF6EC' : themes[theme].surfaceSelected }]}>
+				<CustomIcon name='close' size={20} color={themes[theme].fontInfo} />
 			</Touch>
 		</View>
 	);

@@ -15,7 +15,7 @@ const ListRadio = ({ value: _, isSelected, ...rest }: IListRadio) => {
 	const { colors } = useTheme();
 
 	const iconName = isSelected ? 'radio-checked' : 'radio-unchecked';
-	const iconColor = isSelected ? colors.badgeBackgroundLevel2 : colors.strokeMedium;
+	const iconColor = isSelected ? colors.fontInfo : colors.strokeMedium;
 
 	return (
 		<ListItem
