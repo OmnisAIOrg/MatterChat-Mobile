@@ -9,6 +9,11 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
+# The final step auto-commits formatting fixes; the default GITHUB_TOKEN is read-only
+# in this org, so grant contents write or the push is denied to github-actions[bot].
+permissions:
+  contents: write
+
 jobs:
   format:
     if: ${{ github.repository != 'RocketChat/Rocket.Chat.ReactNative' || (github.ref != 'refs/heads/master' && github.ref != 'refs/heads/develop' && github.ref != 'refs/heads/single-server') }}

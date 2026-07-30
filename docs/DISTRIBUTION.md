@@ -4,18 +4,19 @@ How to get this app into people's hands, from local dev to TestFlight. Current a
 
 ## Status at a glance
 
-| Lane | State | Blocked on |
-|---|---|---|
-| Local dev (Debug + Metro) | ✅ working | — |
-| **Release build (bundled JS, standalone)** | ✅ **working** — verified booting on the simulator with no Metro | — |
-| CI simulator artifact | ✅ working (`matterchat-ios.yml` → MatterChat-Simulator.app.zip, 14-day retention) | — |
-| Device build / TestFlight | ⏳ ready to wire | Apple Developer enrollment (in progress) |
-| Android | ⏳ untouched | Android signing config + CI lane |
-| Push notifications | ⏳ needs setup | APNs key (Apple account) + a push gateway decision |
+| Lane                                       | State                                                                              | Blocked on                                         |
+| ------------------------------------------ | ---------------------------------------------------------------------------------- | -------------------------------------------------- |
+| Local dev (Debug + Metro)                  | ✅ working                                                                         | —                                                  |
+| **Release build (bundled JS, standalone)** | ✅ **working** — verified booting on the simulator with no Metro                   | —                                                  |
+| CI simulator artifact                      | ✅ working (`matterchat-ios.yml` → MatterChat-Simulator.app.zip, 14-day retention) | —                                                  |
+| Device build / TestFlight                  | ⏳ ready to wire                                                                   | Apple Developer enrollment (in progress)           |
+| Android                                    | ⏳ untouched                                                                       | Android signing config + CI lane                   |
+| Push notifications                         | ⏳ needs setup                                                                     | APNs key (Apple account) + a push gateway decision |
 
 ## Local builds
 
 Debug (Metro serves JS live — for development):
+
 ```bash
 corepack pnpm install && corepack pnpm start   # Metro
 xcodebuild -workspace ios/RocketChat.xcworkspace -scheme RocketChat -configuration Debug \
@@ -24,6 +25,7 @@ xcodebuild -workspace ios/RocketChat.xcworkspace -scheme RocketChat -configurati
 ```
 
 Release (bundled Hermes JS — what users run; no Metro needed):
+
 ```bash
 xcodebuild -workspace ios/RocketChat.xcworkspace -scheme RocketChat -configuration Release \
   -destination 'platform=iOS Simulator,name=iPhone 17 Pro' -derivedDataPath ios/build-release \
@@ -31,6 +33,7 @@ xcodebuild -workspace ios/RocketChat.xcworkspace -scheme RocketChat -configurati
 ```
 
 Gotchas (all already handled in-repo, listed so nobody re-trips):
+
 - Pods need Ruby 3.3 + `LANG=en_US.UTF-8`; after `pod install`, Pods/fmt needs the consteval patch
   (chmod u+w `Pods/fmt/include/fmt/base.h`, set `FMT_USE_CONSTEVAL 0`) on Xcode 26.
 - NEVER build with `CODE_SIGNING_ALLOWED=NO` — it strips the App Group entitlement and MMKV
