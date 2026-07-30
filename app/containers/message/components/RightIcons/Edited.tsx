@@ -2,11 +2,13 @@ import { View } from 'react-native';
 
 import { CustomIcon } from '../../../CustomIcon';
 import styles from '../../styles';
+import { useTheme } from '../../../../theme';
 import { useIsEdited, useMessageText } from '../../stores/MessageStore';
 
 const Edited = () => {
 	'use memo';
 
+	const { colors } = useTheme();
 	const isEdited = useIsEdited();
 	const { messageText } = useMessageText();
 
@@ -16,7 +18,7 @@ const Edited = () => {
 
 	return (
 		<View testID={`${messageText}-edited`} style={styles.rightIcons}>
-			<CustomIcon name='edit' size={16} />
+			<CustomIcon name='edit' size={16} color={colors.fontSecondaryInfo} />
 		</View>
 	);
 };

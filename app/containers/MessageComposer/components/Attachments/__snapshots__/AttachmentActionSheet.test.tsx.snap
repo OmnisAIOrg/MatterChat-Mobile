@@ -43,7 +43,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#2F343D",
+            "color": "#26312A",
           },
         ]
       }
@@ -62,7 +62,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
           },
         ]
       }
@@ -79,7 +79,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
               "overflow": "hidden",
             },
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
             },
           ]
         }
@@ -90,7 +90,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1D74F5",
+                "color": "#2FA44A",
                 "fontSize": 40,
               },
               [
@@ -129,12 +129,19 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#156FF5",
-            "borderRadius": 4,
+            "backgroundColor": "#2FA44A",
+            "borderRadius": 14,
+            "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "paddingVertical": 14,
+            "shadowColor": "#2FA44A",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.28,
+            "shadowRadius": 8,
           },
           {
             "cursor": undefined,
@@ -150,7 +157,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             "backgroundColor": "black",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
-            "borderRadius": 4,
+            "borderRadius": 14,
             "borderTopLeftRadius": undefined,
             "borderTopRightRadius": undefined,
             "bottom": 0,
@@ -172,7 +179,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             {
               "backgroundColor": "transparent",
               "fontFamily": "Inter",
-              "fontWeight": "500",
+              "fontWeight": "700",
               "textAlign": "center",
             },
             undefined,
@@ -229,7 +236,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#2F343D",
+            "color": "#26312A",
           },
         ]
       }
@@ -248,7 +255,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
           },
         ]
       }
@@ -285,12 +292,19 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#156FF5",
-            "borderRadius": 4,
+            "backgroundColor": "#2FA44A",
+            "borderRadius": 14,
+            "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "paddingVertical": 14,
+            "shadowColor": "#2FA44A",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.28,
+            "shadowRadius": 8,
           },
           {
             "cursor": undefined,
@@ -306,7 +320,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             "backgroundColor": "black",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
-            "borderRadius": 4,
+            "borderRadius": 14,
             "borderTopLeftRadius": undefined,
             "borderTopRightRadius": undefined,
             "bottom": 0,
@@ -328,7 +342,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             {
               "backgroundColor": "transparent",
               "fontFamily": "Inter",
-              "fontWeight": "500",
+              "fontWeight": "700",
               "textAlign": "center",
             },
             undefined,
@@ -385,7 +399,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#2F343D",
+            "color": "#26312A",
           },
         ]
       }
@@ -404,7 +418,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
           },
         ]
       }
@@ -441,12 +455,19 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#156FF5",
-            "borderRadius": 4,
+            "backgroundColor": "#2FA44A",
+            "borderRadius": 14,
+            "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "paddingVertical": 14,
+            "shadowColor": "#2FA44A",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.28,
+            "shadowRadius": 8,
           },
           {
             "cursor": undefined,
@@ -462,7 +483,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             "backgroundColor": "black",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
-            "borderRadius": 4,
+            "borderRadius": 14,
             "borderTopLeftRadius": undefined,
             "borderTopRightRadius": undefined,
             "bottom": 0,
@@ -484,7 +505,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             {
               "backgroundColor": "transparent",
               "fontFamily": "Inter",
-              "fontWeight": "500",
+              "fontWeight": "700",
               "textAlign": "center",
             },
             undefined,
@@ -541,7 +562,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             "textAlign": "left",
           },
           {
-            "color": "#2F343D",
+            "color": "#26312A",
           },
         ]
       }
@@ -560,7 +581,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
           },
         ]
       }
@@ -597,12 +618,19 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
       style={
         [
           {
-            "backgroundColor": "#156FF5",
-            "borderRadius": 4,
+            "backgroundColor": "#2FA44A",
+            "borderRadius": 14,
+            "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "paddingVertical": 14,
+            "shadowColor": "#2FA44A",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.28,
+            "shadowRadius": 8,
           },
           {
             "cursor": undefined,
@@ -618,7 +646,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             "backgroundColor": "black",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
-            "borderRadius": 4,
+            "borderRadius": 14,
             "borderTopLeftRadius": undefined,
             "borderTopRightRadius": undefined,
             "bottom": 0,
@@ -640,7 +668,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             {
               "backgroundColor": "transparent",
               "fontFamily": "Inter",
-              "fontWeight": "500",
+              "fontWeight": "700",
               "textAlign": "center",
             },
             undefined,
@@ -697,7 +725,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#2F343D",
+            "color": "#26312A",
           },
         ]
       }
@@ -716,7 +744,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
           },
         ]
       }
@@ -733,7 +761,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
               "overflow": "hidden",
             },
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
             },
           ]
         }
@@ -744,7 +772,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1D74F5",
+                "color": "#2FA44A",
                 "fontSize": 40,
               },
               [
@@ -783,12 +811,19 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#156FF5",
-            "borderRadius": 4,
+            "backgroundColor": "#2FA44A",
+            "borderRadius": 14,
+            "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "paddingVertical": 14,
+            "shadowColor": "#2FA44A",
+            "shadowOffset": {
+              "height": 4,
+              "width": 0,
+            },
+            "shadowOpacity": 0.28,
+            "shadowRadius": 8,
           },
           {
             "cursor": undefined,
@@ -804,7 +839,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             "backgroundColor": "black",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
-            "borderRadius": 4,
+            "borderRadius": 14,
             "borderTopLeftRadius": undefined,
             "borderTopRightRadius": undefined,
             "bottom": 0,
@@ -826,7 +861,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             {
               "backgroundColor": "transparent",
               "fontFamily": "Inter",
-              "fontWeight": "500",
+              "fontWeight": "700",
               "textAlign": "center",
             },
             undefined,

@@ -2,6 +2,7 @@ import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useCallback, useContext, useLayoutEffect, useRef, useState } from 'react';
 import { InteractionManager } from 'react-native';
 import { type KeyboardFocus } from 'react-native-external-keyboard';
+import LinearGradient from 'react-native-linear-gradient';
 
 import * as HeaderButton from '../../../containers/Header/components/HeaderButton';
 import i18n from '../../../i18n';
@@ -29,6 +30,8 @@ export const useHeader = () => {
 	const navigation = useNavigation<any>();
 	const issuesWithNotifications = useAppSelector(state => state.troubleshootingNotification.issuesWithNotifications);
 	const notificationPresenceCap = useAppSelector(state => state.app.notificationPresenceCap);
+	// reskin: "Forest" header pref paints the Home header in the brand green gradient
+	const forest = useAppSelector(state => state.sortPreferences.headerStyle) !== 'classic';
 	const { colors } = useTheme();
 	const [
 		createPublicChannelPermission,
@@ -118,7 +121,7 @@ export const useHeader = () => {
 					disabled={disabled}
 				/>
 			),
-			headerTitle: () => <RoomsListHeaderView search={search} searchEnabled={searchEnabled} />,
+			headerTitle: () => <RoomsListHeaderView search={search} searchEnabled={searchEnabled} forest={forest} />,
 			headerRight: () => (
 				<HeaderButton.Container>
 					{issuesWithNotifications ? (
@@ -136,6 +139,7 @@ export const useHeader = () => {
 							onPress={goToNewMessage}
 							testID='rooms-list-view-create-channel'
 							disabled={disabled}
+							color={forest ? '#FFFFFF' : undefined}
 						/>
 					) : null}
 					<HeaderButton.Item
@@ -144,6 +148,7 @@ export const useHeader = () => {
 						onPress={startSearch}
 						testID='rooms-list-view-search'
 						disabled={disabled}
+						color={forest ? '#FFFFFF' : undefined}
 					/>
 					<HeaderButton.Item
 						iconName='directory'
@@ -151,9 +156,20 @@ export const useHeader = () => {
 						onPress={goDirectory}
 						testID='rooms-list-view-directory'
 						disabled={disabled}
+						color={forest ? '#FFFFFF' : undefined}
 					/>
 				</HeaderButton.Container>
-			)
+			),
+			// reskin: Forest header — brand green gradient with white content (Classic keeps the
+			// themed neutral header; both from the same options object so the toggle is instant)
+			...(forest
+				? {
+						headerBackground: () => (
+							<LinearGradient colors={['#169A46', '#0E7A31']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ flex: 1 }} />
+						),
+						headerTintColor: '#FFFFFF'
+					}
+				: { headerBackground: undefined, headerTintColor: undefined })
 		};
 
 		navigation.setOptions(options);
@@ -174,7 +190,8 @@ export const useHeader = () => {
 		goToNewMessage,
 		startSearch,
 		stopSearch,
-		search
+		search,
+		forest
 	]);
 
 	// The rooms list header persists across native-stack navigation, so autoFocus (mount-only)

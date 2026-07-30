@@ -17,6 +17,8 @@ import { type TNavigation } from './stackType';
 import RoomView from '../views/RoomView';
 import RoomsListView from '../views/RoomsListView';
 import ChiOrbView from '../views/ChiOrbView';
+import ActivityView from '../views/ActivityView';
+import DMsView from '../views/DMsView';
 import RoomActionsView from '../views/RoomActionsView';
 import RoomInfoView from '../views/RoomInfoView';
 import ReportUserView from '../views/ReportUserView';
@@ -52,6 +54,7 @@ import UserPreferencesView from '../views/UserPreferencesView';
 import UserNotificationPrefView from '../views/UserNotificationPreferencesView';
 import ChangePasswordView from '../views/ChangePasswordView';
 import SettingsView from '../views/SettingsView';
+import ConnectionsView from '../views/ConnectionsView';
 import SecurityPrivacyView from '../views/SecurityPrivacyView';
 import GetHelpView from '../views/GetHelpView';
 import PushTroubleshootView from '../views/PushTroubleshootView';
@@ -124,9 +127,12 @@ const AddExistingChannelViewScreen = AddExistingChannelView as any;
 const CannedResponseDetailScreen = CannedResponseDetail as any;
 const JitsiMeetViewScreen = JitsiMeetView as any;
 const ChiOrbViewScreen = ChiOrbView as any;
+const ActivityViewScreen = ActivityView as any;
+const DMsViewScreen = DMsView as any;
 const ChangeAvatarViewScreen = ChangeAvatarView as any;
 const UserNotificationPrefViewScreen: ComponentType<StaticScreenProps<undefined>> = UserNotificationPrefView as any;
 const SettingsViewScreen: ComponentType<StaticScreenProps<undefined>> = SettingsView as any;
+const ConnectionsViewScreen: ComponentType<StaticScreenProps<undefined>> = ConnectionsView as any;
 const E2EEncryptionSecurityViewScreen: ComponentType<StaticScreenProps<undefined>> = E2EEncryptionSecurityView as any;
 const LanguageViewScreen: ComponentType<StaticScreenProps<undefined>> = LanguageView as any;
 const DefaultBrowserViewScreen: ComponentType<StaticScreenProps<undefined>> = DefaultBrowserView as any;
@@ -203,6 +209,15 @@ const ChatsStack = createNativeStackNavigator({
 			screen: JitsiMeetViewScreen,
 			options: { headerShown: false, animation: isIOS ? 'default' : 'none' }
 		}),
+		DMsView: createNativeStackScreen({
+			screen: DMsViewScreen,
+			// reskin tab: cross-fade, owned in-view header
+			options: { headerShown: false, animation: 'fade' }
+		}),
+		ActivityView: createNativeStackScreen({
+			screen: ActivityViewScreen,
+			options: { headerShown: false, animation: 'fade' }
+		}),
 		ChiOrbView: createNativeStackScreen({
 			screen: ChiOrbViewScreen,
 			// full-bleed voice surface; fade in like a Siri-style overlay
@@ -238,6 +253,7 @@ const SettingsStack = createNativeStackNavigator({
 	screenOptions: defaultHeader,
 	screens: {
 		SettingsView: SettingsViewScreen,
+		ConnectionsView: ConnectionsViewScreen,
 		SecurityPrivacyView: SecurityPrivacyViewScreen,
 		PushTroubleshootView: PushTroubleshootViewScreen,
 		E2EEncryptionSecurityView: E2EEncryptionSecurityViewScreen,

@@ -134,7 +134,8 @@ export const RecordAudio = (): ReactElement | null => {
 						testID='message-composer-send'
 						accessibilityLabel='Send_audio_message'
 						icon='send-filled'
-						color={colors.buttonBackgroundPrimaryDefault}
+						color={colors.fontWhite}
+						backgroundColor={colors.buttonBackgroundPrimaryDefault}
 					/>
 				</View>
 			</View>
@@ -144,7 +145,7 @@ export const RecordAudio = (): ReactElement | null => {
 	return (
 		<View style={styles.recording}>
 			<View style={styles.duration}>
-				<CustomIcon name='mic' size={24} color={colors.fontDanger} />
+				<CustomIcon name='mic' size={24} color={colors.strokeError} />
 				<Duration ref={durationRef} />
 			</View>
 			<View style={styles.buttons}>
@@ -162,18 +163,24 @@ function useStyle() {
 	const { colors } = useTheme();
 	const style = {
 		review: {
-			borderTopWidth: 1,
-			paddingHorizontal: 16,
+			borderWidth: 1.5,
+			borderRadius: 14,
+			marginHorizontal: 12,
+			marginBottom: 8,
+			paddingHorizontal: 12,
 			paddingBottom: 12,
 			backgroundColor: colors.surfaceLight,
-			borderTopColor: colors.strokeLight
+			borderColor: colors.strokeLight
 		},
 		recording: {
-			borderTopWidth: 1,
-			paddingHorizontal: 16,
+			borderWidth: 1.5,
+			borderRadius: 14,
+			marginHorizontal: 12,
+			marginBottom: 8,
+			paddingHorizontal: 12,
 			paddingBottom: 8,
 			backgroundColor: colors.surfaceLight,
-			borderTopColor: colors.strokeLight
+			borderColor: colors.strokeLight
 		},
 		duration: {
 			flexDirection: 'row',

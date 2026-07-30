@@ -18,8 +18,9 @@ const Code = ({ value }: ICodeProps): ReactElement => {
 			style={[
 				styles.codeBlock,
 				{
-					backgroundColor: colors.surfaceNeutral,
-					borderColor: colors.strokeLight
+					backgroundColor: colors.surfaceTint,
+					borderColor: colors.strokeLight,
+					borderLeftColor: colors.strokeHighlight
 				}
 			]}>
 			{value.map(block => {

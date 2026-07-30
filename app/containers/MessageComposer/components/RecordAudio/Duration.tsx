@@ -35,7 +35,7 @@ function useStyle() {
 			marginLeft: 12,
 			fontSize: 16,
 			...sharedStyles.textRegular,
-			color: colors.fontDefault,
+			color: colors.strokeError,
 			fontVariant: ['tabular-nums'] as FontVariant[]
 		}
 	} as const;

@@ -34,13 +34,13 @@ export default StyleSheet.create({
 		textDecorationLine: 'line-through'
 	},
 	plainText: {
-		fontSize: 16,
+		fontSize: 15,
 		flexShrink: 1,
 		lineHeight: 22
 	},
 	text: {
 		lineHeight: 22,
-		fontSize: 16,
+		fontSize: 15,
 		...sharedStyles.textRegular
 	},
 	textInfo: {
@@ -55,7 +55,7 @@ export default StyleSheet.create({
 	},
 	temp: { opacity: 0.3 },
 	mention: {
-		fontSize: 16,
+		fontSize: 15,
 		...sharedStyles.textSemibold
 	},
 	paragraph: {
@@ -71,7 +71,7 @@ export default StyleSheet.create({
 		height: 300
 	},
 	codeInline: {
-		fontSize: 16,
+		fontSize: 14,
 		lineHeight: 22,
 		...sharedStyles.textRegular,
 		...codeFontFamily,
@@ -82,17 +82,19 @@ export default StyleSheet.create({
 	},
 	codeBlock: {
 		borderWidth: 1,
-		borderRadius: 4,
-		padding: 4
+		borderLeftWidth: 3,
+		borderRadius: 8,
+		paddingVertical: 8,
+		paddingHorizontal: 12
 	},
 	codeBlockText: {
-		fontSize: 16,
-		lineHeight: 22,
+		fontSize: 12,
+		lineHeight: 18,
 		...sharedStyles.textRegular,
 		...codeFontFamily
 	},
 	link: {
-		fontSize: 16,
+		fontSize: 15,
 		...sharedStyles.textRegular
 	},
 	heading1: {
@@ -121,8 +123,9 @@ export default StyleSheet.create({
 	},
 	quote: {
 		height: '100%',
-		width: 2,
-		marginRight: 5
+		width: 3,
+		borderRadius: 2,
+		marginRight: 8
 	},
 	touchableTable: {
 		justifyContent: 'center'

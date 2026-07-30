@@ -8,7 +8,8 @@ export const initialState: IPreferences = {
 	showFavorites: false,
 	showUnread: false,
 	showAvatar: true,
-	displayMode: DisplayMode.Expanded
+	displayMode: DisplayMode.Expanded,
+	headerStyle: 'forest'
 };
 
 export default (state = initialState, action: TApplicationActions): IPreferences => {

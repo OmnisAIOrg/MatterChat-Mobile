@@ -21,7 +21,9 @@ describe('test sortPreferences reducer', () => {
 		};
 		mockedStore.dispatch(setAllPreferences(preferences));
 		const state = mockedStore.getState().sortPreferences;
-		expect(state).toEqual(preferences);
+		// headerStyle (reskin pref) is not part of the legacy persisted set; SET_ALL spreads
+		// over existing state, so the initial value carries through.
+		expect(state).toEqual({ ...preferences, headerStyle: 'forest' });
 	});
 
 	it('should return correctly value after call setPreference action', () => {

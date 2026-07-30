@@ -197,6 +197,15 @@ const SettingsView = (): ReactElement => {
 						left={() => <List.Icon name='locker' />}
 					/>
 					<List.Separator />
+					<List.Item
+						title='Connections'
+						translateTitle={false}
+						showActionIndicator
+						onPress={() => navigateToScreen('ConnectionsView')}
+						testID='settings-view-connections'
+						left={() => <List.Icon name='link' />}
+					/>
+					<List.Separator />
 				</List.Section>
 
 				<List.Section>

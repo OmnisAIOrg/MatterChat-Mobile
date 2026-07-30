@@ -59,7 +59,8 @@ export const MicOrSendButton = (): ReactElement | null => {
 				testID='message-composer-send'
 				accessibilityLabel='Send_message'
 				icon='send-filled'
-				color={colors.strokeHighlight}
+				color={colors.fontWhite}
+				backgroundColor={colors.buttonBackgroundPrimaryDefault}
 			/>
 		);
 	}

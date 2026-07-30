@@ -373,7 +373,7 @@ export const ComposerInput = memo(
 			<TextInput
 				style={[styles.textInput, { color: colors.fontDefault }]}
 				placeholder={placeholder}
-				placeholderTextColor={colors.fontAnnotation}
+				placeholderTextColor={colors.fontHint}
 				ref={component => {
 					inputRef.current = component;
 				}}
@@ -402,9 +402,9 @@ const styles = StyleSheet.create({
 		maxHeight: MAX_HEIGHT,
 		paddingTop: 12,
 		paddingBottom: 12,
-		fontSize: 16,
+		fontSize: 15,
 		textAlignVertical: 'center',
 		...sharedStyles.textRegular,
-		lineHeight: 22
+		lineHeight: 21
 	}
 });

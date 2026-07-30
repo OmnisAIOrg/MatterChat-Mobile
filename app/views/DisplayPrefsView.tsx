@@ -22,7 +22,7 @@ const DisplayPrefsView = (): ReactElement => {
 	const navigation = useNavigation<NativeStackNavigationProp<SettingsStackParamList, 'DisplayPrefsView'>>();
 	const { colors } = useTheme();
 
-	const { sortBy, groupByType, showFavorites, showUnread, showAvatar, displayMode } = useAppSelector(
+	const { sortBy, groupByType, showFavorites, showUnread, showAvatar, displayMode, headerStyle } = useAppSelector(
 		state => state.sortPreferences
 	);
 	const dispatch = useDispatch();
@@ -78,6 +78,15 @@ const DisplayPrefsView = (): ReactElement => {
 		setSortPreference({ displayMode: DisplayMode.Condensed });
 	};
 
+	// reskin: Home header treatment — Forest (green gradient) vs Classic (neutral)
+	const headerForest = () => {
+		setSortPreference({ headerStyle: 'forest' });
+	};
+
+	const headerClassic = () => {
+		setSortPreference({ headerStyle: 'classic' });
+	};
+
 	const renderCheckBox = (value: boolean) => (
 		<List.Icon name={value ? 'checkbox-checked' : 'checkbox-unchecked'} color={value ? colors.strokeHighlight : ''} />
 	);
@@ -121,6 +130,30 @@ const DisplayPrefsView = (): ReactElement => {
 						onPress={toggleAvatar}
 						additionalAccessibilityLabel={showAvatar}
 						accessibilityRole='switch'
+					/>
+					<List.Separator />
+				</List.Section>
+
+				<List.Section title='Header style'>
+					<List.Separator />
+					<List.Item
+						left={() => <List.Icon name='teams' />}
+						title='Forest'
+						testID='display-pref-view-header-forest'
+						right={() => renderRadio(headerStyle !== 'classic')}
+						onPress={headerForest}
+						additionalAccessibilityLabel={headerStyle !== 'classic'}
+						accessibilityRole='radio'
+					/>
+					<List.Separator />
+					<List.Item
+						left={() => <List.Icon name='queue' />}
+						title='Classic'
+						testID='display-pref-view-header-classic'
+						right={() => renderRadio(headerStyle === 'classic')}
+						onPress={headerClassic}
+						additionalAccessibilityLabel={headerStyle === 'classic'}
+						accessibilityRole='radio'
 					/>
 					<List.Separator />
 				</List.Section>

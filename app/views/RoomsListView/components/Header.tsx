@@ -31,7 +31,16 @@ const styles = StyleSheet.create({
 });
 
 // search and searchEnabled need to be props because Header is used on react-navigation, which does not support context
-const RoomsListHeaderView = ({ search, searchEnabled }: { search: (text: string) => void; searchEnabled: boolean }) => {
+const RoomsListHeaderView = ({
+	search,
+	searchEnabled,
+	forest
+}: {
+	search: (text: string) => void;
+	searchEnabled: boolean;
+	// reskin: Forest header paints the nav bar green — title/subtitle switch to white
+	forest?: boolean;
+}) => {
 	'use memo';
 
 	const connecting = useAppSelector(state => state.meteor.connecting || state.server.loading);
@@ -69,14 +78,14 @@ const RoomsListHeaderView = ({ search, searchEnabled }: { search: (text: string)
 		<View style={styles.container} accessibilityLabel={`${serverName} ${subtitle}`} accessibilityRole='header' accessible>
 			<TouchableOpacity onPress={onPress} testID='rooms-list-header-servers-list-button'>
 				<View style={styles.button}>
-					<Text style={[styles.title, { color: colors.fontTitlesLabels }]} numberOfLines={1}>
+					<Text style={[styles.title, { color: forest ? '#FFFFFF' : colors.fontTitlesLabels }]} numberOfLines={1}>
 						{serverName}
 					</Text>
 				</View>
 				{subtitle ? (
 					<Text
 						testID='rooms-list-header-server-subtitle'
-						style={[styles.subtitle, { color: colors.fontSecondaryInfo }]}
+						style={[styles.subtitle, { color: forest ? 'rgba(255,255,255,.78)' : colors.fontSecondaryInfo }]}
 						numberOfLines={1}>
 						{subtitle}
 					</Text>

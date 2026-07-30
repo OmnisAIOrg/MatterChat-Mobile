@@ -28,25 +28,25 @@ export default StyleSheet.create({
 	reactionsContainer: {
 		flexDirection: 'row',
 		flexWrap: 'wrap',
-		gap: 4
+		gap: 6
 	},
 	reactionButton: {
-		borderRadius: 4
+		borderRadius: 14
 	},
 	reactionContainer: {
 		flexDirection: 'row',
 		justifyContent: 'center',
 		alignItems: 'center',
-		borderRadius: 4,
+		borderRadius: 14,
 		borderWidth: 1,
 		minWidth: 46.3,
 		gap: 4,
-		paddingHorizontal: 4
+		paddingHorizontal: 9
 	},
 	reactionCount: {
-		fontSize: 14,
-		lineHeight: 18,
-		...sharedStyles.textSemibold
+		fontSize: 12,
+		lineHeight: 16,
+		...sharedStyles.textBold
 	},
 	reactionEmoji: {
 		fontSize: 13,
@@ -107,8 +107,8 @@ export default StyleSheet.create({
 		...sharedStyles.textRegular
 	},
 	time: {
-		fontSize: 13,
-		lineHeight: 18,
+		fontSize: 11,
+		lineHeight: 16,
 		...sharedStyles.textRegular
 	},
 	repliedThread: {

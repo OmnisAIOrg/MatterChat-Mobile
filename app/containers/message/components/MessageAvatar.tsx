@@ -9,7 +9,7 @@ import { useResponsiveLayout } from '../../../lib/hooks/useResponsiveLayout/useR
 import { useAvatar, useMessageField, useMessageGrouping } from '../stores/MessageStore';
 import { useMessageUser, useNavToRoomInfo } from '../stores/MessageRoomStore';
 
-const AVATAR_BASE_SIZE = 36;
+const AVATAR_BASE_SIZE = 38;
 
 export const AvatarContainer = ({ children }: { children?: ReactElement | null }) => {
 	const { fontScaleLimited } = useResponsiveLayout();
@@ -44,7 +44,6 @@ const MessageAvatar = ({ small }: IMessageAvatar) => {
 					style={small ? undefined : styles.avatar}
 					text={avatar ? '' : author.username}
 					size={size}
-					borderRadius={4}
 					onPress={onPress}
 					avatar={avatar}
 					emoji={emoji}

@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
 		marginRight: 8
 	},
 	detailText: {
-		fontSize: 10,
+		fontSize: 13,
 		marginLeft: 2,
-		...sharedStyles.textSemibold
+		...sharedStyles.textBold
 	},
 	badgeContainer: {
 		flexDirection: 'row',
@@ -69,17 +69,14 @@ const ThreadDetails = ({ item, user, badgeColor, toggleFollowThread, style }: IT
 			<View style={styles.detailsContainer}>
 				<View style={styles.detailContainer}>
 					<CustomIcon name='threads' size={24} />
-					<Text
-						testID={`thread-count-${count}`}
-						style={[styles.detailText, { color: themes[theme].fontSecondaryInfo }]}
-						numberOfLines={1}>
+					<Text testID={`thread-count-${count}`} style={[styles.detailText, { color: themes[theme].fontInfo }]} numberOfLines={1}>
 						{count}
 					</Text>
 				</View>
 
 				<View style={styles.detailContainer}>
 					<CustomIcon name='user' size={24} />
-					<Text style={[styles.detailText, { color: themes[theme].fontSecondaryInfo }]} numberOfLines={1}>
+					<Text style={[styles.detailText, { color: themes[theme].fontInfo }]} numberOfLines={1}>
 						{replies}
 					</Text>
 				</View>

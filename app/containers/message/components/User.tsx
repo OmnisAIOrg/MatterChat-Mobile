@@ -20,9 +20,10 @@ const styles = StyleSheet.create({
 	},
 	username: {
 		flexShrink: 1,
-		fontSize: 16,
-		lineHeight: 22,
-		...sharedStyles.textSemibold
+		fontSize: 15,
+		lineHeight: 20,
+		...sharedStyles.textBold,
+		fontWeight: '800'
 	},
 	usernameInfoMessage: {
 		fontSize: 16,

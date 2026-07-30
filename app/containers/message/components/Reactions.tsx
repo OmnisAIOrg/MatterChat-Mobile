@@ -5,10 +5,12 @@ import MessageActionTouchable from './Touchable/MessageActionTouchable';
 import { CustomIcon } from '../../CustomIcon';
 import styles from '../styles';
 import Emoji from './Emoji';
-import { BUTTON_HIT_SLOP } from '../utils';
 import { useTheme } from '../../../theme';
 import { useMessageId, useMessageItem, useReactions } from '../stores/MessageStore';
 import { useMessageUser, useOnReactionLongPress, useOnReactionPress, useReactionInit } from '../stores/MessageRoomStore';
+
+// Reaction pills are 28px tall; 8px of vertical slop keeps the touch target at 44px
+const REACTION_HIT_SLOP = { top: 8, right: 4, bottom: 8, left: 4 };
 
 interface IReaction {
 	_id: string;
@@ -35,11 +37,11 @@ const AddReaction = () => {
 			testID='message-add-reaction'
 			accessibilityRole='button'
 			accessibilityLabel={I18n.t('Add_reaction')}
-			style={[styles.reactionButton, { backgroundColor: colors.surfaceRoom }]}
-			hitSlop={BUTTON_HIT_SLOP}
+			style={styles.reactionButton}
+			hitSlop={REACTION_HIT_SLOP}
 			android_ripple={{ color: colors.strokeLight }}>
 			<View style={[styles.reactionContainer, { borderColor: colors.strokeLight, height }]}>
-				<CustomIcon name='reaction-add' size={20} color={colors.badgeBackgroundLevel2} />
+				<CustomIcon name='reaction-add' size={20} color={colors.fontSecondaryInfo} />
 			</View>
 		</MessageActionTouchable>
 	);
@@ -66,13 +68,15 @@ const Reaction = ({ reaction }: IMessageReaction) => {
 			accessibilityRole='button'
 			accessibilityLabel={`${reaction.emoji}, ${reaction.usernames.length}`}
 			accessibilityState={{ selected: reacted }}
-			style={[styles.reactionButton, { backgroundColor: reacted ? colors.surfaceNeutral : colors.surfaceRoom }]}
-			hitSlop={BUTTON_HIT_SLOP}
+			style={[styles.reactionButton, { backgroundColor: reacted ? colors.statusBackgroundInfo : colors.surfaceNeutral }]}
+			hitSlop={REACTION_HIT_SLOP}
 			android_ripple={{ color: colors.strokeLight }}>
 			<View
-				style={[styles.reactionContainer, { borderColor: reacted ? colors.badgeBackgroundLevel2 : colors.strokeLight, height }]}>
+				style={[styles.reactionContainer, { borderColor: reacted ? colors.strokeExtraLightHighlight : 'transparent', height }]}>
 				<Emoji content={reaction.emoji} standardEmojiStyle={styles.reactionEmoji} customEmojiStyle={styles.reactionCustomEmoji} />
-				<Text style={[styles.reactionCount, { color: colors.badgeBackgroundLevel2 }]}>{reaction.usernames.length}</Text>
+				<Text style={[styles.reactionCount, { color: reacted ? colors.fontInfo : colors.fontSecondaryInfo }]}>
+					{reaction.usernames.length}
+				</Text>
 			</View>
 		</MessageActionTouchable>
 	);

@@ -19,7 +19,7 @@ import { goRoom } from '../../lib/methods/helpers/goRoom';
 import { events, logEvent } from '../../lib/methods/helpers/log';
 import { getUserSelector } from '../../selectors/login';
 import { useTheme } from '../../theme';
-import ChiFab from './components/ChiFab';
+import MainTabBar from '../../containers/MainTabBar';
 import Container from './components/Container';
 import HomeFilters, { type THomeFilter } from './components/HomeFilters';
 import ListHeader from './components/ListHeader';
@@ -182,7 +182,8 @@ const RoomsListViewWithProvider = () => (
 	<RoomsSearchProvider>
 		<Container>
 			<RoomsListView />
-			<ChiFab />
+			{/* reskin: the floating Chi orb relocated into the tab bar's raised center button */}
+			<MainTabBar active='home' />
 		</Container>
 	</RoomsSearchProvider>
 );

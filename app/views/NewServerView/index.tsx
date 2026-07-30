@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
-import { AccessibilityInfo, BackHandler, Keyboard, Text } from 'react-native';
+import { AccessibilityInfo, BackHandler, Keyboard, Text, View } from 'react-native';
 import { useDispatch } from 'react-redux';
-import { Image } from 'expo-image';
 import { useForm } from 'react-hook-form';
 import { useNavigation } from '@react-navigation/native';
 import { type NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import { inviteLinksClear } from '../../actions/inviteLinks';
 import { selectServerRequest, serverFinishAdd, serverRequest } from '../../actions/server';
+import BrandLockup from '../../containers/BrandLockup';
 import Button from '../../containers/Button';
 import FormContainer, { FormContainerInner } from '../../containers/FormContainer';
 import * as HeaderButton from '../../containers/Header/components/HeaderButton';
@@ -149,14 +149,10 @@ const NewServerView = () => {
 	return (
 		<FormContainer showAppVersion={showBottomInfo} testID='new-server-view' keyboardShouldPersistTaps='handled'>
 			<FormContainerInner accessibilityLabel={I18n.t('Add_server')}>
-				<Image
-					style={{
-						...styles.onboardingImage,
-						marginTop
-					}}
-					source={require('../../static/images/logo_with_name.png')}
-					contentFit='contain'
-				/>
+				{/* reskin: crisp native brand lockup (ensō tile + wordmark) — no raster matte */}
+				<View style={{ marginTop, marginBottom: 32 }}>
+					<BrandLockup size={46} />
+				</View>
 				<Text
 					style={{
 						...styles.title,

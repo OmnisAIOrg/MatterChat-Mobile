@@ -3,6 +3,7 @@ import { type LayoutChangeEvent, StyleSheet, View } from 'react-native';
 
 import { type TMessageAction } from '../../../definitions';
 import { type IComposerInput } from '../interfaces';
+import { useFocused } from '../context';
 import { useTheme } from '../../../theme';
 import { RecordAudio } from './RecordAudio';
 import { Left, Right } from './Unfocused';
@@ -29,7 +30,9 @@ export const MessageComposerContent = memo<MessageComposerContentProps>(
 		'use memo';
 
 		const { colors } = useTheme();
+		const focused = useFocused();
 		const backgroundColor = action === 'edit' ? colors.statusBackgroundWarning2 : colors.surfaceLight;
+		const borderColor = focused ? colors.strokeHighlight : colors.strokeLight;
 
 		if (recordingAudio) {
 			return <RecordAudio />;
@@ -38,7 +41,7 @@ export const MessageComposerContent = memo<MessageComposerContentProps>(
 		return (
 			<View
 				nativeID={MESSAGE_COMPOSER_EXIT_FOCUS_NATIVE_ID}
-				style={[styles.container, { backgroundColor, borderTopColor: colors.strokeLight }]}
+				style={[styles.container, { backgroundColor, borderColor }]}
 				testID='message-composer'
 				onLayout={onLayout}>
 				<View style={styles.input}>
@@ -58,8 +61,11 @@ export const MessageComposerContent = memo<MessageComposerContentProps>(
 
 const styles = StyleSheet.create({
 	container: {
-		borderTopWidth: 1,
-		paddingHorizontal: 16,
+		borderWidth: 1.5,
+		borderRadius: 14,
+		marginHorizontal: 12,
+		marginBottom: 8,
+		paddingHorizontal: 12,
 		minHeight: MIN_HEIGHT
 	},
 	input: {

@@ -233,8 +233,10 @@ export const MessageComposer = ({
 		height: keyboardHeight.value
 	}));
 
+	// +4 keeps the same 4px overlap with the card top: the card has an 8px
+	// bottom margin that is not part of the measured layout height
 	const autocompleteStyle = useAnimatedStyle(() => ({
-		bottom: keyboardHeight.value + contentHeight.value - 4
+		bottom: keyboardHeight.value + contentHeight.value + 4
 	}));
 
 	return (

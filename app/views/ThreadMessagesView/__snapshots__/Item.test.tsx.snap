@@ -11,7 +11,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -50,11 +50,11 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -72,13 +72,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -190,7 +190,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -209,7 +209,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -232,13 +232,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -261,7 +261,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#F5455C",
+                        "backgroundColor": "#E1053C",
                       },
                     ]
                   }
@@ -304,7 +304,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -331,13 +331,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -361,7 +361,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -388,13 +388,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -445,7 +445,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -466,13 +466,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -497,7 +497,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -535,7 +535,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -574,11 +574,11 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -596,13 +596,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -714,7 +714,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -733,7 +733,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -756,13 +756,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -785,7 +785,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#F38C39",
+                        "backgroundColor": "#E09425",
                       },
                     ]
                   }
@@ -828,7 +828,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -855,13 +855,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -885,7 +885,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -912,13 +912,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -969,7 +969,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -990,13 +990,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -1021,7 +1021,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -1059,7 +1059,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -1098,11 +1098,11 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1120,13 +1120,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1238,7 +1238,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -1257,7 +1257,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -1280,13 +1280,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -1309,7 +1309,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#095AD2",
+                        "backgroundColor": "#148B3B",
                       },
                     ]
                   }
@@ -1352,7 +1352,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -1379,13 +1379,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -1409,7 +1409,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -1436,13 +1436,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -1493,7 +1493,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -1514,13 +1514,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -1545,7 +1545,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -1609,11 +1609,11 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1631,13 +1631,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1749,7 +1749,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -1768,7 +1768,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -1791,13 +1791,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -1820,7 +1820,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#095AD2",
+                        "backgroundColor": "#148B3B",
                       },
                     ]
                   }
@@ -1863,7 +1863,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -1890,13 +1890,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -1920,7 +1920,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -1947,13 +1947,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -2004,7 +2004,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -2025,13 +2025,13 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -2056,7 +2056,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -2094,7 +2094,7 @@ exports[`Story Snapshots: Badge should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -2114,7 +2114,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -2153,11 +2153,11 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -2175,13 +2175,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -2293,7 +2293,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -2312,7 +2312,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -2335,13 +2335,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -2391,7 +2391,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -2418,13 +2418,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -2448,7 +2448,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -2475,13 +2475,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -2532,7 +2532,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -2553,13 +2553,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -2584,7 +2584,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -2622,7 +2622,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -2661,11 +2661,11 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -2683,13 +2683,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -2801,7 +2801,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -2820,7 +2820,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -2843,13 +2843,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -2899,7 +2899,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -2926,13 +2926,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -2956,7 +2956,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -2983,13 +2983,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -3040,7 +3040,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -3061,13 +3061,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -3092,7 +3092,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -3130,7 +3130,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -3169,11 +3169,11 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -3191,13 +3191,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -3309,7 +3309,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -3328,7 +3328,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -3351,13 +3351,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -3407,7 +3407,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -3434,13 +3434,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -3464,7 +3464,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -3491,13 +3491,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -3548,7 +3548,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -3569,13 +3569,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -3600,7 +3600,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -3638,7 +3638,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -3677,11 +3677,11 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -3699,13 +3699,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -3817,7 +3817,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -3836,7 +3836,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -3859,13 +3859,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -3915,7 +3915,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -3942,13 +3942,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -3972,7 +3972,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -3999,13 +3999,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -4056,7 +4056,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -4077,13 +4077,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -4108,7 +4108,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -4146,7 +4146,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -4185,11 +4185,11 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -4207,13 +4207,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -4325,7 +4325,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -4344,7 +4344,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -4367,13 +4367,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -4423,7 +4423,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -4450,13 +4450,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -4480,7 +4480,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -4507,13 +4507,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -4564,7 +4564,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -4585,13 +4585,13 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -4616,7 +4616,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -4654,7 +4654,7 @@ exports[`Story Snapshots: Content should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -4674,7 +4674,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }
@@ -4713,11 +4713,11 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "#FDFDFC",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -4735,13 +4735,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -4853,7 +4853,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#16211A",
                       },
                     ]
                   }
@@ -4872,7 +4872,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#5C6B61",
                       },
                     ]
                   }
@@ -4895,13 +4895,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#26312A",
                         "lineHeight": undefined,
                       },
                       {
@@ -4924,7 +4924,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#F5455C",
+                        "backgroundColor": "#E1053C",
                       },
                     ]
                   }
@@ -4967,7 +4967,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -4994,13 +4994,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -5024,7 +5024,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#2F343D",
+                            "color": "#26312A",
                             "fontSize": 24,
                           },
                           [
@@ -5051,13 +5051,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#6C727A",
+                            "color": "#148B3B",
                           },
                         ]
                       }
@@ -5108,7 +5108,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#E4E7EA"
+                      rippleColor="#ECEFEB"
                       style={
                         [
                           {
@@ -5129,13 +5129,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#E4E7EA"
+                      underlayColor="#ECEFEB"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#E4E7EA",
+                            "backgroundColor": "#ECEFEB",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -5160,7 +5160,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#2F343D",
+                                "color": "#26312A",
                                 "fontSize": 24,
                               },
                               [
@@ -5224,11 +5224,11 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#2D3039"
+        rippleColor="#222B24"
         style={
           [
             {
-              "backgroundColor": "#1F2329",
+              "backgroundColor": "#121814",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -5246,13 +5246,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#2D3039"
+        underlayColor="#222B24"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#2D3039",
+              "backgroundColor": "#222B24",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -5364,7 +5364,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#F2F3F5",
+                        "color": "#EDF2EE",
                       },
                     ]
                   }
@@ -5383,7 +5383,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#9EA2A8",
+                        "color": "#8FA096",
                       },
                     ]
                   }
@@ -5406,13 +5406,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#C1C7D0",
+                        "color": "#D5DED7",
                         "lineHeight": undefined,
                       },
                       {
@@ -5435,7 +5435,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#B43C4C",
+                        "backgroundColor": "#E1053C",
                       },
                     ]
                   }
@@ -5478,7 +5478,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#C1C7D0",
+                            "color": "#D5DED7",
                             "fontSize": 24,
                           },
                           [
@@ -5505,13 +5505,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#9EA2A8",
+                            "color": "#48C46A",
                           },
                         ]
                       }
@@ -5535,7 +5535,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#C1C7D0",
+                            "color": "#D5DED7",
                             "fontSize": 24,
                           },
                           [
@@ -5562,13 +5562,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#9EA2A8",
+                            "color": "#48C46A",
                           },
                         ]
                       }
@@ -5619,7 +5619,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#2D3039"
+                      rippleColor="#222B24"
                       style={
                         [
                           {
@@ -5640,13 +5640,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#2D3039"
+                      underlayColor="#222B24"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#2D3039",
+                            "backgroundColor": "#222B24",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -5671,7 +5671,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#C1C7D0",
+                                "color": "#D5DED7",
                                 "fontSize": 24,
                               },
                               [
@@ -5735,11 +5735,11 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#16181a"
+        rippleColor="#141B16"
         style={
           [
             {
-              "backgroundColor": "#000000",
+              "backgroundColor": "#070A08",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -5757,13 +5757,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
           ]
         }
         testID="thread-messages-view-Message content"
-        underlayColor="#16181a"
+        underlayColor="#141B16"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#16181a",
+              "backgroundColor": "#141B16",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -5875,7 +5875,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#F2F3F5",
+                        "color": "#EDF2EE",
                       },
                     ]
                   }
@@ -5894,7 +5894,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#9EA2A8",
+                        "color": "#8FA096",
                       },
                     ]
                   }
@@ -5917,13 +5917,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#D5DED7",
                         "lineHeight": undefined,
                       },
                       {
@@ -5946,7 +5946,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                         "width": 8,
                       },
                       {
-                        "backgroundColor": "#B43C4C",
+                        "backgroundColor": "#E1053C",
                       },
                     ]
                   }
@@ -5989,7 +5989,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#E4E7EA",
+                            "color": "#D5DED7",
                             "fontSize": 24,
                           },
                           [
@@ -6016,13 +6016,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#9EA2A8",
+                            "color": "#48C46A",
                           },
                         ]
                       }
@@ -6046,7 +6046,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#E4E7EA",
+                            "color": "#D5DED7",
                             "fontSize": 24,
                           },
                           [
@@ -6073,13 +6073,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           {
                             "backgroundColor": "transparent",
                             "fontFamily": "Inter",
-                            "fontSize": 10,
-                            "fontWeight": "600",
+                            "fontSize": 13,
+                            "fontWeight": "700",
                             "marginLeft": 2,
                             "textAlign": "left",
                           },
                           {
-                            "color": "#9EA2A8",
+                            "color": "#48C46A",
                           },
                         ]
                       }
@@ -6130,7 +6130,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                       onGestureHandlerEvent={[Function]}
                       onGestureHandlerStateChange={[Function]}
                       onPress={[Function]}
-                      rippleColor="#16181a"
+                      rippleColor="#141B16"
                       style={
                         [
                           {
@@ -6151,13 +6151,13 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           },
                         ]
                       }
-                      underlayColor="#16181a"
+                      underlayColor="#141B16"
                     >
                       <View
                         collapsable={false}
                         style={
                           {
-                            "backgroundColor": "#16181a",
+                            "backgroundColor": "#141B16",
                             "borderBottomLeftRadius": undefined,
                             "borderBottomRightRadius": undefined,
                             "borderRadius": undefined,
@@ -6182,7 +6182,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
                           style={
                             [
                               {
-                                "color": "#E4E7EA",
+                                "color": "#D5DED7",
                                 "fontSize": 24,
                               },
                               [
@@ -6220,7 +6220,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E1E7E1",
           },
         ]
       }

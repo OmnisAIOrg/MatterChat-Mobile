@@ -36,7 +36,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#ECEFEB"
       style={
         [
           {
@@ -57,13 +57,13 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#ECEFEB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -98,7 +98,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#1F2329",
+                "color": "#16211A",
               },
             ]
           }
@@ -142,7 +142,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#ECEFEB"
       style={
         [
           {
@@ -163,13 +163,13 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#ECEFEB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -194,7 +194,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
         }
       >
         <ActivityIndicator
-          color="#6C727A"
+          color="#5C6B61"
         />
       </View>
     </RNGestureHandlerButton>
@@ -233,7 +233,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#ECEFEB"
       style={
         [
           {
@@ -254,13 +254,13 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#ECEFEB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -295,7 +295,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#1F2329",
+                "color": "#16211A",
               },
             ]
           }
@@ -339,7 +339,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#ECEFEB"
       style={
         [
           {
@@ -360,13 +360,13 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#ECEFEB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#ECEFEB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -401,7 +401,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#1F2329",
+                "color": "#16211A",
               },
             ]
           }
@@ -418,7 +418,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#000000",
+      "backgroundColor": "#070A08",
     }
   }
 >
@@ -457,7 +457,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#16181a"
+        rippleColor="#141B16"
         style={
           [
             {
@@ -478,13 +478,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#16181a"
+        underlayColor="#141B16"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#16181a",
+              "backgroundColor": "#141B16",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -519,7 +519,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -650,7 +650,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -659,9 +659,9 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -704,7 +704,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#16181a"
+                            rippleColor="#141B16"
                             style={
                               [
                                 {
@@ -725,13 +725,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#16181a"
+                            underlayColor="#141B16"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#16181a",
+                                  "backgroundColor": "#141B16",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -752,7 +752,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -761,7 +761,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -775,19 +775,19 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -868,13 +868,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -887,13 +887,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -933,13 +933,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -961,11 +961,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -1108,7 +1108,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -1152,13 +1152,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -1180,11 +1180,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -1334,7 +1334,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -1378,13 +1378,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -1406,11 +1406,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -1473,7 +1473,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#16181a"
+        rippleColor="#141B16"
         style={
           [
             {
@@ -1494,13 +1494,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#16181a"
+        underlayColor="#141B16"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#16181a",
+              "backgroundColor": "#141B16",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1535,7 +1535,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -1579,7 +1579,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#16181a"
+        rippleColor="#141B16"
         style={
           [
             {
@@ -1600,13 +1600,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#16181a"
+        underlayColor="#141B16"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#16181a",
+              "backgroundColor": "#141B16",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1641,7 +1641,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -1772,7 +1772,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -1781,9 +1781,9 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -1826,7 +1826,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#16181a"
+                            rippleColor="#141B16"
                             style={
                               [
                                 {
@@ -1847,13 +1847,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#16181a"
+                            underlayColor="#141B16"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#16181a",
+                                  "backgroundColor": "#141B16",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -1874,7 +1874,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -1883,7 +1883,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -1897,19 +1897,19 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -1990,13 +1990,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -2009,13 +2009,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -2055,13 +2055,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -2083,11 +2083,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -2230,7 +2230,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -2274,13 +2274,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -2302,11 +2302,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -2456,7 +2456,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -2500,13 +2500,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -2528,11 +2528,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -2682,7 +2682,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -2691,9 +2691,9 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -2736,7 +2736,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#16181a"
+                            rippleColor="#141B16"
                             style={
                               [
                                 {
@@ -2757,13 +2757,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#16181a"
+                            underlayColor="#141B16"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#16181a",
+                                  "backgroundColor": "#141B16",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -2784,7 +2784,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -2793,7 +2793,7 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -2807,19 +2807,19 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -2900,13 +2900,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -2919,13 +2919,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -2965,13 +2965,13 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#E4E7EA",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -2993,11 +2993,11 @@ exports[`Story Snapshots: BlackTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#E4E7EA",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -3027,7 +3027,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#1F2329",
+      "backgroundColor": "#121814",
     }
   }
 >
@@ -3066,7 +3066,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#2D3039"
+        rippleColor="#222B24"
         style={
           [
             {
@@ -3087,13 +3087,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#2D3039"
+        underlayColor="#222B24"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#2D3039",
+              "backgroundColor": "#222B24",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -3128,7 +3128,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -3259,7 +3259,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -3268,9 +3268,9 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -3313,7 +3313,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#2D3039"
+                            rippleColor="#222B24"
                             style={
                               [
                                 {
@@ -3334,13 +3334,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#2D3039"
+                            underlayColor="#222B24"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#2D3039",
+                                  "backgroundColor": "#222B24",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -3361,7 +3361,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -3370,7 +3370,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -3384,19 +3384,19 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -3477,13 +3477,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -3496,13 +3496,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -3542,13 +3542,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -3570,11 +3570,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -3717,7 +3717,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -3761,13 +3761,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -3789,11 +3789,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -3943,7 +3943,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -3987,13 +3987,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -4015,11 +4015,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -4082,7 +4082,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#2D3039"
+        rippleColor="#222B24"
         style={
           [
             {
@@ -4103,13 +4103,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#2D3039"
+        underlayColor="#222B24"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#2D3039",
+              "backgroundColor": "#222B24",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -4144,7 +4144,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -4188,7 +4188,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#2D3039"
+        rippleColor="#222B24"
         style={
           [
             {
@@ -4209,13 +4209,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#2D3039"
+        underlayColor="#222B24"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#2D3039",
+              "backgroundColor": "#222B24",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -4250,7 +4250,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#EDF2EE",
                 },
               ]
             }
@@ -4381,7 +4381,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -4390,9 +4390,9 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -4435,7 +4435,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#2D3039"
+                            rippleColor="#222B24"
                             style={
                               [
                                 {
@@ -4456,13 +4456,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#2D3039"
+                            underlayColor="#222B24"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#2D3039",
+                                  "backgroundColor": "#222B24",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -4483,7 +4483,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -4492,7 +4492,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -4506,19 +4506,19 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -4599,13 +4599,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -4618,13 +4618,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -4664,13 +4664,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -4692,11 +4692,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -4839,7 +4839,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -4883,13 +4883,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -4911,11 +4911,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -5065,7 +5065,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -5109,13 +5109,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -5137,11 +5137,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -5291,7 +5291,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -5300,9 +5300,9 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -5345,7 +5345,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#2D3039"
+                            rippleColor="#222B24"
                             style={
                               [
                                 {
@@ -5366,13 +5366,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#2D3039"
+                            underlayColor="#222B24"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#2D3039",
+                                  "backgroundColor": "#222B24",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -5393,7 +5393,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -5402,7 +5402,7 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -5416,19 +5416,19 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -5509,13 +5509,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#F2F3F5",
+                                    "color": "#EDF2EE",
                                   },
                                 ]
                               }
@@ -5528,13 +5528,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#9EA2A8",
+                                    "color": "#8FA096",
                                   },
                                 ]
                               }
@@ -5574,13 +5574,13 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#C1C7D0",
+                                      "color": "#D5DED7",
                                     },
                                   ]
                                 }
@@ -5602,11 +5602,11 @@ exports[`Story Snapshots: DarkTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#C1C7D0",
+                                          "color": "#D5DED7",
                                         },
                                       ]
                                     }
@@ -5636,7 +5636,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FDFDFC",
     }
   }
 >
@@ -5675,7 +5675,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
@@ -5696,13 +5696,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -5737,7 +5737,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#16211A",
                 },
               ]
             }
@@ -5868,7 +5868,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -5877,9 +5877,9 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -5922,7 +5922,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#E4E7EA"
+                            rippleColor="#ECEFEB"
                             style={
                               [
                                 {
@@ -5943,13 +5943,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#E4E7EA"
+                            underlayColor="#ECEFEB"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#E4E7EA",
+                                  "backgroundColor": "#ECEFEB",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -5970,7 +5970,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -5979,7 +5979,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -5993,19 +5993,19 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -6086,13 +6086,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#1F2329",
+                                    "color": "#16211A",
                                   },
                                 ]
                               }
@@ -6105,13 +6105,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#6C727A",
+                                    "color": "#5C6B61",
                                   },
                                 ]
                               }
@@ -6151,13 +6151,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -6179,11 +6179,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -6326,7 +6326,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -6370,13 +6370,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -6398,11 +6398,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -6552,7 +6552,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -6596,13 +6596,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -6624,11 +6624,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -6691,7 +6691,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
@@ -6712,13 +6712,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -6753,7 +6753,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#16211A",
                 },
               ]
             }
@@ -6797,7 +6797,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#ECEFEB"
         style={
           [
             {
@@ -6818,13 +6818,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#ECEFEB"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#ECEFEB",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -6859,7 +6859,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#16211A",
                 },
               ]
             }
@@ -6990,7 +6990,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -6999,9 +6999,9 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -7044,7 +7044,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#E4E7EA"
+                            rippleColor="#ECEFEB"
                             style={
                               [
                                 {
@@ -7065,13 +7065,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#E4E7EA"
+                            underlayColor="#ECEFEB"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#E4E7EA",
+                                  "backgroundColor": "#ECEFEB",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -7092,7 +7092,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -7101,7 +7101,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -7115,19 +7115,19 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -7208,13 +7208,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#1F2329",
+                                    "color": "#16211A",
                                   },
                                 ]
                               }
@@ -7227,13 +7227,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#6C727A",
+                                    "color": "#5C6B61",
                                   },
                                 ]
                               }
@@ -7273,13 +7273,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -7301,11 +7301,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -7448,7 +7448,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -7492,13 +7492,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -7520,11 +7520,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -7674,7 +7674,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     />
@@ -7718,13 +7718,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -7746,11 +7746,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }
@@ -7900,7 +7900,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                       style={
                         {
                           "alignItems": "flex-end",
-                          "width": 36,
+                          "width": 38,
                         }
                       }
                     >
@@ -7909,9 +7909,9 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "borderRadius": 4,
-                              "height": 36,
-                              "width": 36,
+                              "borderRadius": 12,
+                              "height": 38,
+                              "width": 38,
                             },
                             {
                               "marginTop": 4,
@@ -7954,7 +7954,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                             onGestureHandlerEvent={[Function]}
                             onGestureHandlerStateChange={[Function]}
                             onPress={[Function]}
-                            rippleColor="#E4E7EA"
+                            rippleColor="#ECEFEB"
                             style={
                               [
                                 {
@@ -7975,13 +7975,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                 },
                               ]
                             }
-                            underlayColor="#E4E7EA"
+                            underlayColor="#ECEFEB"
                           >
                             <View
                               collapsable={false}
                               style={
                                 {
-                                  "backgroundColor": "#E4E7EA",
+                                  "backgroundColor": "#ECEFEB",
                                   "borderBottomLeftRadius": undefined,
                                   "borderBottomRightRadius": undefined,
                                   "borderRadius": undefined,
@@ -8002,7 +8002,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                               style={{}}
                             >
                               <ViewManagerAdapter_ExpoImage
-                                borderRadius={4}
+                                borderRadius={12}
                                 containerViewRef={{"current":"Object"}}
                                 contentFit="cover"
                                 contentPosition={
@@ -8011,7 +8011,7 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "top": "50%",
                                   }
                                 }
-                                height={36}
+                                height={38}
                                 nativeViewRef={{"current":"NativeComponent"}}
                                 onError={[Function]}
                                 onLoad={[Function]}
@@ -8025,19 +8025,19 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       "headers": {
                                         "User-Agent": "RC Mobile; ios unknown; vunknown (unknown)",
                                       },
-                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=72",
+                                      "uri": "https://open.rocket.chat/avatar/diego.mello?format=png&size=76",
                                     },
                                   ]
                                 }
                                 style={
                                   {
-                                    "borderRadius": 4,
-                                    "height": 36,
-                                    "width": 36,
+                                    "borderRadius": 12,
+                                    "height": 38,
+                                    "width": 38,
                                   }
                                 }
                                 transition={null}
-                                width={36}
+                                width={38}
                               />
                             </View>
                           </RNGestureHandlerButton>
@@ -8118,13 +8118,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     "backgroundColor": "transparent",
                                     "flexShrink": 1,
                                     "fontFamily": "Inter",
-                                    "fontSize": 16,
-                                    "fontWeight": "600",
-                                    "lineHeight": 22,
+                                    "fontSize": 15,
+                                    "fontWeight": "800",
+                                    "lineHeight": 20,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#1F2329",
+                                    "color": "#16211A",
                                   },
                                 ]
                               }
@@ -8137,13 +8137,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                   {
                                     "backgroundColor": "transparent",
                                     "fontFamily": "Inter",
-                                    "fontSize": 13,
+                                    "fontSize": 11,
                                     "fontWeight": "400",
-                                    "lineHeight": 18,
+                                    "lineHeight": 16,
                                     "textAlign": "left",
                                   },
                                   {
-                                    "color": "#6C727A",
+                                    "color": "#5C6B61",
                                   },
                                 ]
                               }
@@ -8183,13 +8183,13 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                     {
                                       "backgroundColor": "transparent",
                                       "fontFamily": "Inter",
-                                      "fontSize": 16,
+                                      "fontSize": 15,
                                       "fontWeight": "400",
                                       "lineHeight": 22,
                                       "textAlign": "left",
                                     },
                                     {
-                                      "color": "#2F343D",
+                                      "color": "#26312A",
                                     },
                                   ]
                                 }
@@ -8211,11 +8211,11 @@ exports[`Story Snapshots: LightTheme should match snapshot 1`] = `
                                       [
                                         {
                                           "flexShrink": 1,
-                                          "fontSize": 16,
+                                          "fontSize": 15,
                                           "lineHeight": 22,
                                         },
                                         {
-                                          "color": "#2F343D",
+                                          "color": "#26312A",
                                         },
                                       ]
                                     }

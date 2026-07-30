@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
 		flex: 1
 	},
 	text: {
-		fontSize: 14,
-		...sharedStyles.textMedium
+		fontSize: 12,
+		...sharedStyles.textSemibold
 	},
 	marginRight: {
 		marginRight: 14

@@ -22,7 +22,7 @@ export const ReviewButton = ({ onPress }: { onPress: Function }): ReactElement =
 			onPress={() => onPress()}
 			hitSlop={hitSlop}>
 			<View accessible accessibilityLabel={i18n.t('Review_message')} accessibilityRole='button'>
-				<CustomIcon name={'arrow-right'} size={24} color={colors.fontDefault} />
+				<CustomIcon name={'arrow-right'} size={24} color={colors.fontWhite} />
 			</View>
 		</BorderlessButton>
 	);
@@ -32,8 +32,8 @@ const styles = StyleSheet.create({
 	button: {
 		alignItems: 'center',
 		justifyContent: 'center',
-		width: 32,
-		height: 32,
-		borderRadius: 16
+		width: 34,
+		height: 34,
+		borderRadius: 9
 	}
 });

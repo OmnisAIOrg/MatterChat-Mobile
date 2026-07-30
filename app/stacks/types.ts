@@ -177,6 +177,8 @@ export type ChatsStackParamList = {
 		videoConf?: boolean;
 	};
 	ChiOrbView: undefined;
+	DMsView: undefined;
+	ActivityView: undefined;
 	ChangeAvatarView: {
 		context: TChangeAvatarViewContext;
 		titleHeader?: string;
@@ -209,6 +211,7 @@ export type ProfileStackParamList = {
 export type SettingsStackParamList = {
 	LegalView: undefined;
 	SettingsView: undefined;
+	ConnectionsView: undefined;
 	SecurityPrivacyView: undefined;
 	E2EEncryptionSecurityView: undefined;
 	LanguageView: undefined;
