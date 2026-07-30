@@ -17,7 +17,7 @@
  *   2. Entry point: SidebarView — add a 'Chi' list item navigating to 'ChiOrbView'
  *      (and/or a floating ensō button on RoomsListView).
  */
-import React from 'react';
+import { type ReactElement } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { useNavigation } from '@react-navigation/native';
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
 	webview: { flex: 1, backgroundColor: 'transparent' }
 });
 
-const ChiOrbView = (): React.ReactElement => {
+const ChiOrbView = (): ReactElement => {
 	const navigation = useNavigation();
 	const server = useAppSelector(state => state.server.server);
 	const user = useAppSelector(state => getUserSelector(state));
