@@ -114,14 +114,14 @@ const FilteredRoomsList = ({
 		<SafeAreaView testID={testID} style={{ backgroundColor: colors.surfaceRoom }}>
 			<View style={styles.container}>
 				<Text style={[styles.screenTitle, { color: colors.fontTitlesLabels }]}>{title}</Text>
-				{loading ? (
-					<ActivityIndicator />
-				) : rooms.length === 0 ? (
+				{loading ? <ActivityIndicator /> : null}
+				{!loading && rooms.length === 0 ? (
 					<View style={styles.empty}>
 						<Text style={[styles.emptyTitle, { color: colors.fontTitlesLabels }]}>{emptyTitle}</Text>
 						<Text style={[styles.emptyHint, { color: colors.fontSecondaryInfo }]}>{emptyHint}</Text>
 					</View>
-				) : (
+				) : null}
+				{!loading && rooms.length > 0 ? (
 					<FlatList
 						data={rooms}
 						keyExtractor={(item: any) => item.rid}
@@ -130,7 +130,7 @@ const FilteredRoomsList = ({
 						keyboardShouldPersistTaps='always'
 						windowSize={9}
 					/>
-				)}
+				) : null}
 			</View>
 			<MainTabBar active={tab} />
 		</SafeAreaView>

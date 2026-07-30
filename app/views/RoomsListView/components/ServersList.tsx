@@ -2,6 +2,7 @@ import { memo, useLayoutEffect, useRef, useState } from 'react';
 import { FlatList, Text, View } from 'react-native';
 import { batch, useDispatch } from 'react-redux';
 import { type Subscription } from 'rxjs';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
 import { appStart } from '../../../actions/app';
 import { selectServerRequest, serverInitAdd } from '../../../actions/server';
@@ -14,7 +15,6 @@ import ServerItem from '../../../containers/ServerItem';
 import Status from '../../../containers/Status/Status';
 import Navigation from '../../../lib/navigation/appNavigation';
 import { getUserSelector } from '../../../selectors/login';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { RootEnum, type TServerModel } from '../../../definitions';
 import I18n from '../../../i18n';
 import { TOKEN_KEY } from '../../../lib/constants/keys';
