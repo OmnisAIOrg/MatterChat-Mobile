@@ -34,9 +34,13 @@ jobs:
           # crash at launch ("multi-process MMKV without groupDir"). Ad-hoc needs no Apple account.
           # NOTE: no -sdk flag — it would force the Watch App target onto the iOS SDK
           # ("no such module 'WatchKit'"); the destination alone selects SDKs per target.
+          # Runner images rotate their simulator lineup (iPhone 16 vanished mid-2026) —
+          # pick the first available iPhone at runtime instead of pinning a model name.
+          DEVICE=$(xcrun simctl list devices available | grep -oE 'iPhone [^(]+' | head -1 | xargs)
+          echo "building for simulator: ${DEVICE:-iPhone 17}"
           xcodebuild -workspace RocketChat.xcworkspace -scheme RocketChat \
             -configuration Debug \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination "platform=iOS Simulator,name=${DEVICE:-iPhone 17}" \
             -derivedDataPath build CODE_SIGN_IDENTITY="-" | tail -80
       - name: Package artifact
         run: |

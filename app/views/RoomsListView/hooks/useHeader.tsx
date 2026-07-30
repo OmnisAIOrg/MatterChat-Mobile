@@ -168,7 +168,7 @@ export const useHeader = () => {
 							<LinearGradient colors={['#169A46', '#0E7A31']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ flex: 1 }} />
 						),
 						headerTintColor: '#FFFFFF'
-					}
+				  }
 				: { headerBackground: undefined, headerTintColor: undefined })
 		};
 
