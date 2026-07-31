@@ -15,7 +15,8 @@ export const initialTheme = (): IThemePreference => {
 	const theme = UserPreferences.getMap(THEME_PREFERENCES_KEY) as IThemePreference;
 	const initialTheme: IThemePreference = {
 		currentTheme: defaultTheme(),
-		darkLevel: 'black'
+		darkLevel: 'black',
+		lightLevel: 'light'
 	};
 	return theme || initialTheme;
 };
@@ -29,13 +30,16 @@ export const defaultTheme = (): TThemeMode => {
 };
 
 export const getTheme = (themePreferences: IThemePreference): TSupportedThemes => {
-	const { darkLevel, currentTheme } = themePreferences;
+	const { darkLevel, lightLevel, currentTheme } = themePreferences;
 	let theme = currentTheme;
 	if (currentTheme === 'automatic') {
 		theme = defaultTheme();
 	}
-	return theme === 'dark' ? darkLevel : 'light';
+	return theme === 'dark' ? darkLevel : lightLevel || 'light';
 };
+
+// Light-family themes render dark text/icons over light surfaces.
+export const isLightFamily = (theme: TSupportedThemes): boolean => theme === 'light' || theme === 'paper';
 
 export const newThemeState = (prevState: { themePreferences: IThemePreference }, newTheme: IThemePreference) => {
 	// new theme preferences
@@ -50,7 +54,7 @@ export const newThemeState = (prevState: { themePreferences: IThemePreference },
 
 export const setNativeTheme = (themePreferences: IThemePreference) => {
 	const theme = getTheme(themePreferences);
-	const isLightTheme = theme === 'light';
+	const isLightTheme = isLightFamily(theme);
 	if (isAndroid) {
 		try {
 			NavigationBar.setBarStyle(isLightTheme ? 'dark-content' : 'light-content');

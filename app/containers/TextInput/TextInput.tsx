@@ -22,7 +22,7 @@ export const TextInput = forwardRef<RNTextInput, IThemedTextInput>(({ style, ...
 			ref={ref}
 			style={[{ color: themes[theme].fontTitlesLabels }, style, styles.input]}
 			placeholderTextColor={themes[theme].fontSecondaryInfo}
-			keyboardAppearance={theme === 'light' ? 'light' : 'dark'}
+			keyboardAppearance={theme === 'light' || theme === 'paper' ? 'light' : 'dark'}
 			{...props}
 		/>
 	);

@@ -11,7 +11,7 @@ const StatusBar = ({ barStyle, backgroundColor }: IStatusBar) => {
 	const { theme, colors } = useTheme();
 	if (!barStyle) {
 		barStyle = 'light';
-		if (theme === 'light') {
+		if (theme === 'light' || theme === 'paper') {
 			barStyle = 'dark';
 		}
 	}

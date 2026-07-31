@@ -27,7 +27,7 @@ interface ISearchHeaderProps {
 
 const SearchHeader = ({ onSearchChangeText, testID, style }: ISearchHeaderProps) => {
 	const { theme } = useTheme();
-	const isLight = theme === 'light';
+	const isLight = theme === 'light' || theme === 'paper';
 
 	return (
 		<View style={[styles.container, style]}>

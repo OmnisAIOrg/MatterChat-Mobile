@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import * as List from '../containers/List';
 import SafeAreaView from '../containers/SafeAreaView';
-import { type IThemePreference, type TDarkLevel, type TThemeMode } from '../definitions/ITheme';
+import { type IThemePreference, type TDarkLevel, type TLightLevel, type TThemeMode } from '../definitions/ITheme';
 import I18n from '../i18n';
 import { THEME_PREFERENCES_KEY } from '../lib/constants/keys';
 import { supportSystemTheme } from '../lib/methods/helpers';
@@ -13,6 +13,7 @@ import { useTheme } from '../theme';
 
 const THEME_GROUP = 'THEME_GROUP';
 const DARK_GROUP = 'DARK_GROUP';
+const LIGHT_GROUP = 'LIGHT_GROUP';
 
 const SYSTEM_THEME: ITheme = {
 	label: 'Automatic',
@@ -40,6 +41,26 @@ const THEMES: ITheme[] = [
 		label: 'Dark',
 		value: 'dark',
 		group: DARK_GROUP
+	},
+	{
+		label: 'Evergreen',
+		value: 'evergreen',
+		group: DARK_GROUP
+	},
+	{
+		label: 'Glass',
+		value: 'glass',
+		group: DARK_GROUP
+	},
+	{
+		label: 'Light',
+		value: 'light',
+		group: LIGHT_GROUP
+	},
+	{
+		label: 'Paper',
+		value: 'paper',
+		group: LIGHT_GROUP
 	}
 ];
 
@@ -49,10 +70,11 @@ if (supportSystemTheme()) {
 
 const themeGroup = THEMES.filter(item => item.group === THEME_GROUP);
 const darkGroup = THEMES.filter(item => item.group === DARK_GROUP);
+const lightGroup = THEMES.filter(item => item.group === LIGHT_GROUP);
 
 interface ITheme {
 	label: string;
-	value: TThemeMode | TDarkLevel;
+	value: TThemeMode | TDarkLevel | TLightLevel;
 	group: string;
 }
 
@@ -81,17 +103,20 @@ const ThemeView = (): ReactElement => {
 
 	const isSelected = (item: ITheme) => {
 		const { group } = item;
-		const { darkLevel, currentTheme } = themePreferences as IThemePreference;
+		const { darkLevel, lightLevel, currentTheme } = themePreferences as IThemePreference;
 		if (group === THEME_GROUP) {
 			return item.value === currentTheme;
 		}
 		if (group === DARK_GROUP) {
 			return item.value === darkLevel;
 		}
+		if (group === LIGHT_GROUP) {
+			return item.value === (lightLevel || 'light');
+		}
 	};
 
 	const onClick = (item: ITheme) => {
-		const { darkLevel, currentTheme } = themePreferences as IThemePreference;
+		const { darkLevel, lightLevel, currentTheme } = themePreferences as IThemePreference;
 		const { value, group } = item;
 		let changes: Partial<IThemePreference> = {};
 		if (group === THEME_GROUP && currentTheme !== value) {
@@ -101,6 +126,9 @@ const ThemeView = (): ReactElement => {
 		if (group === DARK_GROUP && darkLevel !== value) {
 			logEvent(events.THEME_SET_DARK_LEVEL, { dark_level: value });
 			changes = { darkLevel: value as TDarkLevel };
+		}
+		if (group === LIGHT_GROUP && (lightLevel || 'light') !== value) {
+			changes = { lightLevel: value as TLightLevel };
 		}
 		handleTheme(changes);
 	};
@@ -120,6 +148,14 @@ const ThemeView = (): ReactElement => {
 					<List.Separator />
 					<>
 						{themeGroup.map(theme => (
+							<Item onPress={() => onClick(theme)} item={theme} isSelected={!!isSelected(theme)} key={theme.label} />
+						))}
+					</>
+				</List.Section>
+				<List.Section title='Light_level'>
+					<List.Separator />
+					<>
+						{lightGroup.map(theme => (
 							<Item onPress={() => onClick(theme)} item={theme} isSelected={!!isSelected(theme)} key={theme.label} />
 						))}
 					</>

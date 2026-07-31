@@ -138,7 +138,10 @@ const NotifierComponent = memo(({ notification, isMasterDetail }: INotifierCompo
 			<Touch
 				onPress={hideNotification}
 				hitSlop={BUTTON_HIT_SLOP}
-				style={[styles.closeButton, { backgroundColor: theme === 'light' ? '#EAF6EC' : themes[theme].surfaceSelected }]}>
+				style={[
+					styles.closeButton,
+					{ backgroundColor: theme === 'light' || theme === 'paper' ? '#EAF6EC' : themes[theme].surfaceSelected }
+				]}>
 				<CustomIcon name='close' size={20} color={themes[theme].fontInfo} />
 			</Touch>
 		</View>

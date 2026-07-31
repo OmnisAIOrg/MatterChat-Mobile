@@ -23,7 +23,7 @@ export const themedHeader = (theme: TSupportedThemes): NativeStackNavigationOpti
 });
 
 export const navigationTheme = (theme: TSupportedThemes) => {
-	const defaultNavTheme = theme === 'light' ? DefaultTheme : DarkTheme;
+	const defaultNavTheme = theme === 'light' || theme === 'paper' ? DefaultTheme : DarkTheme;
 
 	return {
 		...defaultNavTheme,
