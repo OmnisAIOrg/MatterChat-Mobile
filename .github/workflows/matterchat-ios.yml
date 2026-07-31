@@ -4,7 +4,7 @@ name: MatterChat iOS (simulator build)
 on:
   workflow_dispatch: {}
   push:
-    branches: [matterchat]
+    branches: [matterchat, claude/matterchat-ios-android-apps-8nfz6b]
     paths-ignore: ["docs/**", "**.md"]
 concurrency: { group: matterchat-ios, cancel-in-progress: true }
 jobs:
