@@ -2,6 +2,7 @@ import { type ReactElement } from 'react';
 import { View } from 'react-native';
 
 import { DisplayMode } from '../../lib/constants/constantDisplayMode';
+import { isPaperSky, paperShadow } from '../../lib/constants/paperSky';
 import { useTheme } from '../../theme';
 import IconOrAvatar from './IconOrAvatar';
 import { type IWrapperProps } from './interfaces';
@@ -16,15 +17,28 @@ const Wrapper = ({
 	unreadHighlight,
 	...props
 }: IWrapperProps): ReactElement => {
-	const { colors } = useTheme();
+	const { colors, theme } = useTheme();
 	const { rowHeight, rowHeightCondensed } = useResponsiveLayout();
+	const height = displayMode === DisplayMode.Condensed ? rowHeightCondensed : rowHeight;
+	const paperSky = isPaperSky(theme);
 	return (
 		<View
 			style={[
 				styles.container,
-				{ height: displayMode === DisplayMode.Condensed ? rowHeightCondensed : rowHeight },
+				// Paper & Sky: each row is a floating paper card over the sky. Vertical margins
+				// are carved out of the fixed row height so getItemLayout stays exact.
+				paperSky
+					? {
+							height: height - 6,
+							marginVertical: 3,
+							marginHorizontal: 12,
+							borderRadius: 18,
+							backgroundColor: unreadHighlight ? colors.surfaceSelected : colors.surfaceLight,
+							...paperShadow
+					  }
+					: { height },
 				// reskin: unread rows sit on the green-tinted selected surface
-				unreadHighlight ? { backgroundColor: colors.surfaceSelected } : null
+				!paperSky && unreadHighlight ? { backgroundColor: colors.surfaceSelected } : null
 			]}
 			accessibilityLabel={accessibilityLabel}
 			accessibilityHint={accessibilityHint}
@@ -35,7 +49,8 @@ const Wrapper = ({
 				style={[
 					styles.centerContainer,
 					{
-						borderColor: colors.strokeLight
+						// paper cards carry their own edges — no hairline between cards
+						borderColor: paperSky ? 'transparent' : colors.strokeLight
 					}
 				]}>
 				{children}

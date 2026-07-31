@@ -12,6 +12,7 @@ import { type IRoomItem } from '../../containers/RoomItem/interfaces';
 import { SupportedVersionsExpired } from '../../containers/SupportedVersions';
 import i18n from '../../i18n';
 import { MAX_SIDEBAR_WIDTH } from '../../lib/constants/tablet';
+import { isPaperSky } from '../../lib/constants/paperSky';
 import { useAppSelector } from '../../lib/hooks/useAppSelector';
 import { useMasterDetail } from '../../lib/hooks/useMasterDetail';
 import { getRoomAvatar, getRoomTitle, getUidDirectMessage, isIOS, isRead, isTablet } from '../../lib/methods/helpers';
@@ -38,7 +39,7 @@ const RoomsListView = memo(function RoomsListView() {
 
 	useHeader();
 	const { searching, searchEnabled, searchResults, stopSearch } = useContext(RoomsSearchContext);
-	const { colors } = useTheme();
+	const { colors, theme } = useTheme();
 	const username = useAppSelector(state => getUserSelector(state).username);
 	const requirePasswordChange = useAppSelector(state => getUserSelector(state).requirePasswordChange);
 	const useRealName = useAppSelector(state => state.settings.UI_Use_Real_Name) as boolean;
@@ -160,7 +161,7 @@ const RoomsListView = memo(function RoomsListView() {
 				data={searchEnabled ? searchResults : filteredSubscriptions}
 				extraData={searchEnabled ? searchResults : filteredSubscriptions}
 				keyExtractor={item => `${item.rid}-${searchEnabled}`}
-				style={[styles.list, { backgroundColor: colors.surfaceRoom }]}
+				style={[styles.list, { backgroundColor: isPaperSky(theme) ? 'transparent' : colors.surfaceRoom }]}
 				contentContainerStyle={{ paddingBottom: bottom }}
 				renderItem={renderItem}
 				ListHeaderComponent={ListHeader}

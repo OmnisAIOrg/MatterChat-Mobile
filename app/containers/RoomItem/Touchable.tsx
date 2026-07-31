@@ -18,6 +18,7 @@ import { toggleFav } from '../../lib/methods/toggleFav';
 import { toggleRead } from '../../lib/methods/toggleRead';
 import { hideRoom } from '../../lib/methods/hideRoom';
 import { useAppSelector } from '../../lib/hooks/useAppSelector';
+import { isPaperSky } from '../../lib/constants/paperSky';
 
 const Touchable = ({
 	children,
@@ -33,8 +34,14 @@ const Touchable = ({
 	swipeEnabled,
 	displayMode
 }: ITouchableProps): ReactElement => {
-	const { colors } = useTheme();
+	const { colors, theme } = useTheme();
 	const serverVersion = useAppSelector(state => state.server.version);
+	// Paper & Sky: rows are floating paper cards (drawn in Wrapper), so the
+	// touchable stays clear and lets the sky show between them
+	let touchableBackground = isFocused ? colors.surfaceTint : colors.surfaceRoom;
+	if (isPaperSky(theme)) {
+		touchableBackground = 'transparent';
+	}
 	const rowOffSet = useSharedValue(0);
 	const transX = useSharedValue(0);
 	const rowState = useSharedValue(0); // 0: closed, 1: right opened, -1: left opened
@@ -220,7 +227,7 @@ const Touchable = ({
 						onLongPress={handleLongPress}
 						testID={testID}
 						style={{
-							backgroundColor: isFocused ? colors.surfaceTint : colors.surfaceRoom
+							backgroundColor: touchableBackground
 						}}>
 						{children}
 					</Touch>
