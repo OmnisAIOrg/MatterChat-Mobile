@@ -73,7 +73,7 @@ stored in the repo; xcodebuild mints what it needs via `-allowProvisioningUpdate
 
 **How to run it**
 
-1. GitHub → Actions → **MatterChat TestFlight (signed release)** → *Run workflow*.
+1. GitHub → Actions → **MatterChat TestFlight (signed release)** → _Run workflow_.
 2. Optionally set **build_number**. Leave it blank to use the value in the Xcode project
    (`CURRENT_PROJECT_VERSION`, currently `1`). App Store Connect **rejects a build number it has
    already seen**, so after the first upload you must pass a higher one each run. It is applied to
