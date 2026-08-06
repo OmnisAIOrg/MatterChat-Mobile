@@ -2,9 +2,8 @@ import { useFocusEffect, useNavigation } from '@react-navigation/native';
 import { useCallback, useContext, useLayoutEffect, useRef, useState } from 'react';
 import { InteractionManager } from 'react-native';
 import { type KeyboardFocus } from 'react-native-external-keyboard';
-import LinearGradient from 'react-native-linear-gradient';
 
-import { gradients } from '../../../lib/constants/typography';
+import { FRAME_GREEN } from '../../../lib/constants/colors';
 import * as HeaderButton from '../../../containers/Header/components/HeaderButton';
 import i18n from '../../../i18n';
 import { useAppSelector } from '../../../lib/hooks/useAppSelector';
@@ -161,20 +160,12 @@ export const useHeader = () => {
 					/>
 				</HeaderButton.Container>
 			),
-			// reskin: Forest header — brand green gradient with white content (Classic keeps the
-			// themed neutral header; both from the same options object so the toggle is instant)
+			// reskin: Forest header — flat brand green with white content, identical to the
+			// status-bar strip above it and to every other header. (A gradient here left a
+			// visible seam where the strip met the header.) Classic keeps the themed neutral
+			// header; both come from the same options object so the toggle is instant.
 			...(forest
-				? {
-						headerBackground: () => (
-							<LinearGradient
-								colors={gradients.brand as unknown as string[]}
-								start={{ x: 0, y: 0 }}
-								end={{ x: 1, y: 1 }}
-								style={{ flex: 1 }}
-							/>
-						),
-						headerTintColor: '#FFFFFF'
-				  }
+				? { headerBackground: undefined, headerStyle: { backgroundColor: FRAME_GREEN }, headerTintColor: '#FFFFFF' }
 				: { headerBackground: undefined, headerTintColor: undefined })
 		};
 

@@ -1,19 +1,26 @@
 import { useNavigation } from '@react-navigation/native';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { gradients } from '../../lib/constants/typography';
-import { CustomIcon, type TIconsName } from '../CustomIcon';
+import { fontFamily, gradients } from '../../lib/constants/typography';
 import { useTheme } from '../../theme';
+import { CustomIcon, type TIconsName } from '../CustomIcon';
 
 /**
- * Reskin: the owned bottom tab bar — Home / DMs / Chi (raised green ensō) / Activity / You.
- * Built as a Tier-2 owned component over the EXISTING navigation (no new navigator dependency):
- * tabs navigate between screens already registered in the Chats stack (react-navigation v7
- * `navigate` pops back to an existing screen instead of pushing a duplicate), and "You" bubbles
- * up to the drawer-level Settings stack exactly like the old sidebar did. The Chi orb button
- * RELOCATES here from the old floating FAB — same destination (ChiOrbView), new home.
+ * The bottom rail — Home / DMs / Chi / Activity / You.
+ *
+ * Built to the web app's component grammar rather than as a coloured slab: the PWA keeps its
+ * chrome light and airy (near-white fills, hairline green-tinted borders, 13pt radii) and spends
+ * colour only on the primary action. So the rail is a light surface, the active tab is marked by
+ * a soft green tint pill behind its icon, and the emerald gradient is reserved for Chi — carrying
+ * the same lift the web's "Sign in" button has (coloured glow plus a 1px inset highlight along
+ * the top edge, so it reads lit from above).
+ *
+ * Every label sits on one baseline. The Chi tile is absolutely positioned so it can rise above
+ * the rail without dragging its own label out of line with the other four.
+ *
+ * Navigation is unchanged: tabs `navigate` to screens already registered in the Chats stack.
  */
 export type TMainTab = 'home' | 'dms' | 'activity' | 'you';
 
@@ -25,40 +32,71 @@ const TABS: { key: TMainTab | 'chi'; icon?: TIconsName; label: string; route: st
 	{ key: 'you', icon: 'user', label: 'You', route: 'SettingsStackNavigator' }
 ];
 
+const BAR_HEIGHT = 54;
+const CHI_SIZE = 50;
+
 const styles = StyleSheet.create({
 	wrap: {
 		flexDirection: 'row',
-		alignItems: 'flex-start',
-		borderTopWidth: StyleSheet.hairlineWidth,
-		paddingTop: 7
+		alignItems: 'flex-end',
+		borderTopWidth: StyleSheet.hairlineWidth
 	},
 	item: {
 		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'flex-start',
-		minHeight: 48
-	},
-	label: {
-		fontSize: 10,
-		fontWeight: '700',
-		marginTop: 3
-	},
-	chiButton: {
-		width: 56,
-		height: 56,
-		borderRadius: 28,
+		height: BAR_HEIGHT,
 		alignItems: 'center',
 		justifyContent: 'center',
-		marginTop: -22,
-		shadowColor: '#2FA44A',
-		shadowOpacity: 0.45,
-		shadowRadius: 10,
-		shadowOffset: { width: 0, height: 5 },
-		elevation: 8
+		gap: 3
+	},
+	iconPill: {
+		width: 46,
+		height: 26,
+		borderRadius: 13,
+		alignItems: 'center',
+		justifyContent: 'center'
+	},
+	label: {
+		fontFamily: fontFamily.mono,
+		fontSize: 9,
+		letterSpacing: 0.6
+	},
+	labelActive: {
+		fontFamily: fontFamily.monoBold
+	},
+	// The tile rises out of the rail; the label below it stays on the shared baseline.
+	chiTile: {
+		position: 'absolute',
+		top: -(CHI_SIZE / 2) + 4,
+		width: CHI_SIZE,
+		height: CHI_SIZE,
+		borderRadius: 17,
+		alignItems: 'center',
+		justifyContent: 'center',
+		...Platform.select({
+			ios: {
+				shadowColor: '#0D8F5F',
+				shadowOpacity: 0.38,
+				shadowRadius: 10,
+				shadowOffset: { width: 0, height: 6 }
+			},
+			android: { elevation: 8 }
+		})
+	},
+	// the web CTA's inset top highlight, which is what makes it read as lit
+	chiSheen: {
+		position: 'absolute',
+		top: 0,
+		left: 12,
+		right: 12,
+		height: 1,
+		backgroundColor: 'rgba(255,255,255,0.30)'
 	},
 	chiEnso: {
-		width: 34,
-		height: 34
+		width: 28,
+		height: 28
+	},
+	chiLabelSlot: {
+		marginTop: CHI_SIZE / 2 + 6
 	}
 });
 
@@ -67,35 +105,50 @@ const MainTabBar = ({ active }: { active: TMainTab }) => {
 	const { bottom } = useSafeAreaInsets();
 	const navigation = useNavigation<any>();
 
-	// The frame is the web's forest gradient — the bar reads as one piece with the header.
 	return (
-		<LinearGradient
-			colors={gradients.brand as unknown as string[]}
-			start={{ x: 0, y: 0 }}
-			end={{ x: 1, y: 1 }}
-			style={[styles.wrap, { borderTopColor: 'rgba(255,255,255,0.14)', paddingBottom: Math.max(bottom, 10) }]}>
+		<View
+			style={[
+				styles.wrap,
+				{
+					backgroundColor: colors.surfaceLight,
+					borderTopColor: colors.strokeLight,
+					paddingBottom: Math.max(bottom, 8)
+				}
+			]}>
 			{TABS.map(tab => {
 				if (tab.key === 'chi') {
 					return (
 						<View key='chi' style={styles.item} pointerEvents='box-none'>
 							<TouchableOpacity
-								style={[styles.chiButton, { backgroundColor: colors.buttonBackgroundPrimaryDefault }]}
-								activeOpacity={0.85}
+								style={styles.chiTile}
+								activeOpacity={0.88}
 								accessibilityRole='button'
 								accessibilityLabel='Chi assistant'
 								onPress={() => navigation.navigate('ChiOrbView')}>
+								<LinearGradient
+									colors={gradients.emerald as unknown as string[]}
+									locations={[0, 0.6, 1]}
+									start={{ x: 0, y: 0 }}
+									end={{ x: 1, y: 1 }}
+									style={[StyleSheet.absoluteFill, { borderRadius: 17 }]}
+								/>
+								<View style={styles.chiSheen} />
 								<Image source={require('../../static/images/enso_brush_white.png')} style={styles.chiEnso} resizeMode='contain' />
 							</TouchableOpacity>
-							<Text style={[styles.label, { color: '#FFFFFF' }]}>Chi</Text>
+							{/* Chi is an action, not a destination — keep its label neutral so it never
+							    competes with the selected tab's marker. */}
+							<Text style={[styles.label, styles.chiLabelSlot, { color: colors.fontSecondaryInfo }]}>Chi</Text>
 						</View>
 					);
 				}
+
 				const isActive = tab.key === active;
-				const tint = isActive ? '#FFFFFF' : 'rgba(255,255,255,0.66)';
+				const tint = isActive ? colors.fontInfo : colors.fontSecondaryInfo;
 				return (
 					<TouchableOpacity
 						key={tab.key}
 						style={styles.item}
+						activeOpacity={0.7}
 						accessibilityRole='button'
 						accessibilityState={{ selected: isActive }}
 						accessibilityLabel={tab.label}
@@ -104,12 +157,14 @@ const MainTabBar = ({ active }: { active: TMainTab }) => {
 								navigation.navigate(tab.route);
 							}
 						}}>
-						<CustomIcon name={tab.icon!} size={24} color={tint} />
-						<Text style={[styles.label, { color: tint }]}>{tab.label}</Text>
+						<View style={[styles.iconPill, isActive ? { backgroundColor: colors.statusBackgroundInfo } : null]}>
+							<CustomIcon name={tab.icon!} size={21} color={tint} />
+						</View>
+						<Text style={[styles.label, isActive ? styles.labelActive : null, { color: tint }]}>{tab.label}</Text>
 					</TouchableOpacity>
 				);
 			})}
-		</LinearGradient>
+		</View>
 	);
 };
 
