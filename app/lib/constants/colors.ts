@@ -6,6 +6,15 @@
 // One accent red #E1053C stays reserved for destructive/mention.
 // Themes: light (cream) / dark (forest dim) / black (forest OLED).
 
+/**
+ * The app frame green — sampled from the MatterChat app icon (#3BAB55 → #1A8335); this is
+ * its midpoint. Every framing surface uses it: the status-bar strip, nav headers, the tab
+ * bar and the navigator ground. Declared here (a leaf module) so importing it can never
+ * create a cycle — an earlier version imported it from the navigation helpers and resolved
+ * to `undefined` at module-eval time, silently falling back to the neutral surface.
+ */
+export const FRAME_GREEN = '#2A9645';
+
 const backdropColor = '#000000';
 const overlayBackground = 'rgba(22, 33, 26, 0.65)';
 

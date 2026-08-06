@@ -3,11 +3,11 @@ import * as SystemUI from 'expo-system-ui';
 import { NavigationBar } from '@zoontek/react-native-navigation-bar';
 
 import { type IThemePreference, type TThemeMode } from '../../../definitions/ITheme';
-import { themes } from '../../constants/colors';
 import { THEME_PREFERENCES_KEY } from '../../constants/keys';
 import UserPreferences from '../userPreferences';
 import { type TSupportedThemes } from '../../../theme';
 import { isAndroid } from './deviceInfo';
+import { FRAME_GREEN } from '../../constants/colors';
 
 let themeListener: { remove: () => void } | null;
 
@@ -58,7 +58,9 @@ export const setNativeTheme = (themePreferences: IThemePreference) => {
 			// Do nothing
 		}
 	}
-	SystemUI.setBackgroundColorAsync(themes[theme].surfaceNeutral);
+	// The system root behind every screen is the MatterChat frame green, so the status-bar
+	// strip and any safe-area gap read as part of the green frame rather than a neutral band.
+	SystemUI.setBackgroundColorAsync(FRAME_GREEN);
 };
 
 export const unsubscribeTheme = () => {

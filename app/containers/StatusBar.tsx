@@ -1,6 +1,6 @@
 import { StatusBar as StatusBarRN } from 'expo-status-bar';
 
-import { useTheme } from '../theme';
+import { FRAME_GREEN } from '../lib/constants/colors';
 
 interface IStatusBar {
 	barStyle?: 'light' | 'dark';
@@ -8,10 +8,9 @@ interface IStatusBar {
 }
 
 const StatusBar = ({ barStyle, backgroundColor }: IStatusBar) => {
-	const { colors } = useTheme();
-	// The frame behind the status bar is brand green in every theme, so its content is
-	// always light unless a screen explicitly asks otherwise.
-	return <StatusBarRN backgroundColor={backgroundColor ?? colors.surfaceNeutral} animated style={barStyle ?? 'light'} />;
+	// The strip behind the status bar is part of the app's green frame in every theme, so it
+	// defaults to the brand green with light content unless a screen overrides it.
+	return <StatusBarRN backgroundColor={backgroundColor ?? FRAME_GREEN} animated style={barStyle ?? 'light'} />;
 };
 
 export default StatusBar;

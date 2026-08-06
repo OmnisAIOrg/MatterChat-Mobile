@@ -13,12 +13,13 @@ import { deepLinkingOpen } from './actions/deepLinking';
 import { ActionSheetProvider } from './containers/ActionSheet';
 import InAppNotification from './containers/InAppNotification';
 import Loading from './containers/Loading';
+import FrameTopStrip from './containers/FrameTopStrip';
 import StatusBar from './containers/StatusBar';
 import ThemeContextProvider from './containers/ThemeContextProvider';
 import Toast from './containers/Toast';
 import TwoFactor from './containers/TwoFactor';
 import { type IThemePreference } from './definitions/ITheme';
-import { HEADER_GREEN } from './lib/methods/helpers/navigation';
+import { FRAME_GREEN } from './lib/constants/colors';
 import { getAllowAnalyticsEvents, getAllowCrashReport } from './lib/methods/crashReport';
 import { toggleAnalyticsEventsReport, toggleCrashErrorsReport } from './lib/methods/helpers/log';
 import parseDeepLinking from './lib/methods/helpers/parseDeepLinking';
@@ -160,15 +161,16 @@ export default class Root extends Component<{}, IState> {
 		const { themePreferences, theme } = this.state;
 		// The frame (status-bar strip, header, tab bar) is MatterChat green on every screen.
 		return (
-			<SafeAreaProvider style={{ backgroundColor: HEADER_GREEN }}>
+			<SafeAreaProvider style={{ backgroundColor: FRAME_GREEN }}>
 				<Provider store={store}>
 					<ThemeContextProvider theme={theme} themePreferences={themePreferences} setTheme={this.setTheme}>
 						<ResponsiveLayoutProvider>
-							<GestureHandlerRootView style={{ flex: 1, backgroundColor: HEADER_GREEN }}>
+							<GestureHandlerRootView style={{ flex: 1, backgroundColor: FRAME_GREEN }}>
 								<KeyboardProvider>
 									<ActionSheetProvider>
-										<StatusBar />
+										<StatusBar backgroundColor={FRAME_GREEN} />
 										<AppContainer />
+										<FrameTopStrip />
 										<TwoFactor />
 										<ScreenLockedView />
 										<ChangePasscodeView />

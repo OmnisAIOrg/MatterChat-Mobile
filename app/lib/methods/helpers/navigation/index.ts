@@ -1,7 +1,7 @@
 import { DarkTheme, DefaultTheme } from '@react-navigation/native';
 import { type NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
-import { themes } from '../../../constants/colors';
+import { themes, FRAME_GREEN } from '../../../constants/colors';
 import { type TSupportedThemes } from '../../../../theme';
 import sharedStyles from '../../../../views/Styles';
 import Header from '../../../../containers/Header';
@@ -16,7 +16,7 @@ export const drawerStyle = {
 
 // The app frame is MatterChat green everywhere — the same green as the app icon.
 // Every navigation header carries it with white content.
-export const HEADER_GREEN = '#2A9645';
+export const HEADER_GREEN = FRAME_GREEN;
 
 export const themedHeader = (_theme: TSupportedThemes): NativeStackNavigationOptions => ({
 	headerStyle: {
