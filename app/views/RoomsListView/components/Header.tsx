@@ -5,6 +5,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import { showActionSheetRef } from '../../../containers/ActionSheet';
 import SearchHeader from '../../../containers/SearchHeader';
 import I18n from '../../../i18n';
+import { fontFamily } from '../../../lib/constants/typography';
 import { useAppSelector } from '../../../lib/hooks/useAppSelector';
 import { useTheme } from '../../../theme';
 import sharedStyles from '../../Styles';
@@ -19,10 +20,14 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center'
 	},
+	// Workspace name reads as a screen title: brand display face, and no fontWeight left
+	// competing with it (RN doesn't synthesize weight for custom fonts).
 	title: {
 		flexShrink: 1,
 		fontSize: 16,
-		...sharedStyles.textSemibold
+		...sharedStyles.textSemibold,
+		fontFamily: fontFamily.display,
+		fontWeight: 'normal'
 	},
 	subtitle: {
 		fontSize: 14,

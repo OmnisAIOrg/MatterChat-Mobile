@@ -63,3 +63,52 @@ Gotchas (all already handled in-repo, listed so nobody re-trips):
 
 `android/` builds via `build-android.yml` upstream patterns; needs our keystore + package rename
 mirroring the iOS decision. No local Android SDK on the current dev Mac — CI lane only.
+
+## TestFlight
+
+`.github/workflows/matterchat-testflight.yml` builds a signed Release archive and uploads it to
+TestFlight. It supersedes step 4 above — it uses **xcodebuild + `altool` with App Store Connect
+cloud signing**, not fastlane `match`/`gym`/`pilot`. No certificates, profiles, or keychains are
+stored in the repo; xcodebuild mints what it needs via `-allowProvisioningUpdates`.
+
+**How to run it**
+
+1. GitHub → Actions → **MatterChat TestFlight (signed release)** → *Run workflow*.
+2. Optionally set **build_number**. Leave it blank to use the value in the Xcode project
+   (`CURRENT_PROJECT_VERSION`, currently `1`). App Store Connect **rejects a build number it has
+   already seen**, so after the first upload you must pass a higher one each run. It is applied to
+   all four targets at once, which ASC requires.
+3. ~40–60 min later the build appears in App Store Connect → TestFlight, in "Processing" for
+   another 5–15 min before it is assignable to testers.
+
+There is deliberately **no `push:` trigger** — every run burns a build number.
+
+**What it needs (already configured)**
+
+- Repo secrets: `APP_STORE_CONNECT_API_KEY_ID`, `APP_STORE_CONNECT_API_ISSUER_ID`,
+  `APP_STORE_CONNECT_API_KEY` (the raw `.p8` contents). The workflow writes the key to
+  `~/private_keys/AuthKey_<KEY_ID>.p8` at mode 600 — that exact path/filename is how `altool`
+  auto-discovers it, so don't "tidy" it.
+- Team ID `P8S9U28C8B`; bundle ids `com.omnisai.matterchat` + `.ShareExtension`,
+  `.NotificationService`, `.watchkitapp`. All four must exist as App IDs in the developer portal
+  with matching capabilities (App Groups, Push Notifications, Associated Domains) or provisioning
+  fails at archive time.
+
+**Gotchas baked into the workflow**
+
+- The `Release` config in `project.pbxproj` is still pinned to the fork's old fastlane setup:
+  `CODE_SIGN_STYLE = Manual` plus `PROVISIONING_PROFILE_SPECIFIER` values like
+  `match AppStore chat.rocket.ios` — profiles that don't exist in our account and name a bundle id
+  we no longer ship. The workflow overrides `CODE_SIGN_STYLE=Automatic` and blanks
+  `PROVISIONING_PROFILE_SPECIFIER` **on the xcodebuild command line** so local/manual builds are
+  unaffected. If you ever clean up the project file, drop these overrides too.
+- The Watch App's `Release` config has an empty `DEVELOPMENT_TEAM`; the command-line
+  `DEVELOPMENT_TEAM=P8S9U28C8B` covers it.
+- The fmt/consteval patch is re-applied after `pod install` (`Pods/` is gitignored, so CI always
+  gets a pristine fmt). Note the `ios/Podfile` `post_install` hook that passes `-DFMT_CONSTEVAL=`
+  is **not sufficient on its own** — `base.h` re-`#define`s that macro after the command-line `-D`,
+  so the header wins. Forcing `FMT_USE_CONSTEVAL` to `0` in `base.h` is the fix that sticks.
+- No `-sdk` flag on the archive: it would force the Watch App target onto the iOS SDK
+  ("no such module 'WatchKit'"). `-destination 'generic/platform=iOS'` alone picks SDKs per target.
+- The signed `.ipa` is uploaded as a build artifact (14-day retention) even when the TestFlight
+  upload itself fails, so a duplicate-build-number rejection doesn't cost a full rebuild.

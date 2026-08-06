@@ -10,6 +10,7 @@ import RoomItem from '../../containers/RoomItem';
 import { type IRoomItem } from '../../containers/RoomItem/interfaces';
 import SafeAreaView from '../../containers/SafeAreaView';
 import { MAX_SIDEBAR_WIDTH } from '../../lib/constants/tablet';
+import { fontFamily } from '../../lib/constants/typography';
 import { useAppSelector } from '../../lib/hooks/useAppSelector';
 import { useMasterDetail } from '../../lib/hooks/useMasterDetail';
 import { getRoomAvatar, getRoomTitle, getUidDirectMessage, isIOS, isRead } from '../../lib/methods/helpers';
@@ -29,7 +30,9 @@ const styles = StyleSheet.create({
 	},
 	screenTitle: {
 		fontSize: 26,
-		fontWeight: '800',
+		// SpaceGrotesk-Bold carries the weight itself — a fontWeight here would make RN
+		// look for a face that doesn't exist and fall back to the system font.
+		fontFamily: fontFamily.display,
 		letterSpacing: -0.4,
 		paddingHorizontal: 16,
 		paddingTop: 10,

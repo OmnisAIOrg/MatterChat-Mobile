@@ -75,8 +75,9 @@ const FormContainer = ({ children, testID, showAppVersion = true, hero, ...props
 		return (
 			<View style={sharedStyles.container}>
 				<LinearGradient
-					colors={gradients.brand as unknown as string[]}
-					start={{ x: 0, y: 0 }}
+					colors={gradients.forest as unknown as string[]}
+					locations={[0, 0.34, 0.62, 1]}
+					start={{ x: 0.14, y: -0.05 }}
 					end={{ x: 1, y: 1 }}
 					style={styles.forest}
 				/>

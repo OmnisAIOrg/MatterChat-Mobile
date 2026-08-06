@@ -2,6 +2,7 @@ import { DarkTheme, DefaultTheme } from '@react-navigation/native';
 import { type NativeStackNavigationOptions } from '@react-navigation/native-stack';
 
 import { themes, FRAME_GREEN } from '../../../constants/colors';
+import { fontFamily } from '../../../constants/typography';
 import { type TSupportedThemes } from '../../../../theme';
 import sharedStyles from '../../../../views/Styles';
 import Header from '../../../../containers/Header';
@@ -23,7 +24,15 @@ export const themedHeader = (_theme: TSupportedThemes): NativeStackNavigationOpt
 		backgroundColor: HEADER_GREEN
 	},
 	headerTintColor: '#F4FFF9',
-	headerTitleStyle: { ...sharedStyles.textBold, color: '#F4FFF9', fontSize: 17 }
+	// Space Grotesk is the brand display face; it must win over textBold's family, and its
+	// weight must not compete (RN never synthesizes weight for a custom font).
+	headerTitleStyle: {
+		...sharedStyles.textBold,
+		fontFamily: fontFamily.display,
+		fontWeight: 'normal',
+		color: '#F4FFF9',
+		fontSize: 17
+	}
 });
 
 export const navigationTheme = (theme: TSupportedThemes) => {

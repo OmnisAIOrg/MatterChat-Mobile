@@ -1,6 +1,7 @@
 import { Platform, StyleSheet, type TextStyle } from 'react-native';
 
 import { MAX_SCREEN_CONTENT_WIDTH } from '../lib/constants/tablet';
+import { fontFamily } from '../lib/constants/typography';
 
 const defaultTextStyle: TextStyle = {
 	textAlign: 'left',
@@ -47,10 +48,15 @@ export default StyleSheet.create({
 	opacity5: {
 		opacity: 0.5
 	},
+	// Screen title — the brand display face, matching the web's "Welcome back" (Space Grotesk 700).
+	// SpaceGrotesk-Bold IS the bold cut: RN doesn't synthesize weight for custom faces, so nothing
+	// here may set fontWeight, and consumers must spread this AFTER any textBold.
 	loginTitle: {
 		fontSize: 20,
 		marginVertical: 15,
-		lineHeight: 28
+		lineHeight: 28,
+		fontFamily: fontFamily.display,
+		fontWeight: 'normal'
 	},
 	loginSubtitle: {
 		fontSize: 16,

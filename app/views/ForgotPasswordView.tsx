@@ -69,7 +69,8 @@ const ForgotPasswordView = ({ route }: ForgotPasswordViewProps): ReactElement =>
 	return (
 		<FormContainer testID='forgot-password-view'>
 			<FormContainerInner>
-				<Text style={[sharedStyles.loginTitle, sharedStyles.textBold, { color: colors.fontTitlesLabels, fontSize: 24 }]}>
+				{/* loginTitle carries the display face, so it must come after textBold's family/weight */}
+				<Text style={[sharedStyles.textBold, sharedStyles.loginTitle, { color: colors.fontTitlesLabels, fontSize: 24 }]}>
 					{I18n.t('Reset_password')}
 				</Text>
 				<Text style={[sharedStyles.textMedium, { color: colors.fontTitlesLabels, lineHeight: 22, fontSize: 16 }]}>

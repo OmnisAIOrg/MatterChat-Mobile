@@ -1,7 +1,9 @@
 import { StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { type IApplicationState, RootEnum } from '../definitions';
 import { FRAME_GREEN } from '../lib/constants/colors';
+import { useAppSelector } from '../lib/hooks/useAppSelector';
 
 /**
  * The status-bar strip of the app frame.
@@ -21,12 +23,24 @@ const styles = StyleSheet.create({
 	}
 });
 
+/** The strip takes the colour of whatever the screen puts directly beneath it. */
+const groundFor = (root?: string): string => {
+	if (root === RootEnum.ROOT_LOADING || root === RootEnum.ROOT_LOADING_SHARE_EXTENSION) {
+		return '#0B120D'; // the initializing ground
+	}
+	if (root === RootEnum.ROOT_OUTSIDE) {
+		return '#12402C'; // the onboarding forest, at its top stop
+	}
+	return FRAME_GREEN; // inside the app the header sits here
+};
+
 const FrameTopStrip = () => {
 	const { top } = useSafeAreaInsets();
+	const root = useAppSelector((state: IApplicationState) => state.app.root);
 	if (!top) {
 		return null;
 	}
-	return <View pointerEvents='none' style={[styles.strip, { height: top, backgroundColor: FRAME_GREEN }]} />;
+	return <View pointerEvents='none' style={[styles.strip, { height: top, backgroundColor: groundFor(root) }]} />;
 };
 
 export default FrameTopStrip;
