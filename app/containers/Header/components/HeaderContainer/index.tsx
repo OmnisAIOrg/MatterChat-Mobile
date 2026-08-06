@@ -2,7 +2,7 @@ import { memo } from 'react';
 import { View, type ViewProps, StyleSheet } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { useTheme } from '../../../../theme';
+import { HEADER_GREEN } from '../../../../lib/methods/helpers/navigation';
 
 interface IHeaderContainer extends ViewProps {
 	addExtraNotchPadding?: boolean;
@@ -15,7 +15,6 @@ const HeaderContainer = memo(({ isMasterDetail = false, customRightIcon, customL
 	'use memo';
 
 	const insets = useSafeAreaInsets();
-	const { colors } = useTheme();
 	const paddingTop = 4;
 	const paddingBottom = 4;
 	const paddingRight = isMasterDetail || !customRightIcon ? 4 : 16;
@@ -30,9 +29,11 @@ const HeaderContainer = memo(({ isMasterDetail = false, customRightIcon, customL
 				paddingRight: paddingRight + insets.right,
 				paddingLeft: insets.left + (customLeftIcon ? 10 : 4),
 				gap: isMasterDetail ? 4 : 12,
-				backgroundColor: colors.surfaceNeutral,
+				// The header is part of the app's green frame (same green as the app icon),
+				// so it reads continuously with the status-bar strip above it.
+				backgroundColor: HEADER_GREEN,
 				borderBottomWidth: StyleSheet.hairlineWidth,
-				borderBottomColor: colors.strokeLight
+				borderBottomColor: 'rgba(255,255,255,0.14)'
 			}}>
 			{children}
 		</View>

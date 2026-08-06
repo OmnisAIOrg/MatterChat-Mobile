@@ -10,17 +10,17 @@
 	</array>
 	<key>com.apple.developer.associated-domains</key>
 	<array>
-		<string>applinks:go.rocket.chat</string>
+		<string>applinks:app.matterchat.com</string>
 	</array>
 	<key>com.apple.developer.usernotifications.communication</key>
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.ios.chat.rocket</string>
+		<string>group.com.omnisai.matterchat</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+		<string>$(AppIdentifierPrefix)com.omnisai.matterchat</string>
 	</array>
 </dict>
 </plist>

@@ -14,12 +14,16 @@ export const drawerStyle = {
 	width: 320
 };
 
-export const themedHeader = (theme: TSupportedThemes): NativeStackNavigationOptions => ({
+// The app frame is MatterChat green everywhere — the same green as the app icon.
+// Every navigation header carries it with white content.
+export const HEADER_GREEN = '#2A9645';
+
+export const themedHeader = (_theme: TSupportedThemes): NativeStackNavigationOptions => ({
 	headerStyle: {
-		backgroundColor: themes[theme].surfaceNeutral
+		backgroundColor: HEADER_GREEN
 	},
-	headerTintColor: themes[theme].fontDefault,
-	headerTitleStyle: { ...sharedStyles.textBold, color: themes[theme].fontTitlesLabels, fontSize: 16 }
+	headerTintColor: '#F4FFF9',
+	headerTitleStyle: { ...sharedStyles.textBold, color: '#F4FFF9', fontSize: 17 }
 });
 
 export const navigationTheme = (theme: TSupportedThemes) => {
@@ -29,7 +33,10 @@ export const navigationTheme = (theme: TSupportedThemes) => {
 		...defaultNavTheme,
 		colors: {
 			...defaultNavTheme.colors,
-			background: themes[theme].surfaceRoom,
+			// The navigator's ground is the frame green: it only shows in safe-area gaps and
+			// between transitions, where it should read as part of the green frame. Screens
+			// paint their own opaque content surfaces over it.
+			background: HEADER_GREEN,
 			border: themes[theme].strokeLight
 		}
 	};

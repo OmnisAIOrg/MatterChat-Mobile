@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppGroupIdentifier</key>
-	<string>group.ios.chat.rocket</string>
+	<string>group.com.omnisai.matterchat</string>
 	<key>bugsnag</key>
 	<dict>
 		<key>apiKey</key>
@@ -48,7 +48,7 @@
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>KeychainGroup</key>
-	<string>$(AppIdentifierPrefix)chat.rocket.reactnative</string>
+	<string>$(AppIdentifierPrefix)com.omnisai.matterchat</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>googlechrome</string>
@@ -82,6 +82,13 @@
 	<array>
 		<string>custom.ttf</string>
 		<string>Inter.ttf</string>
+		<string>Newsreader-Regular.ttf</string>
+		<string>Newsreader-SemiBold.ttf</string>
+		<string>Newsreader-Italic.ttf</string>
+		<string>SpaceGrotesk-Medium.ttf</string>
+		<string>SpaceGrotesk-Bold.ttf</string>
+		<string>JetBrainsMono-Regular.ttf</string>
+		<string>JetBrainsMono-Bold.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

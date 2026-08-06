@@ -1,7 +1,9 @@
 import { useNavigation } from '@react-navigation/native';
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { gradients } from '../../lib/constants/typography';
 import { CustomIcon, type TIconsName } from '../CustomIcon';
 import { useTheme } from '../../theme';
 
@@ -65,12 +67,13 @@ const MainTabBar = ({ active }: { active: TMainTab }) => {
 	const { bottom } = useSafeAreaInsets();
 	const navigation = useNavigation<any>();
 
+	// The frame is the web's forest gradient — the bar reads as one piece with the header.
 	return (
-		<View
-			style={[
-				styles.wrap,
-				{ backgroundColor: colors.surfaceLight, borderTopColor: colors.strokeLight, paddingBottom: Math.max(bottom, 10) }
-			]}>
+		<LinearGradient
+			colors={gradients.brand as unknown as string[]}
+			start={{ x: 0, y: 0 }}
+			end={{ x: 1, y: 1 }}
+			style={[styles.wrap, { borderTopColor: 'rgba(255,255,255,0.14)', paddingBottom: Math.max(bottom, 10) }]}>
 			{TABS.map(tab => {
 				if (tab.key === 'chi') {
 					return (
@@ -83,12 +86,12 @@ const MainTabBar = ({ active }: { active: TMainTab }) => {
 								onPress={() => navigation.navigate('ChiOrbView')}>
 								<Image source={require('../../static/images/enso_brush_white.png')} style={styles.chiEnso} resizeMode='contain' />
 							</TouchableOpacity>
-							<Text style={[styles.label, { color: colors.fontInfo }]}>Chi</Text>
+							<Text style={[styles.label, { color: '#FFFFFF' }]}>Chi</Text>
 						</View>
 					);
 				}
 				const isActive = tab.key === active;
-				const tint = isActive ? colors.fontInfo : colors.fontSecondaryInfo;
+				const tint = isActive ? '#FFFFFF' : 'rgba(255,255,255,0.66)';
 				return (
 					<TouchableOpacity
 						key={tab.key}
@@ -106,7 +109,7 @@ const MainTabBar = ({ active }: { active: TMainTab }) => {
 					</TouchableOpacity>
 				);
 			})}
-		</View>
+		</LinearGradient>
 	);
 };
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AccessibilityInfo, BackHandler, Keyboard, Text, View } from 'react-native';
+import { AccessibilityInfo, BackHandler, Keyboard, Text } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { useForm } from 'react-hook-form';
 import { useNavigation } from '@react-navigation/native';
@@ -7,14 +7,14 @@ import { type NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import { inviteLinksClear } from '../../actions/inviteLinks';
 import { selectServerRequest, serverFinishAdd, serverRequest } from '../../actions/server';
-import BrandLockup from '../../containers/BrandLockup';
+import BrandHero from '../../containers/BrandHero';
 import Button from '../../containers/Button';
 import FormContainer, { FormContainerInner } from '../../containers/FormContainer';
 import * as HeaderButton from '../../containers/Header/components/HeaderButton';
 import { type TServerHistoryModel } from '../../definitions';
 import I18n from '../../i18n';
 import { useTheme } from '../../theme';
-import { isAndroid, isTablet } from '../../lib/methods/helpers';
+import { isAndroid } from '../../lib/methods/helpers';
 import EventEmitter from '../../lib/methods/helpers/events';
 import ServerInput from './components/ServerInput';
 import { getServerById } from '../../lib/database/services/Server';
@@ -51,8 +51,6 @@ const NewServerView = () => {
 	const { deleteServerHistory, queryServerHistory, serversHistory } = useServersHistory();
 	const { certificate, chooseCertificate, removeCertificate, autocompleteCertificate } = useCertificate();
 	const { submit } = useConnectServer({ workspaceUrl, certificate, previousServer });
-	const phoneMarginTop = previousServer ? 32 : 84;
-	const marginTop = isTablet ? 0 : phoneMarginTop;
 
 	const onChangeText = (text: string) => {
 		setValue('workspaceUrl', text);
@@ -147,12 +145,12 @@ const NewServerView = () => {
 	}, [connecting, previousServer]);
 
 	return (
-		<FormContainer showAppVersion={showBottomInfo} testID='new-server-view' keyboardShouldPersistTaps='handled'>
+		<FormContainer
+			showAppVersion={showBottomInfo}
+			testID='new-server-view'
+			keyboardShouldPersistTaps='handled'
+			hero={<BrandHero />}>
 			<FormContainerInner accessibilityLabel={I18n.t('Add_server')}>
-				{/* reskin: crisp native brand lockup (ensō tile + wordmark) — no raster matte */}
-				<View style={{ marginTop, marginBottom: 32 }}>
-					<BrandLockup size={46} />
-				</View>
 				<Text
 					style={{
 						...styles.title,

@@ -212,6 +212,13 @@
 		7AC0A1E02C000012001CAA11 /* Challenge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0A1E02C000002001CAA11 /* Challenge.mm */; };
 		7ACFE7D92DDE48760090D9BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACFE7D82DDE48760090D9BC /* AppDelegate.swift */; };
 		7AE10C0828A59530003593CB /* Inter.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7AE10C0528A59530003593CB /* Inter.ttf */; };
+		BA27F4C4425B2FC92062399C /* Newsreader-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2571E6539F0678A25D522DF5 /* Newsreader-Regular.ttf */; };
+		9BFD033056B9AEE26031642C /* Newsreader-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2256289473FDAEC90992066D /* Newsreader-SemiBold.ttf */; };
+		C3996C0658A249B43A2A1C1E /* Newsreader-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1A544F385AE08F6951A15 /* Newsreader-Italic.ttf */; };
+		62499479796E4CDB9324377F /* SpaceGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C2EA0EBDDD791B635475E09 /* SpaceGrotesk-Medium.ttf */; };
+		0333DD87F64DBD7D862F5B96 /* SpaceGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C479E334573D53BC0ECDCCB3 /* SpaceGrotesk-Bold.ttf */; };
+		7B45550F1A7776477FFB0F3F /* JetBrainsMono-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A099CD95E6226B54FCD13CC1 /* JetBrainsMono-Regular.ttf */; };
+		D4CF0FFDC8AF42C236B15212 /* JetBrainsMono-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9558537CCB924764A5732599 /* JetBrainsMono-Bold.ttf */; };
 		7AVR00022F5F5900002A6BDE /* VoipRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AVR00002F5F5900002A6BDE /* VoipRegion.swift */; };
 		85160EB6C143E0493FE5F014 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194D9A8897F4A486C2C6F89A /* ExpoModulesProvider.swift */; };
 		A48B46DA2D3FFBD200945489 /* A11yFlowModule.m in Sources */ = {isa = PBXBuildFile; fileRef = A48B46D82D3FFBD200945489 /* A11yFlowModule.m */; };
@@ -451,6 +458,13 @@
 		7ACD4853222860DE00442C55 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		7ACFE7D82DDE48760090D9BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AE10C0528A59530003593CB /* Inter.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Inter.ttf; sourceTree = "<group>"; };
+		2571E6539F0678A25D522DF5 /* Newsreader-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Newsreader-Regular.ttf"; sourceTree = "<group>"; };
+		2256289473FDAEC90992066D /* Newsreader-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Newsreader-SemiBold.ttf"; sourceTree = "<group>"; };
+		7EF1A544F385AE08F6951A15 /* Newsreader-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Newsreader-Italic.ttf"; sourceTree = "<group>"; };
+		6C2EA0EBDDD791B635475E09 /* SpaceGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		C479E334573D53BC0ECDCCB3 /* SpaceGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpaceGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		A099CD95E6226B54FCD13CC1 /* JetBrainsMono-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Regular.ttf"; sourceTree = "<group>"; };
+		9558537CCB924764A5732599 /* JetBrainsMono-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JetBrainsMono-Bold.ttf"; sourceTree = "<group>"; };
 		7AVR00002F5F5900002A6BDE /* VoipRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoipRegion.swift; sourceTree = "<group>"; };
 		83F98EE33D91A93DF8E69F34 /* MediaCallsAnswerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCallsAnswerRequest.swift; sourceTree = "<group>"; };
 		88ED4E003393D3A9256F4EB3 /* Pods_defaults_Rocket_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_Rocket_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1017,6 +1031,13 @@
 			isa = PBXGroup;
 			children = (
 				7AE10C0528A59530003593CB /* Inter.ttf */,
+				2571E6539F0678A25D522DF5 /* Newsreader-Regular.ttf */,
+				2256289473FDAEC90992066D /* Newsreader-SemiBold.ttf */,
+				7EF1A544F385AE08F6951A15 /* Newsreader-Italic.ttf */,
+				6C2EA0EBDDD791B635475E09 /* SpaceGrotesk-Medium.ttf */,
+				C479E334573D53BC0ECDCCB3 /* SpaceGrotesk-Bold.ttf */,
+				A099CD95E6226B54FCD13CC1 /* JetBrainsMono-Regular.ttf */,
+				9558537CCB924764A5732599 /* JetBrainsMono-Bold.ttf */,
 				7A610CD127ECE38100B8ABDD /* custom.ttf */,
 			);
 			name = Resources;
@@ -1230,6 +1251,13 @@
 				7A610CD527ECE38100B8ABDD /* custom.ttf in Resources */,
 				7AAB3E42257E6A6E00707CF6 /* Images.xcassets in Resources */,
 				7AE10C0828A59530003593CB /* Inter.ttf in Resources */,
+				BA27F4C4425B2FC92062399C /* Newsreader-Regular.ttf in Resources */,
+				9BFD033056B9AEE26031642C /* Newsreader-SemiBold.ttf in Resources */,
+				C3996C0658A249B43A2A1C1E /* Newsreader-Italic.ttf in Resources */,
+				62499479796E4CDB9324377F /* SpaceGrotesk-Medium.ttf in Resources */,
+				0333DD87F64DBD7D862F5B96 /* SpaceGrotesk-Bold.ttf in Resources */,
+				7B45550F1A7776477FFB0F3F /* JetBrainsMono-Regular.ttf in Resources */,
+				D4CF0FFDC8AF42C236B15212 /* JetBrainsMono-Bold.ttf in Resources */,
 				7AAB3E44257E6A6E00707CF6 /* GoogleService-Info.plist in Resources */,
 				65AD383A2BFBDF4A00271B39 /* PrivacyInfo.xcprivacy in Resources */,
 				7AAB3E45257E6A6E00707CF6 /* LaunchScreen.storyboard in Resources */,
@@ -1828,7 +1856,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -1868,7 +1896,7 @@
 					"-DFB_SONARKIT_ENABLED=1",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "chat.rocket.ios.Rocket-Chat-ShareExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -1905,7 +1933,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -1943,7 +1971,7 @@
 					"-DFB_SONARKIT_ENABLED=1",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = "chat.rocket.ios.Rocket-Chat-ShareExtension";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.ShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore chat.rocket.ios.Rocket-Chat-ShareExtension";
 				SKIP_INSTALL = YES;
@@ -1971,14 +1999,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"RocketChat Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Rocket.Chat;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = chat.rocket.ios;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.omnisai.matterchat;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1988,7 +2016,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.watchkitapp;
 				PRODUCT_NAME = "Rocket.Chat Watch";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
@@ -2031,7 +2059,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Rocket.Chat;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = chat.rocket.ios;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.omnisai.matterchat;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2040,7 +2068,7 @@
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.watchkitapp;
 				PRODUCT_NAME = "Rocket.Chat Watch";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore chat.rocket.ios.watchkitapp";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=watchos*]" = "match AppStore chat.rocket.ios.watchkitapp";
@@ -2069,7 +2097,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -2093,7 +2121,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -2122,7 +2150,7 @@
 				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -2145,7 +2173,7 @@
 				MARKETING_VERSION = 4.75.0;
 				MTL_FAST_MATH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios.NotificationService;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore chat.rocket.ios.NotificationService";
 				SKIP_INSTALL = YES;
@@ -2170,7 +2198,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				EXCLUDED_ARCHS = "";
@@ -2209,7 +2237,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";
@@ -2235,7 +2263,7 @@
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = S6UPZG7ZR3;
+				DEVELOPMENT_TEAM = P8S9U28C8B;
 				ENABLE_BITCODE = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -2273,7 +2301,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = chat.rocket.ios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnisai.matterchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "match AppStore chat.rocket.ios";
 				SWIFT_OBJC_BRIDGING_HEADER = "RocketChatRN-Bridging-Header.h";

@@ -18,7 +18,7 @@ import ThemeContextProvider from './containers/ThemeContextProvider';
 import Toast from './containers/Toast';
 import TwoFactor from './containers/TwoFactor';
 import { type IThemePreference } from './definitions/ITheme';
-import { themes } from './lib/constants/colors';
+import { HEADER_GREEN } from './lib/methods/helpers/navigation';
 import { getAllowAnalyticsEvents, getAllowCrashReport } from './lib/methods/crashReport';
 import { toggleAnalyticsEventsReport, toggleCrashErrorsReport } from './lib/methods/helpers/log';
 import parseDeepLinking from './lib/methods/helpers/parseDeepLinking';
@@ -158,12 +158,13 @@ export default class Root extends Component<{}, IState> {
 
 	render() {
 		const { themePreferences, theme } = this.state;
+		// The frame (status-bar strip, header, tab bar) is MatterChat green on every screen.
 		return (
-			<SafeAreaProvider style={{ backgroundColor: themes[this.state.theme].surfaceRoom }}>
+			<SafeAreaProvider style={{ backgroundColor: HEADER_GREEN }}>
 				<Provider store={store}>
 					<ThemeContextProvider theme={theme} themePreferences={themePreferences} setTheme={this.setTheme}>
 						<ResponsiveLayoutProvider>
-							<GestureHandlerRootView>
+							<GestureHandlerRootView style={{ flex: 1, backgroundColor: HEADER_GREEN }}>
 								<KeyboardProvider>
 									<ActionSheetProvider>
 										<StatusBar />

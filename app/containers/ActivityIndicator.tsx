@@ -1,8 +1,7 @@
 import { type ReactElement } from 'react';
-import { ActivityIndicator, type ActivityIndicatorProps, StyleSheet } from 'react-native';
+import { type ActivityIndicatorProps, StyleSheet, View } from 'react-native';
 
-import { useTheme } from '../theme';
-import { themes } from '../lib/constants/colors';
+import EnsoLoader from './EnsoLoader';
 
 interface IActivityIndicator extends ActivityIndicatorProps {
 	absolute?: boolean;
@@ -11,7 +10,9 @@ interface IActivityIndicator extends ActivityIndicatorProps {
 const styles = StyleSheet.create({
 	indicator: {
 		padding: 16,
-		flex: 1
+		flex: 1,
+		alignItems: 'center',
+		justifyContent: 'center'
 	},
 	absolute: {
 		position: 'absolute',
@@ -24,15 +25,15 @@ const styles = StyleSheet.create({
 	}
 });
 
-const RCActivityIndicator = ({ absolute, ...props }: IActivityIndicator): ReactElement => {
-	const { theme } = useTheme();
-	return (
-		<ActivityIndicator
-			style={[styles.indicator, absolute && styles.absolute]}
-			color={themes[theme].fontSecondaryInfo}
-			{...props}
-		/>
-	);
-};
+/**
+ * Every wait in the app shows the brand's looping ensō instead of a system spinner.
+ * Component name and props are unchanged so all existing call sites inherit it untouched;
+ * `size` maps small → 32 and large → 52.
+ */
+const RCActivityIndicator = ({ absolute, size, style }: IActivityIndicator): ReactElement => (
+	<View style={[styles.indicator, absolute && styles.absolute, style]}>
+		<EnsoLoader size={size === 'large' ? 52 : 32} />
+	</View>
+);
 
 export default RCActivityIndicator;

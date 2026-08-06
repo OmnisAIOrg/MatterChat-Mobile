@@ -4,6 +4,7 @@ import { InteractionManager } from 'react-native';
 import { type KeyboardFocus } from 'react-native-external-keyboard';
 import LinearGradient from 'react-native-linear-gradient';
 
+import { gradients } from '../../../lib/constants/typography';
 import * as HeaderButton from '../../../containers/Header/components/HeaderButton';
 import i18n from '../../../i18n';
 import { useAppSelector } from '../../../lib/hooks/useAppSelector';
@@ -165,7 +166,12 @@ export const useHeader = () => {
 			...(forest
 				? {
 						headerBackground: () => (
-							<LinearGradient colors={['#169A46', '#0E7A31']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={{ flex: 1 }} />
+							<LinearGradient
+								colors={gradients.brand as unknown as string[]}
+								start={{ x: 0, y: 0 }}
+								end={{ x: 1, y: 1 }}
+								style={{ flex: 1 }}
+							/>
 						),
 						headerTintColor: '#FFFFFF'
 				  }

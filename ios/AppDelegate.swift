@@ -53,6 +53,12 @@ public class AppDelegate: ExpoAppDelegate {
       launchOptions: launchOptions)
 #endif
 
+    // The app's frame is MatterChat green (same green as the app icon). The window is the
+    // bottom-most layer, so painting it here keeps the status-bar strip green instead of
+    // showing a neutral band above full-bleed screens.
+    window?.backgroundColor = UIColor(red: 0x2A / 255.0, green: 0x96 / 255.0, blue: 0x45 / 255.0, alpha: 1.0)
+    window?.rootViewController?.view.backgroundColor = window?.backgroundColor
+
     let result = super.application(application, didFinishLaunchingWithOptions: launchOptions)
 
     // Initialize boot splash

@@ -8,14 +8,10 @@ interface IStatusBar {
 }
 
 const StatusBar = ({ barStyle, backgroundColor }: IStatusBar) => {
-	const { theme, colors } = useTheme();
-	if (!barStyle) {
-		barStyle = 'light';
-		if (theme === 'light') {
-			barStyle = 'dark';
-		}
-	}
-	return <StatusBarRN backgroundColor={backgroundColor ?? colors.surfaceNeutral} animated style={barStyle} />;
+	const { colors } = useTheme();
+	// The frame behind the status bar is brand green in every theme, so its content is
+	// always light unless a screen explicitly asks otherwise.
+	return <StatusBarRN backgroundColor={backgroundColor ?? colors.surfaceNeutral} animated style={barStyle ?? 'light'} />;
 };
 
 export default StatusBar;
