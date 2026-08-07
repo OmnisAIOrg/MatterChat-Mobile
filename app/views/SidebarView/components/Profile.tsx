@@ -31,10 +31,9 @@ const Profile = ({ navigation }: { navigation: DrawerNavigationProp<DrawerParamL
 
 	return (
 		<>
-			<List.Separator />
 			<TouchableWithoutFeedback onPress={onPressUser} testID='sidebar-close-drawer'>
-				<View style={[styles.header, { backgroundColor: colors.surfaceRoom }]}>
-					<Avatar text={username} style={styles.avatar} size={30} />
+				<View style={[styles.header, { backgroundColor: colors.surfaceLight, borderBottomColor: colors.strokeExtraLight }]}>
+					<Avatar text={username} style={styles.avatar} size={40} />
 					<View style={styles.headerTextContainer}>
 						<View style={styles.headerUsername}>
 							<Text numberOfLines={1} style={[styles.username, { color: colors.fontTitlesLabels }]}>
@@ -42,7 +41,7 @@ const Profile = ({ navigation }: { navigation: DrawerNavigationProp<DrawerParamL
 							</Text>
 						</View>
 						<Text
-							style={[styles.currentServerText, { color: colors.fontTitlesLabels }]}
+							style={[styles.currentServerText, { color: colors.fontSecondaryInfo }]}
 							numberOfLines={1}
 							accessibilityLabel={`Connected to ${server}`}>
 							{siteName}

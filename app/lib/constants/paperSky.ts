@@ -63,8 +63,8 @@ export const paper = {
 
 	/** the inset top rim that makes a sheet read as lit from above */
 	rim: '#FFFEFA',
-	/** the edge that separates paper from sky — a lit hairline all the way round the sheet */
-	edge: 'rgba(255,255,255,0.62)'
+	/** the edge that separates paper from sky — a lit rim all the way round the sheet */
+	edge: 'rgba(255,255,255,0.72)'
 } as const;
 
 /** Paper inverted for night mode. Warm, never neutral grey. */
@@ -242,7 +242,7 @@ export const sheet = {
 	radiusSmall: 22,
 	rowPaddingV: 12,
 	rowPaddingH: 16,
-	border: 1,
+	border: 1.5,
 	divider: 1,
 	/** glass panes carry a heavier edge than paper — they have no shadow of their own to define them */
 	glassBorder: 1.5,

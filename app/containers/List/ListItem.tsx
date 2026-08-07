@@ -248,8 +248,10 @@ const Button = memo(({ onPress, backgroundColor, underlayColor, style, ...props 
 	return (
 		<Touch
 			onPress={handlePress}
-			style={[{ backgroundColor: backgroundColor || colors.surfaceRoom }, style]}
-			underlayColor={underlayColor}
+			// Rows inherit the sheet's paper. A row that paints its own surface leaves a seam at the
+			// top of every list where the sheet shows through above the first row.
+			style={[{ backgroundColor: backgroundColor ?? 'transparent' }, style]}
+			underlayColor={underlayColor || colors.surfaceHover}
 			enabled={!props.disabled || !!props.disabledReason}>
 			<Content {...props} />
 		</Touch>
@@ -265,14 +267,12 @@ export interface IListItem extends Omit<IListItemContent, 'theme'>, Omit<IListIt
 const ListItem = memo(({ ...props }: IListItem) => {
 	'use memo';
 
-	const { colors } = useTheme();
-
 	if (props.onPress) {
 		const { onPress } = props;
 		return <Button {...props} onPress={onPress} />;
 	}
 	return (
-		<View style={{ backgroundColor: props.backgroundColor || colors.surfaceRoom }}>
+		<View style={{ backgroundColor: props.backgroundColor ?? 'transparent' }}>
 			<Content {...props} />
 		</View>
 	);

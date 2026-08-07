@@ -28,7 +28,7 @@ const light = {
 	surfaceFeatured: '#175F35',
 	surfaceFeaturedHover: '#0F4A28',
 
-	strokeExtraLight: '#E9E1CE',
+	strokeExtraLight: '#E4D9C0',
 	strokeLight: '#E4D8BC',
 	strokeMedium: '#C9C2AC',
 	strokeDark: '#8A8471',

@@ -6,7 +6,8 @@ import scrollPersistTaps from '../../lib/methods/helpers/scrollPersistTaps';
 
 const styles = StyleSheet.create({
 	container: {
-		paddingVertical: 16
+		// The sheet provides the outer inset; the list only needs to breathe at its ends.
+		paddingVertical: 8
 	}
 });
 

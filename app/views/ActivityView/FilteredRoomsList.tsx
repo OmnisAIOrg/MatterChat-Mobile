@@ -5,6 +5,7 @@ import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-cont
 import { shallowEqual } from 'react-redux';
 
 import ActivityIndicator from '../../containers/ActivityIndicator';
+import EmptyState from '../../containers/EmptyState';
 import MainTabBar, { DOCK_CLEARANCE, type TMainTab } from '../../containers/MainTabBar';
 import RoomItem from '../../containers/RoomItem';
 import { type IRoomItem } from '../../containers/RoomItem/interfaces';
@@ -16,7 +17,6 @@ import { useMasterDetail } from '../../lib/hooks/useMasterDetail';
 import { getRoomAvatar, getRoomTitle, getUidDirectMessage, isIOS, isRead } from '../../lib/methods/helpers';
 import { goRoom } from '../../lib/methods/helpers/goRoom';
 import { getUserSelector } from '../../selectors/login';
-import { useTheme } from '../../theme';
 import { useSubscriptions } from '../RoomsListView/hooks/useSubscriptions';
 
 /**
@@ -41,22 +41,6 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 20,
 		paddingTop: 12,
 		paddingBottom: 14
-	},
-	empty: {
-		flex: 1,
-		alignItems: 'center',
-		justifyContent: 'center',
-		paddingHorizontal: 40
-	},
-	emptyTitle: {
-		fontSize: 16,
-		fontWeight: '800',
-		marginBottom: 6,
-		textAlign: 'center'
-	},
-	emptyHint: {
-		fontSize: 14,
-		textAlign: 'center'
 	}
 });
 
@@ -75,7 +59,6 @@ const FilteredRoomsList = ({
 	emptyHint: string;
 	testID: string;
 }) => {
-	const { colors } = useTheme();
 	const navigation = useNavigation<any>();
 	const { width } = useSafeAreaFrame();
 	const { bottom } = useSafeAreaInsets();
@@ -123,12 +106,7 @@ const FilteredRoomsList = ({
 			<Text style={styles.screenTitle}>{title}</Text>
 			<ScreenSheet bottomInset={bottom} dockClearance={DOCK_CLEARANCE}>
 				{loading ? <ActivityIndicator /> : null}
-				{!loading && rooms.length === 0 ? (
-					<View style={styles.empty}>
-						<Text style={[styles.emptyTitle, { color: colors.fontTitlesLabels }]}>{emptyTitle}</Text>
-						<Text style={[styles.emptyHint, { color: colors.fontSecondaryInfo }]}>{emptyHint}</Text>
-					</View>
-				) : null}
+				{!loading && rooms.length === 0 ? <EmptyState title={emptyTitle} hint={emptyHint} /> : null}
 				{!loading && rooms.length > 0 ? (
 					<FlatList
 						data={rooms}

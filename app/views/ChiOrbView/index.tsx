@@ -19,21 +19,38 @@
  */
 import { type ReactElement } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { WebView } from 'react-native-webview';
 import { useNavigation } from '@react-navigation/native';
 
+import { CustomIcon } from '../../containers/CustomIcon';
+import GlassButton from '../../containers/GlassButton';
+import { useSkyOverride } from '../../containers/Sky';
+import { onSky } from '../../lib/constants/paperSky';
 import { useAppSelector } from '../../lib/hooks/useAppSelector';
 import { getUserSelector } from '../../selectors/login';
 
 const styles = StyleSheet.create({
-	container: { flex: 1, backgroundColor: '#07090c' },
-	webview: { flex: 1, backgroundColor: 'transparent' }
+	// Chi is summoned over whatever you were doing, so its scrim has to reach the very top of the
+	// window — the app's global status-bar spacer would otherwise leave a bright band of sky above
+	// a near-black sheet, and the seam is the first thing you'd see.
+	container: { flex: 1, backgroundColor: 'transparent' },
+	webview: { flex: 1, backgroundColor: 'transparent' },
+	close: {
+		position: 'absolute',
+		right: 16
+	}
 });
 
 const ChiOrbView = (): ReactElement => {
 	const navigation = useNavigation();
+	const { top } = useSafeAreaInsets();
 	const server = useAppSelector(state => state.server.server);
 	const user = useAppSelector(state => getUserSelector(state));
+
+	// Chi is heads-down by definition: the sky goes night behind it, and stays there until you
+	// leave — so backing out of Chi is a sunrise rather than a cut.
+	useSkyOverride('night');
 
 	// Same-origin auth injection — the orb reads these exactly like the desktop Chi window.
 	const inject = `(function(){try{
@@ -62,7 +79,7 @@ const ChiOrbView = (): ReactElement => {
 	};
 
 	return (
-		<View style={styles.container}>
+		<View style={[styles.container, { marginTop: -top }]}>
 			<WebView
 				style={styles.webview}
 				source={{ uri: `${server}/omnis-widgets/chi-mobile.html` }}
@@ -75,6 +92,11 @@ const ChiOrbView = (): ReactElement => {
 				originWhitelist={['https://*']}
 				setSupportMultipleWindows={false}
 			/>
+			<View style={[styles.close, { top: top + 10 }]}>
+				<GlassButton accessibilityLabel='Close Chi' onPress={() => (navigation.canGoBack() ? navigation.goBack() : undefined)}>
+					<CustomIcon name='chevron-down' size={21} color={onSky.primary} />
+				</GlassButton>
+			</View>
 		</View>
 	);
 };

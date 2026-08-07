@@ -5,6 +5,7 @@ import { useSafeAreaFrame, useSafeAreaInsets } from 'react-native-safe-area-cont
 import { shallowEqual } from 'react-redux';
 
 import ActivityIndicator from '../../containers/ActivityIndicator';
+import EmptyState from '../../containers/EmptyState';
 import BackgroundContainer from '../../containers/BackgroundContainer';
 import { ChangePasswordRequired } from '../../containers/ChangePasswordRequired';
 import RoomItem from '../../containers/RoomItem';
@@ -216,6 +217,16 @@ const RoomsListView = memo(function RoomsListView() {
 					contentContainerStyle={{ paddingBottom: 12 }}
 					renderItem={renderItem}
 					ListHeaderComponent={ListHeader}
+					ListEmptyComponent={
+						<EmptyState
+							title={homeFilter === 'all' ? 'No conversations yet' : 'Nothing matches that filter'}
+							hint={
+								homeFilter === 'all'
+									? 'Start one from the pencil at the top right, or ask Chi to find the room you need.'
+									: 'Try another filter — All shows every room you are in.'
+							}
+						/>
+					}
 					ListFooterComponent={searching ? () => <ActivityIndicator /> : undefined}
 					getItemLayout={getItemLayout}
 					removeClippedSubviews={isIOS}

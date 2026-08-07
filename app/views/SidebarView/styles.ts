@@ -8,8 +8,10 @@ export default StyleSheet.create({
 	},
 	header: {
 		paddingVertical: 16,
+		paddingHorizontal: 4,
 		flexDirection: 'row',
-		alignItems: 'center'
+		alignItems: 'center',
+		borderBottomWidth: 1
 	},
 	headerTextContainer: {
 		flex: 1,
@@ -21,15 +23,15 @@ export default StyleSheet.create({
 		alignItems: 'center'
 	},
 	username: {
-		fontSize: 14,
-		...sharedStyles.textMedium
+		fontSize: 16,
+		...sharedStyles.textBold
 	},
 	avatar: {
-		marginHorizontal: 10
+		marginHorizontal: 12
 	},
 	currentServerText: {
-		fontSize: 14,
-		...sharedStyles.textSemibold
+		fontSize: 13,
+		...sharedStyles.textRegular
 	},
 	customStatusDisabled: {
 		width: 10,

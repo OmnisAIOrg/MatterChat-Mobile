@@ -1,8 +1,8 @@
 import { useNavigation } from '@react-navigation/native';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
 import { CustomIcon } from '../../../containers/CustomIcon';
-import Glass from '../../../containers/Glass';
+import GlassButton from '../../../containers/GlassButton';
 import { useSkyOverride } from '../../../containers/Sky';
 import { onSky } from '../../../lib/constants/paperSky';
 import { useMasterDetail } from '../../../lib/hooks/useMasterDetail';
@@ -36,13 +36,11 @@ const styles = StyleSheet.create({
 		flexDirection: 'row',
 		alignItems: 'center',
 		justifyContent: 'space-between',
-		height: 40
+		height: 42
 	},
 	circle: {
-		width: 40,
-		height: 40,
-		alignItems: 'center',
-		justifyContent: 'center'
+		width: 42,
+		height: 42
 	},
 	body: {
 		alignItems: 'center',
@@ -109,29 +107,18 @@ const SkyHero = ({ unread, mentions, directs, onCreate, canCreate }: ISkyHeroPro
 	return (
 		<View style={styles.root}>
 			<View style={styles.actions}>
-				<TouchableOpacity
-					activeOpacity={0.7}
-					accessibilityRole='button'
+				<GlassButton
 					accessibilityLabel='Workspace'
 					testID='rooms-list-view-sidebar'
 					onPress={() =>
 						isMasterDetail ? navigation.navigate('ModalStackNavigator', { screen: 'SettingsView' }) : navigation.toggleDrawer()
 					}>
-					<Glass variant='clear' radius={20} style={styles.circle}>
-						<CustomIcon name='hamburguer' size={22} color={onSky.primary} />
-					</Glass>
-				</TouchableOpacity>
+					<CustomIcon name='hamburguer' size={21} color={onSky.primary} />
+				</GlassButton>
 				{canCreate ? (
-					<TouchableOpacity
-						activeOpacity={0.7}
-						accessibilityRole='button'
-						accessibilityLabel='Create new'
-						testID='rooms-list-view-create-channel'
-						onPress={onCreate}>
-						<Glass variant='clear' radius={20} style={styles.circle}>
-							<CustomIcon name='create' size={22} color={onSky.primary} />
-						</Glass>
-					</TouchableOpacity>
+					<GlassButton accessibilityLabel='Create new' testID='rooms-list-view-create-channel' onPress={onCreate}>
+						<CustomIcon name='create' size={21} color={onSky.primary} />
+					</GlassButton>
 				) : (
 					<View style={styles.circle} />
 				)}

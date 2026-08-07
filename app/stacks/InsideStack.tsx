@@ -9,7 +9,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { type StaticScreenProps } from '@react-navigation/native';
 
 import { ThemeContext } from '../theme';
-import { defaultHeader, themedHeader } from '../lib/methods/helpers/navigation';
+import { defaultHeader, drawerStyle, themedHeader } from '../lib/methods/helpers/navigation';
 import withNavigation from '../lib/navigation/withNavigation';
 import Sidebar from '../views/SidebarView';
 import { isIOS, isTablet } from '../lib/methods/helpers';
@@ -313,6 +313,8 @@ const DrawerStack = createDrawerNavigator({
 		headerShown: false,
 		drawerPosition: I18nManager.isRTL ? 'right' : 'left',
 		drawerType: 'slide',
+		// The drawer is a sheet floating on the sky, so its own surface paints nothing.
+		drawerStyle,
 		freezeOnBlur: true
 	},
 	screens: {
@@ -325,11 +327,12 @@ const DrawerStack = createDrawerNavigator({
 }).with(({ Navigator }) => {
 	'use memo';
 
-	const { colors } = useContext(ThemeContext);
 	return (
 		<Navigator
 			drawerContent={({ navigation }) => <Sidebar navigation={navigation as any} />}
-			screenOptions={{ overlayColor: `rgba(0,0,0,${colors.backdropOpacity})` }}
+			// The scrim is the sky at dusk, not neutral black: a grey wash over a green app reads as
+			// a screenshot with the lights off.
+			screenOptions={{ overlayColor: 'rgba(3,20,10,0.52)' }}
 		/>
 	);
 });

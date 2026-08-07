@@ -16,7 +16,8 @@ export const defaultHeader: NativeStackNavigationOptions = {
 };
 
 export const drawerStyle = {
-	width: 320
+	width: 326,
+	backgroundColor: 'transparent'
 };
 
 // Kept for the few places that still need a single flat green to paint before React mounts.
