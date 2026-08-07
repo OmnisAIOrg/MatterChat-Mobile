@@ -13,7 +13,6 @@ import SafeAreaView from '../../containers/SafeAreaView';
 import { type ISearch, type TSubscriptionModel } from '../../definitions';
 import I18n from '../../i18n';
 import database from '../../lib/database';
-import { useTheme } from '../../theme';
 import { goRoom as goRoomMethod, type TGoRoomItem } from '../../lib/methods/helpers/goRoom';
 import log, { events, logEvent } from '../../lib/methods/helpers/log';
 import { type NewMessageStackParamList } from '../../stacks/types';
@@ -35,8 +34,6 @@ const NewMessageView = () => {
 	const [searching, setSearching] = useState(false);
 	// Guards against an older (slower) search overwriting the results of a newer one
 	const searchId = useRef(0);
-
-	const { colors } = useTheme();
 
 	const navigation = useNavigation<NativeStackNavigationProp<NewMessageStackParamList, 'NewMessageView'>>();
 	const { bottom } = useSafeAreaInsets();
@@ -133,7 +130,8 @@ const NewMessageView = () => {
 				}}
 				ItemSeparatorComponent={List.Separator}
 				ListFooterComponent={searching ? () => <ActivityIndicator /> : List.Separator}
-				style={{ backgroundColor: colors.surfaceTint }}
+				// The list is the sheet, not a panel on it — anything painted here shows as a band
+				// above the first row.
 				contentContainerStyle={{ paddingBottom: bottom }}
 				keyboardShouldPersistTaps='always'
 			/>

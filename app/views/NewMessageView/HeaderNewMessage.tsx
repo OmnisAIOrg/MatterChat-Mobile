@@ -5,11 +5,9 @@ import { useDispatch } from 'react-redux';
 import { useNavigation } from '@react-navigation/native';
 
 import { createChannelRequest } from '../../actions/createChannel';
-import { themes } from '../../lib/constants/colors';
 import SearchBox from '../../containers/SearchBox';
 import I18n from '../../i18n';
 import Navigation from '../../lib/navigation/appNavigation';
-import { useTheme } from '../../theme';
 import { events, logEvent } from '../../lib/methods/helpers/log';
 import { type NewMessageStackParamList } from '../../stacks/types';
 import { compareServerVersion } from '../../lib/methods/helpers';
@@ -26,8 +24,6 @@ const styles = StyleSheet.create({
 const HeaderNewMessage = ({ maxUsers, onChangeText }: { maxUsers: number; onChangeText: (text: string) => void }) => {
 	const navigation = useNavigation<NativeStackNavigationProp<NewMessageStackParamList, 'NewMessageView'>>();
 	const dispatch = useDispatch();
-	const { theme } = useTheme();
-
 	const serverVersion = useAppSelector(state => state.server.version as string);
 
 	const [
@@ -70,7 +66,7 @@ const HeaderNewMessage = ({ maxUsers, onChangeText }: { maxUsers: number; onChan
 
 	return (
 		<>
-			<View style={[styles.container, { backgroundColor: themes[theme].surfaceTint }]}>
+			<View style={styles.container}>
 				{createPublicChannelPermission || createPrivateChannelPermission ? (
 					<ButtonCreate
 						onPress={createChannel}
