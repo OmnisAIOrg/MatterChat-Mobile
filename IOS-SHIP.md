@@ -4,13 +4,13 @@ What the app already does, what only you can do, and how to get a build onto a p
 
 ## Identity
 
-| | |
-|---|---|
-| Bundle IDs | `com.omnisai.matterchat` + `.ShareExtension`, `.NotificationService`, `.watchkitapp` |
-| App Group | `group.com.omnisai.matterchat` |
-| Team | `P8S9U28C8B` |
-| Associated domain | `applinks:app.matterchat.com` |
-| Display name | MatterChat (app, share sheet, watch) |
+|                   |                                                                                      |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| Bundle IDs        | `com.omnisai.matterchat` + `.ShareExtension`, `.NotificationService`, `.watchkitapp` |
+| App Group         | `group.com.omnisai.matterchat`                                                       |
+| Team              | `P8S9U28C8B`                                                                         |
+| Associated domain | `applinks:app.matterchat.com`                                                        |
+| Display name      | MatterChat (app, share sheet, watch)                                                 |
 
 `aps-environment` resolves from `APS_ENVIRONMENT`: `development` for Debug, `production` for
 Release. This matters more than it looks — a distribution build signed with the sandbox value
@@ -59,7 +59,7 @@ should never leave your hands:
 1. Apple Developer → Keys → new key with **Apple Push Notifications service (APNs)** →
    download the `.p8` (one download, ever).
 2. MatterChat admin → **Push**:
-   - *Use default gateway* → **off**. Rocket.Chat's community gateway only serves official
+   - _Use default gateway_ → **off**. Rocket.Chat's community gateway only serves official
      builds; a fork has to talk to APNs directly.
    - APN key: paste the `.p8` contents, key ID, team ID `P8S9U28C8B`.
    - Bundle id: `com.omnisai.matterchat`.
