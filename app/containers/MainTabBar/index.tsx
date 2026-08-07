@@ -1,6 +1,7 @@
 import { useNavigation } from '@react-navigation/native';
 import * as Haptics from 'expo-haptics';
-import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { type ReactNode, useRef } from 'react';
+import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { onSky, paper } from '../../lib/constants/paperSky';
@@ -21,15 +22,28 @@ import Glass from '../Glass';
  *
  * All five labels sit on one baseline. The orb is absolutely positioned precisely so that raising
  * it doesn't drag its label out of line with the other four.
+ *
+ * `active` is optional: inside a conversation the dock is still there — you can leave the way you
+ * came in — but none of the five is where you are, so none of them is lit.
  */
 export type TMainTab = 'home' | 'dms' | 'activity' | 'you';
 
-const TABS: { key: TMainTab | 'chi'; icon?: TIconsName; label: string; route: string }[] = [
-	{ key: 'home', icon: 'home', label: 'Home', route: 'RoomsListView' },
-	{ key: 'dms', icon: 'message', label: 'Chats', route: 'DMsView' },
-	{ key: 'chi', label: 'Chi', route: 'ChiOrbView' },
-	{ key: 'activity', icon: 'mention', label: 'Activity', route: 'ActivityView' },
-	{ key: 'you', icon: 'user', label: 'You', route: 'SettingsStackNavigator' }
+/**
+ * Four of the five destinations live in the Chats stack and one lives in the Settings stack, and
+ * those two are *siblings* under the drawer. React Navigation resolves a route name by walking up
+ * the tree, never sideways — so a bare `navigate('RoomsListView')` from the You tab silently does
+ * nothing. Every tab therefore names its drawer route and its screen, which resolves from anywhere
+ * in the app, including from inside a conversation.
+ */
+const CHATS = 'ChatsStackNavigator';
+const SETTINGS = 'SettingsStackNavigator';
+
+const TABS: { key: TMainTab | 'chi'; icon?: TIconsName; label: string; stack: string; screen: string }[] = [
+	{ key: 'home', icon: 'home', label: 'Home', stack: CHATS, screen: 'RoomsListView' },
+	{ key: 'dms', icon: 'message', label: 'Chats', stack: CHATS, screen: 'DMsView' },
+	{ key: 'chi', label: 'Chi', stack: CHATS, screen: 'ChiOrbView' },
+	{ key: 'activity', icon: 'mention', label: 'Activity', stack: CHATS, screen: 'ActivityView' },
+	{ key: 'you', icon: 'user', label: 'You', stack: SETTINGS, screen: 'SettingsView' }
 ];
 
 const PAD_TOP = 12;
@@ -71,8 +85,10 @@ const styles = StyleSheet.create({
 		})
 	},
 	item: {
-		flex: 1,
 		alignItems: 'center'
+	},
+	itemPress: {
+		flex: 1
 	},
 	iconSlot: {
 		width: 54,
@@ -163,18 +179,33 @@ const styles = StyleSheet.create({
 	}
 });
 
-const MainTabBar = ({ active, badges }: { active: TMainTab; badges?: Partial<Record<TMainTab, number>> }) => {
+/**
+ * A dock button with press physics: it gives under the finger and springs back. Nothing else in
+ * the app is pressed as often, and a tab that doesn't move under your thumb is the single clearest
+ * tell that a UI is a picture of an app rather than an app.
+ */
+const Pressed = ({ children, onPress, style, pressStyle, ...rest }: any & { children: ReactNode }) => {
+	const scale = useRef(new Animated.Value(1)).current;
+	const to = (v: number) => Animated.spring(scale, { toValue: v, useNativeDriver: true, speed: 40, bounciness: 6 }).start();
+	return (
+		<Pressable style={pressStyle} onPressIn={() => to(0.9)} onPressOut={() => to(1)} onPress={onPress} {...rest}>
+			<Animated.View style={[style, { transform: [{ scale }] }]}>{children}</Animated.View>
+		</Pressable>
+	);
+};
+
+const MainTabBar = ({ active, badges }: { active?: TMainTab; badges?: Partial<Record<TMainTab, number>> }) => {
 	const { bottom } = useSafeAreaInsets();
 	const navigation = useNavigation<any>();
 
-	const go = (route: string, isActive: boolean) => {
+	const go = (stack: string, screen: string, isActive: boolean) => {
 		if (isActive) {
 			return;
 		}
 		// A dock press is a place-change; it deserves the same physical acknowledgement iOS gives
 		// its own tab bars.
 		Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
-		navigation.navigate(route);
+		navigation.navigate(stack, { screen });
 	};
 
 	return (
@@ -184,7 +215,7 @@ const MainTabBar = ({ active, badges }: { active: TMainTab; badges?: Partial<Rec
 					if (tab.key === 'chi') {
 						// A spacer that owns nothing but the label's slot — the orb is drawn over it.
 						return (
-							<View key='chi' style={styles.item} pointerEvents='none'>
+							<View key='chi' style={[styles.itemPress, styles.item]} pointerEvents='none'>
 								<View style={styles.iconSlot} />
 								<Text style={[styles.label, styles.labelActive]}>Chi</Text>
 							</View>
@@ -194,14 +225,14 @@ const MainTabBar = ({ active, badges }: { active: TMainTab; badges?: Partial<Rec
 					const isActive = tab.key === active;
 					const badge = badges?.[tab.key];
 					return (
-						<TouchableOpacity
+						<Pressed
 							key={tab.key}
+							pressStyle={styles.itemPress}
 							style={[styles.item, isActive ? null : styles.inactive]}
-							activeOpacity={0.6}
 							accessibilityRole='button'
 							accessibilityState={{ selected: isActive }}
 							accessibilityLabel={tab.label}
-							onPress={() => go(tab.route, isActive)}>
+							onPress={() => go(tab.stack, tab.screen, isActive)}>
 							<View style={styles.iconSlot}>
 								{isActive ? (
 									<View style={styles.key}>
@@ -218,21 +249,20 @@ const MainTabBar = ({ active, badges }: { active: TMainTab; badges?: Partial<Rec
 								</View>
 							) : null}
 							<Text style={[styles.label, isActive ? styles.labelActive : null]}>{tab.label}</Text>
-						</TouchableOpacity>
+						</Pressed>
 					);
 				})}
 			</Glass>
 			<View style={[styles.orbSlot, { left: 0, right: 0 }]} pointerEvents='box-none'>
-				<TouchableOpacity
-					activeOpacity={0.85}
+				<Pressed
 					accessibilityRole='button'
 					accessibilityLabel='Chi assistant'
 					onPress={() => {
 						Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
-						navigation.navigate('ChiOrbView');
+						navigation.navigate(CHATS, { screen: 'ChiOrbView' });
 					}}>
 					<ChiOrb size={ORB} />
-				</TouchableOpacity>
+				</Pressed>
 			</View>
 		</View>
 	);

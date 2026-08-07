@@ -25,6 +25,9 @@ const styles = StyleSheet.create({
 		marginHorizontal: 14,
 		borderTopLeftRadius: geom.radius,
 		borderTopRightRadius: geom.radius,
+		borderWidth: geom.border,
+		borderBottomWidth: 0,
+		borderColor: paper.edge,
 		overflow: 'hidden',
 		...Platform.select({
 			ios: {

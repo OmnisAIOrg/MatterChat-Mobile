@@ -3,7 +3,7 @@ import { type ReactNode } from 'react';
 import { StyleSheet, View, type ViewStyle } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-import { glass } from '../../lib/constants/paperSky';
+import { glass, sheet as geom } from '../../lib/constants/paperSky';
 
 /**
  * Glass — the app's chrome, and only the chrome.
@@ -40,7 +40,17 @@ const styles = StyleSheet.create({
 		top: 0,
 		left: 0,
 		right: 0,
-		height: 1.5
+		height: geom.glassRim
+	},
+	// The counterpart along the bottom: a pane lit from above has to be dark underneath, or it
+	// floats without weight.
+	underside: {
+		position: 'absolute',
+		bottom: 0,
+		left: 0,
+		right: 0,
+		height: 1,
+		backgroundColor: 'rgba(0,0,0,0.28)'
 	}
 });
 
@@ -52,7 +62,7 @@ const Glass = ({ variant = 'dock', radius, style, children, pointerEvents }: IGl
 	return (
 		<View
 			pointerEvents={pointerEvents}
-			style={[styles.root, { borderRadius: radius, borderWidth: border ? 1 : 0, borderColor: border }, style]}>
+			style={[styles.root, { borderRadius: radius, borderWidth: border ? geom.glassBorder : 0, borderColor: border }, style]}>
 			<BlurView
 				intensity={recipe.blur}
 				tint='dark'
@@ -72,6 +82,7 @@ const Glass = ({ variant = 'dock', radius, style, children, pointerEvents }: IGl
 				<View style={[StyleSheet.absoluteFill, { backgroundColor: recipe.fill }]} pointerEvents='none' />
 			)}
 			{rim ? <View style={[styles.rim, { backgroundColor: rim }]} pointerEvents='none' /> : null}
+			{rim ? <View style={styles.underside} pointerEvents='none' /> : null}
 			{children}
 		</View>
 	);

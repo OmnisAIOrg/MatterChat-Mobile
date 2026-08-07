@@ -60,11 +60,15 @@ export const MessageComposerContent = memo<MessageComposerContentProps>(
 );
 
 const styles = StyleSheet.create({
+	// The input tray at the foot of the conversation sheet. It keeps a hairline along its top edge
+	// so it reads as the last row of the paper — connected to the messages above it — and an inner
+	// margin so the field itself still floats.
 	container: {
 		borderWidth: 1.5,
 		borderRadius: 14,
-		marginHorizontal: 12,
-		marginBottom: 8,
+		marginHorizontal: 10,
+		marginTop: 8,
+		marginBottom: 10,
 		paddingHorizontal: 12,
 		minHeight: MIN_HEIGHT
 	},

@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
 	tile: {
 		width: 32,
 		height: 32,
-		borderRadius: 10
+		borderRadius: 10,
+		borderWidth: 1
 	}
 });
 
@@ -47,7 +48,13 @@ const ListIcon = ({ name, color, style, testID, size }: IListIcon): ReactElement
 
 	if (!color && !INDICATOR_ICONS.includes(name)) {
 		return (
-			<View style={[styles.icon, styles.tile, { backgroundColor: colors.statusBackgroundInfo }, style]}>
+			<View
+				style={[
+					styles.icon,
+					styles.tile,
+					{ backgroundColor: colors.statusBackgroundInfo, borderColor: colors.strokeExtraLightHighlight },
+					style
+				]}>
 				<CustomIcon name={name} color={colors.fontInfo} size={size ?? TILE_ICON_SIZE} testID={testID} />
 			</View>
 		);

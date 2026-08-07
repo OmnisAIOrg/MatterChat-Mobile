@@ -8,26 +8,34 @@ import { MessageInnerContext } from '../context';
 
 interface IEmojiKeyboardProvider {
 	children: ReactElement | null;
+	/**
+	 * Whether the composer has to keep its own clearance above the home indicator when the keyboard
+	 * is down. False when it sits inside a sheet that already floats clear of the bottom edge — the
+	 * conversation shell — where the extra inset would show as dead paper under the input tray.
+	 */
+	ownsBottomInset?: boolean;
 }
 
 interface IEmojiKeyboardContextProps {
 	showEmojiPickerSharedValue: SharedValue<boolean>;
 	showEmojiSearchbarSharedValue: SharedValue<boolean>;
+	ownsBottomInset: boolean;
 }
 
 const EmojiKeyboardContext = createContext<IEmojiKeyboardContextProps>({
 	showEmojiPickerSharedValue: { value: false } as SharedValue<boolean>,
-	showEmojiSearchbarSharedValue: { value: false } as SharedValue<boolean>
+	showEmojiSearchbarSharedValue: { value: false } as SharedValue<boolean>,
+	ownsBottomInset: true
 });
 
-export const EmojiKeyboardProvider = ({ children }: IEmojiKeyboardProvider) => {
+export const EmojiKeyboardProvider = ({ children, ownsBottomInset = true }: IEmojiKeyboardProvider) => {
 	'use memo';
 
 	const showEmojiPickerSharedValue = useSharedValue(false);
 	const showEmojiSearchbarSharedValue = useSharedValue(false);
 
 	return (
-		<EmojiKeyboardContext.Provider value={{ showEmojiPickerSharedValue, showEmojiSearchbarSharedValue }}>
+		<EmojiKeyboardContext.Provider value={{ showEmojiPickerSharedValue, showEmojiSearchbarSharedValue, ownsBottomInset }}>
 			{children}
 		</EmojiKeyboardContext.Provider>
 	);
@@ -71,12 +79,13 @@ const useKeyboardAnimation = () => {
 export const useEmojiKeyboard = () => {
 	'use memo';
 
-	const { showEmojiPickerSharedValue, showEmojiSearchbarSharedValue } = useContext(EmojiKeyboardContext);
+	const { showEmojiPickerSharedValue, showEmojiSearchbarSharedValue, ownsBottomInset } = useContext(EmojiKeyboardContext);
 	const { focus } = useContext(MessageInnerContext);
 	const [showEmojiKeyboard, setShowEmojiKeyboard] = useState(false);
 	const [showEmojiSearchbar, setShowEmojiSearchbar] = useState(false);
 
-	const { bottom } = useSafeAreaInsets();
+	const insets = useSafeAreaInsets();
+	const bottom = ownsBottomInset ? insets.bottom : 0;
 	const { height } = useKeyboardAnimation();
 	const keyboardHeight = useSharedValue(bottom);
 	const previousHeight = useSharedValue(bottom);

@@ -43,8 +43,8 @@ export const paper = {
 	chevron: '#C9C2AC',
 
 	/** row dividers; the tighter one is used inside conversations */
-	hairline: '#E9E1CE',
-	hairlineSoft: '#F0EADA',
+	hairline: '#E4D9C0',
+	hairlineSoft: '#EBE3D1',
 	/** borders of paperGreen bands */
 	hairlineGreen: '#DCE8D6',
 	/** outline buttons on paper */
@@ -62,7 +62,9 @@ export const paper = {
 	danger: '#B3402E',
 
 	/** the inset top rim that makes a sheet read as lit from above */
-	rim: '#FFFDF7'
+	rim: '#FFFEFA',
+	/** the edge that separates paper from sky — a lit hairline all the way round the sheet */
+	edge: 'rgba(255,255,255,0.62)'
 } as const;
 
 /** Paper inverted for night mode. Warm, never neutral grey. */
@@ -97,7 +99,8 @@ export const paperNight = {
 	warn: '#D08A3E',
 	danger: '#E0715C',
 
-	rim: 'rgba(255,255,255,0.06)'
+	rim: 'rgba(255,255,255,0.07)',
+	edge: 'rgba(255,255,255,0.10)'
 } as const;
 
 export type TPaper = typeof paper;
@@ -121,24 +124,25 @@ export const onSky = {
 export const glass = {
 	/** clear circle buttons, quick actions */
 	clear: {
-		fill: 'rgba(255,255,255,0.14)',
-		border: 'rgba(255,255,255,0.28)',
-		rim: 'rgba(255,255,255,0.32)',
+		fill: 'rgba(255,255,255,0.16)',
+		border: 'rgba(255,255,255,0.38)',
+		rim: 'rgba(255,255,255,0.42)',
 		blur: 30
 	},
 	/** search fields, "To:" fields — a dark smoked pane */
 	field: {
 		from: 'rgba(24,54,32,0.30)',
 		to: 'rgba(8,24,14,0.38)',
-		border: 'rgba(255,255,255,0.20)',
+		border: 'rgba(255,255,255,0.30)',
+		rim: 'rgba(255,255,255,0.22)',
 		blur: 34
 	},
 	/** the floating tab dock and the composer dock */
 	dock: {
-		from: 'rgba(14,34,21,0.72)',
-		to: 'rgba(5,16,10,0.80)',
-		border: 'rgba(255,255,255,0.32)',
-		rim: 'rgba(255,255,255,0.28)',
+		from: 'rgba(14,34,21,0.74)',
+		to: 'rgba(5,16,10,0.84)',
+		border: 'rgba(255,255,255,0.42)',
+		rim: 'rgba(255,255,255,0.34)',
 		blur: 46
 	},
 	/** green glass — Chi suggestion chips on the night sky */
@@ -226,12 +230,23 @@ export const SKY: Record<TSkyState, ISky> = {
  */
 export const FRAME_GREEN = '#2A9645';
 
-/** Sheet geometry. One recipe, used by every paper surface. */
+/**
+ * Sheet geometry. One recipe, used by every paper surface.
+ *
+ * `border` and `divider` are deliberately a full point rather than a hairline: at 3x a 0.33pt rule
+ * disappears into the cream and every edge in the app goes soft. A real line is what stops the
+ * design reading flat.
+ */
 export const sheet = {
 	radius: 26,
 	radiusSmall: 22,
 	rowPaddingV: 12,
-	rowPaddingH: 16
+	rowPaddingH: 16,
+	border: 1,
+	divider: 1,
+	/** glass panes carry a heavier edge than paper — they have no shadow of their own to define them */
+	glassBorder: 1.5,
+	glassRim: 2
 } as const;
 
 /** Corner radii are symmetric everywhere — no speech-tail bubbles. */

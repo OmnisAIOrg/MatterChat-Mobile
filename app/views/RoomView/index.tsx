@@ -40,7 +40,6 @@ import { Review } from '../../lib/methods/helpers/review';
 import RoomClass from '../../lib/methods/subscriptions/room';
 import { getUserSelector } from '../../selectors/login';
 import Navigation from '../../lib/navigation/appNavigation';
-import { ScreenSheet } from '../../containers/Paper';
 import SafeAreaView from '../../containers/SafeAreaView';
 import { withDimensions } from '../../lib/hooks/withDimensions';
 import { withMasterDetail } from '../../lib/hooks/useMasterDetail';
@@ -98,6 +97,7 @@ import { withActionSheet } from '../../containers/ActionSheet';
 import { goRoom, type TGoRoomItem } from '../../lib/methods/helpers/goRoom';
 import { ComposerAttachments, type IMessageComposerRef, MessageComposerContainer } from '../../containers/MessageComposer';
 import { createMessageActionStore, type TMessageActionStore } from '../../containers/message/stores/MessageActionStore';
+import ConversationShell from './ConversationShell';
 import { RoomProviders } from './RoomProviders';
 import { MessageRoomProvider } from '../../containers/message/stores/MessageRoomStore';
 import AudioManager from '../../lib/methods/AudioManager';
@@ -1542,14 +1542,12 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 			}
 		}
 
+		// The composer lives inside the conversation sheet now, so the sheet owns the clearance for
+		// the dock and the home indicator; the tray just sits at the foot of the paper.
 		return (
-			// The composer is a dock: a paper card floating clear of the bottom edge with the sky
-			// visible beneath it, exactly like the tab dock it replaces in conversations.
-			<View style={footerBottomInset}>
-				<MessageComposerContainer ref={this.messageComposerRef}>
-					<ComposerAttachments />
-				</MessageComposerContainer>
-			</View>
+			<MessageComposerContainer ref={this.messageComposerRef} ownsBottomInset={false}>
+				<ComposerAttachments />
+			</MessageComposerContainer>
 		);
 	};
 
@@ -1650,11 +1648,10 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 				setQuotesAndText={this.setQuotesAndText}
 				getText={this.getText}>
 				<SafeAreaView plain style={styles.transparent} testID='room-view'>
-					{/* Paper & Sky: the conversation is a sheet. Its top corners round away under the
-					    transparent header so the living sky shows in the band above it, and it runs to
-					    the composer at the bottom — one continuous reading surface, never a stack of
-					    bubbles. */}
-					<ScreenSheet attached style={styles.conversationSheet}>
+					{/* Paper & Sky: a room is the same sheet as every other screen, and the message box
+					    is the bottom of that sheet rather than a bar floating under it. The dock stays
+					    put beneath — you leave a conversation the way you got into it. */}
+					<ConversationShell>
 						{!this.tmid ? (
 							<Banner
 								title={I18n.t('Announcement')}
@@ -1703,8 +1700,8 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 								serverVersion={serverVersion}
 							/>
 						</MessageRoomProvider>
-					</ScreenSheet>
-					{this.renderFooter()}
+						{this.renderFooter()}
+					</ConversationShell>
 					{this.renderActions()}
 					<UploadProgress rid={rid} user={user} baseUrl={baseUrl} width={width} />
 					<JoinCode ref={this.joinCode} onJoin={this.onJoin} rid={rid} t={t} theme={theme} />

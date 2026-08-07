@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 import { Image } from 'expo-image';
 import { settings as RocketChatSettings } from '@rocket.chat/sdk';
 
@@ -27,7 +27,7 @@ const Avatar = memo(
 		serverVersion,
 		text,
 		size = 25,
-		borderRadius = Math.round(size * 0.32),
+		borderRadius = Math.round(size * 0.31),
 		type = SubscriptionType.DIRECT,
 		avatarExternalProviderUrl,
 		roomAvatarExternalProviderUrl,
@@ -40,10 +40,23 @@ const Avatar = memo(
 		}
 
 		const avatarAccessibilityLabel = accessibilityLabel ?? I18n.t('Avatar_Photo', { username: text });
+		// The design's squircle is 31% of the size, and the edge + cast are what stop a row of
+		// avatars reading as flat stickers on the sheet.
 		const avatarStyle = {
 			width: size,
 			height: size,
-			borderRadius
+			borderRadius,
+			borderWidth: StyleSheet.hairlineWidth,
+			borderColor: 'rgba(44,42,33,0.12)',
+			...Platform.select({
+				ios: {
+					shadowColor: '#2C2A21',
+					shadowOffset: { width: 0, height: 2 },
+					shadowRadius: 4,
+					shadowOpacity: 0.16
+				},
+				android: { elevation: 2 }
+			})
 		};
 
 		let image;

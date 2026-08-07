@@ -1,5 +1,15 @@
-import { type ReactNode } from 'react';
-import { Platform, ScrollView, type ScrollViewProps, StyleSheet, Text, View, type ViewStyle } from 'react-native';
+import { type ReactNode, useEffect, useRef } from 'react';
+import {
+	Animated,
+	Easing,
+	Platform,
+	ScrollView,
+	type ScrollViewProps,
+	StyleSheet,
+	Text,
+	View,
+	type ViewStyle
+} from 'react-native';
 
 import { paper as light, paperNight as night, sheet as geom, type TPaper } from '../../lib/constants/paperSky';
 import { useTheme } from '../../theme';
@@ -67,6 +77,7 @@ const styles = StyleSheet.create({
 		flex: 1,
 		marginHorizontal: 14,
 		borderRadius: geom.radius,
+		borderWidth: geom.border,
 		overflow: 'hidden',
 		...Platform.select({
 			ios: {
@@ -170,18 +181,34 @@ export const ScreenSheet = ({
 }) => {
 	const p = usePaper();
 	const { sky } = useSkyState();
+	// The sheet arrives rather than appears: it rises a few points into place as it fades in. Tabs
+	// cross-fade with no lateral motion, so without this the content would simply blink on.
+	const enter = useRef(new Animated.Value(0)).current;
+	useEffect(() => {
+		Animated.timing(enter, {
+			toValue: 1,
+			duration: 340,
+			easing: Easing.out(Easing.cubic),
+			useNativeDriver: true
+		}).start();
+	}, [enter]);
+
 	return (
-		<View
+		<Animated.View
 			style={[
 				styles.screenSheet,
 				attached ? styles.screenSheetAttached : { marginBottom: bottomInset + dockClearance - 20 },
-				{ backgroundColor: p.sheet, shadowColor: sky.sheetShadow },
-				style
+				{ backgroundColor: p.sheet, shadowColor: sky.sheetShadow, borderColor: p.edge },
+				style,
+				{
+					opacity: enter,
+					transform: [{ translateY: enter.interpolate({ inputRange: [0, 1], outputRange: [14, 0] }) }]
+				}
 			]}>
 			<View style={[styles.rim, { backgroundColor: p.rim }]} pointerEvents='none' />
 			{children}
 			{attached ? null : <View style={[styles.lip, { backgroundColor: p.hairline }]} pointerEvents='none' />}
-		</View>
+		</Animated.View>
 	);
 };
 
