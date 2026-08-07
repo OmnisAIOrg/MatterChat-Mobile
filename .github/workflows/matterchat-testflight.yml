@@ -1,0 +1,201 @@
+name: MatterChat TestFlight (signed release)
+# Archives a signed Release build and ships it to TestFlight.
+#
+# Signing model: AUTOMATIC + "cloud signing". No certificates or provisioning profiles are
+# stored in this repo and there is no fastlane match keychain — xcodebuild talks to App Store
+# Connect with the API key below and mints/downloads whatever profiles the targets need
+# (-allowProvisioningUpdates). That covers all four bundle ids:
+#   com.omnisai.matterchat, .ShareExtension, .NotificationService, .watchkitapp
+#
+# Manual-only trigger on purpose: every run consumes a TestFlight build number, so this must
+# never fire automatically on push.
+on:
+  workflow_dispatch:
+    inputs:
+      build_number:
+        description: 'Build number (CFBundleVersion) for this upload. Leave blank to keep the value in the Xcode project. Must be higher than the last build already on TestFlight.'
+        required: false
+        type: string
+
+# Never let two uploads race — App Store Connect rejects duplicate build numbers, so queue
+# instead of cancelling a run that may already be mid-upload.
+concurrency: { group: matterchat-testflight, cancel-in-progress: false }
+
+jobs:
+  testflight:
+    runs-on: macos-15
+    timeout-minutes: 120
+    env:
+      # Centralised so every step (archive, export, altool) reads the same values.
+      KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+      ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_ISSUER_ID }}
+      TEAM_ID: P8S9U28C8B
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate build_number
+        # Fail in 2 seconds rather than 40 minutes into an archive. Also stops the untrusted
+        # workflow_dispatch input from being interpolated into a shell command later on.
+        env: { BUILD_NUMBER: '${{ inputs.build_number }}' }
+        run: |
+          if [ -n "$BUILD_NUMBER" ] && ! printf '%s' "$BUILD_NUMBER" | grep -qE '^[0-9]+([.][0-9]+)*$'; then
+            echo "::error::build_number must be numeric (e.g. 42 or 1.2.3), got: $BUILD_NUMBER"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+
+      # --- setup steps below mirror matterchat-ios.yml, which is the proven-green lane ---
+      - name: JS deps (pnpm via corepack)
+        run: |
+          npm i -g corepack
+          corepack enable
+          COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack pnpm install --frozen-lockfile || COREPACK_ENABLE_DOWNLOAD_PROMPT=0 corepack pnpm install
+
+      - name: Pods
+        working-directory: ios
+        run: |
+          bundle install || true
+          (bundle exec pod install || pod install)
+
+      - name: Patch Pods/fmt for Xcode 26 consteval
+        # fmt 9.x's compile-time format-string checking uses `consteval`, which Xcode 26's clang
+        # rejects ("call to consteval function ... is not a constant expression").
+        # ios/Podfile has a post_install hook that passes -DFMT_CONSTEVAL= to the fmt target, but
+        # that alone is not enough: base.h unconditionally re-#defines FMT_CONSTEVAL after the
+        # command-line -D, so the header wins. Forcing FMT_USE_CONSTEVAL to 0 at the source is
+        # the fix that actually sticks.
+        # Pods/ is gitignored, so this must run AFTER pod install on every fresh checkout.
+        # No-op on runner images still shipping Xcode 16, where fmt's consteval path compiles fine.
+        run: |
+          FMT_BASE=ios/Pods/fmt/include/fmt/base.h
+          if [ ! -f "$FMT_BASE" ]; then
+            echo "::warning::$FMT_BASE not found — skipping fmt consteval patch"
+            exit 0
+          fi
+          chmod u+w "$FMT_BASE"
+          # BSD sed (macOS) needs the empty-string argument to -i.
+          sed -i '' -E 's/^([[:space:]]*#[[:space:]]*define[[:space:]]+FMT_USE_CONSTEVAL[[:space:]]+)1/\10/' "$FMT_BASE"
+          echo "FMT_USE_CONSTEVAL definitions after patch:"
+          grep -n 'define FMT_USE_CONSTEVAL' "$FMT_BASE"
+
+      - name: Write App Store Connect API key to disk
+        # xcodebuild's cloud signing (-authenticationKeyPath) and altool both read a .p8 from
+        # disk rather than an env var. altool additionally auto-discovers keys by looking for
+        # ~/private_keys/AuthKey_<KEY_ID>.p8, so the filename and location are load-bearing.
+        env:
+          API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
+        run: |
+          umask 077                      # anything created below is 600 from birth
+          mkdir -p "$HOME/private_keys"
+          printf '%s\n' "$API_KEY" > "$HOME/private_keys/AuthKey_${KEY_ID}.p8"
+          chmod 600 "$HOME/private_keys/AuthKey_${KEY_ID}.p8"
+          # Never print the key; just prove it landed and is non-empty.
+          wc -c < "$HOME/private_keys/AuthKey_${KEY_ID}.p8" | xargs echo "wrote AuthKey_${KEY_ID}.p8, bytes:"
+
+      - name: Archive (Release, automatic cloud signing)
+        env: { BUILD_NUMBER: '${{ inputs.build_number }}' }
+        run: |
+          set -o pipefail
+          mkdir -p build          # tee writes the log here before xcodebuild creates the dir
+          xcodebuild -version
+
+          # The Release configuration in project.pbxproj is still pinned to the fork's old
+          # fastlane match setup: CODE_SIGN_STYLE = Manual plus PROVISIONING_PROFILE_SPECIFIER
+          # values like "match AppStore chat.rocket.ios" — profiles that do not exist in this
+          # Apple account and name a bundle id we no longer ship. Left alone, the archive fails
+          # with "No profile ... found". Overriding both settings on the command line switches
+          # every target to cloud signing without editing the project file (local/manual builds
+          # keep working exactly as they do today).
+          # DEVELOPMENT_TEAM is also set here because the Watch App's Release config has it empty.
+          BUILD_SETTING=""
+          if [ -n "$BUILD_NUMBER" ]; then
+            # Applies to all four targets at once — App Store Connect requires the app and its
+            # extensions to share a build number.
+            BUILD_SETTING="CURRENT_PROJECT_VERSION=$BUILD_NUMBER"
+            echo "overriding build number: $BUILD_NUMBER"
+          fi
+
+          # NOTE: destination only, no -sdk flag — -sdk iphoneos would force the Watch App target
+          # onto the iOS SDK and break with "no such module 'WatchKit'" (same trap as the
+          # simulator lane).
+          xcodebuild archive \
+            -workspace ios/RocketChat.xcworkspace \
+            -scheme RocketChat \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/MatterChat.xcarchive \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$HOME/private_keys/AuthKey_${KEY_ID}.p8" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            CODE_SIGN_STYLE=Automatic \
+            PROVISIONING_PROFILE_SPECIFIER="" \
+            $BUILD_SETTING \
+            2>&1 | tee build/archive.log | tail -300
+
+      - name: Export IPA
+        run: |
+          set -o pipefail
+          # Generated here rather than committed so teamID/method live next to the archive step.
+          # method app-store-connect is the Xcode 15.4+ spelling of the old "app-store".
+          # uploadSymbols ships dSYMs so crash reports symbolicate in App Store Connect.
+          cat > build/ExportOptions.plist <<'PLIST'
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>app-store-connect</string>
+            <key>teamID</key>
+            <string>P8S9U28C8B</string>
+            <key>signingStyle</key>
+            <string>automatic</string>
+            <key>uploadSymbols</key>
+            <true/>
+            <key>destination</key>
+            <string>export</string>
+          </dict>
+          </plist>
+          PLIST
+
+          # The key flags are repeated here: export re-signs the payload, so it needs App Store
+          # Connect access again to resolve the distribution profiles.
+          xcodebuild -exportArchive \
+            -archivePath build/MatterChat.xcarchive \
+            -exportPath build/ipa \
+            -exportOptionsPlist build/ExportOptions.plist \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$HOME/private_keys/AuthKey_${KEY_ID}.p8" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID" \
+            2>&1 | tee build/export.log | tail -100
+
+          ls -lh build/ipa
+
+      - name: Upload to TestFlight
+        run: |
+          set -o pipefail
+          IPA=$(find build/ipa -maxdepth 1 -name '*.ipa' | head -1)
+          if [ -z "$IPA" ]; then
+            echo "::error::no .ipa produced by -exportArchive"
+            exit 1
+          fi
+          echo "uploading: $IPA"
+          # altool resolves --apiKey against ~/private_keys/AuthKey_<KEY_ID>.p8 written earlier.
+          xcrun altool --upload-app -f "$IPA" -t ios \
+            --apiKey "$KEY_ID" \
+            --apiIssuer "$ISSUER_ID"
+
+      - name: Upload IPA artifact
+        # Runs even when the TestFlight upload fails (e.g. duplicate build number) so the signed
+        # build is still downloadable instead of being rebuilt from scratch.
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: MatterChat-TestFlight-ipa
+          path: build/ipa/*.ipa
+          retention-days: 14
+          if-no-files-found: warn
