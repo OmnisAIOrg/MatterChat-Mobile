@@ -109,6 +109,16 @@ jobs:
           # every target to cloud signing without editing the project file (local/manual builds
           # keep working exactly as they do today).
           # DEVELOPMENT_TEAM is also set here because the Watch App's Release config has it empty.
+          #
+          # CODE_SIGN_IDENTITY has to come along too. The Watch App, Share extension and
+          # Notification Service still pin the pre-Xcode-8 spelling "iPhone Distribution" in their
+          # Release configs, and automatic signing rejects it outright:
+          #   "<target> has conflicting provisioning settings ... automatically signed for
+          #    development, but a conflicting code signing identity iPhone Distribution has been
+          #    manually specified"
+          # Forcing the modern "Apple Distribution" on the command line fixes both halves of that
+          # sentence at once — it is a valid automatic-signing identity, and it is the distribution
+          # one, so the archive is signed for TestFlight rather than for a development device.
           BUILD_SETTING=""
           if [ -n "$BUILD_NUMBER" ]; then
             # Applies to all four targets at once — App Store Connect requires the app and its
@@ -132,6 +142,7 @@ jobs:
             -authenticationKeyIssuerID "$ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
             CODE_SIGN_STYLE=Automatic \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
             PROVISIONING_PROFILE_SPECIFIER="" \
             $BUILD_SETTING \
             2>&1 | tee build/archive.log | tail -300
