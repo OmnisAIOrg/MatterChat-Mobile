@@ -256,7 +256,11 @@ export const MessageComposer = ({
 				onLayout={handleLayout}>
 				{children}
 			</MessageComposerContent>
-			<Animated.View style={[emojiKeyboardStyle, { backgroundColor: colors.surfaceLight }]}>
+			{/* The keyboard spacer only becomes a surface when it is actually holding the emoji
+			    picker; otherwise it must stay clear, or it paints a cream band under the floating
+			    composer where the living sky belongs. */}
+			<Animated.View
+				style={[emojiKeyboardStyle, { backgroundColor: showEmojiKeyboard ? colors.surfaceLight : 'transparent' }]}>
 				{showEmojiKeyboard && !showEmojiSearchbar ? <EmojiPicker onItemClicked={onKeyboardItemSelected} isEmojiKeyboard /> : null}
 			</Animated.View>
 			<Autocomplete

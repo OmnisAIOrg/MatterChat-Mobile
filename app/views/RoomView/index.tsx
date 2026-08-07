@@ -1543,9 +1543,13 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 		}
 
 		return (
-			<MessageComposerContainer ref={this.messageComposerRef}>
-				<ComposerAttachments />
-			</MessageComposerContainer>
+			// The composer is a dock: a paper card floating clear of the bottom edge with the sky
+			// visible beneath it, exactly like the tab dock it replaces in conversations.
+			<View style={footerBottomInset}>
+				<MessageComposerContainer ref={this.messageComposerRef}>
+					<ComposerAttachments />
+				</MessageComposerContainer>
+			</View>
 		);
 	};
 
