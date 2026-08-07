@@ -2,6 +2,7 @@ import { Platform, StyleSheet, type TextStyle } from 'react-native';
 
 import { MAX_SCREEN_CONTENT_WIDTH } from '../lib/constants/tablet';
 import { fontFamily } from '../lib/constants/typography';
+import { RULE } from '../lib/constants/paperSky';
 
 const defaultTextStyle: TextStyle = {
 	textAlign: 'left',
@@ -64,20 +65,20 @@ export default StyleSheet.create({
 		marginBottom: 15
 	},
 	separator: {
-		height: StyleSheet.hairlineWidth
+		height: RULE
 	},
 	separatorTop: {
-		borderTopWidth: StyleSheet.hairlineWidth
+		borderTopWidth: RULE
 	},
 	separatorBottom: {
-		borderBottomWidth: StyleSheet.hairlineWidth
+		borderBottomWidth: RULE
 	},
 	separatorVertical: {
-		borderTopWidth: StyleSheet.hairlineWidth,
-		borderBottomWidth: StyleSheet.hairlineWidth
+		borderTopWidth: RULE,
+		borderBottomWidth: RULE
 	},
 	separatorLeft: {
-		borderLeftWidth: StyleSheet.hairlineWidth
+		borderLeftWidth: RULE
 	},
 	textRegular: {
 		...defaultTextStyle,

@@ -9,6 +9,7 @@ import EndCall from './components/EndCall';
 import { useCallStore, useControlsVisible } from '../../lib/services/voip/useCallStore';
 import { Content } from './components/Content';
 import { CONTROLS_ANIMATION_DURATION } from '../../views/CallView/styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 const styles = StyleSheet.create({
 	header: {
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		paddingHorizontal: 12,
 		paddingBottom: 12,
-		borderBottomWidth: StyleSheet.hairlineWidth
+		borderBottomWidth: RULE
 	}
 });
 

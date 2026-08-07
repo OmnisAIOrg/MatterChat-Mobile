@@ -24,7 +24,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,
@@ -277,7 +277,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,
@@ -942,7 +942,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,
@@ -1195,7 +1195,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,
@@ -1860,7 +1860,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,
@@ -2113,7 +2113,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
           style={
             [
               {
-                "height": 0.5,
+                "height": 1,
               },
               {
                 "marginBottom": 20,

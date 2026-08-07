@@ -67,7 +67,7 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
           {
             "borderColor": "rgba(44,42,33,0.12)",
             "borderRadius": 9,
-            "borderWidth": 0.5,
+            "borderWidth": 1,
             "height": 30,
             "shadowColor": "#2C2A21",
             "shadowOffset": {
@@ -89,7 +89,7 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
       <ViewManagerAdapter_ExpoImage
         borderColor={522988065}
         borderRadius={9}
-        borderWidth={0.5}
+        borderWidth={1}
         containerViewRef={{"current":"Object"}}
         contentFit="cover"
         contentPosition={
@@ -129,7 +129,7 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
           {
             "borderColor": "rgba(44,42,33,0.12)",
             "borderRadius": 9,
-            "borderWidth": 0.5,
+            "borderWidth": 1,
             "height": 30,
             "shadowColor": "#2C2A21",
             "shadowOffset": {
@@ -257,7 +257,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {
@@ -279,7 +279,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         <ViewManagerAdapter_ExpoImage
           borderColor={522988065}
           borderRadius={9}
-          borderWidth={0.5}
+          borderWidth={1}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -319,7 +319,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {
@@ -509,7 +509,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {
@@ -531,7 +531,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
         <ViewManagerAdapter_ExpoImage
           borderColor={522988065}
           borderRadius={9}
-          borderWidth={0.5}
+          borderWidth={1}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -571,7 +571,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {
@@ -761,7 +761,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {
@@ -783,7 +783,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
         <ViewManagerAdapter_ExpoImage
           borderColor={522988065}
           borderRadius={9}
-          borderWidth={0.5}
+          borderWidth={1}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -823,7 +823,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
             {
               "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "height": 30,
               "shadowColor": "#2C2A21",
               "shadowOffset": {

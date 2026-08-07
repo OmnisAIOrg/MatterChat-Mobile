@@ -28,6 +28,7 @@ import GlassSearch from './components/GlassSearch';
 import HomeFilters, { type THomeFilter } from './components/HomeFilters';
 import SearchBar from './components/SearchBar';
 import SkyHero from './components/SkyHero';
+import HomeDashboard from './components/HomeDashboard';
 import ListHeader from './components/ListHeader';
 import SectionHeader from './components/SectionHeader';
 import RoomsSearchProvider, { RoomsSearchContext } from './contexts/RoomsSearchProvider';
@@ -83,24 +84,39 @@ const RoomsListView = memo(function RoomsListView() {
 	const { refreshing, onRefresh } = useRefresh({ searching });
 	const supportedVersionsStatus = useAppSelector(state => state.supportedVersions.status);
 
-	// What the hero — and therefore the sky — is made of. All three numbers come straight off the
+	// What the hero, the sky and the dashboard are made of. Every number comes straight off the
 	// subscriptions we already hold; nothing here costs a request.
-	const { unread, mentions, directs } = useMemo(() => {
+	//
+	// `subscriptions` arrives already sorted the way the user asked for (activity or alphabetical),
+	// so the first match in each category is also the one worth linking to — which is why the
+	// dashboard can hand you a room rather than just a count.
+	const { unread, mentions, directs, threads, mentionRoom, threadRoom } = useMemo(() => {
 		let u = 0;
 		let m = 0;
 		let d = 0;
+		let t = 0;
+		let mRoom: any = null;
+		let tRoom: any = null;
 		subscriptions.forEach((s: any) => {
 			if (!s?.rid || s.hideUnreadStatus) {
 				return;
 			}
 			const count = s.unread > 0 ? s.unread : 0;
 			u += count;
-			m += s.userMentions > 0 ? s.userMentions : 0;
+			if (s.userMentions > 0) {
+				m += s.userMentions;
+				mRoom = mRoom ?? s;
+			}
+			const tu = s.tunread?.length ?? 0;
+			if (tu > 0) {
+				t += tu;
+				tRoom = tRoom ?? s;
+			}
 			if (s.t === 'd' && count > 0) {
 				d += 1;
 			}
 		});
-		return { unread: u, mentions: m, directs: d };
+		return { unread: u, mentions: m, directs: d, threads: t, mentionRoom: mRoom, threadRoom: tRoom };
 	}, [subscriptions]);
 
 	const [createPublic, createPrivate, createTeam, createDirect, createDiscussion] = usePermissions([
@@ -111,6 +127,24 @@ const RoomsListView = memo(function RoomsListView() {
 		'start-discussion'
 	]);
 	const canCreateRoom = [createPublic, createPrivate, createTeam, createDirect, createDiscussion].some(r => r === true);
+
+	// The dashboard's halves are shortcuts, not just counters: each opens the room its number came
+	// from. `goRoom` is the same entry the list rows use, so a mention opened from here behaves
+	// exactly like a mention opened by scrolling to it.
+	const goToDashboardRoom = useCallback(
+		(item: any) => {
+			if (!item || !navigation.isFocused()) {
+				return;
+			}
+			logEvent(events.RL_GO_ROOM);
+			goRoom({ item, isMasterDetail });
+		},
+		[isMasterDetail, navigation]
+	);
+
+	const goToChi = useCallback(() => {
+		navigation.navigate('ChiOrbView');
+	}, [navigation]);
 
 	const goToNewMessage = useCallback(() => {
 		logEvent(events.RL_GO_NEW_MSG);
@@ -216,7 +250,28 @@ const RoomsListView = memo(function RoomsListView() {
 					style={styles.list}
 					contentContainerStyle={{ paddingBottom: 12 }}
 					renderItem={renderItem}
-					ListHeaderComponent={ListHeader}
+					ListHeaderComponent={
+						searchEnabled ? (
+							ListHeader
+						) : (
+							<>
+								<HomeDashboard
+									mentions={{
+										count: mentions,
+										hint: mentionRoom ? getRoomTitle(mentionRoom) : 'Nothing waiting',
+										onPress: () => goToDashboardRoom(mentionRoom)
+									}}
+									threads={{
+										count: threads,
+										hint: threadRoom ? getRoomTitle(threadRoom) : 'No unread threads',
+										onPress: () => goToDashboardRoom(threadRoom)
+									}}
+									onChi={goToChi}
+								/>
+								<ListHeader />
+							</>
+						)
+					}
 					ListEmptyComponent={
 						<EmptyState
 							title={homeFilter === 'all' ? 'No conversations yet' : 'Nothing matches that filter'}

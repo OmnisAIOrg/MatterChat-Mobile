@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Platform, StyleSheet, View } from 'react-native';
+import { Platform, View } from 'react-native';
 import { Image } from 'expo-image';
 import { settings as RocketChatSettings } from '@rocket.chat/sdk';
 
@@ -9,6 +9,7 @@ import { SubscriptionType } from '../../definitions';
 import { type IAvatar } from './interfaces';
 import I18n from '../../i18n';
 import Touch from '../Touch';
+import { RULE } from '../../lib/constants/paperSky';
 
 const Avatar = memo(
 	({
@@ -46,7 +47,7 @@ const Avatar = memo(
 			width: size,
 			height: size,
 			borderRadius,
-			borderWidth: StyleSheet.hairlineWidth,
+			borderWidth: RULE,
 			borderColor: 'rgba(44,42,33,0.12)',
 			...Platform.select({
 				ios: {

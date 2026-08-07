@@ -3,10 +3,11 @@ import { BlockContext } from '@rocket.chat/ui-kit';
 
 import { useTheme } from '../../theme';
 import { type IIcon, type IIconButton, type IInfoCard, type IInfoCardRow } from './interfaces';
+import { RULE } from '../../lib/constants/paperSky';
 
 const styles = StyleSheet.create({
 	card: {
-		borderWidth: StyleSheet.hairlineWidth,
+		borderWidth: RULE,
 		borderRadius: 4,
 		overflow: 'hidden'
 	},

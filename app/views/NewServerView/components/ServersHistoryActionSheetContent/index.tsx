@@ -9,11 +9,12 @@ import { type TServerHistoryModel } from '../../../../definitions';
 import ServersHistoryItem from '../ServersHistoryItem';
 import I18n from '../../../../i18n';
 import sharedStyles from '../../../Styles';
+import { RULE } from '../../../../lib/constants/paperSky';
 
 const styles = StyleSheet.create({
 	header: {
 		height: 41,
-		borderBottomWidth: StyleSheet.hairlineWidth,
+		borderBottomWidth: RULE,
 		alignItems: 'center',
 		flexDirection: 'row',
 		justifyContent: 'space-between'

@@ -20,7 +20,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {
@@ -280,7 +280,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {
@@ -313,7 +313,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {
@@ -575,7 +575,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {
@@ -608,7 +608,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {
@@ -868,7 +868,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
       style={
         [
           {
-            "height": 0.5,
+            "height": 1,
           },
           undefined,
           {

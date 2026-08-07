@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export default StyleSheet.create({
 	searchContainer: {
@@ -12,7 +13,7 @@ export default StyleSheet.create({
 	},
 	divider: {
 		width: '100%',
-		height: StyleSheet.hairlineWidth,
+		height: RULE,
 		marginVertical: 20
 	},
 	listEmptyContainer: {

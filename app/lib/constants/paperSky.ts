@@ -254,6 +254,14 @@ export const FRAME_GREEN = '#2A9645';
  * disappears into the cream and every edge in the app goes soft. A real line is what stops the
  * design reading flat.
  */
+/**
+ * Every rule in the app: a full point, never `StyleSheet.hairlineWidth`.
+ *
+ * On a 3x screen a hairline is 0.33pt — it renders as a pale grey suggestion of a line and the
+ * whole design goes soft. Edges here are *drawn*: you should be able to see where paper ends.
+ */
+export const RULE = 1;
+
 export const sheet = {
 	radius: 26,
 	radiusSmall: 22,

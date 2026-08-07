@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export default StyleSheet.create({
 	button: {
@@ -55,8 +56,8 @@ export default StyleSheet.create({
 		alignSelf: 'center'
 	},
 	divider: {
-		height: StyleSheet.hairlineWidth,
-		borderBottomWidth: StyleSheet.hairlineWidth,
+		height: RULE,
+		borderBottomWidth: RULE,
 		marginVertical: 12
 	},
 	broadcast: {

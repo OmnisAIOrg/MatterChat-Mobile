@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export default StyleSheet.create({
 	container: {
@@ -11,7 +12,7 @@ export default StyleSheet.create({
 	},
 	serversListContainerHeader: {
 		height: 41,
-		borderBottomWidth: StyleSheet.hairlineWidth,
+		borderBottomWidth: RULE,
 		alignItems: 'center',
 		flexDirection: 'row'
 	},

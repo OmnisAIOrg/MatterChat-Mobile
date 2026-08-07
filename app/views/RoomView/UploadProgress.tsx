@@ -14,6 +14,7 @@ import { type TSupportedThemes, withTheme } from '../../theme';
 import { type TSendFileMessageFileInfo, type IUser, type TUploadModel } from '../../definitions';
 import { sendFileMessage } from '../../lib/methods/sendFileMessage';
 import { cancelUpload, isUploadActive } from '../../lib/methods/sendFileMessage/utils';
+import { RULE } from '../../lib/constants/paperSky';
 
 const styles = StyleSheet.create({
 	container: {
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
 	},
 	item: {
 		height: 54,
-		borderBottomWidth: StyleSheet.hairlineWidth,
+		borderBottomWidth: RULE,
 		justifyContent: 'center',
 		paddingHorizontal: 20
 	},

@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export default StyleSheet.create({
 	listEmptyContainer: {
@@ -19,7 +20,7 @@ export default StyleSheet.create({
 		justifyContent: 'space-between'
 	},
 	separator: {
-		height: StyleSheet.hairlineWidth
+		height: RULE
 	},
 	name: {
 		...sharedStyles.textRegular,

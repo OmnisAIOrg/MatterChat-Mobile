@@ -19,7 +19,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         {
           "borderColor": "rgba(44,42,33,0.12)",
           "borderRadius": 37,
-          "borderWidth": 0.5,
+          "borderWidth": 1,
           "height": 120,
           "shadowColor": "#2C2A21",
           "shadowOffset": {
@@ -40,7 +40,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
     <ViewManagerAdapter_ExpoImage
       borderColor={522988065}
       borderRadius={37}
-      borderWidth={0.5}
+      borderWidth={1}
       containerViewRef={{"current":"Object"}}
       contentFit="cover"
       contentPosition={
@@ -78,7 +78,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         {
           "borderColor": "rgba(44,42,33,0.12)",
           "borderRadius": 37,
-          "borderWidth": 0.5,
+          "borderWidth": 1,
           "height": 120,
           "shadowColor": "#2C2A21",
           "shadowOffset": {
@@ -116,7 +116,7 @@ exports[`Story Snapshots: WithEdit should match snapshot 1`] = `
         {
           "borderColor": "rgba(44,42,33,0.12)",
           "borderRadius": 37,
-          "borderWidth": 0.5,
+          "borderWidth": 1,
           "height": 120,
           "shadowColor": "#2C2A21",
           "shadowOffset": {
@@ -137,7 +137,7 @@ exports[`Story Snapshots: WithEdit should match snapshot 1`] = `
     <ViewManagerAdapter_ExpoImage
       borderColor={522988065}
       borderRadius={37}
-      borderWidth={0.5}
+      borderWidth={1}
       containerViewRef={{"current":"Object"}}
       contentFit="cover"
       contentPosition={
@@ -175,7 +175,7 @@ exports[`Story Snapshots: WithEdit should match snapshot 1`] = `
         {
           "borderColor": "rgba(44,42,33,0.12)",
           "borderRadius": 37,
-          "borderWidth": 0.5,
+          "borderWidth": 1,
           "height": 120,
           "shadowColor": "#2C2A21",
           "shadowOffset": {

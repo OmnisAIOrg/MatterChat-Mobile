@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../../views/Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export const ACTION_WIDTH = 80;
 export const SMALL_SWIPE = ACTION_WIDTH / 2;
@@ -19,7 +20,7 @@ export default StyleSheet.create({
 		flex: 1,
 		paddingVertical: 10,
 		paddingRight: 14,
-		borderBottomWidth: StyleSheet.hairlineWidth
+		borderBottomWidth: RULE
 	},
 	title: {
 		flex: 1,

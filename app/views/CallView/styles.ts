@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import sharedStyles from '../Styles';
+import { RULE } from '../../lib/constants/paperSky';
 
 export const CONTROLS_ANIMATION_DURATION = 300;
 
@@ -52,7 +53,7 @@ export const styles = StyleSheet.create({
 		padding: 24,
 		paddingBottom: 48,
 		gap: 24,
-		borderTopWidth: StyleSheet.hairlineWidth,
+		borderTopWidth: RULE,
 		position: 'absolute',
 		bottom: 0,
 		left: 0,

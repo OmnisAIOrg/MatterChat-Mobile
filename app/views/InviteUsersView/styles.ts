@@ -1,6 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 import { PADDING_HORIZONTAL } from '../../containers/List/constants';
+import { RULE } from '../../lib/constants/paperSky';
 
 export default StyleSheet.create({
 	innerContainer: {
@@ -9,7 +10,7 @@ export default StyleSheet.create({
 	},
 	divider: {
 		width: '100%',
-		height: StyleSheet.hairlineWidth,
+		height: RULE,
 		marginVertical: 20
 	}
 });

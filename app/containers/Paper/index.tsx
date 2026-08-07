@@ -11,7 +11,7 @@ import {
 	type ViewStyle
 } from 'react-native';
 
-import { paper as light, paperNight as night, sheet as geom, type TPaper } from '../../lib/constants/paperSky';
+import { RULE, paper as light, paperNight as night, sheet as geom, type TPaper } from '../../lib/constants/paperSky';
 import { useTheme } from '../../theme';
 import { useSkyState } from '../Sky';
 
@@ -100,8 +100,8 @@ const styles = StyleSheet.create({
 	},
 	band: {
 		height: 7,
-		borderTopWidth: StyleSheet.hairlineWidth,
-		borderBottomWidth: StyleSheet.hairlineWidth
+		borderTopWidth: RULE,
+		borderBottomWidth: RULE
 	},
 	sectionLabel: {
 		fontSize: 11,

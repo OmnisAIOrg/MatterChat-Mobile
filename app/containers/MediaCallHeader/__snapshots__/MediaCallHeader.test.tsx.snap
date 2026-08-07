@@ -14,7 +14,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,
@@ -342,7 +342,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,
@@ -670,7 +670,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,
@@ -1015,7 +1015,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,
@@ -1363,7 +1363,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,
@@ -1712,7 +1712,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
       [
         {
           "alignItems": "center",
-          "borderBottomWidth": 0.5,
+          "borderBottomWidth": 1,
           "flexDirection": "row",
           "justifyContent": "space-between",
           "paddingBottom": 12,

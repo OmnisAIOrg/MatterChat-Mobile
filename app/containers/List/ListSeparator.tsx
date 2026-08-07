@@ -3,10 +3,11 @@ import { StyleSheet, View, type ViewStyle } from 'react-native';
 
 import { themes } from '../../lib/constants/colors';
 import { useTheme } from '../../theme';
+import { RULE } from '../../lib/constants/paperSky';
 
 const styles = StyleSheet.create({
 	separator: {
-		height: StyleSheet.hairlineWidth
+		height: RULE
 	}
 });
 

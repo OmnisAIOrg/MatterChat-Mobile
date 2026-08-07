@@ -135,7 +135,7 @@ exports[`Story Snapshots: ChannelMessage should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -156,7 +156,7 @@ exports[`Story Snapshots: ChannelMessage should match snapshot 1`] = `
           <ViewManagerAdapter_ExpoImage
             borderColor={522988065}
             borderRadius={13}
-            borderWidth={0.5}
+            borderWidth={1}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -196,7 +196,7 @@ exports[`Story Snapshots: ChannelMessage should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -525,7 +525,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -546,7 +546,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
           <ViewManagerAdapter_ExpoImage
             borderColor={522988065}
             borderRadius={13}
-            borderWidth={0.5}
+            borderWidth={1}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -586,7 +586,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -915,7 +915,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -936,7 +936,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
           <ViewManagerAdapter_ExpoImage
             borderColor={522988065}
             borderRadius={13}
-            borderWidth={0.5}
+            borderWidth={1}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -976,7 +976,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -1305,7 +1305,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {
@@ -1326,7 +1326,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
           <ViewManagerAdapter_ExpoImage
             borderColor={522988065}
             borderRadius={13}
-            borderWidth={0.5}
+            borderWidth={1}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -1366,7 +1366,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               {
                 "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 13,
-                "borderWidth": 0.5,
+                "borderWidth": 1,
                 "height": 42,
                 "shadowColor": "#2C2A21",
                 "shadowOffset": {

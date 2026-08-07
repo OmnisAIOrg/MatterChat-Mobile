@@ -961,7 +961,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -1234,7 +1234,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -1507,7 +1507,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -1677,7 +1677,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -1857,7 +1857,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -2130,7 +2130,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -2403,7 +2403,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -2573,7 +2573,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -2753,7 +2753,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -3026,7 +3026,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -3299,7 +3299,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -3469,7 +3469,7 @@ exports[`Story Snapshots: InfoCard should match snapshot 1`] = `
           [
             {
               "borderRadius": 4,
-              "borderWidth": 0.5,
+              "borderWidth": 1,
               "overflow": "hidden",
             },
             {
@@ -3645,7 +3645,7 @@ exports[`Story Snapshots: InfoCardI18n should match snapshot 1`] = `
     [
       {
         "borderRadius": 4,
-        "borderWidth": 0.5,
+        "borderWidth": 1,
         "overflow": "hidden",
       },
       {
@@ -4076,7 +4076,7 @@ exports[`Story Snapshots: InfoCardIcons should match snapshot 1`] = `
     [
       {
         "borderRadius": 4,
-        "borderWidth": 0.5,
+        "borderWidth": 1,
         "overflow": "hidden",
       },
       {
@@ -4577,7 +4577,7 @@ exports[`Story Snapshots: InfoCardLongText should match snapshot 1`] = `
     [
       {
         "borderRadius": 4,
-        "borderWidth": 0.5,
+        "borderWidth": 1,
         "overflow": "hidden",
       },
       {
