@@ -319,7 +319,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
         ]
       }
     >
-      Until Jun 15, 2:00 PM
+      Until Jun 15, 7:00 PM
     </Text>
   </View>,
   <View
@@ -435,7 +435,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
         ]
       }
     >
-      Until Jun 15, 2:00 PM
+      Until Jun 15, 7:00 PM
     </Text>
   </View>,
 ]

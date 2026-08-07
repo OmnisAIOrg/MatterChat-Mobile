@@ -206,6 +206,7 @@ exports[`Story Snapshots: DisabledLoadingButton should match snapshot 1`] = `
     }
   />
   <View
+    color="#FFFFFF"
     style={
       [
         {
@@ -694,6 +695,7 @@ exports[`Story Snapshots: LoadingButton should match snapshot 1`] = `
     }
   />
   <View
+    color="#FFFFFF"
     style={
       [
         {

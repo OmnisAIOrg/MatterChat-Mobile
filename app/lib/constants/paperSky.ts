@@ -153,6 +153,23 @@ export const glass = {
 	}
 } as const;
 
+/**
+ * The accent bezel — lifted verbatim from the desktop app's `depthSkin.ts`, where it is the ring of
+ * anodised green the whole window sits inside. Bringing it to the dock is what ties the two apps
+ * together: same three stops, same lit top lip, same dark bottom lip, same shadow in the bezel's
+ * own hue rather than neutral black (a neutral shadow under a green edge reads as dirt).
+ */
+export const bezel = {
+	top: '#5FCB7A',
+	mid: '#2BA14C',
+	bottom: '#1B7A2E',
+	edgeHighlight: 'rgba(255, 255, 255, 0.45)',
+	edgeShade: 'rgba(9, 44, 21, 0.30)',
+	shadow: 'rgba(9, 44, 21, 1)',
+	/** the desktop window wears 12; a dock is a smaller object, so it wears 4 */
+	width: 4
+} as const;
+
 /** The Chi orb's depth recipe — a lit sphere, not a flat circle. */
 export const orb = {
 	base: '#1E8A44',

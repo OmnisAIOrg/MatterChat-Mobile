@@ -6399,7 +6399,7 @@ exports[`Story Snapshots: Time should match snapshot 1`] = `
     ]
   }
 >
-  4:20 AM
+  10:20 AM
 </Text>
 `;
 
@@ -6632,7 +6632,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
         ]
       }
     >
-      4:20 AM
+      10:20 AM
     </Text>
   </View>
   <View

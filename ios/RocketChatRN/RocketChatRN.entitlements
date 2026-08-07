@@ -2,8 +2,11 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- Resolved per build configuration (APS_ENVIRONMENT in project.pbxproj): `development` for
+	     local builds, `production` for Release. A TestFlight build signed with the sandbox value
+	     registers a sandbox APNs token, and every production push to it is silently dropped. -->
 	<key>aps-environment</key>
-	<string>development</string>
+	<string>$(APS_ENVIRONMENT)</string>
 	<key>com.apple.developer.applesignin</key>
 	<array>
 		<string>Default</string>

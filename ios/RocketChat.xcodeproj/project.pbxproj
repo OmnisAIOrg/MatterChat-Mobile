@@ -2004,7 +2004,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Rocket.Chat;
+				INFOPLIST_KEY_CFBundleDisplayName = MatterChat;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.omnisai.matterchat;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2057,7 +2057,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Rocket.Chat;
+				INFOPLIST_KEY_CFBundleDisplayName = MatterChat;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.omnisai.matterchat;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2188,6 +2188,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E604ABC16022AB0B4819037E /* Pods-defaults-Rocket.Chat.debug.xcconfig */;
 			buildSettings = {
+				APS_ENVIRONMENT = development;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -2253,6 +2254,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2CF16884F9353D83C6EFBE81 /* Pods-defaults-Rocket.Chat.release.xcconfig */;
 			buildSettings = {
+				APS_ENVIRONMENT = production;
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

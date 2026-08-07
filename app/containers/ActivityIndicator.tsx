@@ -30,8 +30,10 @@ const styles = StyleSheet.create({
  * Component name and props are unchanged so all existing call sites inherit it untouched;
  * `size` maps small → 32 and large → 52.
  */
-const RCActivityIndicator = ({ absolute, size, style }: IActivityIndicator): ReactElement => (
-	<View style={[styles.indicator, absolute && styles.absolute, style]}>
+const RCActivityIndicator = ({ absolute, size, style, testID, ...props }: IActivityIndicator): ReactElement => (
+	// testID is forwarded because call sites assert on it (e.g. FormTextInput's loading state);
+	// the ensō is a drop-in for the system spinner, including its contract.
+	<View style={[styles.indicator, absolute && styles.absolute, style]} testID={testID} {...props}>
 		<EnsoLoader size={size === 'large' ? 52 : 32} />
 	</View>
 );

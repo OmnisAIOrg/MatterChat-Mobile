@@ -895,6 +895,7 @@ exports[`Story Snapshots: Loading should match snapshot 1`] = `
             value="Rocket.Chat"
           />
           <View
+            color="#3B382E"
             style={
               [
                 {

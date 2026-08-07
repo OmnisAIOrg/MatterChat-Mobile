@@ -3,8 +3,9 @@ import * as Haptics from 'expo-haptics';
 import { type ReactNode, useRef } from 'react';
 import { Animated, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import LinearGradient from 'react-native-linear-gradient';
 
-import { onSky, paper } from '../../lib/constants/paperSky';
+import { bezel, onSky, paper } from '../../lib/constants/paperSky';
 import ChiOrb from '../ChiOrb';
 import { CustomIcon, type TIconsName } from '../CustomIcon';
 import Glass from '../Glass';
@@ -15,6 +16,11 @@ import Glass from '../Glass';
  * It is chrome, so it is glass: a smoked pane inset from all three edges, floating clear of the
  * screen with the sky visible around and beneath it. Not a bar welded to the bottom — the whole
  * point of the inset is that the app reads as content on a sky rather than content in a chassis.
+ *
+ * Around the pane runs the accent bezel from the desktop app — the same three green stops, the same
+ * lit top lip and dark bottom lip, the same shadow cast in the bezel's own hue. On desktop the whole
+ * window sits inside that ring; here the dock does. It is the one detail that makes the two apps
+ * read as the same product from across a room.
  *
  * The Chi orb is the exception to everything: it is a lit sphere raised 16px out of the dock,
  * drawn as a sibling of the glass pane rather than a child, because the pane clips to its own
@@ -58,6 +64,7 @@ const CONTENT_H = ICON_SLOT + LABEL_GAP + LABEL_H;
 const DOCK_H = PAD_TOP + CONTENT_H + PAD_BOTTOM;
 const ORB = 56;
 const RAISE = 26;
+const DOCK_RADIUS = 34;
 
 /** The dock floats over content, so scrollable screens must reserve this much at the bottom. */
 export const DOCK_CLEARANCE = DOCK_H + 30;
@@ -69,20 +76,33 @@ const styles = StyleSheet.create({
 		right: 14,
 		zIndex: 8
 	},
+	// The anodised ring. It carries the shadow, because the bezel is the outermost surface — the
+	// glass inside it casts nothing of its own.
+	bezel: {
+		padding: bezel.width,
+		borderRadius: DOCK_RADIUS + bezel.width,
+		overflow: 'hidden',
+		...Platform.select({
+			ios: {
+				shadowColor: bezel.shadow,
+				shadowOffset: { width: 0, height: 7 },
+				shadowRadius: 16,
+				shadowOpacity: 0.5
+			},
+			android: { elevation: 16 }
+		})
+	},
+	bezelLip: {
+		position: 'absolute',
+		left: 0,
+		right: 0,
+		height: 1
+	},
 	dock: {
 		flexDirection: 'row',
 		paddingTop: PAD_TOP,
 		paddingBottom: PAD_BOTTOM,
-		paddingHorizontal: 10,
-		...Platform.select({
-			ios: {
-				shadowColor: '#000',
-				shadowOffset: { width: 0, height: 18 },
-				shadowRadius: 22,
-				shadowOpacity: 0.55
-			},
-			android: { elevation: 16 }
-		})
+		paddingHorizontal: 10
 	},
 	item: {
 		alignItems: 'center'
@@ -157,7 +177,7 @@ const styles = StyleSheet.create({
 	// past the dock's edge onto the sky.
 	orbSlot: {
 		position: 'absolute',
-		top: PAD_TOP - RAISE,
+		top: PAD_TOP - RAISE + bezel.width,
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
@@ -210,49 +230,61 @@ const MainTabBar = ({ active, badges }: { active?: TMainTab; badges?: Partial<Re
 
 	return (
 		<View style={[styles.wrap, { bottom: Math.max(bottom - 12, 12) }]} pointerEvents='box-none'>
-			<Glass variant='dock' radius={34} style={styles.dock}>
-				{TABS.map(tab => {
-					if (tab.key === 'chi') {
-						// A spacer that owns nothing but the label's slot — the orb is drawn over it.
-						return (
-							<View key='chi' style={[styles.itemPress, styles.item]} pointerEvents='none'>
-								<View style={styles.iconSlot} />
-								<Text style={[styles.label, styles.labelActive]}>Chi</Text>
-							</View>
-						);
-					}
+			<View style={styles.bezel}>
+				<LinearGradient
+					colors={[bezel.top, bezel.mid, bezel.bottom]}
+					locations={[0, 0.52, 1]}
+					start={{ x: 0.5, y: 0 }}
+					end={{ x: 0.5, y: 1 }}
+					style={StyleSheet.absoluteFill}
+					pointerEvents='none'
+				/>
+				<View style={[styles.bezelLip, { top: 0, backgroundColor: bezel.edgeHighlight }]} pointerEvents='none' />
+				<View style={[styles.bezelLip, { bottom: 0, backgroundColor: bezel.edgeShade }]} pointerEvents='none' />
+				<Glass variant='dock' radius={DOCK_RADIUS} style={styles.dock}>
+					{TABS.map(tab => {
+						if (tab.key === 'chi') {
+							// A spacer that owns nothing but the label's slot — the orb is drawn over it.
+							return (
+								<View key='chi' style={[styles.itemPress, styles.item]} pointerEvents='none'>
+									<View style={styles.iconSlot} />
+									<Text style={[styles.label, styles.labelActive]}>Chi</Text>
+								</View>
+							);
+						}
 
-					const isActive = tab.key === active;
-					const badge = badges?.[tab.key];
-					return (
-						<Pressed
-							key={tab.key}
-							pressStyle={styles.itemPress}
-							style={[styles.item, isActive ? null : styles.inactive]}
-							accessibilityRole='button'
-							accessibilityState={{ selected: isActive }}
-							accessibilityLabel={tab.label}
-							onPress={() => go(tab.stack, tab.screen, isActive)}>
-							<View style={styles.iconSlot}>
-								{isActive ? (
-									<View style={styles.key}>
-										<View style={styles.keySheen} />
+						const isActive = tab.key === active;
+						const badge = badges?.[tab.key];
+						return (
+							<Pressed
+								key={tab.key}
+								pressStyle={styles.itemPress}
+								style={[styles.item, isActive ? null : styles.inactive]}
+								accessibilityRole='button'
+								accessibilityState={{ selected: isActive }}
+								accessibilityLabel={tab.label}
+								onPress={() => go(tab.stack, tab.screen, isActive)}>
+								<View style={styles.iconSlot}>
+									{isActive ? (
+										<View style={styles.key}>
+											<View style={styles.keySheen} />
+										</View>
+									) : null}
+									<View style={styles.glyph}>
+										<CustomIcon name={tab.icon!} size={ICON} color={onSky.primary} />
+									</View>
+								</View>
+								{badge ? (
+									<View style={[styles.badge, { right: 22 }]}>
+										<Text style={styles.badgeText}>{badge > 99 ? '99+' : badge}</Text>
 									</View>
 								) : null}
-								<View style={styles.glyph}>
-									<CustomIcon name={tab.icon!} size={ICON} color={onSky.primary} />
-								</View>
-							</View>
-							{badge ? (
-								<View style={[styles.badge, { right: 22 }]}>
-									<Text style={styles.badgeText}>{badge > 99 ? '99+' : badge}</Text>
-								</View>
-							) : null}
-							<Text style={[styles.label, isActive ? styles.labelActive : null]}>{tab.label}</Text>
-						</Pressed>
-					);
-				})}
-			</Glass>
+								<Text style={[styles.label, isActive ? styles.labelActive : null]}>{tab.label}</Text>
+							</Pressed>
+						);
+					})}
+				</Glass>
+			</View>
 			<View style={[styles.orbSlot, { left: 0, right: 0 }]} pointerEvents='box-none'>
 				<Pressed
 					accessibilityRole='button'
