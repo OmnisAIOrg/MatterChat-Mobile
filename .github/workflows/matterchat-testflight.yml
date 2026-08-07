@@ -110,15 +110,16 @@ jobs:
           # keep working exactly as they do today).
           # DEVELOPMENT_TEAM is also set here because the Watch App's Release config has it empty.
           #
-          # CODE_SIGN_IDENTITY has to come along too. The Watch App, Share extension and
-          # Notification Service still pin the pre-Xcode-8 spelling "iPhone Distribution" in their
-          # Release configs, and automatic signing rejects it outright:
+          # CODE_SIGN_IDENTITY is cleared, not replaced. The Watch App, Share extension and
+          # Notification Service pin "iPhone Distribution" in their Release configs, and automatic
+          # signing rejects *any* pinned identity it did not choose itself:
           #   "<target> has conflicting provisioning settings ... automatically signed for
-          #    development, but a conflicting code signing identity iPhone Distribution has been
-          #    manually specified"
-          # Forcing the modern "Apple Distribution" on the command line fixes both halves of that
-          # sentence at once — it is a valid automatic-signing identity, and it is the distribution
-          # one, so the archive is signed for TestFlight rather than for a development device.
+          #    development, but a conflicting code signing identity <x> has been manually specified"
+          # Naming "Apple Distribution" instead just moved the complaint to all four targets — the
+          # archive action resolves a development profile on a fresh runner, so anything else is a
+          # conflict. An empty value lets automatic signing pick, and the export step below re-signs
+          # the payload for distribution (method app-store-connect, signingStyle automatic), which
+          # is where the distribution profile is actually needed.
           BUILD_SETTING=""
           if [ -n "$BUILD_NUMBER" ]; then
             # Applies to all four targets at once — App Store Connect requires the app and its
@@ -142,7 +143,7 @@ jobs:
             -authenticationKeyIssuerID "$ISSUER_ID" \
             DEVELOPMENT_TEAM="$TEAM_ID" \
             CODE_SIGN_STYLE=Automatic \
-            CODE_SIGN_IDENTITY="Apple Distribution" \
+            CODE_SIGN_IDENTITY="" \
             PROVISIONING_PROFILE_SPECIFIER="" \
             $BUILD_SETTING \
             2>&1 | tee build/archive.log | tail -300
