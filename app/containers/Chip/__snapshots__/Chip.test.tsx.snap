@@ -51,7 +51,7 @@ exports[`Story Snapshots: ChipFullWidth should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": undefined,
         },
         undefined,
@@ -92,7 +92,7 @@ exports[`Story Snapshots: ChipFullWidth should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }
@@ -156,7 +156,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": 192,
         },
         undefined,
@@ -177,8 +177,17 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         style={
           [
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             },
             {
@@ -190,7 +199,9 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
+          borderColor={522988065}
           borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -207,6 +218,15 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -217,8 +237,17 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
           }
           style={
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             }
           }
@@ -250,7 +279,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }
@@ -264,7 +293,7 @@ exports[`Story Snapshots: ChipText should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#26312A",
+              "color": "#3B382E",
               "fontSize": 16,
             },
             [
@@ -340,7 +369,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": 192,
         },
         undefined,
@@ -361,8 +390,17 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         style={
           [
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             },
             {
@@ -374,7 +412,9 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
+          borderColor={522988065}
           borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -391,6 +431,15 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -401,8 +450,17 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
           }
           style={
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             }
           }
@@ -434,7 +492,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }
@@ -448,7 +506,7 @@ exports[`Story Snapshots: ChipWithShortText should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#26312A",
+              "color": "#3B382E",
               "fontSize": 16,
             },
             [
@@ -524,7 +582,7 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": 192,
         },
         undefined,
@@ -563,7 +621,7 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }
@@ -577,7 +635,7 @@ exports[`Story Snapshots: ChipWithoutAvatar should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#26312A",
+              "color": "#3B382E",
               "fontSize": 16,
             },
             [
@@ -653,7 +711,7 @@ exports[`Story Snapshots: ChipWithoutAvatarAndIcon should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": 192,
         },
         undefined,
@@ -692,7 +750,7 @@ exports[`Story Snapshots: ChipWithoutAvatarAndIcon should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }
@@ -756,7 +814,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
           "paddingHorizontal": 8,
         },
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#EAE1CB",
           "maxWidth": 192,
         },
         undefined,
@@ -777,8 +835,17 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
         style={
           [
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             },
             {
@@ -790,7 +857,9 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
+          borderColor={522988065}
           borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -807,6 +876,15 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -817,8 +895,17 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
           }
           style={
             {
+              "borderColor": "rgba(44,42,33,0.12)",
               "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 28,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 28,
             }
           }
@@ -850,7 +937,7 @@ exports[`Story Snapshots: ChipWithoutIcon should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#26312A",
+                "color": "#3B382E",
               },
             ]
           }

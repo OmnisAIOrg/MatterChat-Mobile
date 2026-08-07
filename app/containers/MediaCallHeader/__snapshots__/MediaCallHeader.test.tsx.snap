@@ -21,8 +21,8 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -95,7 +95,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -182,7 +182,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -223,7 +223,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -301,7 +301,7 @@ exports[`Story Snapshots: ActiveCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -349,8 +349,8 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -423,7 +423,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -510,7 +510,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -551,7 +551,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -629,7 +629,7 @@ exports[`Story Snapshots: Collapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -677,8 +677,8 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -751,7 +751,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -838,7 +838,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -879,7 +879,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -900,7 +900,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#6C727A",
+                "color": "#6B675A",
               },
             ]
           }
@@ -974,7 +974,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -1022,8 +1022,8 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -1096,7 +1096,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1183,7 +1183,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -1224,7 +1224,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1302,7 +1302,7 @@ exports[`Story Snapshots: Focused should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -1340,7 +1340,7 @@ exports[`Story Snapshots: NoCall should match snapshot 1`] = `
   <View
     style={
       {
-        "backgroundColor": "#E4E7EA",
+        "backgroundColor": "transparent",
         "paddingTop": 0,
       }
     }
@@ -1370,8 +1370,8 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -1444,7 +1444,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1531,7 +1531,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -1572,7 +1572,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1597,7 +1597,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#6C727A",
+                "color": "#6B675A",
               },
             ]
           }
@@ -1671,7 +1671,7 @@ exports[`Story Snapshots: WithRemoteHeld should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -1719,8 +1719,8 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#E4E7EA",
-          "borderBottomColor": "#CBCED1",
+          "backgroundColor": "#EAE1CB",
+          "borderBottomColor": "#E4D8BC",
           "paddingTop": 12,
         },
         [Function],
@@ -1793,7 +1793,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1880,7 +1880,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 16,
                 },
                 [
@@ -1921,7 +1921,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1946,7 +1946,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#6C727A",
+                "color": "#6B675A",
               },
             ]
           }
@@ -2020,7 +2020,7 @@ exports[`Story Snapshots: WithRemoteMuted should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#D40C26",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [

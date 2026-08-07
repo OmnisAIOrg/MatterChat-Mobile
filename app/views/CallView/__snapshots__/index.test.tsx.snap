@@ -20,10 +20,24 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -31,13 +45,27 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -95,8 +123,17 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -105,7 +142,9 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -122,6 +161,15 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -134,8 +182,17 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -170,7 +227,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -197,8 +254,8 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -268,7 +325,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -280,7 +337,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -314,7 +371,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -375,7 +432,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -387,7 +444,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -421,7 +478,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -482,7 +539,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -494,7 +551,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -528,7 +585,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -600,7 +657,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -612,7 +669,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -646,7 +703,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -707,7 +764,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -719,7 +776,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -753,7 +810,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -814,7 +871,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -826,7 +883,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -860,7 +917,7 @@ exports[`Story Snapshots: ConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -894,10 +951,24 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -905,13 +976,27 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -969,8 +1054,17 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -979,7 +1073,9 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -996,6 +1092,15 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -1008,8 +1113,17 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -1044,7 +1158,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1071,8 +1185,8 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -1142,7 +1256,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -1154,7 +1268,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -1188,7 +1302,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1251,7 +1365,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -1263,7 +1377,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -1297,7 +1411,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1360,7 +1474,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -1372,7 +1486,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -1406,7 +1520,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1478,7 +1592,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -1490,7 +1604,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -1524,7 +1638,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1585,7 +1699,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -1597,7 +1711,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -1631,7 +1745,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1694,7 +1808,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -1706,7 +1820,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -1740,7 +1854,7 @@ exports[`Story Snapshots: ConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1774,10 +1888,24 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -1785,13 +1913,27 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -1849,8 +1991,17 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -1859,7 +2010,9 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -1876,6 +2029,15 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -1888,8 +2050,17 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -1924,7 +2095,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1951,8 +2122,8 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -2022,7 +2193,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2034,7 +2205,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -2068,7 +2239,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2129,7 +2300,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2141,7 +2312,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -2175,7 +2346,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2236,7 +2407,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2248,7 +2419,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -2282,7 +2453,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2354,7 +2525,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2366,7 +2537,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -2400,7 +2571,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2461,7 +2632,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -2473,7 +2644,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -2507,7 +2678,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2568,7 +2739,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2580,7 +2751,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -2614,7 +2785,7 @@ exports[`Story Snapshots: MutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -2648,10 +2819,24 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -2659,13 +2844,27 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -2723,8 +2922,17 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -2733,7 +2941,9 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -2750,6 +2960,15 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -2762,8 +2981,17 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -2798,7 +3026,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -2825,8 +3053,8 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -2896,7 +3124,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -2908,7 +3136,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -2942,7 +3170,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3003,7 +3231,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3015,7 +3243,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -3049,7 +3277,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3110,7 +3338,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3122,7 +3350,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -3156,7 +3384,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3228,7 +3456,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3240,7 +3468,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -3274,7 +3502,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3335,7 +3563,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -3347,7 +3575,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -3381,7 +3609,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3442,7 +3670,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3454,7 +3682,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -3488,7 +3716,7 @@ exports[`Story Snapshots: MutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3522,10 +3750,24 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -3533,13 +3775,27 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -3597,8 +3853,17 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -3607,7 +3872,9 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -3624,6 +3891,15 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -3636,8 +3912,17 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -3672,7 +3957,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -3699,8 +3984,8 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -3770,7 +4055,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3782,7 +4067,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -3816,7 +4101,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3877,7 +4162,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3889,7 +4174,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -3923,7 +4208,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -3984,7 +4269,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -3996,7 +4281,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -4030,7 +4315,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4102,7 +4387,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4114,7 +4399,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -4148,7 +4433,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4209,7 +4494,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -4221,7 +4506,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -4255,7 +4540,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4316,7 +4601,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4328,7 +4613,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -4362,7 +4647,7 @@ exports[`Story Snapshots: OnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4396,10 +4681,24 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -4407,13 +4706,27 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -4471,8 +4784,17 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -4481,7 +4803,9 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -4498,6 +4822,15 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -4510,8 +4843,17 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -4546,7 +4888,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -4573,8 +4915,8 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -4644,7 +4986,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4656,7 +4998,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -4690,7 +5032,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4751,7 +5093,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4763,7 +5105,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -4797,7 +5139,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4858,7 +5200,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4870,7 +5212,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -4904,7 +5246,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -4976,7 +5318,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -4988,7 +5330,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5022,7 +5364,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5083,7 +5425,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -5095,7 +5437,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -5129,7 +5471,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5190,7 +5532,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -5202,7 +5544,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5236,7 +5578,7 @@ exports[`Story Snapshots: SpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5266,7 +5608,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -5328,8 +5670,17 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -5338,7 +5689,9 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -5355,6 +5708,15 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -5367,8 +5729,17 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -5403,7 +5774,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -5430,8 +5801,8 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -5501,7 +5872,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -5513,7 +5884,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5547,7 +5918,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5608,7 +5979,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -5620,7 +5991,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5654,7 +6025,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5715,7 +6086,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -5727,7 +6098,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5761,7 +6132,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5822,7 +6193,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -5834,7 +6205,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -5868,7 +6239,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -5929,7 +6300,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -5941,7 +6312,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -5975,7 +6346,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6036,7 +6407,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6048,7 +6419,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6082,7 +6453,7 @@ exports[`Story Snapshots: TabletConnectedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6112,7 +6483,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -6174,8 +6545,17 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -6184,7 +6564,9 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -6201,6 +6583,15 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -6213,8 +6604,17 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -6249,7 +6649,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -6276,8 +6676,8 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -6347,7 +6747,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6359,7 +6759,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6393,7 +6793,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6456,7 +6856,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6468,7 +6868,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6502,7 +6902,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6565,7 +6965,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6577,7 +6977,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6611,7 +7011,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6672,7 +7072,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6684,7 +7084,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6718,7 +7118,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6779,7 +7179,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -6791,7 +7191,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -6825,7 +7225,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6888,7 +7288,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "opacity": 0.5,
                 },
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -6900,7 +7300,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -6934,7 +7334,7 @@ exports[`Story Snapshots: TabletConnectingCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -6964,7 +7364,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -7026,8 +7426,17 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -7036,7 +7445,9 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -7053,6 +7464,15 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -7065,8 +7485,17 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -7101,7 +7530,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -7128,8 +7557,8 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -7199,7 +7628,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -7211,7 +7640,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -7245,7 +7674,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7306,7 +7735,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -7318,7 +7747,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -7352,7 +7781,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7413,7 +7842,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -7425,7 +7854,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -7459,7 +7888,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7520,7 +7949,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -7532,7 +7961,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -7566,7 +7995,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7627,7 +8056,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -7639,7 +8068,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -7673,7 +8102,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7734,7 +8163,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -7746,7 +8175,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -7780,7 +8209,7 @@ exports[`Story Snapshots: TabletMutedAndOnHold should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -7810,7 +8239,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -7872,8 +8301,17 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -7882,7 +8320,9 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -7899,6 +8339,15 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -7911,8 +8360,17 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -7947,7 +8405,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -7974,8 +8432,8 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -8045,7 +8503,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8057,7 +8515,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -8091,7 +8549,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8152,7 +8610,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8164,7 +8622,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -8198,7 +8656,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8259,7 +8717,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8271,7 +8729,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -8305,7 +8763,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8366,7 +8824,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8378,7 +8836,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -8412,7 +8870,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8473,7 +8931,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -8485,7 +8943,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -8519,7 +8977,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8580,7 +9038,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8592,7 +9050,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -8626,7 +9084,7 @@ exports[`Story Snapshots: TabletMutedCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8656,7 +9114,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -8718,8 +9176,17 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -8728,7 +9195,9 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -8745,6 +9214,15 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -8757,8 +9235,17 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -8793,7 +9280,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -8820,8 +9307,8 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -8891,7 +9378,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -8903,7 +9390,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -8937,7 +9424,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -8998,7 +9485,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9010,7 +9497,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -9044,7 +9531,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9105,7 +9592,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9117,7 +9604,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -9151,7 +9638,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9212,7 +9699,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9224,7 +9711,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -9258,7 +9745,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9319,7 +9806,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -9331,7 +9818,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -9365,7 +9852,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9426,7 +9913,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9438,7 +9925,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -9472,7 +9959,7 @@ exports[`Story Snapshots: TabletOnHoldCall should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9502,7 +9989,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -9564,8 +10051,17 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -9574,7 +10070,9 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -9591,6 +10089,15 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -9603,8 +10110,17 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -9639,7 +10155,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -9666,8 +10182,8 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -9737,7 +10253,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9749,7 +10265,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#BB0B21",
+                    "color": "#B3402E",
                     "fontSize": 32,
                   },
                   [
@@ -9783,7 +10299,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9844,7 +10360,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9856,7 +10372,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -9890,7 +10406,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -9951,7 +10467,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -9963,7 +10479,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -9997,7 +10513,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10058,7 +10574,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10070,7 +10586,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10104,7 +10620,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10165,7 +10681,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -10177,7 +10693,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -10211,7 +10727,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10272,7 +10788,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10284,7 +10800,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10318,7 +10834,7 @@ exports[`Story Snapshots: TabletSpeakerOn should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10348,7 +10864,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
           "justifyContent": "space-between",
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -10410,8 +10926,17 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -10420,7 +10945,9 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -10437,6 +10964,15 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -10449,8 +10985,17 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -10485,7 +11030,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -10512,8 +11057,8 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -10583,7 +11128,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10595,7 +11140,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10629,7 +11174,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10690,7 +11235,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10702,7 +11247,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10736,7 +11281,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10797,7 +11342,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10809,7 +11354,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10843,7 +11388,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -10904,7 +11449,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -10916,7 +11461,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -10950,7 +11495,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11011,7 +11556,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -11023,7 +11568,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -11057,7 +11602,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11118,7 +11663,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -11130,7 +11675,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -11164,7 +11709,7 @@ exports[`Story Snapshots: TabletWithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11198,10 +11743,24 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
     style={
       [
         {
+          "borderBottomWidth": 0,
+          "borderColor": "rgba(255,255,255,0.72)",
+          "borderTopLeftRadius": 26,
+          "borderTopRightRadius": 26,
+          "borderWidth": 1.5,
           "flex": 1,
+          "marginHorizontal": 14,
+          "overflow": "hidden",
+          "shadowOffset": {
+            "height": 20,
+            "width": 0,
+          },
+          "shadowOpacity": 1,
+          "shadowRadius": 24,
         },
         {
-          "backgroundColor": "#F2F3F5",
+          "backgroundColor": "#FAF5EA",
+          "shadowColor": "rgba(4,20,10,0.42)",
         },
         [
           {
@@ -11209,13 +11768,27 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
             "justifyContent": "space-between",
           },
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
           },
         ],
       ]
     }
     testID="call-view-container"
   >
+    <View
+      pointerEvents="none"
+      style={
+        {
+          "backgroundColor": "#FFFEFA",
+          "height": 1,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+          "zIndex": 2,
+        }
+      }
+    />
     <View
       accessibilityLabel="Toggle call controls"
       accessibilityRole="button"
@@ -11273,8 +11846,17 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
           style={
             [
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               },
               undefined,
@@ -11283,7 +11865,9 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
           testID="avatar"
         >
           <ViewManagerAdapter_ExpoImage
+            borderColor={522988065}
             borderRadius={2}
+            borderWidth={0.5}
             containerViewRef={{"current":"Object"}}
             contentFit="cover"
             contentPosition={
@@ -11300,6 +11884,15 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
             onProgress={[Function]}
             placeholder={[]}
             priority="high"
+            shadowColor="#2C2A21"
+            shadowOffset={
+              {
+                "height": 2,
+                "width": 0,
+              }
+            }
+            shadowOpacity={0.16}
+            shadowRadius={4}
             source={
               [
                 {
@@ -11312,8 +11905,17 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
             }
             style={
               {
+                "borderColor": "rgba(44,42,33,0.12)",
                 "borderRadius": 2,
+                "borderWidth": 0.5,
                 "height": 120,
+                "shadowColor": "#2C2A21",
+                "shadowOffset": {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.16,
+                "shadowRadius": 4,
                 "width": 120,
               }
             }
@@ -11348,7 +11950,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 "textAlign": "center",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -11375,8 +11977,8 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
             "right": 0,
           },
           {
-            "backgroundColor": "#FFFFFF",
-            "borderTopColor": "#EBECEF",
+            "backgroundColor": "#FFFDF6",
+            "borderTopColor": "#E4D9C0",
           },
           [Function],
         ]
@@ -11446,7 +12048,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -11458,7 +12060,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -11492,7 +12094,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11553,7 +12155,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -11565,7 +12167,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -11599,7 +12201,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11660,7 +12262,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -11672,7 +12274,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -11706,7 +12308,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11778,7 +12380,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -11790,7 +12392,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -11824,7 +12426,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11885,7 +12487,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#EC0D2A",
+                  "backgroundColor": "#B3402E",
                 },
               ]
             }
@@ -11897,7 +12499,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#FFFFFF",
+                    "color": "#FAF5EA",
                     "fontSize": 32,
                   },
                   [
@@ -11931,7 +12533,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -11992,7 +12594,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                 },
                 false,
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#F0E7D2",
                 },
               ]
             }
@@ -12004,7 +12606,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 32,
                   },
                   [
@@ -12038,7 +12640,7 @@ exports[`Story Snapshots: WithDialpad should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }

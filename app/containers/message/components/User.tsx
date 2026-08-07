@@ -8,7 +8,8 @@ import { messageHaveAuthorName } from '../utils';
 import MessageTime from './Time';
 import { useResponsiveLayout } from '../../../lib/hooks/useResponsiveLayout/useResponsiveLayout';
 import { useSetting } from '../../../lib/hooks/useSetting';
-import { useIsOwnMessage, useMessageAuthor, useMessageGrouping, useMessageHeaderMeta } from '../stores/MessageStore';
+import { usePaper } from '../../Paper';
+import { useIsOwnMessage, useMessageAuthor, useMessageGrouping, useMessageHeaderMeta, useMessageTone } from '../stores/MessageStore';
 import { useNavToRoomInfo } from '../stores/MessageRoomStore';
 
 const styles = StyleSheet.create({
@@ -38,6 +39,19 @@ const styles = StyleSheet.create({
 	alias: {
 		fontSize: 14,
 		...sharedStyles.textRegular
+	},
+	// Who is speaking, said once and quietly: a 10pt chip beside the name rather than a differently
+	// shaped bubble. The paper tone under the row already carries the message.
+	badge: {
+		paddingHorizontal: 7,
+		paddingVertical: 2,
+		borderRadius: 6,
+		overflow: 'hidden',
+		fontSize: 10,
+		lineHeight: 14,
+		letterSpacing: 0.6,
+		...sharedStyles.textBold,
+		fontWeight: '800'
 	}
 });
 
@@ -52,6 +66,8 @@ const User = () => {
 	const { u: author, alias } = useMessageAuthor();
 	const { t: type } = useMessageHeaderMeta();
 	const itsMe = useIsOwnMessage();
+	const tone = useMessageTone();
+	const p = usePaper();
 
 	if (isHeader) {
 		const username = (useRealName && author?.name) || author?.username;
@@ -83,9 +99,17 @@ const User = () => {
 		return (
 			<View style={styles.container}>
 				<Pressable testID={`username-header-${username}`} style={styles.titleContainer} onPress={onUserPress}>
-					<Text style={[styles.username, { color: colors.fontTitlesLabels }]} numberOfLines={1}>
+					<Text
+						style={[styles.username, { color: tone === 'assistant' ? p.accent : colors.fontTitlesLabels }]}
+						numberOfLines={1}>
 						{textContent}
 					</Text>
+					{tone === 'assistant' ? (
+						<Text style={[styles.badge, { backgroundColor: p.accentSoft, color: p.accent }]}>ASSISTANT</Text>
+					) : null}
+					{tone === 'own' ? (
+						<Text style={[styles.badge, { backgroundColor: p.ownBadge, color: p.inkSoft }]}>YOU</Text>
+					) : null}
 					{isLargeFontScale ? null : <MessageTime />}
 				</Pressable>
 				<RightIcons />

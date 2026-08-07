@@ -24,7 +24,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -63,11 +63,11 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -84,13 +84,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -118,11 +118,11 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
-                  "paddingHorizontal": 12,
+                  "paddingHorizontal": 16,
                 },
                 undefined,
                 {
-                  "height": 46,
+                  "height": 58,
                 },
               ]
             }
@@ -131,7 +131,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
             <View
               style={
                 {
-                  "paddingRight": 12,
+                  "paddingRight": 16,
                 }
               }
             >
@@ -141,6 +141,16 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     {
                       "alignItems": "center",
                       "justifyContent": "center",
+                    },
+                    {
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 32,
+                      "width": 32,
+                    },
+                    {
+                      "backgroundColor": "#EAF2E6",
+                      "borderColor": "#DCE8D6",
                     },
                     undefined,
                   ]
@@ -152,12 +162,12 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
-                        "fontSize": 24,
+                        "color": "#175F35",
+                        "fontSize": 20,
                       },
                       [
                         {
-                          "lineHeight": 24,
+                          "lineHeight": 20,
                         },
                         undefined,
                       ],
@@ -198,13 +208,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                         "flex": 1,
                         "flexShrink": 1,
                         "fontFamily": "Inter",
-                        "fontSize": 16,
-                        "fontWeight": "500",
+                        "fontSize": 15,
+                        "fontWeight": "600",
                         "textAlign": "left",
                       },
                       undefined,
                       {
-                        "color": "#2F343D",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -217,7 +227,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
               style={
                 [
                   {
-                    "paddingLeft": 12,
+                    "paddingLeft": 16,
                   },
                   {},
                 ]
@@ -240,7 +250,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -274,7 +284,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -307,7 +317,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -346,11 +356,11 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -367,13 +377,13 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -401,13 +411,13 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
-                  "paddingHorizontal": 12,
+                  "paddingHorizontal": 16,
                 },
                 {
                   "opacity": 0.3,
                 },
                 {
-                  "height": 46,
+                  "height": 58,
                 },
               ]
             }
@@ -416,7 +426,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
             <View
               style={
                 {
-                  "paddingRight": 12,
+                  "paddingRight": 16,
                 }
               }
             >
@@ -426,6 +436,16 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
                     {
                       "alignItems": "center",
                       "justifyContent": "center",
+                    },
+                    {
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 32,
+                      "width": 32,
+                    },
+                    {
+                      "backgroundColor": "#EAF2E6",
+                      "borderColor": "#DCE8D6",
                     },
                     undefined,
                   ]
@@ -437,12 +457,12 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
-                        "fontSize": 24,
+                        "color": "#175F35",
+                        "fontSize": 20,
                       },
                       [
                         {
-                          "lineHeight": 24,
+                          "lineHeight": 20,
                         },
                         undefined,
                       ],
@@ -483,13 +503,13 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
                         "flex": 1,
                         "flexShrink": 1,
                         "fontFamily": "Inter",
-                        "fontSize": 16,
-                        "fontWeight": "500",
+                        "fontSize": 15,
+                        "fontWeight": "600",
                         "textAlign": "left",
                       },
                       undefined,
                       {
-                        "color": "#2F343D",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -502,7 +522,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
               style={
                 [
                   {
-                    "paddingLeft": 12,
+                    "paddingLeft": 16,
                   },
                   {},
                 ]
@@ -525,7 +545,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -559,7 +579,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -592,7 +612,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -631,11 +651,11 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#E4E7EA"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FFFFFF",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -652,13 +672,13 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#E4E7EA"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -686,11 +706,11 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
                   "alignItems": "center",
                   "flexDirection": "row",
                   "justifyContent": "center",
-                  "paddingHorizontal": 12,
+                  "paddingHorizontal": 16,
                 },
                 undefined,
                 {
-                  "height": 46,
+                  "height": 58,
                 },
               ]
             }
@@ -699,7 +719,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
             <View
               style={
                 {
-                  "paddingRight": 12,
+                  "paddingRight": 16,
                 }
               }
             >
@@ -709,6 +729,16 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
                     {
                       "alignItems": "center",
                       "justifyContent": "center",
+                    },
+                    {
+                      "borderRadius": 10,
+                      "borderWidth": 1,
+                      "height": 32,
+                      "width": 32,
+                    },
+                    {
+                      "backgroundColor": "#EAF2E6",
+                      "borderColor": "#DCE8D6",
                     },
                     undefined,
                   ]
@@ -720,12 +750,12 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
-                        "fontSize": 24,
+                        "color": "#175F35",
+                        "fontSize": 20,
                       },
                       [
                         {
-                          "lineHeight": 24,
+                          "lineHeight": 20,
                         },
                         undefined,
                       ],
@@ -766,13 +796,13 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
                         "flex": 1,
                         "flexShrink": 1,
                         "fontFamily": "Inter",
-                        "fontSize": 16,
-                        "fontWeight": "500",
+                        "fontSize": 15,
+                        "fontWeight": "600",
                         "textAlign": "left",
                       },
                       undefined,
                       {
-                        "color": "#2F343D",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -785,7 +815,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
               style={
                 [
                   {
-                    "paddingLeft": 12,
+                    "paddingLeft": 16,
                   },
                   {},
                 ]
@@ -808,7 +838,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#2F343D",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -842,7 +872,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }

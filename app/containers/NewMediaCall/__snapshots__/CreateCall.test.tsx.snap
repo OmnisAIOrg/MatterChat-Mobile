@@ -45,7 +45,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
         "marginTop": 32,
       },
       {
-        "backgroundColor": "#C0F6E4",
+        "backgroundColor": "#DCE8D6",
       },
     ]
   }
@@ -57,7 +57,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#FFFFFF",
+          "color": "#A39C86",
           "fontSize": 24,
         },
         [
@@ -89,7 +89,7 @@ exports[`Story Snapshots: Disabled should match snapshot 1`] = `
           "textAlign": "left",
         },
         {
-          "color": "#FFFFFF",
+          "color": "#A39C86",
         },
       ]
     }
@@ -144,7 +144,7 @@ exports[`Story Snapshots: Enabled should match snapshot 1`] = `
         "marginTop": 32,
       },
       {
-        "backgroundColor": "#158D65",
+        "backgroundColor": "#175F35",
       },
     ]
   }

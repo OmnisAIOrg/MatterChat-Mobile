@@ -97,7 +97,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#ECEFEB",
+        "backgroundColor": "#EAE1CB",
         "borderRadius": 14,
         "height": 48,
         "justifyContent": "center",
@@ -135,7 +135,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#A6B2A8",
+          "color": "#A39C86",
           "fontSize": 16,
         },
         {
@@ -171,7 +171,7 @@ exports[`Story Snapshots: DisabledLoadingButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#ECEFEB",
+        "backgroundColor": "#EAE1CB",
         "borderRadius": 14,
         "height": 48,
         "justifyContent": "center",
@@ -205,14 +205,439 @@ exports[`Story Snapshots: DisabledLoadingButton should match snapshot 1`] = `
       }
     }
   />
-  <ActivityIndicator
-    color="#FFFFFF"
+  <View
     style={
-      {
-        "padding": 0,
-      }
+      [
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 16,
+        },
+        undefined,
+        {
+          "padding": 0,
+        },
+      ]
     }
-  />
+  >
+    <View
+      accessibilityRole="progressbar"
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "alignItems": "center",
+          "height": 31,
+          "justifyContent": "center",
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 32,
+        }
+      }
+    >
+      <RNCMaskedView
+        style={
+          {
+            "height": 31,
+            "width": 32,
+          }
+        }
+      >
+        <View
+          pointerEvents="none"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source="test-file-stub"
+            style={
+              {
+                "height": 31,
+                "width": 32,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            [
+              {
+                "height": 31,
+                "width": 32,
+              },
+              {
+                "backgroundColor": "#0B3A1C",
+              },
+            ]
+          }
+        />
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#22C25C",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0.3,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#B8FFCF",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <View
+          pointerEvents="none"
+          style={
+            {
+              "alignItems": "center",
+              "bottom": 0,
+              "justifyContent": "center",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple0"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple0",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple430"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple430",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple870"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple870",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </RNCMaskedView>
+    </View>
+  </View>
 </RNGestureHandlerButton>
 `;
 
@@ -234,7 +659,7 @@ exports[`Story Snapshots: LoadingButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#ECEFEB",
+        "backgroundColor": "#EAE1CB",
         "borderRadius": 14,
         "height": 48,
         "justifyContent": "center",
@@ -268,14 +693,439 @@ exports[`Story Snapshots: LoadingButton should match snapshot 1`] = `
       }
     }
   />
-  <ActivityIndicator
-    color="#FFFFFF"
+  <View
     style={
-      {
-        "padding": 0,
-      }
+      [
+        {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "padding": 16,
+        },
+        undefined,
+        {
+          "padding": 0,
+        },
+      ]
     }
-  />
+  >
+    <View
+      accessibilityRole="progressbar"
+      collapsable={false}
+      pointerEvents="none"
+      style={
+        {
+          "alignItems": "center",
+          "height": 31,
+          "justifyContent": "center",
+          "opacity": 1,
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 32,
+        }
+      }
+    >
+      <RNCMaskedView
+        style={
+          {
+            "height": 31,
+            "width": 32,
+          }
+        }
+      >
+        <View
+          pointerEvents="none"
+          style={
+            {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <Image
+            resizeMode="contain"
+            source="test-file-stub"
+            style={
+              {
+                "height": 31,
+                "width": 32,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            [
+              {
+                "height": 31,
+                "width": 32,
+              },
+              {
+                "backgroundColor": "#0B3A1C",
+              },
+            ]
+          }
+        />
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#22C25C",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0.3,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#B8FFCF",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+        <View
+          pointerEvents="none"
+          style={
+            {
+              "alignItems": "center",
+              "bottom": 0,
+              "justifyContent": "center",
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        >
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple0"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple0",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple430"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple430",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <View
+            collapsable={false}
+            pointerEvents="none"
+            style={
+              {
+                "height": 48,
+                "opacity": 0,
+                "position": "absolute",
+                "transform": [
+                  {
+                    "scale": 2.05,
+                  },
+                ],
+                "width": 48,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={48}
+              bbWidth={48}
+              focusable={false}
+              height={48}
+              style={
+                [
+                  {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  {
+                    "flex": 0,
+                    "height": 48,
+                    "width": 48,
+                  },
+                ]
+              }
+              width={48}
+            >
+              <RNSVGGroup
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGRadialGradient
+                    cx="50%"
+                    cy="50%"
+                    fx="50%"
+                    fy="50%"
+                    gradient={
+                      [
+                        0.14,
+                        4647810,
+                        0.19,
+                        1197142166,
+                        0.24,
+                        -1940852596,
+                        0.27,
+                        -12784776,
+                        0.295,
+                        -4653105,
+                        0.315,
+                        -9699422,
+                        0.34,
+                        -229576564,
+                        0.39,
+                        3331945,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="ripple870"
+                    rx="50%"
+                    ry="50%"
+                  />
+                </RNSVGDefs>
+                <RNSVGRect
+                  fill={
+                    {
+                      "brushRef": "ripple870",
+                      "type": 1,
+                    }
+                  }
+                  height="100%"
+                  propList={
+                    [
+                      "fill",
+                    ]
+                  }
+                  width="100%"
+                  x="0"
+                  y="0"
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+        <View
+          collapsable={false}
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            }
+          }
+        />
+      </RNCMaskedView>
+    </View>
+  </View>
 </RNGestureHandlerButton>
 `;
 
@@ -297,13 +1147,13 @@ exports[`Story Snapshots: PrimaryButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#2FA44A",
+        "backgroundColor": "#175F35",
         "borderRadius": 14,
         "height": 48,
         "justifyContent": "center",
         "marginBottom": 12,
         "paddingHorizontal": 16,
-        "shadowColor": "#2FA44A",
+        "shadowColor": "#175F35",
         "shadowOffset": {
           "height": 4,
           "width": 0,
@@ -378,8 +1228,8 @@ exports[`Story Snapshots: SecondaryButton should match snapshot 1`] = `
   style={
     [
       {
-        "backgroundColor": "#FDFDFC",
-        "borderColor": "#E1E7E1",
+        "backgroundColor": "#FFFDF6",
+        "borderColor": "#E4D8BC",
         "borderRadius": 14,
         "borderWidth": 1.5,
         "height": 48,
@@ -418,7 +1268,7 @@ exports[`Story Snapshots: SecondaryButton should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#26312A",
+          "color": "#3B382E",
           "fontSize": 16,
         },
         {
@@ -455,12 +1305,12 @@ exports[`Story Snapshots: SmallButton should match snapshot 1`] = `
     [
       {
         "alignSelf": "center",
-        "backgroundColor": "#2FA44A",
+        "backgroundColor": "#175F35",
         "borderRadius": 14,
         "marginBottom": 12,
         "paddingHorizontal": 12,
         "paddingVertical": 8,
-        "shadowColor": "#2FA44A",
+        "shadowColor": "#175F35",
         "shadowOffset": {
           "height": 4,
           "width": 0,

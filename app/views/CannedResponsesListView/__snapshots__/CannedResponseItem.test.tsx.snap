@@ -36,11 +36,11 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
             "borderRadius": undefined,
             "margin": undefined,
             "marginBottom": undefined,
@@ -57,13 +57,13 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#EAE1CB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#EAE1CB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -116,7 +116,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -138,7 +138,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -163,14 +163,20 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
             style={
               [
                 {
-                  "backgroundColor": "#F7F8FA",
-                  "borderRadius": 4,
+                  "backgroundColor": "#F0E7D2",
+                  "borderRadius": 14,
                   "height": 28,
                   "justifyContent": "center",
                   "marginBottom": 12,
                   "marginLeft": 8,
                   "paddingHorizontal": 16,
-                  "paddingVertical": 14,
+                  "shadowColor": "#175F35",
+                  "shadowOffset": {
+                    "height": 4,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.28,
+                  "shadowRadius": 8,
                   "width": 56,
                 },
                 {
@@ -187,7 +193,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "backgroundColor": "black",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
-                  "borderRadius": 4,
+                  "borderRadius": 14,
                   "borderTopLeftRadius": undefined,
                   "borderTopRightRadius": undefined,
                   "bottom": 0,
@@ -203,13 +209,13 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 12,
                   },
                   {
                     "backgroundColor": "transparent",
                     "fontFamily": "Inter",
-                    "fontWeight": "500",
+                    "fontWeight": "700",
                     "textAlign": "center",
                   },
                   undefined,
@@ -236,7 +242,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#6C727A",
+                "color": "#8A8471",
               },
             ]
           }
@@ -290,11 +296,11 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#FFFFFF",
+            "backgroundColor": "#FFFDF6",
             "borderRadius": undefined,
             "margin": undefined,
             "marginBottom": undefined,
@@ -311,13 +317,13 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
           },
         ]
       }
-      underlayColor="#E4E7EA"
+      underlayColor="#EAE1CB"
     >
       <View
         collapsable={false}
         style={
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#EAE1CB",
             "borderBottomLeftRadius": undefined,
             "borderBottomRightRadius": undefined,
             "borderRadius": undefined,
@@ -370,7 +376,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -392,7 +398,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -417,14 +423,20 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
             style={
               [
                 {
-                  "backgroundColor": "#F7F8FA",
-                  "borderRadius": 4,
+                  "backgroundColor": "#F0E7D2",
+                  "borderRadius": 14,
                   "height": 28,
                   "justifyContent": "center",
                   "marginBottom": 12,
                   "marginLeft": 8,
                   "paddingHorizontal": 16,
-                  "paddingVertical": 14,
+                  "shadowColor": "#175F35",
+                  "shadowOffset": {
+                    "height": 4,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.28,
+                  "shadowRadius": 8,
                   "width": 56,
                 },
                 {
@@ -441,7 +453,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "backgroundColor": "black",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
-                  "borderRadius": 4,
+                  "borderRadius": 14,
                   "borderTopLeftRadius": undefined,
                   "borderTopRightRadius": undefined,
                   "bottom": 0,
@@ -457,13 +469,13 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#1F2329",
+                    "color": "#2C2A21",
                     "fontSize": 12,
                   },
                   {
                     "backgroundColor": "transparent",
                     "fontFamily": "Inter",
-                    "fontWeight": "500",
+                    "fontWeight": "700",
                     "textAlign": "center",
                   },
                   undefined,
@@ -490,7 +502,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#6C727A",
+                "color": "#8A8471",
               },
             ]
           }
@@ -517,7 +529,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -536,7 +548,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -554,7 +566,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -573,7 +585,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -591,7 +603,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -610,7 +622,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -628,7 +640,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -647,7 +659,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -665,7 +677,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -684,7 +696,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -702,7 +714,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -721,7 +733,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }
@@ -739,7 +751,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                   "marginTop": 8,
                 },
                 {
-                  "backgroundColor": "#EBECEF",
+                  "backgroundColor": "#E4D9C0",
                 },
               ]
             }
@@ -758,7 +770,7 @@ exports[`Story Snapshots: Itens should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#6C727A",
+                    "color": "#8A8471",
                   },
                 ]
               }

@@ -6,7 +6,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#000000",
+          "backgroundColor": "#020805",
         }
       }
     >
@@ -30,7 +30,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#1f2329",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -62,7 +62,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#3C3F44",
+                    "backgroundColor": "#0C2C1C",
                   },
                 ]
               }
@@ -73,7 +73,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#E4E7EA",
+                      "color": "#D7EFE3",
                       "fontSize": 16,
                     },
                     [
@@ -105,7 +105,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#E4E7EA",
+                      "color": "#F4FFF9",
                     },
                   ]
                 }
@@ -126,7 +126,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#9EA2A8",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -145,7 +145,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#F4FFF9",
                 },
               ]
             }
@@ -171,7 +171,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#E4E7EA",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -198,7 +198,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -215,7 +215,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -234,7 +234,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -251,7 +251,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -283,7 +283,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#1f2329",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -315,7 +315,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#3C3F44",
+                    "backgroundColor": "#0C2C1C",
                   },
                 ]
               }
@@ -326,7 +326,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#E4E7EA",
+                      "color": "#D7EFE3",
                       "fontSize": 16,
                     },
                     [
@@ -358,7 +358,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#E4E7EA",
+                      "color": "#F4FFF9",
                     },
                   ]
                 }
@@ -379,7 +379,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#9EA2A8",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -398,7 +398,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#F4FFF9",
                 },
               ]
             }
@@ -424,7 +424,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#E4E7EA",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -451,7 +451,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -468,7 +468,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -487,7 +487,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -504,7 +504,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -523,7 +523,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -540,7 +540,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -559,7 +559,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -576,7 +576,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -595,7 +595,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -612,7 +612,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -631,7 +631,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -648,7 +648,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -667,7 +667,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -684,7 +684,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -703,7 +703,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -720,7 +720,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -739,7 +739,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -756,7 +756,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -775,7 +775,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -792,7 +792,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -821,7 +821,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#E4E7EA",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -848,7 +848,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -865,7 +865,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -884,7 +884,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#0C2C1C",
                     },
                   ]
                 }
@@ -901,7 +901,7 @@ exports[`Story Snapshots: Black should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -924,7 +924,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#1F2329",
+          "backgroundColor": "#06170F",
         }
       }
     >
@@ -948,7 +948,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#333842",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -980,7 +980,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#3C3F44",
+                    "backgroundColor": "#123D2A",
                   },
                 ]
               }
@@ -991,7 +991,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#C1C7D0",
+                      "color": "#D7EFE3",
                       "fontSize": 16,
                     },
                     [
@@ -1023,7 +1023,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#E4E7EA",
+                      "color": "#F4FFF9",
                     },
                   ]
                 }
@@ -1044,7 +1044,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#9EA2A8",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -1063,7 +1063,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#F4FFF9",
                 },
               ]
             }
@@ -1089,7 +1089,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#C1C7D0",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -1116,7 +1116,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1133,7 +1133,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1152,7 +1152,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1169,7 +1169,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1201,7 +1201,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#333842",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -1233,7 +1233,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#3C3F44",
+                    "backgroundColor": "#123D2A",
                   },
                 ]
               }
@@ -1244,7 +1244,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#C1C7D0",
+                      "color": "#D7EFE3",
                       "fontSize": 16,
                     },
                     [
@@ -1276,7 +1276,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#E4E7EA",
+                      "color": "#F4FFF9",
                     },
                   ]
                 }
@@ -1297,7 +1297,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#9EA2A8",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -1316,7 +1316,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#F2F3F5",
+                  "color": "#F4FFF9",
                 },
               ]
             }
@@ -1342,7 +1342,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#C1C7D0",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -1369,7 +1369,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1386,7 +1386,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1405,7 +1405,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1422,7 +1422,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1441,7 +1441,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1458,7 +1458,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1477,7 +1477,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1494,7 +1494,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1513,7 +1513,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1530,7 +1530,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1549,7 +1549,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1566,7 +1566,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1585,7 +1585,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1602,7 +1602,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1621,7 +1621,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1638,7 +1638,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1657,7 +1657,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1674,7 +1674,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1693,7 +1693,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1710,7 +1710,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1739,7 +1739,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#C1C7D0",
+                    "color": "#D7EFE3",
                   },
                 ]
               }
@@ -1766,7 +1766,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1783,7 +1783,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1802,7 +1802,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#3C3F44",
+                      "backgroundColor": "#123D2A",
                     },
                   ]
                 }
@@ -1819,7 +1819,7 @@ exports[`Story Snapshots: Dark should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#E4E7EA",
+                        "color": "#F4FFF9",
                       },
                     ]
                   }
@@ -1842,7 +1842,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FAF5EA",
         }
       }
     >
@@ -1866,7 +1866,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#CBCED1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -1898,7 +1898,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#D7DBE0",
+                    "backgroundColor": "#EAF2E6",
                   },
                 ]
               }
@@ -1909,7 +1909,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#2F343D",
+                      "color": "#3B382E",
                       "fontSize": 16,
                     },
                     [
@@ -1941,7 +1941,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#1F2329",
+                      "color": "#2C2A21",
                     },
                   ]
                 }
@@ -1962,7 +1962,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#6C727A",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -1981,7 +1981,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -2007,7 +2007,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#2F343D",
+                    "color": "#3B382E",
                   },
                 ]
               }
@@ -2034,7 +2034,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2051,7 +2051,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2070,7 +2070,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2087,7 +2087,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2119,7 +2119,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                 "marginBottom": 20,
               },
               {
-                "backgroundColor": "#CBCED1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2151,7 +2151,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                     "padding": 4,
                   },
                   {
-                    "backgroundColor": "#D7DBE0",
+                    "backgroundColor": "#EAF2E6",
                   },
                 ]
               }
@@ -2162,7 +2162,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#2F343D",
+                      "color": "#3B382E",
                       "fontSize": 16,
                     },
                     [
@@ -2194,7 +2194,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#1F2329",
+                      "color": "#2C2A21",
                     },
                   ]
                 }
@@ -2215,7 +2215,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#6C727A",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -2234,7 +2234,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -2260,7 +2260,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#2F343D",
+                    "color": "#3B382E",
                   },
                 ]
               }
@@ -2287,7 +2287,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2304,7 +2304,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2323,7 +2323,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2340,7 +2340,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2359,7 +2359,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2376,7 +2376,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2395,7 +2395,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2412,7 +2412,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2431,7 +2431,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2448,7 +2448,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2467,7 +2467,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2484,7 +2484,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2503,7 +2503,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2520,7 +2520,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2539,7 +2539,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2556,7 +2556,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2575,7 +2575,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2592,7 +2592,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2611,7 +2611,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2628,7 +2628,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2657,7 +2657,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#2F343D",
+                    "color": "#3B382E",
                   },
                 ]
               }
@@ -2684,7 +2684,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2701,7 +2701,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2720,7 +2720,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                       "padding": 4,
                     },
                     {
-                      "backgroundColor": "#D7DBE0",
+                      "backgroundColor": "#EAF2E6",
                     },
                   ]
                 }
@@ -2737,7 +2737,7 @@ exports[`Story Snapshots: Light should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }

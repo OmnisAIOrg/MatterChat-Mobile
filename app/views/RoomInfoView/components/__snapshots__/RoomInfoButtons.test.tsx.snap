@@ -52,7 +52,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -80,7 +80,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -123,7 +123,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -151,7 +151,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -194,7 +194,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -222,7 +222,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -265,7 +265,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -293,7 +293,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -357,7 +357,7 @@ exports[`Story Snapshots: ItsMe should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -385,7 +385,7 @@ exports[`Story Snapshots: ItsMe should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -428,7 +428,7 @@ exports[`Story Snapshots: ItsMe should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -456,7 +456,7 @@ exports[`Story Snapshots: ItsMe should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -520,7 +520,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -548,7 +548,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -591,7 +591,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -619,7 +619,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -662,7 +662,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -690,7 +690,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -733,7 +733,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -761,7 +761,7 @@ exports[`Story Snapshots: NoVoiceCall should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -825,7 +825,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -853,7 +853,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -896,7 +896,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -924,7 +924,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -967,7 +967,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -995,7 +995,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1038,7 +1038,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1066,7 +1066,7 @@ exports[`Story Snapshots: OlderServer should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1130,7 +1130,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1158,7 +1158,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1201,7 +1201,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1229,7 +1229,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1272,7 +1272,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1300,7 +1300,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1343,7 +1343,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1371,7 +1371,7 @@ exports[`Story Snapshots: WithBlockedUser should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1435,7 +1435,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1463,7 +1463,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1506,7 +1506,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1534,7 +1534,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1577,7 +1577,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
               "fontSize": 30,
             },
             [
@@ -1605,7 +1605,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#6C727A",
+              "color": "#8A8471",
             },
           ]
         }
@@ -1648,7 +1648,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#EC0D2A",
+              "color": "#B3402E",
               "fontSize": 30,
             },
             [
@@ -1676,7 +1676,7 @@ exports[`Story Snapshots: WithRoomFromRid should match snapshot 1`] = `
               "marginTop": 4,
             },
             {
-              "color": "#EC0D2A",
+              "color": "#B3402E",
             },
           ]
         }

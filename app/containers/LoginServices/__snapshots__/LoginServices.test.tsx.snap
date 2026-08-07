@@ -19,12 +19,14 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
     style={
       [
         {
-          "backgroundColor": "#E4E7EA",
-          "borderRadius": 4,
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#E4D8BC",
+          "borderRadius": 14,
+          "borderWidth": 1.5,
+          "height": 48,
           "justifyContent": "center",
           "marginBottom": 0,
           "paddingHorizontal": 16,
-          "paddingVertical": 14,
         },
         {
           "cursor": undefined,
@@ -40,7 +42,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
           "backgroundColor": "black",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
-          "borderRadius": 4,
+          "borderRadius": 14,
           "borderTopLeftRadius": undefined,
           "borderTopRightRadius": undefined,
           "bottom": 0,
@@ -56,13 +58,13 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
       style={
         [
           {
-            "color": "#6C727A",
+            "color": "#8A8471",
             "fontSize": 16,
           },
           {
             "backgroundColor": "transparent",
             "fontFamily": "Inter",
-            "fontWeight": "500",
+            "fontWeight": "700",
             "textAlign": "center",
           },
           undefined,
@@ -90,7 +92,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "height": 1,
           },
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D8BC",
           },
         ]
       }
@@ -107,7 +109,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#6C727A",
+            "color": "#6B675A",
           },
         ]
       }
@@ -122,7 +124,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "height": 1,
           },
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D8BC",
           },
         ]
       }
@@ -145,12 +147,14 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
     style={
       [
         {
-          "backgroundColor": "#E4E7EA",
-          "borderRadius": 4,
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#E4D8BC",
+          "borderRadius": 14,
+          "borderWidth": 1.5,
+          "height": 48,
           "justifyContent": "center",
           "marginBottom": 0,
           "paddingHorizontal": 16,
-          "paddingVertical": 14,
         },
         {
           "cursor": undefined,
@@ -166,7 +170,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
           "backgroundColor": "black",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
-          "borderRadius": 4,
+          "borderRadius": 14,
           "borderTopLeftRadius": undefined,
           "borderTopRightRadius": undefined,
           "bottom": 0,
@@ -182,13 +186,13 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
       style={
         [
           {
-            "color": "#6C727A",
+            "color": "#8A8471",
             "fontSize": 16,
           },
           {
             "backgroundColor": "transparent",
             "fontFamily": "Inter",
-            "fontWeight": "500",
+            "fontWeight": "700",
             "textAlign": "center",
           },
           undefined,
@@ -216,7 +220,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "height": 1,
           },
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D8BC",
           },
         ]
       }
@@ -233,7 +237,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#6C727A",
+            "color": "#6B675A",
           },
         ]
       }
@@ -248,7 +252,7 @@ exports[`Story Snapshots: Separators should match snapshot 1`] = `
             "height": 1,
           },
           {
-            "backgroundColor": "#CBCED1",
+            "backgroundColor": "#E4D8BC",
           },
         ]
       }
@@ -276,12 +280,19 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
     style={
       [
         {
-          "backgroundColor": "#156FF5",
-          "borderRadius": 4,
+          "backgroundColor": "#175F35",
+          "borderRadius": 14,
+          "height": 48,
           "justifyContent": "center",
           "marginBottom": 12,
           "paddingHorizontal": 16,
-          "paddingVertical": 14,
+          "shadowColor": "#175F35",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.28,
+          "shadowRadius": 8,
         },
         {
           "cursor": undefined,
@@ -297,7 +308,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
           "backgroundColor": "black",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
-          "borderRadius": 4,
+          "borderRadius": 14,
           "borderTopLeftRadius": undefined,
           "borderTopRightRadius": undefined,
           "bottom": 0,
@@ -319,7 +330,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
           {
             "backgroundColor": "transparent",
             "fontFamily": "Inter",
-            "fontWeight": "500",
+            "fontWeight": "700",
             "textAlign": "center",
           },
           undefined,
@@ -363,11 +374,11 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -430,7 +441,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -465,7 +476,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -523,11 +534,11 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -590,7 +601,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -625,7 +636,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -683,11 +694,11 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -750,7 +761,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -785,7 +796,7 @@ exports[`Story Snapshots: ServiceListCollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -831,12 +842,19 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
     style={
       [
         {
-          "backgroundColor": "#156FF5",
-          "borderRadius": 4,
+          "backgroundColor": "#175F35",
+          "borderRadius": 14,
+          "height": 48,
           "justifyContent": "center",
           "marginBottom": 12,
           "paddingHorizontal": 16,
-          "paddingVertical": 14,
+          "shadowColor": "#175F35",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.28,
+          "shadowRadius": 8,
         },
         {
           "cursor": undefined,
@@ -852,7 +870,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
           "backgroundColor": "black",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
-          "borderRadius": 4,
+          "borderRadius": 14,
           "borderTopLeftRadius": undefined,
           "borderTopRightRadius": undefined,
           "bottom": 0,
@@ -874,7 +892,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
           {
             "backgroundColor": "transparent",
             "fontFamily": "Inter",
-            "fontWeight": "500",
+            "fontWeight": "700",
             "textAlign": "center",
           },
           undefined,
@@ -918,11 +936,11 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -985,7 +1003,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1020,7 +1038,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1078,11 +1096,11 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1145,7 +1163,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1180,7 +1198,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1238,11 +1256,11 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1305,7 +1323,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1340,7 +1358,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1398,11 +1416,11 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1465,7 +1483,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1500,7 +1518,7 @@ exports[`Story Snapshots: ServiceListUncollapsed should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1563,11 +1581,11 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#F7F8FA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1629,7 +1647,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1664,7 +1682,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1722,11 +1740,11 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#F7F8FA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1788,7 +1806,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1823,7 +1841,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -1881,11 +1899,11 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#F7F8FA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -1947,7 +1965,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -1982,7 +2000,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }
@@ -2040,11 +2058,11 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
       onGestureHandlerEvent={[Function]}
       onGestureHandlerStateChange={[Function]}
       onPress={[Function]}
-      rippleColor="#E4E7EA"
+      rippleColor="#EAE1CB"
       style={
         [
           {
-            "backgroundColor": "#F7F8FA",
+            "backgroundColor": "#F0E7D2",
             "borderRadius": 4,
             "margin": undefined,
             "marginBottom": 10,
@@ -2106,7 +2124,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -2141,7 +2159,7 @@ exports[`Story Snapshots: ServicesList should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                 },
               ]
             }

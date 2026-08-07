@@ -8,7 +8,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#158D65",
+          "color": "#2FA44A",
           "fontSize": 32,
         },
         [
@@ -42,7 +42,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#D40C26",
+          "color": "#B3402E",
           "fontSize": 32,
         },
         [
@@ -76,7 +76,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#AC892F",
+          "color": "#D9A62E",
           "fontSize": 32,
         },
         [
@@ -110,7 +110,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#6C727A",
+          "color": "#A39C86",
           "fontSize": 32,
         },
         [
@@ -144,7 +144,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#F38C39",
+          "color": "#E09425",
           "fontSize": 32,
         },
         [
@@ -178,7 +178,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#6C727A",
+          "color": "#A39C86",
           "fontSize": 32,
         },
         [
@@ -212,7 +212,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#6C727A",
+          "color": "#A39C86",
           "fontSize": 32,
         },
         [
@@ -246,7 +246,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
     style={
       [
         {
-          "color": "#158D65",
+          "color": "#2FA44A",
           "fontSize": 60,
         },
         [

@@ -41,7 +41,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -70,8 +70,17 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             style={
               [
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 },
                 undefined,
@@ -80,7 +89,9 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             testID="avatar"
           >
             <ViewManagerAdapter_ExpoImage
-              borderRadius={4}
+              borderColor={522988065}
+              borderRadius={9}
+              borderWidth={0.5}
               containerViewRef={{"current":"Object"}}
               contentFit="cover"
               contentPosition={
@@ -97,6 +108,15 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
               onProgress={[Function]}
               placeholder={[]}
               priority="high"
+              shadowColor="#2C2A21"
+              shadowOffset={
+                {
+                  "height": 2,
+                  "width": 0,
+                }
+              }
+              shadowOpacity={0.16}
+              shadowRadius={4}
               source={
                 [
                   {
@@ -109,8 +129,17 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
               }
               style={
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 }
               }
@@ -135,7 +164,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 20,
                 },
                 [
@@ -177,7 +206,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -202,7 +231,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -222,7 +251,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [
@@ -276,7 +305,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -305,7 +334,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#6B675A",
                   "fontSize": 20,
                 },
                 [
@@ -350,7 +379,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -375,7 +404,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -395,7 +424,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [
@@ -449,7 +478,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -478,8 +507,17 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             style={
               [
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 },
                 undefined,
@@ -488,7 +526,9 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             testID="avatar"
           >
             <ViewManagerAdapter_ExpoImage
-              borderRadius={4}
+              borderColor={522988065}
+              borderRadius={9}
+              borderWidth={0.5}
               containerViewRef={{"current":"Object"}}
               contentFit="cover"
               contentPosition={
@@ -505,6 +545,15 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
               onProgress={[Function]}
               placeholder={[]}
               priority="high"
+              shadowColor="#2C2A21"
+              shadowOffset={
+                {
+                  "height": 2,
+                  "width": 0,
+                }
+              }
+              shadowOpacity={0.16}
+              shadowRadius={4}
               source={
                 [
                   {
@@ -517,8 +566,17 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
               }
               style={
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 }
               }
@@ -543,7 +601,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 20,
                 },
                 [
@@ -585,7 +643,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -610,7 +668,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -630,7 +688,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [
@@ -697,7 +755,7 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -726,8 +784,17 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
             style={
               [
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 },
                 undefined,
@@ -736,7 +803,9 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
             testID="avatar"
           >
             <ViewManagerAdapter_ExpoImage
-              borderRadius={4}
+              borderColor={522988065}
+              borderRadius={9}
+              borderWidth={0.5}
               containerViewRef={{"current":"Object"}}
               contentFit="cover"
               contentPosition={
@@ -753,6 +822,15 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
               onProgress={[Function]}
               placeholder={[]}
               priority="high"
+              shadowColor="#2C2A21"
+              shadowOffset={
+                {
+                  "height": 2,
+                  "width": 0,
+                }
+              }
+              shadowOpacity={0.16}
+              shadowRadius={4}
               source={
                 [
                   {
@@ -765,8 +843,17 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
               }
               style={
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 }
               }
@@ -791,7 +878,7 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 20,
                 },
                 [
@@ -833,7 +920,7 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -858,7 +945,7 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -878,7 +965,7 @@ exports[`Story Snapshots: LongUsername should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [
@@ -945,7 +1032,7 @@ exports[`Story Snapshots: Sip should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -974,7 +1061,7 @@ exports[`Story Snapshots: Sip should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#6B675A",
                   "fontSize": 20,
                 },
                 [
@@ -1019,7 +1106,7 @@ exports[`Story Snapshots: Sip should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1044,7 +1131,7 @@ exports[`Story Snapshots: Sip should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -1064,7 +1151,7 @@ exports[`Story Snapshots: Sip should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [
@@ -1131,7 +1218,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
             "paddingHorizontal": 10,
           },
           {
-            "backgroundColor": "#E4E7EA",
+            "backgroundColor": "#F0E7D2",
           },
         ]
       }
@@ -1160,8 +1247,17 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
             style={
               [
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 },
                 undefined,
@@ -1170,7 +1266,9 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
             testID="avatar"
           >
             <ViewManagerAdapter_ExpoImage
-              borderRadius={4}
+              borderColor={522988065}
+              borderRadius={9}
+              borderWidth={0.5}
               containerViewRef={{"current":"Object"}}
               contentFit="cover"
               contentPosition={
@@ -1187,6 +1285,15 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
               onProgress={[Function]}
               placeholder={[]}
               priority="high"
+              shadowColor="#2C2A21"
+              shadowOffset={
+                {
+                  "height": 2,
+                  "width": 0,
+                }
+              }
+              shadowOpacity={0.16}
+              shadowRadius={4}
               source={
                 [
                   {
@@ -1199,8 +1306,17 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
               }
               style={
                 {
-                  "borderRadius": 4,
+                  "borderColor": "rgba(44,42,33,0.12)",
+                  "borderRadius": 9,
+                  "borderWidth": 0.5,
                   "height": 28,
+                  "shadowColor": "#2C2A21",
+                  "shadowOffset": {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.16,
+                  "shadowRadius": 4,
                   "width": 28,
                 }
               }
@@ -1225,7 +1341,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#6C727A",
+                  "color": "#A39C86",
                   "fontSize": 20,
                 },
                 [
@@ -1267,7 +1383,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#2F343D",
+                  "color": "#3B382E",
                 },
               ]
             }
@@ -1292,7 +1408,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#9EA2A8"
+        rippleColor="#E4D8BC"
         style={
           [
             {
@@ -1312,7 +1428,7 @@ exports[`Story Snapshots: User should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 16,
               },
               [

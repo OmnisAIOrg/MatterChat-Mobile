@@ -19,7 +19,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "justifyContent": "center",
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 16,
         },
@@ -59,7 +59,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "justifyContent": "center",
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 26,
         },
@@ -102,7 +102,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -143,7 +143,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -184,7 +184,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E1053C",
+          "backgroundColor": "#B3402E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -225,7 +225,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E09425",
+          "backgroundColor": "#B0611E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -266,7 +266,7 @@ exports[`Story Snapshots: All should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#148B3B",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -321,7 +321,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -362,7 +362,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E1053C",
+          "backgroundColor": "#B3402E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -403,7 +403,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E09425",
+          "backgroundColor": "#B0611E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -444,7 +444,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E1053C",
+          "backgroundColor": "#B3402E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -485,7 +485,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#148B3B",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -526,7 +526,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E1053C",
+          "backgroundColor": "#B3402E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -567,7 +567,7 @@ exports[`Story Snapshots: DifferentMentionTypes should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#E09425",
+          "backgroundColor": "#B0611E",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -622,7 +622,7 @@ exports[`Story Snapshots: Normal should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -663,7 +663,7 @@ exports[`Story Snapshots: Normal should match snapshot 1`] = `
           "paddingVertical": 4,
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 22,
         },
@@ -715,7 +715,7 @@ exports[`Story Snapshots: Small should match snapshot 1`] = `
           "justifyContent": "center",
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 16,
         },
@@ -755,7 +755,7 @@ exports[`Story Snapshots: Small should match snapshot 1`] = `
           "justifyContent": "center",
         },
         {
-          "backgroundColor": "#2FA44A",
+          "backgroundColor": "#175F35",
           "borderRadius": 11,
           "minWidth": 26,
         },
@@ -813,7 +813,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -854,7 +854,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#E1053C",
+            "backgroundColor": "#B3402E",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -895,7 +895,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#E09425",
+            "backgroundColor": "#B0611E",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -936,7 +936,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#148B3B",
+            "backgroundColor": "#175F35",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -988,7 +988,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#12B981",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -1111,7 +1111,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#148B3B",
+            "backgroundColor": "#0D8F5F",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -1163,7 +1163,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#12B981",
             "borderRadius": 11,
             "minWidth": 22,
           },
@@ -1286,7 +1286,7 @@ exports[`Story Snapshots: Themes should match snapshot 1`] = `
             "paddingVertical": 4,
           },
           {
-            "backgroundColor": "#148B3B",
+            "backgroundColor": "#0D8F5F",
             "borderRadius": 11,
             "minWidth": 22,
           },

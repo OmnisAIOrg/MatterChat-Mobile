@@ -22,7 +22,7 @@ exports[`Story Snapshots: Item should match snapshot 1`] = `
           "textAlignVertical": "center",
         },
         {
-          "color": "#2F343D",
+          "color": "#3B382E",
           "height": 0,
         },
       ]
@@ -45,7 +45,7 @@ exports[`Story Snapshots: Item should match snapshot 1`] = `
           "textAlignVertical": "center",
         },
         {
-          "color": "#2F343D",
+          "color": "#3B382E",
           "height": 0,
         },
       ]
@@ -68,7 +68,7 @@ exports[`Story Snapshots: Item should match snapshot 1`] = `
           "textAlignVertical": "center",
         },
         {
-          "color": "#2F343D",
+          "color": "#3B382E",
           "height": 0,
         },
       ]

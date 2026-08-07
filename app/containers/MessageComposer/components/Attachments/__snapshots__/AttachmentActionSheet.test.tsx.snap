@@ -43,7 +43,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#26312A",
+            "color": "#3B382E",
           },
         ]
       }
@@ -62,7 +62,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#ECEFEB",
+            "backgroundColor": "#EAE1CB",
           },
         ]
       }
@@ -79,7 +79,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
               "overflow": "hidden",
             },
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#EAE1CB",
             },
           ]
         }
@@ -90,7 +90,7 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#2FA44A",
+                "color": "#175F35",
                 "fontSize": 40,
               },
               [
@@ -129,13 +129,13 @@ exports[`Story Snapshots: File should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 14,
             "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "shadowColor": "#2FA44A",
+            "shadowColor": "#175F35",
             "shadowOffset": {
               "height": 4,
               "width": 0,
@@ -236,7 +236,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#26312A",
+            "color": "#3B382E",
           },
         ]
       }
@@ -255,7 +255,7 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#ECEFEB",
+            "backgroundColor": "#EAE1CB",
           },
         ]
       }
@@ -292,13 +292,13 @@ exports[`Story Snapshots: Image should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 14,
             "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "shadowColor": "#2FA44A",
+            "shadowColor": "#175F35",
             "shadowOffset": {
               "height": 4,
               "width": 0,
@@ -399,7 +399,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#26312A",
+            "color": "#3B382E",
           },
         ]
       }
@@ -418,7 +418,7 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#ECEFEB",
+            "backgroundColor": "#EAE1CB",
           },
         ]
       }
@@ -455,13 +455,13 @@ exports[`Story Snapshots: ImageOnLegacyServer should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 14,
             "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "shadowColor": "#2FA44A",
+            "shadowColor": "#175F35",
             "shadowOffset": {
               "height": 4,
               "width": 0,
@@ -562,7 +562,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             "textAlign": "left",
           },
           {
-            "color": "#26312A",
+            "color": "#3B382E",
           },
         ]
       }
@@ -581,7 +581,7 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#ECEFEB",
+            "backgroundColor": "#EAE1CB",
           },
         ]
       }
@@ -618,13 +618,13 @@ exports[`Story Snapshots: ImageWithPrefilledAltText should match snapshot 1`] = 
       style={
         [
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 14,
             "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "shadowColor": "#2FA44A",
+            "shadowColor": "#175F35",
             "shadowOffset": {
               "height": 4,
               "width": 0,
@@ -725,7 +725,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             "textAlign": "left",
           },
           {
-            "color": "#26312A",
+            "color": "#3B382E",
           },
         ]
       }
@@ -744,7 +744,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
             "overflow": "hidden",
           },
           {
-            "backgroundColor": "#ECEFEB",
+            "backgroundColor": "#EAE1CB",
           },
         ]
       }
@@ -761,7 +761,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
               "overflow": "hidden",
             },
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#EAE1CB",
             },
           ]
         }
@@ -772,7 +772,7 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#2FA44A",
+                "color": "#175F35",
                 "fontSize": 40,
               },
               [
@@ -811,13 +811,13 @@ exports[`Story Snapshots: Video should match snapshot 1`] = `
       style={
         [
           {
-            "backgroundColor": "#2FA44A",
+            "backgroundColor": "#175F35",
             "borderRadius": 14,
             "height": 48,
             "justifyContent": "center",
             "marginBottom": 0,
             "paddingHorizontal": 16,
-            "shadowColor": "#2FA44A",
+            "shadowColor": "#175F35",
             "shadowOffset": {
               "height": 4,
               "width": 0,

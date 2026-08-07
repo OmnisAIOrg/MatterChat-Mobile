@@ -4,7 +4,7 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -49,11 +49,11 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -71,13 +71,13 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
             ]
           }
           testID="directory-item-style"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -120,8 +120,17 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -132,7 +141,9 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -149,6 +160,15 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -161,8 +181,17 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -193,7 +222,7 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -231,7 +260,7 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -247,13 +276,13 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -264,7 +293,7 @@ exports[`Story Snapshots: CustomStyle should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -286,7 +315,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -331,11 +360,11 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -353,13 +382,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
             ]
           }
           testID="directory-item"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -400,8 +429,17 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -412,7 +450,9 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -429,6 +469,15 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -441,8 +490,17 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -473,7 +531,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -511,7 +569,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -527,13 +585,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -544,7 +602,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -566,7 +624,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -611,11 +669,11 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -633,13 +691,13 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
             ]
           }
           testID="directory-item-dm"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -680,8 +738,17 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -692,7 +759,9 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -709,6 +778,15 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -721,8 +799,17 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -760,7 +847,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -776,13 +863,13 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -793,7 +880,7 @@ exports[`Story Snapshots: DirectMessage should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -815,7 +902,7 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -860,11 +947,11 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -882,13 +969,13 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
             ]
           }
           testID="directory-item-long"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -929,8 +1016,17 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -941,7 +1037,9 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -958,6 +1056,15 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -970,8 +1077,17 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -1002,7 +1118,7 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -1040,7 +1156,7 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -1056,13 +1172,13 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -1073,7 +1189,7 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -1094,7 +1210,7 @@ exports[`Story Snapshots: LongRoomName should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#6C727A",
+                      "color": "#6B675A",
                     },
                   ]
                 }
@@ -1114,7 +1230,7 @@ exports[`Story Snapshots: OnlyTitle should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -1159,11 +1275,11 @@ exports[`Story Snapshots: OnlyTitle should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -1181,13 +1297,13 @@ exports[`Story Snapshots: OnlyTitle should match snapshot 1`] = `
             ]
           }
           testID="directory-item-title"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -1245,7 +1361,7 @@ exports[`Story Snapshots: OnlyTitle should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -1283,7 +1399,7 @@ exports[`Story Snapshots: OnlyTitle should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -1305,7 +1421,7 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -1350,11 +1466,11 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -1372,13 +1488,13 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
             ]
           }
           testID="directory-item-team"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -1419,8 +1535,17 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -1431,7 +1556,9 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -1448,6 +1575,15 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -1460,8 +1596,17 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -1492,7 +1637,7 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -1530,7 +1675,7 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -1546,13 +1691,13 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -1563,7 +1708,7 @@ exports[`Story Snapshots: TeamMain should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -1585,7 +1730,7 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -1630,11 +1775,11 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -1652,13 +1797,13 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
             ]
           }
           testID="directory-item-label"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -1699,8 +1844,17 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -1711,7 +1865,9 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -1728,6 +1884,15 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -1740,8 +1905,17 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -1772,7 +1946,7 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -1810,7 +1984,7 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }
@@ -1826,13 +2000,13 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                       {
                         "backgroundColor": "transparent",
                         "fontFamily": "Inter",
-                        "fontSize": 16,
+                        "fontSize": 15,
                         "fontWeight": "400",
                         "lineHeight": 22,
                         "textAlign": "left",
                       },
                       {
-                        "color": "#2F343D",
+                        "color": "#3B382E",
                         "lineHeight": undefined,
                       },
                       {
@@ -1843,7 +2017,7 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                       },
                     ]
                   }
@@ -1864,7 +2038,7 @@ exports[`Story Snapshots: WithRightLabel should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#6C727A",
+                      "color": "#6B675A",
                     },
                   ]
                 }
@@ -1884,7 +2058,7 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
 <RCTScrollView
   style={
     {
-      "backgroundColor": "#FFFFFF",
+      "backgroundColor": "#FAF5EA",
     }
   }
 >
@@ -1929,11 +2103,11 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
           onGestureHandlerEvent={[Function]}
           onGestureHandlerStateChange={[Function]}
           onPress={[Function]}
-          rippleColor="#E4E7EA"
+          rippleColor="#EAE1CB"
           style={
             [
               {
-                "backgroundColor": "#FFFFFF",
+                "backgroundColor": "#FAF5EA",
                 "borderRadius": undefined,
                 "margin": undefined,
                 "marginBottom": undefined,
@@ -1951,13 +2125,13 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
             ]
           }
           testID="directory-item-no-desc"
-          underlayColor="#E4E7EA"
+          underlayColor="#EAE1CB"
         >
           <View
             collapsable={false}
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "borderBottomLeftRadius": undefined,
                 "borderBottomRightRadius": undefined,
                 "borderRadius": undefined,
@@ -1998,8 +2172,17 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     },
                     {
@@ -2010,7 +2193,9 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                 testID="avatar"
               >
                 <ViewManagerAdapter_ExpoImage
-                  borderRadius={4}
+                  borderColor={522988065}
+                  borderRadius={9}
+                  borderWidth={0.5}
                   containerViewRef={{"current":"Object"}}
                   contentFit="cover"
                   contentPosition={
@@ -2027,6 +2212,15 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                   onProgress={[Function]}
                   placeholder={[]}
                   priority="high"
+                  shadowColor="#2C2A21"
+                  shadowOffset={
+                    {
+                      "height": 2,
+                      "width": 0,
+                    }
+                  }
+                  shadowOpacity={0.16}
+                  shadowRadius={4}
                   source={
                     [
                       {
@@ -2039,8 +2233,17 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                   }
                   style={
                     {
-                      "borderRadius": 4,
+                      "borderColor": "rgba(44,42,33,0.12)",
+                      "borderRadius": 9,
+                      "borderWidth": 0.5,
                       "height": 30,
+                      "shadowColor": "#2C2A21",
+                      "shadowOffset": {
+                        "height": 2,
+                        "width": 0,
+                      },
+                      "shadowOpacity": 0.16,
+                      "shadowRadius": 4,
                       "width": 30,
                     }
                   }
@@ -2071,7 +2274,7 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                     style={
                       [
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                           "fontSize": 16,
                         },
                         [
@@ -2109,7 +2312,7 @@ exports[`Story Snapshots: WithoutDescription should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#1F2329",
+                          "color": "#2C2A21",
                         },
                       ]
                     }

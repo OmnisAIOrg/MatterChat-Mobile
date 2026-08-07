@@ -5,7 +5,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -29,7 +29,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -37,7 +37,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -90,7 +90,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -103,7 +103,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#E1053C",
+                    "color": "#B3402E",
                     "fontSize": 24,
                   },
                   [
@@ -137,7 +137,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -145,7 +145,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -198,7 +198,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -211,7 +211,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#E1053C",
+                    "color": "#B3402E",
                     "fontSize": 24,
                   },
                   [
@@ -245,7 +245,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -253,7 +253,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -306,7 +306,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -319,7 +319,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#E1053C",
+                    "color": "#B3402E",
                     "fontSize": 24,
                   },
                   [
@@ -362,11 +362,13 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -378,7 +380,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -410,7 +412,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -418,7 +420,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -471,7 +473,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -484,7 +486,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#E1053C",
+                    "color": "#B3402E",
                     "fontSize": 24,
                   },
                   [
@@ -527,11 +529,13 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -543,7 +547,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -575,7 +579,7 @@ exports[`Story Snapshots: Alert should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -589,7 +593,7 @@ exports[`Story Snapshots: Header should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -627,7 +631,7 @@ exports[`Story Snapshots: Header should match snapshot 1`] = `
               "textTransform": "uppercase",
             },
             {
-              "color": "#5C6B61",
+              "color": "#6B675A",
             },
           ]
         }
@@ -657,7 +661,7 @@ exports[`Story Snapshots: Header should match snapshot 1`] = `
               "textTransform": "uppercase",
             },
             {
-              "color": "#5C6B61",
+              "color": "#6B675A",
             },
           ]
         }
@@ -674,7 +678,7 @@ exports[`Story Snapshots: Icon should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -699,11 +703,13 @@ exports[`Story Snapshots: Icon should match snapshot 1`] = `
           },
           {
             "borderRadius": 10,
+            "borderWidth": 1,
             "height": 32,
             "width": 32,
           },
           {
-            "backgroundColor": "#EAF6EC",
+            "backgroundColor": "#EAF2E6",
+            "borderColor": "#DCE8D6",
           },
           undefined,
         ]
@@ -715,7 +721,7 @@ exports[`Story Snapshots: Icon should match snapshot 1`] = `
         style={
           [
             {
-              "color": "#148B3B",
+              "color": "#175F35",
               "fontSize": 20,
             },
             [
@@ -775,11 +781,11 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
     onGestureHandlerEvent={[Function]}
     onGestureHandlerStateChange={[Function]}
     onPress={[Function]}
-    rippleColor="#ECEFEB"
+    rippleColor="#EAE1CB"
     style={
       [
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
           "borderRadius": undefined,
           "margin": undefined,
           "marginBottom": undefined,
@@ -796,13 +802,13 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
         },
       ]
     }
-    underlayColor="#ECEFEB"
+    underlayColor="#F3EDDE"
   >
     <View
       collapsable={false}
       style={
         {
-          "backgroundColor": "#ECEFEB",
+          "backgroundColor": "#F3EDDE",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
           "borderRadius": undefined,
@@ -855,11 +861,13 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -871,7 +879,7 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -923,7 +931,7 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -943,7 +951,7 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
                   "textAlign": "left",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -973,11 +981,13 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -989,7 +999,7 @@ exports[`Story Snapshots: ListItemWithRightContainerStyle should match snapshot 
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -1022,7 +1032,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -1046,7 +1056,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1085,11 +1095,11 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1106,13 +1116,13 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1179,7 +1189,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -1200,7 +1210,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1239,11 +1249,11 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1260,13 +1270,13 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1335,7 +1345,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -1356,7 +1366,7 @@ exports[`Story Snapshots: Pressable should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1370,7 +1380,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -1394,7 +1404,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1433,11 +1443,11 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1454,13 +1464,13 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1527,7 +1537,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -1563,7 +1573,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#148B3B",
+                        "color": "#175F35",
                         "fontSize": 24,
                       },
                       [
@@ -1597,7 +1607,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1636,11 +1646,11 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1657,13 +1667,13 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1730,7 +1740,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -1766,7 +1776,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#A9B5AC",
+                        "color": "#C9C2AC",
                         "fontSize": 24,
                       },
                       [
@@ -1800,7 +1810,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -1839,11 +1849,11 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -1860,13 +1870,13 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -1933,7 +1943,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -1969,7 +1979,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#A9B5AC",
+                        "color": "#C9C2AC",
                         "fontSize": 24,
                       },
                       [
@@ -2003,7 +2013,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -2042,11 +2052,11 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
               "borderRadius": undefined,
               "margin": undefined,
               "marginBottom": undefined,
@@ -2063,13 +2073,13 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
             },
           ]
         }
-        underlayColor="#ECEFEB"
+        underlayColor="#F3EDDE"
       >
         <View
           collapsable={false}
           style={
             {
-              "backgroundColor": "#ECEFEB",
+              "backgroundColor": "#F3EDDE",
               "borderBottomLeftRadius": undefined,
               "borderBottomRightRadius": undefined,
               "borderRadius": undefined,
@@ -2136,7 +2146,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2156,7 +2166,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                       "textAlign": "left",
                     },
                     {
-                      "color": "#5C6B61",
+                      "color": "#6B675A",
                     },
                   ]
                 }
@@ -2191,7 +2201,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#148B3B",
+                        "color": "#175F35",
                         "fontSize": 24,
                       },
                       [
@@ -2225,7 +2235,7 @@ exports[`Story Snapshots: Radio should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -2247,20 +2257,48 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#F2F4F1",
+        "backgroundColor": "#FAF5EA",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       [
         {
-          "paddingVertical": 16,
+          "paddingVertical": 8,
         },
         {
           "paddingBottom": 0,
@@ -2291,7 +2329,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2299,7 +2337,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2352,7 +2390,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2371,7 +2409,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2379,7 +2417,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2432,7 +2470,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2451,7 +2489,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2472,7 +2510,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2480,7 +2518,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2533,7 +2571,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2552,7 +2590,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2560,7 +2598,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2613,7 +2651,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2632,7 +2670,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2667,7 +2705,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -2683,7 +2721,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2691,7 +2729,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2744,7 +2782,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2763,7 +2801,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2771,7 +2809,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2824,7 +2862,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2843,7 +2881,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2868,7 +2906,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }
@@ -2906,7 +2944,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -2922,7 +2960,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -2930,7 +2968,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -2983,7 +3021,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -3002,7 +3040,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -3010,7 +3048,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -3063,7 +3101,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -3082,7 +3120,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -3107,7 +3145,7 @@ exports[`Story Snapshots: SectionAndInfo should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }
@@ -3126,7 +3164,7 @@ exports[`Story Snapshots: Separator should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -3150,7 +3188,7 @@ exports[`Story Snapshots: Separator should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3164,7 +3202,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -3188,7 +3226,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3196,7 +3234,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -3249,7 +3287,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -3268,7 +3306,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3276,7 +3314,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -3329,7 +3367,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -3349,7 +3387,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -3367,7 +3405,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3375,7 +3413,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -3429,7 +3467,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -3449,7 +3487,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -3467,7 +3505,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3475,7 +3513,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -3529,7 +3567,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -3549,7 +3587,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -3567,7 +3605,7 @@ exports[`Story Snapshots: TitleAndSubtitle should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -3589,20 +3627,48 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#F2F4F1",
+        "backgroundColor": "#FAF5EA",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       [
         {
-          "paddingVertical": 16,
+          "paddingVertical": 8,
         },
         {
           "paddingBottom": 0,
@@ -3647,7 +3713,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -3663,7 +3729,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -3702,11 +3768,11 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -3723,13 +3789,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -3782,11 +3848,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -3798,7 +3866,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -3850,7 +3918,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -3870,7 +3938,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -3897,11 +3965,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -3913,7 +3983,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -3947,7 +4017,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -3986,11 +4056,11 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -4007,13 +4077,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -4068,11 +4138,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4084,7 +4156,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4136,7 +4208,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -4156,7 +4228,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -4183,11 +4255,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4199,7 +4273,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4233,7 +4307,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -4258,7 +4332,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }
@@ -4296,7 +4370,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -4312,7 +4386,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -4351,11 +4425,11 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -4372,13 +4446,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -4431,11 +4505,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4447,7 +4523,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4499,7 +4575,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -4519,7 +4595,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -4546,11 +4622,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4562,7 +4640,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4596,7 +4674,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -4635,11 +4713,11 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -4656,13 +4734,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -4717,11 +4795,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4733,7 +4813,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4785,7 +4865,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -4805,7 +4885,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -4832,11 +4912,13 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -4848,7 +4930,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -4882,7 +4964,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -4907,7 +4989,7 @@ exports[`Story Snapshots: WithBiggerFont should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }
@@ -4934,20 +5016,48 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#121812",
+        "backgroundColor": "#020805",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       [
         {
-          "paddingVertical": 16,
+          "paddingVertical": 8,
         },
         {
           "paddingBottom": 0,
@@ -4992,7 +5102,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -5008,7 +5118,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -5047,11 +5157,11 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#141B16"
+            rippleColor="#0A2417"
             style={
               [
                 {
-                  "backgroundColor": "#070A08",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -5068,13 +5178,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#141B16"
+            underlayColor="#051209"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#141B16",
+                  "backgroundColor": "#051209",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -5127,11 +5237,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5143,7 +5255,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5195,7 +5307,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -5215,7 +5327,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -5242,11 +5354,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5258,7 +5372,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5292,7 +5406,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -5331,11 +5445,11 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#141B16"
+            rippleColor="#0A2417"
             style={
               [
                 {
-                  "backgroundColor": "#070A08",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -5352,13 +5466,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#141B16"
+            underlayColor="#051209"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#141B16",
+                  "backgroundColor": "#051209",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -5413,11 +5527,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5429,7 +5545,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5481,7 +5597,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -5501,7 +5617,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -5528,11 +5644,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5544,7 +5662,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5578,7 +5696,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -5603,7 +5721,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#75857A",
+                  "color": "#5FBF95",
                 },
               ]
             }
@@ -5641,7 +5759,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -5657,7 +5775,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -5696,11 +5814,11 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#141B16"
+            rippleColor="#0A2417"
             style={
               [
                 {
-                  "backgroundColor": "#070A08",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -5717,13 +5835,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#141B16"
+            underlayColor="#051209"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#141B16",
+                  "backgroundColor": "#051209",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -5776,11 +5894,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5792,7 +5912,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5844,7 +5964,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -5864,7 +5984,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -5891,11 +6011,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -5907,7 +6029,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -5941,7 +6063,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -5980,11 +6102,11 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#141B16"
+            rippleColor="#0A2417"
             style={
               [
                 {
-                  "backgroundColor": "#070A08",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -6001,13 +6123,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#141B16"
+            underlayColor="#051209"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#141B16",
+                  "backgroundColor": "#051209",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -6062,11 +6184,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -6078,7 +6202,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -6130,7 +6254,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -6150,7 +6274,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -6177,11 +6301,13 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#16301F",
+                          "backgroundColor": "#0A2417",
+                          "borderColor": "#0A2417",
                         },
                         undefined,
                       ]
@@ -6193,7 +6319,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -6227,7 +6353,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#18211B",
+                "backgroundColor": "#0A2417",
               },
             ]
           }
@@ -6252,7 +6378,7 @@ exports[`Story Snapshots: WithBlackTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#75857A",
+                  "color": "#5FBF95",
                 },
               ]
             }
@@ -6271,7 +6397,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -6295,7 +6421,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -6303,7 +6429,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -6375,7 +6501,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -6414,7 +6540,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#ECEFEB"
+        rippleColor="#EAE1CB"
         style={
           [
             {
@@ -6529,7 +6655,7 @@ exports[`Story Snapshots: WithCustomColors should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -6551,20 +6677,48 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#1A211C",
+        "backgroundColor": "#06170F",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       [
         {
-          "paddingVertical": 16,
+          "paddingVertical": 8,
         },
         {
           "paddingBottom": 0,
@@ -6609,7 +6763,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -6625,7 +6779,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -6664,11 +6818,11 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#222B24"
+            rippleColor="#12402C"
             style={
               [
                 {
-                  "backgroundColor": "#121814",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -6685,13 +6839,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#222B24"
+            underlayColor="#0C2C1C"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#222B24",
+                  "backgroundColor": "#0C2C1C",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -6744,11 +6898,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -6760,7 +6916,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -6812,7 +6968,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -6832,7 +6988,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -6859,11 +7015,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -6875,7 +7033,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -6909,7 +7067,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -6948,11 +7106,11 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#222B24"
+            rippleColor="#12402C"
             style={
               [
                 {
-                  "backgroundColor": "#121814",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -6969,13 +7127,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#222B24"
+            underlayColor="#0C2C1C"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#222B24",
+                  "backgroundColor": "#0C2C1C",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -7030,11 +7188,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7046,7 +7206,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7098,7 +7258,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -7118,7 +7278,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -7145,11 +7305,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7161,7 +7323,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7195,7 +7357,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -7220,7 +7382,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#75857A",
+                  "color": "#5FBF95",
                 },
               ]
             }
@@ -7258,7 +7420,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8FD9B8",
                 },
               ]
             }
@@ -7274,7 +7436,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -7313,11 +7475,11 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#222B24"
+            rippleColor="#12402C"
             style={
               [
                 {
-                  "backgroundColor": "#121814",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -7334,13 +7496,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#222B24"
+            underlayColor="#0C2C1C"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#222B24",
+                  "backgroundColor": "#0C2C1C",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -7393,11 +7555,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7409,7 +7573,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7461,7 +7625,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -7481,7 +7645,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -7508,11 +7672,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7524,7 +7690,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7558,7 +7724,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -7597,11 +7763,11 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#222B24"
+            rippleColor="#12402C"
             style={
               [
                 {
-                  "backgroundColor": "#121814",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -7618,13 +7784,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#222B24"
+            underlayColor="#0C2C1C"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#222B24",
+                  "backgroundColor": "#0C2C1C",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -7679,11 +7845,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7695,7 +7863,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7747,7 +7915,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#EDF2EE",
+                            "color": "#F4FFF9",
                           },
                         ]
                       }
@@ -7767,7 +7935,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#8FA096",
+                          "color": "#8FD9B8",
                         },
                       ]
                     }
@@ -7794,11 +7962,13 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#1F3A28",
+                          "backgroundColor": "#12402C",
+                          "borderColor": "#12402C",
                         },
                         undefined,
                       ]
@@ -7810,7 +7980,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#48C46A",
+                            "color": "#34E6A8",
                             "fontSize": 20,
                           },
                           [
@@ -7844,7 +8014,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#26302A",
+                "backgroundColor": "#12402C",
               },
             ]
           }
@@ -7869,7 +8039,7 @@ exports[`Story Snapshots: WithDarkTheme should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#75857A",
+                  "color": "#5FBF95",
                 },
               ]
             }
@@ -7896,15 +8066,43 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#F2F4F1",
+        "backgroundColor": "#FAF5EA",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     ItemSeparatorComponent={
       {
@@ -7995,7 +8193,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8009,7 +8207,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8062,7 +8260,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8081,7 +8279,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8095,7 +8293,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8148,7 +8346,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8167,7 +8365,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8181,7 +8379,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8234,7 +8432,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8253,7 +8451,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8267,7 +8465,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8320,7 +8518,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8339,7 +8537,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8353,7 +8551,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8406,7 +8604,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8425,7 +8623,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8439,7 +8637,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8492,7 +8690,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8511,7 +8709,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8525,7 +8723,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8578,7 +8776,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8597,7 +8795,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8611,7 +8809,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8664,7 +8862,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8683,7 +8881,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8697,7 +8895,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8750,7 +8948,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8769,7 +8967,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8783,7 +8981,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
         <View
           style={
             {
-              "backgroundColor": "#FDFDFC",
+              "backgroundColor": "transparent",
             }
           }
         >
@@ -8836,7 +9034,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#16211A",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -8855,7 +9053,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8879,7 +9077,7 @@ exports[`Story Snapshots: WithFlatList should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -8895,7 +9093,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
   contentContainerStyle={
     [
       {
-        "paddingVertical": 16,
+        "paddingVertical": 8,
       },
       {
         "paddingBottom": 0,
@@ -8919,7 +9117,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -8927,7 +9125,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -8966,11 +9164,13 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -8982,7 +9182,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -9034,7 +9234,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -9053,7 +9253,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -9061,7 +9261,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -9114,7 +9314,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -9142,11 +9342,13 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -9158,7 +9360,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -9190,7 +9392,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -9198,7 +9400,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -9237,11 +9439,13 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -9253,7 +9457,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -9305,7 +9509,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -9325,7 +9529,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -9352,11 +9556,13 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                 },
                 {
                   "borderRadius": 10,
+                  "borderWidth": 1,
                   "height": 32,
                   "width": 32,
                 },
                 {
-                  "backgroundColor": "#EAF6EC",
+                  "backgroundColor": "#EAF2E6",
+                  "borderColor": "#DCE8D6",
                 },
                 undefined,
               ]
@@ -9368,7 +9574,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#148B3B",
+                    "color": "#175F35",
                     "fontSize": 20,
                   },
                   [
@@ -9400,7 +9606,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -9408,7 +9614,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         }
       }
     >
@@ -9461,7 +9667,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#16211A",
+                    "color": "#2C2A21",
                   },
                 ]
               }
@@ -9497,7 +9703,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -9529,7 +9735,7 @@ exports[`Story Snapshots: WithIcon should match snapshot 1`] = `
           },
           undefined,
           {
-            "backgroundColor": "#E1E7E1",
+            "backgroundColor": "#E4D9C0",
           },
         ]
       }
@@ -9551,20 +9757,48 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
   style={
     [
       {
+        "borderBottomWidth": 0,
+        "borderColor": "rgba(255,255,255,0.72)",
+        "borderTopLeftRadius": 26,
+        "borderTopRightRadius": 26,
+        "borderWidth": 1.5,
         "flex": 1,
+        "marginHorizontal": 14,
+        "overflow": "hidden",
+        "shadowOffset": {
+          "height": 20,
+          "width": 0,
+        },
+        "shadowOpacity": 1,
+        "shadowRadius": 24,
       },
       {
-        "backgroundColor": "#F2F4F1",
+        "backgroundColor": "#FAF5EA",
+        "shadowColor": "rgba(4,20,10,0.42)",
       },
       undefined,
     ]
   }
 >
+  <View
+    pointerEvents="none"
+    style={
+      {
+        "backgroundColor": "#FFFEFA",
+        "height": 1,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "zIndex": 2,
+      }
+    }
+  />
   <RCTScrollView
     contentContainerStyle={
       [
         {
-          "paddingVertical": 16,
+          "paddingVertical": 8,
         },
         {
           "paddingBottom": 0,
@@ -9609,7 +9843,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -9625,7 +9859,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -9664,11 +9898,11 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -9685,13 +9919,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -9744,11 +9978,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -9760,7 +9996,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -9812,7 +10048,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -9832,7 +10068,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -9859,11 +10095,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -9875,7 +10113,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -9909,7 +10147,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -9948,11 +10186,11 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -9969,13 +10207,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -10030,11 +10268,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10046,7 +10286,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10098,7 +10338,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -10118,7 +10358,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -10145,11 +10385,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10161,7 +10403,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10195,7 +10437,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -10220,7 +10462,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }
@@ -10258,7 +10500,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                   "textTransform": "uppercase",
                 },
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                 },
               ]
             }
@@ -10274,7 +10516,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -10313,11 +10555,11 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -10334,13 +10576,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -10393,11 +10635,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10409,7 +10653,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10461,7 +10705,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -10481,7 +10725,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -10508,11 +10752,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10524,7 +10770,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10558,7 +10804,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -10597,11 +10843,11 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#ECEFEB"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
-                  "backgroundColor": "#FDFDFC",
+                  "backgroundColor": "transparent",
                   "borderRadius": undefined,
                   "margin": undefined,
                   "marginBottom": undefined,
@@ -10618,13 +10864,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#ECEFEB"
+            underlayColor="#F3EDDE"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#ECEFEB",
+                  "backgroundColor": "#F3EDDE",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -10679,11 +10925,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10695,7 +10943,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10747,7 +10995,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           },
                           undefined,
                           {
-                            "color": "#16211A",
+                            "color": "#2C2A21",
                           },
                         ]
                       }
@@ -10767,7 +11015,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#5C6B61",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -10794,11 +11042,13 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                         },
                         {
                           "borderRadius": 10,
+                          "borderWidth": 1,
                           "height": 32,
                           "width": 32,
                         },
                         {
-                          "backgroundColor": "#EAF6EC",
+                          "backgroundColor": "#EAF2E6",
+                          "borderColor": "#DCE8D6",
                         },
                         undefined,
                       ]
@@ -10810,7 +11060,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                       style={
                         [
                           {
-                            "color": "#148B3B",
+                            "color": "#175F35",
                             "fontSize": 20,
                           },
                           [
@@ -10844,7 +11094,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
               },
               undefined,
               {
-                "backgroundColor": "#E1E7E1",
+                "backgroundColor": "#E4D9C0",
               },
             ]
           }
@@ -10869,7 +11119,7 @@ exports[`Story Snapshots: WithSmallFont should match snapshot 1`] = `
                   "textAlign": "left",
                 },
                 {
-                  "color": "#8FA096",
+                  "color": "#8A8471",
                 },
               ]
             }

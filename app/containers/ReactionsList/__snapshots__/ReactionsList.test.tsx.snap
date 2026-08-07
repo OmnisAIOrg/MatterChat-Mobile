@@ -703,7 +703,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -721,7 +721,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -797,7 +797,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -815,7 +815,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -891,7 +891,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -909,7 +909,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -965,7 +965,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -983,7 +983,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -1039,7 +1039,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -1057,7 +1057,7 @@ exports[`Story Snapshots: ReactionsListFullName should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -1778,7 +1778,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -1796,7 +1796,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -1872,7 +1872,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -1890,7 +1890,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -1966,7 +1966,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -1984,7 +1984,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -2040,7 +2040,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -2058,7 +2058,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }
@@ -2114,7 +2114,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#2F343D",
+                          "color": "#3B382E",
                         },
                       ]
                     }
@@ -2132,7 +2132,7 @@ exports[`Story Snapshots: ReactionsListStory should match snapshot 1`] = `
                           "textAlign": "left",
                         },
                         {
-                          "color": "#6C727A",
+                          "color": "#6B675A",
                         },
                       ]
                     }

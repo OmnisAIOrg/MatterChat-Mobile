@@ -70,7 +70,7 @@ exports[`Story Snapshots: ActiveButton should match snapshot 1`] = `
             },
             false,
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F0E7D2",
             },
           ]
         }
@@ -82,7 +82,7 @@ exports[`Story Snapshots: ActiveButton should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#BB0B21",
+                "color": "#B3402E",
                 "fontSize": 32,
               },
               [
@@ -116,7 +116,7 @@ exports[`Story Snapshots: ActiveButton should match snapshot 1`] = `
               "textAlign": "left",
             },
             {
-              "color": "#2F343D",
+              "color": "#3B382E",
             },
           ]
         }
@@ -206,7 +206,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -218,7 +218,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -252,7 +252,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -313,7 +313,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -325,7 +325,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -359,7 +359,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -420,7 +420,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -432,7 +432,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -466,7 +466,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -541,7 +541,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -553,7 +553,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -587,7 +587,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -648,7 +648,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#EC0D2A",
+                "backgroundColor": "#B3402E",
               },
             ]
           }
@@ -660,7 +660,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#FFFFFF",
+                  "color": "#FAF5EA",
                   "fontSize": 32,
                 },
                 [
@@ -694,7 +694,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -755,7 +755,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -767,7 +767,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -801,7 +801,7 @@ exports[`Story Snapshots: AllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -884,7 +884,7 @@ exports[`Story Snapshots: DangerButton should match snapshot 1`] = `
             },
             false,
             {
-              "backgroundColor": "#EC0D2A",
+              "backgroundColor": "#B3402E",
             },
           ]
         }
@@ -896,7 +896,7 @@ exports[`Story Snapshots: DangerButton should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#FFFFFF",
+                "color": "#FAF5EA",
                 "fontSize": 32,
               },
               [
@@ -930,7 +930,7 @@ exports[`Story Snapshots: DangerButton should match snapshot 1`] = `
               "textAlign": "left",
             },
             {
-              "color": "#2F343D",
+              "color": "#3B382E",
             },
           ]
         }
@@ -1012,7 +1012,7 @@ exports[`Story Snapshots: DefaultButton should match snapshot 1`] = `
             },
             false,
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F0E7D2",
             },
           ]
         }
@@ -1024,7 +1024,7 @@ exports[`Story Snapshots: DefaultButton should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 32,
               },
               [
@@ -1058,7 +1058,7 @@ exports[`Story Snapshots: DefaultButton should match snapshot 1`] = `
               "textAlign": "left",
             },
             {
-              "color": "#2F343D",
+              "color": "#3B382E",
             },
           ]
         }
@@ -1142,7 +1142,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
               "opacity": 0.5,
             },
             {
-              "backgroundColor": "#E4E7EA",
+              "backgroundColor": "#F0E7D2",
             },
           ]
         }
@@ -1154,7 +1154,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#1F2329",
+                "color": "#2C2A21",
                 "fontSize": 32,
               },
               [
@@ -1188,7 +1188,7 @@ exports[`Story Snapshots: DisabledButton should match snapshot 1`] = `
               "textAlign": "left",
             },
             {
-              "color": "#2F343D",
+              "color": "#3B382E",
             },
           ]
         }
@@ -1279,7 +1279,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -1291,7 +1291,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -1325,7 +1325,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1386,7 +1386,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -1398,7 +1398,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -1432,7 +1432,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1493,7 +1493,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -1505,7 +1505,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -1539,7 +1539,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1600,7 +1600,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -1612,7 +1612,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -1646,7 +1646,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1707,7 +1707,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#EC0D2A",
+                "backgroundColor": "#B3402E",
               },
             ]
           }
@@ -1719,7 +1719,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#FFFFFF",
+                  "color": "#FAF5EA",
                   "fontSize": 32,
                 },
                 [
@@ -1753,7 +1753,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -1814,7 +1814,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
               },
               false,
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#F0E7D2",
               },
             ]
           }
@@ -1826,7 +1826,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#1F2329",
+                  "color": "#2C2A21",
                   "fontSize": 32,
                 },
                 [
@@ -1860,7 +1860,7 @@ exports[`Story Snapshots: TabletAllVariants should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }

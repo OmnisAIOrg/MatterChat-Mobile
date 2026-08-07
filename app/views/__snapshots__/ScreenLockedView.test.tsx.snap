@@ -123,7 +123,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "flex": 1,
                 "flexDirection": "column",
                 "justifyContent": "center",
@@ -153,7 +153,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                         "fontSize": 40,
                       },
                       [
@@ -203,7 +203,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -249,7 +249,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -271,7 +271,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -293,7 +293,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -315,7 +315,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -337,7 +337,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -359,7 +359,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -430,7 +430,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -452,13 +452,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-1"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -494,7 +494,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -552,7 +552,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -574,13 +574,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-2"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -616,7 +616,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -674,7 +674,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -696,13 +696,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-3"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -738,7 +738,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -808,7 +808,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -830,13 +830,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-4"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -872,7 +872,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -930,7 +930,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -952,13 +952,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-5"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -994,7 +994,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1052,7 +1052,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1074,13 +1074,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-6"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1116,7 +1116,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1186,7 +1186,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1208,13 +1208,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-7"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1250,7 +1250,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1308,7 +1308,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1330,13 +1330,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-8"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1372,7 +1372,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1430,7 +1430,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1452,13 +1452,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-9"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1494,7 +1494,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1577,7 +1577,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1599,13 +1599,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-0"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1641,7 +1641,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -1699,7 +1699,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -1721,13 +1721,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-backspace"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -1758,7 +1758,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -1914,7 +1914,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "flex": 1,
                 "flexDirection": "column",
                 "justifyContent": "center",
@@ -1944,7 +1944,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                         "fontSize": 40,
                       },
                       [
@@ -1994,7 +1994,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -2040,7 +2040,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2062,7 +2062,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2084,7 +2084,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2106,7 +2106,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2128,7 +2128,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2150,7 +2150,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -2221,7 +2221,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2243,13 +2243,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-1"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2285,7 +2285,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2343,7 +2343,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2365,13 +2365,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-2"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2407,7 +2407,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2465,7 +2465,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2487,13 +2487,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-3"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2529,7 +2529,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2599,7 +2599,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2621,13 +2621,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-4"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2663,7 +2663,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2721,7 +2721,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2743,13 +2743,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-5"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2785,7 +2785,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2843,7 +2843,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2865,13 +2865,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-6"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -2907,7 +2907,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -2977,7 +2977,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -2999,13 +2999,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-7"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3041,7 +3041,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -3099,7 +3099,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -3121,13 +3121,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-8"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3163,7 +3163,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -3221,7 +3221,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -3243,13 +3243,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-9"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3285,7 +3285,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -3355,7 +3355,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -3377,13 +3377,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="biometry-button"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3414,7 +3414,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -3485,7 +3485,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -3507,13 +3507,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-0"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3549,7 +3549,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -3607,7 +3607,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -3629,13 +3629,13 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-backspace"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -3666,7 +3666,7 @@ exports[`Story Snapshots: WithBiometry should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -3822,7 +3822,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "flex": 1,
                 "flexDirection": "column",
                 "justifyContent": "center",
@@ -3852,7 +3852,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                         "fontSize": 40,
                       },
                       [
@@ -3902,7 +3902,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -3948,7 +3948,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -3970,7 +3970,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -3992,7 +3992,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -4014,7 +4014,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -4036,7 +4036,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -4058,7 +4058,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -4129,7 +4129,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4151,13 +4151,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-1"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4193,7 +4193,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4251,7 +4251,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4273,13 +4273,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-2"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4315,7 +4315,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4373,7 +4373,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4395,13 +4395,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-3"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4437,7 +4437,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4507,7 +4507,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4529,13 +4529,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-4"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4571,7 +4571,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4629,7 +4629,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4651,13 +4651,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-5"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4693,7 +4693,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4751,7 +4751,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4773,13 +4773,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-6"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4815,7 +4815,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -4885,7 +4885,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -4907,13 +4907,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-7"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -4949,7 +4949,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -5007,7 +5007,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -5029,13 +5029,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-8"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -5071,7 +5071,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -5129,7 +5129,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -5151,13 +5151,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-9"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -5193,7 +5193,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -5263,7 +5263,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -5285,13 +5285,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="biometry-button"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -5322,7 +5322,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -5393,7 +5393,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -5415,13 +5415,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-0"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -5457,7 +5457,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -5515,7 +5515,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -5537,13 +5537,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-backspace"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -5574,7 +5574,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -5635,7 +5635,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#E4E7EA"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
@@ -5656,13 +5656,13 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#E4E7EA"
+            underlayColor="#EAE1CB"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#EAE1CB",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -5692,7 +5692,7 @@ exports[`Story Snapshots: WithBiometryAndClose should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#2F343D",
+                      "color": "#3B382E",
                       "fontSize": 30,
                     },
                     [
@@ -5844,7 +5844,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#E4E7EA",
+                "backgroundColor": "#EAE1CB",
                 "flex": 1,
                 "flexDirection": "column",
                 "justifyContent": "center",
@@ -5874,7 +5874,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                   style={
                     [
                       {
-                        "color": "#6C727A",
+                        "color": "#6B675A",
                         "fontSize": 40,
                       },
                       [
@@ -5924,7 +5924,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                         "textAlign": "left",
                       },
                       {
-                        "color": "#1F2329",
+                        "color": "#2C2A21",
                       },
                     ]
                   }
@@ -5970,7 +5970,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -5992,7 +5992,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -6014,7 +6014,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -6036,7 +6036,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -6058,7 +6058,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -6080,7 +6080,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     <View
                       style={
                         {
-                          "backgroundColor": "#CBCED1",
+                          "backgroundColor": "#E4D8BC",
                           "borderRadius": 6,
                           "height": 12,
                           "marginLeft": 10,
@@ -6151,7 +6151,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6173,13 +6173,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-1"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6215,7 +6215,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6273,7 +6273,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6295,13 +6295,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-2"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6337,7 +6337,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6395,7 +6395,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6417,13 +6417,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-3"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6459,7 +6459,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6529,7 +6529,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6551,13 +6551,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-4"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6593,7 +6593,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6651,7 +6651,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6673,13 +6673,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-5"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6715,7 +6715,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6773,7 +6773,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6795,13 +6795,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-6"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6837,7 +6837,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -6907,7 +6907,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -6929,13 +6929,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-7"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -6971,7 +6971,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -7029,7 +7029,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -7051,13 +7051,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-8"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -7093,7 +7093,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -7151,7 +7151,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -7173,13 +7173,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-9"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -7215,7 +7215,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -7298,7 +7298,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -7320,13 +7320,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-0"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -7362,7 +7362,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                               "textAlign": "left",
                             },
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                             },
                           ]
                         }
@@ -7420,7 +7420,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                     onGestureHandlerEvent={[Function]}
                     onGestureHandlerStateChange={[Function]}
                     onPress={[Function]}
-                    rippleColor="#9EA2A8"
+                    rippleColor="#E4D8BC"
                     style={
                       [
                         {
@@ -7442,13 +7442,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                       ]
                     }
                     testID="passcode-button-backspace"
-                    underlayColor="#E4E7EA"
+                    underlayColor="#F0E7D2"
                   >
                     <View
                       collapsable={false}
                       style={
                         {
-                          "backgroundColor": "#E4E7EA",
+                          "backgroundColor": "#F0E7D2",
                           "borderBottomLeftRadius": undefined,
                           "borderBottomRightRadius": undefined,
                           "borderRadius": 4,
@@ -7479,7 +7479,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                         style={
                           [
                             {
-                              "color": "#2F343D",
+                              "color": "#3B382E",
                               "fontSize": 36,
                             },
                             [
@@ -7540,7 +7540,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
             onGestureHandlerEvent={[Function]}
             onGestureHandlerStateChange={[Function]}
             onPress={[Function]}
-            rippleColor="#E4E7EA"
+            rippleColor="#EAE1CB"
             style={
               [
                 {
@@ -7561,13 +7561,13 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                 },
               ]
             }
-            underlayColor="#E4E7EA"
+            underlayColor="#EAE1CB"
           >
             <View
               collapsable={false}
               style={
                 {
-                  "backgroundColor": "#E4E7EA",
+                  "backgroundColor": "#EAE1CB",
                   "borderBottomLeftRadius": undefined,
                   "borderBottomRightRadius": undefined,
                   "borderRadius": undefined,
@@ -7597,7 +7597,7 @@ exports[`Story Snapshots: WithCloseButton should match snapshot 1`] = `
                 style={
                   [
                     {
-                      "color": "#2F343D",
+                      "color": "#3B382E",
                       "fontSize": 30,
                     },
                     [

@@ -5,8 +5,8 @@ exports[`MessageComposer Audio tap record 1`] = `
   <View
     style={
       {
-        "backgroundColor": "#FDFDFC",
-        "borderColor": "#E1E7E1",
+        "backgroundColor": "#FFFDF6",
+        "borderColor": "#E4D8BC",
         "borderRadius": 14,
         "borderWidth": 1.5,
         "marginBottom": 8,
@@ -32,7 +32,7 @@ exports[`MessageComposer Audio tap record 1`] = `
         style={
           [
             {
-              "color": "#E1053C",
+              "color": "#B3402E",
               "fontSize": 24,
             },
             [
@@ -56,7 +56,7 @@ exports[`MessageComposer Audio tap record 1`] = `
         style={
           {
             "backgroundColor": "transparent",
-            "color": "#E1053C",
+            "color": "#B3402E",
             "fontFamily": "Inter",
             "fontSize": 16,
             "fontVariant": [
@@ -129,7 +129,7 @@ exports[`MessageComposer Audio tap record 1`] = `
             style={
               [
                 {
-                  "color": "#E1053C",
+                  "color": "#B3402E",
                   "fontSize": 24,
                 },
                 [
@@ -166,7 +166,7 @@ exports[`MessageComposer Audio tap record 1`] = `
           style={
             {
               "backgroundColor": "transparent",
-              "color": "#5C6B61",
+              "color": "#6B675A",
               "fontFamily": "Inter",
               "fontSize": 14,
               "fontWeight": "400",
@@ -201,7 +201,7 @@ exports[`MessageComposer Audio tap record 1`] = `
           [
             {
               "alignItems": "center",
-              "backgroundColor": "#2FA44A",
+              "backgroundColor": "#175F35",
               "borderRadius": 9,
               "height": 34,
               "justifyContent": "center",
@@ -254,7 +254,7 @@ exports[`MessageComposer Audio tap record 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -272,14 +272,15 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#E1E7E1",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#E4D8BC",
         },
       ]
     }
@@ -350,7 +351,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -384,7 +385,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -402,7 +403,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -468,7 +469,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -531,9 +532,9 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#F6F7F5",
-                "borderColor": "#EAEFEA",
-                "borderLeftColor": "#2FA44A",
+                "backgroundColor": "#F0E7D2",
+                "borderColor": "#E4D9C0",
+                "borderLeftColor": "#175F35",
                 "borderLeftWidth": 3,
                 "borderRadius": 8,
                 "borderWidth": 1,
@@ -569,7 +570,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#16211A",
+                      "color": "#2C2A21",
                       "flexShrink": 1,
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -584,7 +585,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#8FA096",
+                      "color": "#8A8471",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "400",
@@ -643,7 +644,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
                     style={
                       [
                         {
-                          "color": "#26312A",
+                          "color": "#3B382E",
                           "fontSize": 24,
                         },
                         [
@@ -680,12 +681,12 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "lineHeight": undefined,
                   },
                   {
                     "backgroundColor": "transparent",
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "fontFamily": "Inter",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -708,7 +709,7 @@ exports[`MessageComposer Quote Add quote \`abc\` 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -726,14 +727,15 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#E1E7E1",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#E4D8BC",
         },
       ]
     }
@@ -804,7 +806,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -838,7 +840,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -856,7 +858,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -922,7 +924,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -986,9 +988,9 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#F6F7F5",
-                "borderColor": "#EAEFEA",
-                "borderLeftColor": "#2FA44A",
+                "backgroundColor": "#F0E7D2",
+                "borderColor": "#E4D9C0",
+                "borderLeftColor": "#175F35",
                 "borderLeftWidth": 3,
                 "borderRadius": 8,
                 "borderWidth": 1,
@@ -1024,7 +1026,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#16211A",
+                      "color": "#2C2A21",
                       "flexShrink": 1,
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -1039,7 +1041,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#8FA096",
+                      "color": "#8A8471",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "400",
@@ -1098,7 +1100,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                     style={
                       [
                         {
-                          "color": "#26312A",
+                          "color": "#3B382E",
                           "fontSize": 24,
                         },
                         [
@@ -1135,12 +1137,12 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "lineHeight": undefined,
                   },
                   {
                     "backgroundColor": "transparent",
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "fontFamily": "Inter",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1170,9 +1172,9 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#F6F7F5",
-                "borderColor": "#EAEFEA",
-                "borderLeftColor": "#2FA44A",
+                "backgroundColor": "#F0E7D2",
+                "borderColor": "#E4D9C0",
+                "borderLeftColor": "#175F35",
                 "borderLeftWidth": 3,
                 "borderRadius": 8,
                 "borderWidth": 1,
@@ -1208,7 +1210,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#16211A",
+                      "color": "#2C2A21",
                       "flexShrink": 1,
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -1223,7 +1225,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#8FA096",
+                      "color": "#8A8471",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "400",
@@ -1282,7 +1284,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                     style={
                       [
                         {
-                          "color": "#26312A",
+                          "color": "#3B382E",
                           "fontSize": 24,
                         },
                         [
@@ -1319,12 +1321,12 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "lineHeight": undefined,
                   },
                   {
                     "backgroundColor": "transparent",
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "fontFamily": "Inter",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1347,7 +1349,7 @@ exports[`MessageComposer Quote Add quote \`def\` 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -1365,14 +1367,15 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#E1E7E1",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#E4D8BC",
         },
       ]
     }
@@ -1443,7 +1446,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -1477,7 +1480,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -1495,7 +1498,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -1561,7 +1564,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
               style={
                 [
                   {
-                    "color": "#5C6B61",
+                    "color": "#6B675A",
                     "fontSize": 24,
                   },
                   [
@@ -1625,9 +1628,9 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#F6F7F5",
-                "borderColor": "#EAEFEA",
-                "borderLeftColor": "#2FA44A",
+                "backgroundColor": "#F0E7D2",
+                "borderColor": "#E4D9C0",
+                "borderLeftColor": "#175F35",
                 "borderLeftWidth": 3,
                 "borderRadius": 8,
                 "borderWidth": 1,
@@ -1663,7 +1666,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#16211A",
+                      "color": "#2C2A21",
                       "flexShrink": 1,
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -1678,7 +1681,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#8FA096",
+                      "color": "#8A8471",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "400",
@@ -1737,7 +1740,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                     style={
                       [
                         {
-                          "color": "#26312A",
+                          "color": "#3B382E",
                           "fontSize": 24,
                         },
                         [
@@ -1774,12 +1777,12 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "lineHeight": undefined,
                   },
                   {
                     "backgroundColor": "transparent",
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "fontFamily": "Inter",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1809,9 +1812,9 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
           <View
             style={
               {
-                "backgroundColor": "#F6F7F5",
-                "borderColor": "#EAEFEA",
-                "borderLeftColor": "#2FA44A",
+                "backgroundColor": "#F0E7D2",
+                "borderColor": "#E4D9C0",
+                "borderLeftColor": "#175F35",
                 "borderLeftWidth": 3,
                 "borderRadius": 8,
                 "borderWidth": 1,
@@ -1847,7 +1850,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#16211A",
+                      "color": "#2C2A21",
                       "flexShrink": 1,
                       "fontFamily": "Inter",
                       "fontSize": 14,
@@ -1862,7 +1865,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                   style={
                     {
                       "backgroundColor": "transparent",
-                      "color": "#8FA096",
+                      "color": "#8A8471",
                       "fontFamily": "Inter",
                       "fontSize": 12,
                       "fontWeight": "400",
@@ -1921,7 +1924,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                     style={
                       [
                         {
-                          "color": "#26312A",
+                          "color": "#3B382E",
                           "fontSize": 24,
                         },
                         [
@@ -1958,12 +1961,12 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
                     "textAlign": "left",
                   },
                   {
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "lineHeight": undefined,
                   },
                   {
                     "backgroundColor": "transparent",
-                    "color": "#26312A",
+                    "color": "#3B382E",
                     "fontFamily": "Inter",
                     "fontSize": 14,
                     "fontWeight": "400",
@@ -1986,7 +1989,7 @@ exports[`MessageComposer Quote Remove a quote 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -2004,14 +2007,15 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -2035,7 +2039,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -2053,7 +2057,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -2118,7 +2122,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2196,7 +2200,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2274,7 +2278,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2352,7 +2356,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2430,7 +2434,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2508,7 +2512,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2586,7 +2590,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2615,7 +2619,7 @@ exports[`MessageComposer Toolbar Markdown tap bold 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -2633,14 +2637,15 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -2664,7 +2669,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -2682,7 +2687,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -2747,7 +2752,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2825,7 +2830,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2903,7 +2908,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -2981,7 +2986,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3059,7 +3064,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3137,7 +3142,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3215,7 +3220,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3244,7 +3249,7 @@ exports[`MessageComposer Toolbar Markdown tap code 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -3262,14 +3267,15 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -3293,7 +3299,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -3311,7 +3317,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -3376,7 +3382,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3454,7 +3460,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3532,7 +3538,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3610,7 +3616,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3688,7 +3694,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3766,7 +3772,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3844,7 +3850,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -3873,7 +3879,7 @@ exports[`MessageComposer Toolbar Markdown tap code-block 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -3891,14 +3897,15 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -3922,7 +3929,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -3940,7 +3947,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -4005,7 +4012,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4083,7 +4090,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4161,7 +4168,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4239,7 +4246,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4317,7 +4324,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4395,7 +4402,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4473,7 +4480,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4502,7 +4509,7 @@ exports[`MessageComposer Toolbar Markdown tap italic 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -4520,14 +4527,15 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -4551,7 +4559,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -4569,7 +4577,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -4634,7 +4642,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4712,7 +4720,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4790,7 +4798,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4868,7 +4876,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -4946,7 +4954,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5024,7 +5032,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5102,7 +5110,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5131,7 +5139,7 @@ exports[`MessageComposer Toolbar Markdown tap markdown 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -5149,14 +5157,15 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -5180,7 +5189,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -5198,7 +5207,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -5263,7 +5272,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5341,7 +5350,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5419,7 +5428,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5497,7 +5506,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5575,7 +5584,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5653,7 +5662,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5731,7 +5740,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5760,7 +5769,7 @@ exports[`MessageComposer Toolbar Markdown tap strike 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -5778,14 +5787,15 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -5809,7 +5819,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -5827,7 +5837,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -5892,7 +5902,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -5970,7 +5980,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6048,7 +6058,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6126,7 +6136,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6204,7 +6214,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6282,7 +6292,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6360,7 +6370,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6389,7 +6399,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap bold 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -6407,14 +6417,15 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -6438,7 +6449,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -6456,7 +6467,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -6521,7 +6532,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6599,7 +6610,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6677,7 +6688,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6755,7 +6766,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6833,7 +6844,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6911,7 +6922,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -6989,7 +7000,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7018,7 +7029,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -7036,14 +7047,15 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -7067,7 +7079,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -7085,7 +7097,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -7150,7 +7162,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7228,7 +7240,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7306,7 +7318,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7384,7 +7396,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7462,7 +7474,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7540,7 +7552,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7618,7 +7630,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7647,7 +7659,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap code-block 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -7665,14 +7677,15 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -7696,7 +7709,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -7714,7 +7727,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -7779,7 +7792,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7857,7 +7870,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -7935,7 +7948,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8013,7 +8026,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8091,7 +8104,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8169,7 +8182,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8247,7 +8260,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8276,7 +8289,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap italic 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -8294,14 +8307,15 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -8325,7 +8339,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -8343,7 +8357,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -8408,7 +8422,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8486,7 +8500,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8564,7 +8578,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8642,7 +8656,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8720,7 +8734,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8798,7 +8812,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8876,7 +8890,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -8905,7 +8919,7 @@ exports[`MessageComposer Toolbar Markdown type test and tap strike 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -8923,14 +8937,15 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -8954,7 +8969,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -8972,7 +8987,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -9037,7 +9052,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9115,7 +9130,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9193,7 +9208,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9271,7 +9286,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9349,7 +9364,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9378,7 +9393,7 @@ exports[`MessageComposer Toolbar tap actions 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }
@@ -9396,14 +9411,15 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -9427,7 +9443,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -9445,7 +9461,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -9510,7 +9526,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9588,7 +9604,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9666,7 +9682,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9744,7 +9760,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9822,7 +9838,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -9851,7 +9867,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "#FFFDF6",
         },
       ]
     }
@@ -9864,7 +9880,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             "flex": 1,
           },
           {
-            "backgroundColor": "#FDFDFC",
+            "backgroundColor": "#FFFDF6",
             "marginBottom": 0,
           },
         ]
@@ -9946,7 +9962,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#148B3B",
+                        "color": "#175F35",
                         "fontSize": 24,
                       },
                       [
@@ -9979,7 +9995,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#2FA44A",
+                    "backgroundColor": "#175F35",
                   },
                 ]
               }
@@ -10040,7 +10056,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10073,7 +10089,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10134,7 +10150,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10167,7 +10183,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10228,7 +10244,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10261,7 +10277,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10322,7 +10338,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10355,7 +10371,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10416,7 +10432,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10449,7 +10465,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10510,7 +10526,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10543,7 +10559,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10604,7 +10620,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10637,7 +10653,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10698,7 +10714,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10731,7 +10747,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -10792,7 +10808,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                   style={
                     [
                       {
-                        "color": "#5C6B61",
+                        "color": "#6B675A",
                         "fontSize": 24,
                       },
                       [
@@ -10825,7 +10841,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
                     "width": "100%",
                   },
                   {
-                    "backgroundColor": "#EAEFEA",
+                    "backgroundColor": "#E4D9C0",
                   },
                 ]
               }
@@ -11149,7 +11165,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
               "paddingHorizontal": 12,
             },
             {
-              "borderTopColor": "#EAEFEA",
+              "borderTopColor": "#E4D9C0",
             },
           ]
         }
@@ -11205,7 +11221,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#26312A",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -11277,7 +11293,7 @@ exports[`MessageComposer Toolbar tap emoji 1`] = `
             style={
               [
                 {
-                  "color": "#26312A",
+                  "color": "#3B382E",
                   "fontSize": 24,
                 },
                 [
@@ -11314,14 +11330,15 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
         {
           "borderRadius": 14,
           "borderWidth": 1.5,
-          "marginBottom": 8,
-          "marginHorizontal": 12,
+          "marginBottom": 10,
+          "marginHorizontal": 10,
+          "marginTop": 8,
           "minHeight": 48,
           "paddingHorizontal": 12,
         },
         {
-          "backgroundColor": "#FDFDFC",
-          "borderColor": "#2FA44A",
+          "backgroundColor": "#FFFDF6",
+          "borderColor": "#175F35",
         },
       ]
     }
@@ -11345,7 +11362,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
         onSelectionChange={[Function]}
         onTouchStart={[Function]}
         placeholder="Message @Rocket Chat"
-        placeholderTextColor="#8FA096"
+        placeholderTextColor="#8A8471"
         style={
           [
             {
@@ -11363,7 +11380,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
               "textAlignVertical": "center",
             },
             {
-              "color": "#26312A",
+              "color": "#3B382E",
             },
           ]
         }
@@ -11428,7 +11445,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -11506,7 +11523,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -11584,7 +11601,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -11662,7 +11679,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -11740,7 +11757,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 24,
                 },
                 [
@@ -11769,7 +11786,7 @@ exports[`MessageComposer Toolbar tap mention 1`] = `
       [
         [Function],
         {
-          "backgroundColor": "#FDFDFC",
+          "backgroundColor": "transparent",
         },
       ]
     }

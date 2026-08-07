@@ -189,6 +189,28 @@ export const useIsOwnMessage = (): boolean => {
 	return author?._id === user?.id;
 };
 
+/**
+ * Which of the three paper tones a message row is written on.
+ *
+ * The rule is strict and it is the whole reason the colour is readable at a glance: green means
+ * "from Chi", the warmer cream means "you said this", and everything else is neutral paper. No
+ * other row in the app is allowed to be green.
+ */
+export type TMessageTone = 'own' | 'assistant' | 'plain';
+
+export const useMessageTone = (): TMessageTone => {
+	const author = useMessageStore(s => s.item.u);
+	const role = useMessageStore(s => s.item.role);
+	const user = useMessageUser();
+	if (author?._id === user?.id) {
+		return 'own';
+	}
+	if (role === 'bot' || author?.username === 'chi') {
+		return 'assistant';
+	}
+	return 'plain';
+};
+
 export const useAvatar = (): Pick<TAnyMessageModel, 'avatar' | 'emoji'> =>
 	useMessageStore(useShallow(s => ({ avatar: s.item.avatar, emoji: s.item.emoji })));
 

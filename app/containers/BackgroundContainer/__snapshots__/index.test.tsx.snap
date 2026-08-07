@@ -88,7 +88,7 @@ exports[`Story Snapshots: BlackThemeLoading should match snapshot 1`] = `
     />
   </View>
   <ActivityIndicator
-    color="#9EA2A8"
+    color="#5FBF95"
     style={
       {
         "backgroundColor": "transparent",
@@ -165,7 +165,7 @@ exports[`Story Snapshots: BlackThemeText should match snapshot 1`] = `
           "top": 60,
         },
         {
-          "color": "#9EA2A8",
+          "color": "#5FBF95",
         },
       ]
     }
@@ -218,7 +218,7 @@ exports[`Story Snapshots: DarkThemeLoading should match snapshot 1`] = `
     />
   </View>
   <ActivityIndicator
-    color="#9EA2A8"
+    color="#5FBF95"
     style={
       {
         "backgroundColor": "transparent",
@@ -295,7 +295,7 @@ exports[`Story Snapshots: DarkThemeText should match snapshot 1`] = `
           "top": 60,
         },
         {
-          "color": "#9EA2A8",
+          "color": "#5FBF95",
         },
       ]
     }
@@ -348,7 +348,7 @@ exports[`Story Snapshots: Loading should match snapshot 1`] = `
     />
   </View>
   <ActivityIndicator
-    color="#6C727A"
+    color="#8A8471"
     style={
       {
         "backgroundColor": "transparent",
@@ -425,7 +425,7 @@ exports[`Story Snapshots: LongText should match snapshot 1`] = `
           "top": 60,
         },
         {
-          "color": "#6C727A",
+          "color": "#8A8471",
         },
       ]
     }
@@ -493,7 +493,7 @@ exports[`Story Snapshots: Text should match snapshot 1`] = `
           "top": 60,
         },
         {
-          "color": "#6C727A",
+          "color": "#8A8471",
         },
       ]
     }

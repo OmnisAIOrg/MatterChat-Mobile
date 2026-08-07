@@ -14,11 +14,11 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
   onGestureHandlerEvent={[Function]}
   onGestureHandlerStateChange={[Function]}
   onPress={[Function]}
-  rippleColor="#D7DBE0"
+  rippleColor="#EAF2E6"
   style={
     [
       {
-        "backgroundColor": "#FFFFFF",
+        "backgroundColor": "#FFFDF6",
       },
       {
         "cursor": undefined,
@@ -26,13 +26,13 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
     ]
   }
   testID="new-message-view-item-john.doe"
-  underlayColor="#D7DBE0"
+  underlayColor="#EAF2E6"
 >
   <View
     collapsable={false}
     style={
       {
-        "backgroundColor": "#D7DBE0",
+        "backgroundColor": "#EAF2E6",
         "borderBottomLeftRadius": undefined,
         "borderBottomRightRadius": undefined,
         "borderRadius": undefined,
@@ -65,8 +65,17 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
       style={
         [
           {
-            "borderRadius": 4,
+            "borderColor": "rgba(44,42,33,0.12)",
+            "borderRadius": 9,
+            "borderWidth": 0.5,
             "height": 30,
+            "shadowColor": "#2C2A21",
+            "shadowOffset": {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.16,
+            "shadowRadius": 4,
             "width": 30,
           },
           {
@@ -78,7 +87,9 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
       testID="avatar"
     >
       <ViewManagerAdapter_ExpoImage
-        borderRadius={4}
+        borderColor={522988065}
+        borderRadius={9}
+        borderWidth={0.5}
         containerViewRef={{"current":"Object"}}
         contentFit="cover"
         contentPosition={
@@ -95,6 +106,15 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
         onProgress={[Function]}
         placeholder={[]}
         priority="high"
+        shadowColor="#2C2A21"
+        shadowOffset={
+          {
+            "height": 2,
+            "width": 0,
+          }
+        }
+        shadowOpacity={0.16}
+        shadowRadius={4}
         source={
           [
             {
@@ -107,8 +127,17 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
         }
         style={
           {
-            "borderRadius": 4,
+            "borderColor": "rgba(44,42,33,0.12)",
+            "borderRadius": 9,
+            "borderWidth": 0.5,
             "height": 30,
+            "shadowColor": "#2C2A21",
+            "shadowOffset": {
+              "height": 2,
+              "width": 0,
+            },
+            "shadowOpacity": 0.16,
+            "shadowRadius": 4,
             "width": 30,
           }
         }
@@ -139,7 +168,7 @@ exports[`NewMessageView Item should match snapshot when hasMediaCallPermission i
               "textAlign": "left",
             },
             {
-              "color": "#2F343D",
+              "color": "#3B382E",
             },
           ]
         }
@@ -175,11 +204,11 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
     onGestureHandlerStateChange={[Function]}
     onLongPress={[Function]}
     onPress={[Function]}
-    rippleColor="#D7DBE0"
+    rippleColor="#EAF2E6"
     style={
       [
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
         {
           "cursor": undefined,
@@ -187,13 +216,13 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
       ]
     }
     testID="new-message-view-item-john.doe"
-    underlayColor="#D7DBE0"
+    underlayColor="#EAF2E6"
   >
     <View
       collapsable={false}
       style={
         {
-          "backgroundColor": "#D7DBE0",
+          "backgroundColor": "#EAF2E6",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
           "borderRadius": undefined,
@@ -226,8 +255,17 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             },
             {
@@ -239,7 +277,9 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderColor={522988065}
+          borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -256,6 +296,15 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -268,8 +317,17 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             }
           }
@@ -300,7 +358,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -328,7 +386,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#D7DBE0"
+        rippleColor="#EAF2E6"
         style={
           [
             {
@@ -349,7 +407,7 @@ exports[`Story Snapshots: Default should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
                 "fontSize": 22,
               },
               [
@@ -398,11 +456,11 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
     onGestureHandlerEvent={[Function]}
     onGestureHandlerStateChange={[Function]}
     onPress={[Function]}
-    rippleColor="#D7DBE0"
+    rippleColor="#EAF2E6"
     style={
       [
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
         {
           "cursor": undefined,
@@ -410,13 +468,13 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
       ]
     }
     testID="new-message-view-item-long.name"
-    underlayColor="#D7DBE0"
+    underlayColor="#EAF2E6"
   >
     <View
       collapsable={false}
       style={
         {
-          "backgroundColor": "#D7DBE0",
+          "backgroundColor": "#EAF2E6",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
           "borderRadius": undefined,
@@ -449,8 +507,17 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             },
             {
@@ -462,7 +529,9 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderColor={522988065}
+          borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -479,6 +548,15 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -491,8 +569,17 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             }
           }
@@ -523,7 +610,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -551,7 +638,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#D7DBE0"
+        rippleColor="#EAF2E6"
         style={
           [
             {
@@ -572,7 +659,7 @@ exports[`Story Snapshots: LongName should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
                 "fontSize": 22,
               },
               [
@@ -621,11 +708,11 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
     onGestureHandlerEvent={[Function]}
     onGestureHandlerStateChange={[Function]}
     onPress={[Function]}
-    rippleColor="#D7DBE0"
+    rippleColor="#EAF2E6"
     style={
       [
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#FFFDF6",
         },
         {
           "cursor": undefined,
@@ -633,13 +720,13 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
       ]
     }
     testID="new-message-view-item-john.doe"
-    underlayColor="#D7DBE0"
+    underlayColor="#EAF2E6"
   >
     <View
       collapsable={false}
       style={
         {
-          "backgroundColor": "#D7DBE0",
+          "backgroundColor": "#EAF2E6",
           "borderBottomLeftRadius": undefined,
           "borderBottomRightRadius": undefined,
           "borderRadius": undefined,
@@ -672,8 +759,17 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
         style={
           [
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             },
             {
@@ -685,7 +781,9 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
         testID="avatar"
       >
         <ViewManagerAdapter_ExpoImage
-          borderRadius={4}
+          borderColor={522988065}
+          borderRadius={9}
+          borderWidth={0.5}
           containerViewRef={{"current":"Object"}}
           contentFit="cover"
           contentPosition={
@@ -702,6 +800,15 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
           onProgress={[Function]}
           placeholder={[]}
           priority="high"
+          shadowColor="#2C2A21"
+          shadowOffset={
+            {
+              "height": 2,
+              "width": 0,
+            }
+          }
+          shadowOpacity={0.16}
+          shadowRadius={4}
           source={
             [
               {
@@ -714,8 +821,17 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
           }
           style={
             {
-              "borderRadius": 4,
+              "borderColor": "rgba(44,42,33,0.12)",
+              "borderRadius": 9,
+              "borderWidth": 0.5,
               "height": 30,
+              "shadowColor": "#2C2A21",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.16,
+              "shadowRadius": 4,
               "width": 30,
             }
           }
@@ -746,7 +862,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
                 "textAlign": "left",
               },
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
               },
             ]
           }
@@ -774,7 +890,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
         onGestureHandlerEvent={[Function]}
         onGestureHandlerStateChange={[Function]}
         onPress={[Function]}
-        rippleColor="#D7DBE0"
+        rippleColor="#EAF2E6"
         style={
           [
             {
@@ -795,7 +911,7 @@ exports[`Story Snapshots: NoVoiceCallPermission should match snapshot 1`] = `
           style={
             [
               {
-                "color": "#2F343D",
+                "color": "#3B382E",
                 "fontSize": 22,
               },
               [

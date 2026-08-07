@@ -4,7 +4,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
 <View
   style={
     {
-      "backgroundColor": "#FDFDFC",
+      "backgroundColor": "#FAF5EA",
     }
   }
   testID="searchbox"
@@ -53,12 +53,12 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
             onChangeText={[Function]}
             onFocus={[Function]}
             placeholder="Search"
-            placeholderTextColor="#8FA096"
+            placeholderTextColor="#8A8471"
             returnKeyType="search"
             style={
               [
                 {
-                  "color": "#16211A",
+                  "color": "#2C2A21",
                 },
                 [
                   {
@@ -78,9 +78,9 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                   },
                   {},
                   {
-                    "backgroundColor": "#FDFDFC",
-                    "borderColor": "#E1E7E1",
-                    "color": "#16211A",
+                    "backgroundColor": "#FFFDF6",
+                    "borderColor": "#E4D8BC",
+                    "color": "#2C2A21",
                   },
                   {},
                   {},
@@ -94,7 +94,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
                       "paddingVertical": 0,
                     },
                     {
-                      "backgroundColor": "#ECEFEB",
+                      "backgroundColor": "#EAE1CB",
                     },
                   ],
                 ],
@@ -112,7 +112,7 @@ exports[`Story Snapshots: Basic should match snapshot 1`] = `
             style={
               [
                 {
-                  "color": "#5C6B61",
+                  "color": "#6B675A",
                   "fontSize": 20,
                 },
                 [

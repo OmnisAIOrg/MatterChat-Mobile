@@ -14,8 +14,10 @@ import {
 	useMessageLongPress,
 	useMessagePress,
 	useMessageStatus,
+	useMessageTone,
 	useMessageTouchable
 } from '../../stores/MessageStore';
+import { usePaper } from '../../../Paper';
 
 const MessageTouchable = (props: TMessageProps) => {
 	'use memo';
@@ -33,7 +35,18 @@ const MessageTouchable = (props: TMessageProps) => {
 	const accessibilityActions = useMessageAccessibilityActions(!tappable);
 	const accessibilityHint = useMessageAccessibilityHint();
 
-	let backgroundColor = undefined;
+	// Paper & Sky: a conversation is one sheet, and the only thing that changes between rows is the
+	// tone of the paper — your own words sit on a slightly warmer cream, Chi's on the green that
+	// means "from the assistant", everyone else's on the sheet itself.
+	const tone = useMessageTone();
+	const p = usePaper();
+	let backgroundColor: string | undefined;
+	if (tone === 'own') {
+		backgroundColor = p.own;
+	}
+	if (tone === 'assistant') {
+		backgroundColor = p.green;
+	}
 	if (isBeingEdited) {
 		backgroundColor = colors.statusBackgroundWarning2;
 	}
