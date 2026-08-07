@@ -12,7 +12,7 @@ import { ThemeContext } from '../theme';
 import { defaultHeader, themedHeader } from '../lib/methods/helpers/navigation';
 import withNavigation from '../lib/navigation/withNavigation';
 import Sidebar from '../views/SidebarView';
-import { isIOS } from '../lib/methods/helpers';
+import { isIOS, isTablet } from '../lib/methods/helpers';
 import { type TNavigation } from './stackType';
 import RoomView from '../views/RoomView';
 import RoomsListView from '../views/RoomsListView';
@@ -162,7 +162,10 @@ const ChatsStack = createNativeStackNavigator({
 	screens: {
 		RoomsListView: createNativeStackScreen({
 			screen: RoomsListView,
-			options: { freezeOnBlur: true }
+			// Paper & Sky: Home draws its own chrome — sky hero, glass search, glass chips — so it
+			// carries no navigation header. Declared statically rather than toggled at runtime:
+			// flipping `headerShown` from a layout effect re-enters the screen mid-commit.
+			options: { freezeOnBlur: true, headerShown: false }
 		}),
 		RoomView: RoomViewScreen,
 		RoomActionsView: createNativeStackScreen({
@@ -209,19 +212,20 @@ const ChatsStack = createNativeStackNavigator({
 			screen: JitsiMeetViewScreen,
 			options: { headerShown: false, animation: isIOS ? 'default' : 'none' }
 		}),
+		// Tabs are peers, not a stack: they cross-fade in place over the sky, with no lateral
+		// motion to imply a hierarchy that isn't there. 350ms, the same on every tab.
 		DMsView: createNativeStackScreen({
 			screen: DMsViewScreen,
-			// reskin tab: cross-fade, owned in-view header
-			options: { headerShown: false, animation: 'fade' }
+			options: { headerShown: false, animation: 'fade', animationDuration: 350 }
 		}),
 		ActivityView: createNativeStackScreen({
 			screen: ActivityViewScreen,
-			options: { headerShown: false, animation: 'fade' }
+			options: { headerShown: false, animation: 'fade', animationDuration: 350 }
 		}),
 		ChiOrbView: createNativeStackScreen({
 			screen: ChiOrbViewScreen,
-			// full-bleed voice surface; fade in like a Siri-style overlay
-			options: { headerShown: false, animation: 'fade' }
+			// Chi arrives as a sheet from below — it is an action you summon, not a place you go.
+			options: { headerShown: false, animation: 'slide_from_bottom', animationDuration: 420 }
 		})
 	}
 }).with(({ Navigator }) => {
@@ -252,7 +256,10 @@ const ProfileStack = createNativeStackNavigator({
 const SettingsStack = createNativeStackNavigator({
 	screenOptions: defaultHeader,
 	screens: {
-		SettingsView: SettingsViewScreen,
+		// Paper & Sky: You draws its own sky hero, so on phones it has no navigation header.
+		// `isTablet` is a module constant, so this is decided once at load rather than toggled at
+		// runtime — flipping `headerShown` from an effect re-enters the screen mid-commit.
+		SettingsView: createNativeStackScreen({ screen: SettingsViewScreen, options: { headerShown: isTablet } }),
 		ConnectionsView: ConnectionsViewScreen,
 		SecurityPrivacyView: SecurityPrivacyViewScreen,
 		PushTroubleshootView: PushTroubleshootViewScreen,

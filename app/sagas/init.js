@@ -1,4 +1,4 @@
-import { call, delay, put, select, takeLatest } from 'redux-saga/effects';
+import { call, put, select, takeLatest } from 'redux-saga/effects';
 import RNBootSplash from 'react-native-bootsplash';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -21,33 +21,19 @@ export const initLocalSettings = function* initLocalSettings() {
 	yield put(setAllPreferences(sortPreferences));
 };
 
-// The opening ensō is a brand moment, not a stall: hold the loading root (AuthLoadingView,
-// which renders the looping ensō) for at least this long on cold start so the animation is
-// actually seen. Startup is usually faster than this, which is exactly why the hold exists.
-const MIN_BOOT_MS = 1400;
-
 const restore = function* restore() {
-	const bootStartedAt = Date.now();
-	// Let the loading screen mount and the ensō start turning before any root switch lands.
-	const holdForBootAnimation = function* holdForBootAnimation() {
-		const elapsed = Date.now() - bootStartedAt;
-		if (elapsed < MIN_BOOT_MS) {
-			yield delay(MIN_BOOT_MS - elapsed);
-		}
-	};
 	try {
 		// Hand off from the static launch screen to the animated one. The root starts as
 		// `undefined` (no group in RootNavigator matches, so nothing renders); entering
-		// ROOT_LOADING mounts AuthLoadingView with the live looping ensō, and the APP.START
-		// handler then hides the launch image over it. Both sit on the same brand green, so
-		// the swap is invisible — the ensō simply starts turning.
+		// ROOT_LOADING lets the APP.START handler hide the launch image, revealing BootOverlay's
+		// charging ensō on the same ground — the swap is invisible, the mark simply starts to
+		// charge. The overlay holds its own minimum before igniting, so nothing here waits.
 		yield put(appStart({ root: RootEnum.ROOT_LOADING }));
 
 		const server = UserPreferences.getString(CURRENT_SERVER);
 		let userId = UserPreferences.getString(`${TOKEN_KEY}-${server}`);
 
 		if (!server) {
-			yield call(holdForBootAnimation);
 			yield put(appStart({ root: RootEnum.ROOT_OUTSIDE }));
 		} else if (!userId) {
 			const serversDB = database.servers;
@@ -64,7 +50,6 @@ const restore = function* restore() {
 					}
 				}
 			}
-			yield call(holdForBootAnimation);
 			yield put(appStart({ root: RootEnum.ROOT_OUTSIDE }));
 		} else {
 			yield localAuthenticate(server);

@@ -35,7 +35,9 @@ const Wrapper = ({
 				style={[
 					styles.centerContainer,
 					{
-						borderColor: colors.strokeLight
+						// The row hairline is the softer of the two paper strokes: dividers inside a
+						// sheet should separate rows without drawing a grid over them.
+						borderColor: colors.strokeExtraLight
 					}
 				]}>
 				{children}

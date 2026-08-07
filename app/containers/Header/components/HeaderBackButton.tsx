@@ -1,7 +1,7 @@
 import { type HeaderBackButtonProps, HeaderBackButton as RNHeaderBackButton } from '@react-navigation/elements';
 import { Platform, StyleSheet } from 'react-native';
 
-import { useTheme } from '../../../theme';
+import { onSky } from '../../../lib/constants/paperSky';
 import I18n from '../../../i18n';
 
 const styles = StyleSheet.create({
@@ -22,11 +22,10 @@ const styles = StyleSheet.create({
 export const HeaderBackButton = ({ ...props }: HeaderBackButtonProps) => {
 	'use memo';
 
-	const { colors } = useTheme();
 	return (
 		<RNHeaderBackButton
 			accessibilityLabel={I18n.t('Back')}
-			tintColor={colors.fontInfo}
+			tintColor={onSky.primary}
 			style={styles.container}
 			testID='header-back'
 			{...props}

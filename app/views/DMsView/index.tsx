@@ -9,7 +9,7 @@ const dmFilter = (s: any): boolean => s.t === 'd';
 const DMsView = () => (
 	<FilteredRoomsList
 		tab='dms'
-		title='Direct messages'
+		title='Chats'
 		filter={dmFilter}
 		emptyTitle='No direct messages yet'
 		emptyHint='Start a conversation from the + button on Home.'

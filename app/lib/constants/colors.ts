@@ -1,112 +1,110 @@
-// MatterChat design tokens — MIRRORS THE WEB APP (app.matterchat.com).
-// Values sampled directly from the production web UI so mobile and web read as one product:
-//   emerald #12B981 (primary) · mint #34E6A8 (dark accent) · deep #0D8F5F / #0E7A4A (text-safe green)
-//   warm cream surfaces #FFFDF9 / #F6F1E8 / #F1EBDF · ink #0B1A14 · hairline #E3E8E2
-//   forest darks #12402C → #0A2417 → #06170F → #030C07 (the web hero gradient stops)
-// One accent red #E1053C stays reserved for destructive/mention.
-// Themes: light (cream) / dark (forest dim) / black (forest OLED).
+// MatterChat design tokens — PAPER & SKY.
+//
+// The light theme *is* paper: warm cream (#FAF5EA sheet · #FFFDF6 bright · #F0E7D2 slab ·
+// #F3EDDE own · #EAF2E6 "needs you / from Chi"), ink #2C2A21 through #8A8471, hairline #E9E1CE,
+// and one accent — ensō green #175F35 — carrying buttons, names, counts, links and toggles.
+// Amber #B0611E is deadlines only; red #B3402E is destructive only. Keeping that mapping strict
+// is what makes colour readable at a glance in a room full of legal traffic.
+//
+// The chrome that frames paper is not in this file: it is glass over the living sky, and those
+// recipes live in `paperSky.ts`. Dark/black themes stay forest so the sky still belongs to them.
 
-/**
- * The app frame green — sampled from the MatterChat app icon (#3BAB55 → #1A8335); this is
- * its midpoint. Every framing surface uses it: the status-bar strip, nav headers, the tab
- * bar and the navigator ground. Declared here (a leaf module) so importing it can never
- * create a cycle — an earlier version imported it from the navigation helpers and resolved
- * to `undefined` at module-eval time, silently falling back to the neutral surface.
- */
-export const FRAME_GREEN = '#2A9645';
+// Re-exported so the many call sites that already import it from here keep working; the value
+// itself lives in `paperSky.ts` alongside the sky it is the mid-tone of.
+export { FRAME_GREEN } from './paperSky';
 
 const backdropColor = '#000000';
 const overlayBackground = 'rgba(22, 33, 26, 0.65)';
 
 const light = {
-	surfaceLight: '#FFFDF9',
-	surfaceTint: '#F1EBDF',
-	surfaceRoom: '#F6F1E8',
-	surfaceNeutral: '#E9E1D2',
-	surfaceDisabled: '#F1EBDF',
-	surfaceHover: '#EFE9DD',
-	surfaceSelected: '#E8F7EF',
-	surfaceDark: '#0B1A14',
-	surfaceFeatured: '#0D8F5F',
-	surfaceFeaturedHover: '#0E7A4A',
+	surfaceLight: '#FFFDF6',
+	surfaceTint: '#F0E7D2',
+	surfaceRoom: '#FAF5EA',
+	surfaceNeutral: '#EAE1CB',
+	surfaceDisabled: '#F0E7D2',
+	surfaceHover: '#F3EDDE',
+	surfaceSelected: '#EAF2E6',
+	surfaceDark: '#2C2A21',
+	surfaceFeatured: '#175F35',
+	surfaceFeaturedHover: '#0F4A28',
 
-	strokeExtraLight: '#E8E1D4',
-	strokeLight: '#DFE3DC',
-	strokeMedium: '#A9B5AC',
-	strokeDark: '#55655C',
-	strokeExtraDark: '#163024',
-	strokeExtraLightHighlight: '#C7EFDD',
-	strokeHighlight: '#12B981',
-	strokeExtraLightError: '#FBD3DC',
-	strokeError: '#E1053C',
+	strokeExtraLight: '#E9E1CE',
+	strokeLight: '#E4D8BC',
+	strokeMedium: '#C9C2AC',
+	strokeDark: '#8A8471',
+	strokeExtraDark: '#2C2A21',
+	strokeExtraLightHighlight: '#DCE8D6',
+	strokeHighlight: '#175F35',
+	strokeExtraLightError: '#EFD5CE',
+	strokeError: '#B3402E',
 
 	fontWhite: '#FFFFFF',
-	fontDisabled: '#C2CCC5',
-	fontAnnotation: '#7C8B83',
-	fontHint: '#7C8B83',
-	fontSecondaryInfo: '#55655C',
-	fontDefault: '#163024',
-	fontTitlesLabels: '#0B1A14',
-	fontInfo: '#0E7A4A',
-	fontDanger: '#C21038',
-	fontPureBlack: '#0B1A14',
+	fontDisabled: '#C9C2AC',
+	fontAnnotation: '#8A8471',
+	fontHint: '#8A8471',
+	fontSecondaryInfo: '#6B675A',
+	fontDefault: '#3B382E',
+	fontTitlesLabels: '#2C2A21',
+	fontInfo: '#175F35',
+	fontDanger: '#B3402E',
+	fontPureBlack: '#2C2A21',
 	fontPureWhite: '#FFFFFF',
 
-	statusBackgroundInfo: '#E8F7EF',
-	statusBackgroundSuccess: '#D9F5E8',
-	statusBackgroundDanger: '#FBD3DC',
-	statusBackgroundWarning: '#FBF1E6',
-	statusBackgroundWarning2: '#FDF7E7',
-	statusBackgroundService: '#F8E3D2',
+	statusBackgroundInfo: '#EAF2E6',
+	statusBackgroundSuccess: '#E4F0DF',
+	statusBackgroundDanger: '#F6DED8',
+	statusBackgroundWarning: '#F7E9D6',
+	statusBackgroundWarning2: '#FBF2E0',
+	statusBackgroundService: '#F5E4D3',
 	statusBackgroundService2: '#EDD0F7',
-	statusFontInfo: '#0E7A4A',
-	statusFontSuccess: '#0D8F5F',
-	statusFontDanger: '#B00D30',
+	statusFontInfo: '#175F35',
+	statusFontSuccess: '#175F35',
+	statusFontDanger: '#B3402E',
 	statusFontWarning: '#B0611E',
-	statusFontWarning2: '#26312A',
+	statusFontWarning2: '#4A463A',
 	statusFontService: '#974809',
 	statusFontService2: '#7F1B9F',
 
-	badgeBackgroundLevel1: '#7A8880',
-	badgeBackgroundLevel2: '#12B981',
-	badgeBackgroundLevel3: '#E09425',
-	badgeBackgroundLevel4: '#E1053C',
+	badgeBackgroundLevel1: '#8A8471',
+	badgeBackgroundLevel2: '#175F35',
+	badgeBackgroundLevel3: '#B0611E',
+	badgeBackgroundLevel4: '#B3402E',
 
-	userPresenceOnline: '#12B981',
-	userPresenceBusy: '#E1053C',
-	userPresenceAway: '#E8B931',
-	userPresenceOffline: '#8FA096',
+	userPresenceOnline: '#2FA44A',
+	userPresenceBusy: '#B3402E',
+	userPresenceAway: '#D9A62E',
+	userPresenceOffline: '#A39C86',
 	userPresenceDisabled: '#E09425',
 
-	buttonBackgroundPrimaryDefault: '#12B981',
-	buttonBackgroundPrimaryPress: '#0D8F5F',
-	buttonBackgroundPrimaryDisabled: '#E8F7EF',
+	buttonBackgroundPrimaryDefault: '#175F35',
+	buttonBackgroundPrimaryPress: '#0F4A28',
+	buttonBackgroundPrimaryDisabled: '#DCE8D6',
 
-	buttonBackgroundSecondaryDefault: '#F1EBDF',
-	buttonBackgroundSecondaryPress: '#E6DFD0',
-	buttonBackgroundSecondaryDisabled: '#F6F1E8',
+	buttonBackgroundSecondaryDefault: '#F0E7D2',
+	buttonBackgroundSecondaryPress: '#E4D8BC',
+	buttonBackgroundSecondaryDisabled: '#F3EDDE',
 
-	buttonBackgroundSecondaryDangerDefault: '#ECEFEB',
-	buttonBackgroundSecondaryDangerPress: '#D8DFD9',
-	buttonBackgroundSecondaryDangerDisabled: '#F1F4F0',
+	buttonBackgroundSecondaryDangerDefault: '#F3EDDE',
+	buttonBackgroundSecondaryDangerPress: '#E4D8BC',
+	buttonBackgroundSecondaryDangerDisabled: '#F6F1E4',
 
-	buttonBackgroundDangerDefault: '#E1053C',
-	buttonBackgroundDangerPress: '#B00D30',
-	buttonBackgroundDangerDisabled: '#FBD3DC',
+	buttonBackgroundDangerDefault: '#B3402E',
+	buttonBackgroundDangerPress: '#943324',
+	buttonBackgroundDangerDisabled: '#F0D9D3',
 
-	buttonBackgroundSuccessDefault: '#0D8F5F',
-	buttonBackgroundSuccessPress: '#0E7A4A',
-	buttonBackgroundSuccessDisabled: '#DBF3E6',
+	buttonBackgroundSuccessDefault: '#175F35',
+	buttonBackgroundSuccessPress: '#0F4A28',
+	buttonBackgroundSuccessDisabled: '#DCE8D6',
 
-	buttonFontPrimary: '#FFFFFF',
-	buttonPrimaryDisabled: '#A6B2A8',
-	buttonFontSecondary: '#0B1A14',
-	buttonSecondaryDisabled: '#A6B2A8',
-	buttonFontSecondaryDanger: '#B00D30',
-	buttonSecondaryDangerDisabled: '#E9AABB',
-	buttonFontDanger: '#FFFFFF',
+	buttonFontPrimary: '#FAF5EA',
+	buttonPrimaryDisabled: '#A39C86',
+	buttonFontSecondary: '#2C2A21',
+	buttonSecondaryDisabled: '#A39C86',
+	buttonFontSecondaryDanger: '#B3402E',
+	buttonSecondaryDangerDisabled: '#D8AFA6',
+	buttonFontDanger: '#FAF5EA',
 	buttonDangerDisabled: '#FFFFFF',
-	buttonFontSuccess: '#FFFFFF',
+	buttonFontSuccess: '#FAF5EA',
 	buttonSuccessDisabled: '#FFFFFF'
 };
 

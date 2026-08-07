@@ -1,169 +1,239 @@
 import { useNavigation } from '@react-navigation/native';
-import { Image, Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import LinearGradient from 'react-native-linear-gradient';
+import * as Haptics from 'expo-haptics';
+import { Platform, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { fontFamily, gradients } from '../../lib/constants/typography';
-import { useTheme } from '../../theme';
+import { onSky, paper } from '../../lib/constants/paperSky';
+import ChiOrb from '../ChiOrb';
 import { CustomIcon, type TIconsName } from '../CustomIcon';
+import Glass from '../Glass';
 
 /**
- * The bottom rail — Home / DMs / Chi / Activity / You.
+ * The floating dock — Home / Chats / Chi / Activity / You.
  *
- * Built to the web app's component grammar rather than as a coloured slab: the PWA keeps its
- * chrome light and airy (near-white fills, hairline green-tinted borders, 13pt radii) and spends
- * colour only on the primary action. So the rail is a light surface, the active tab is marked by
- * a soft green tint pill behind its icon, and the emerald gradient is reserved for Chi — carrying
- * the same lift the web's "Sign in" button has (coloured glow plus a 1px inset highlight along
- * the top edge, so it reads lit from above).
+ * It is chrome, so it is glass: a smoked pane inset from all three edges, floating clear of the
+ * screen with the sky visible around and beneath it. Not a bar welded to the bottom — the whole
+ * point of the inset is that the app reads as content on a sky rather than content in a chassis.
  *
- * Every label sits on one baseline. The Chi tile is absolutely positioned so it can rise above
- * the rail without dragging its own label out of line with the other four.
+ * The Chi orb is the exception to everything: it is a lit sphere raised 16px out of the dock,
+ * drawn as a sibling of the glass pane rather than a child, because the pane clips to its own
+ * 34px radius and the orb has to break that boundary (and cast its shadow past it).
  *
- * Navigation is unchanged: tabs `navigate` to screens already registered in the Chats stack.
+ * All five labels sit on one baseline. The orb is absolutely positioned precisely so that raising
+ * it doesn't drag its label out of line with the other four.
  */
 export type TMainTab = 'home' | 'dms' | 'activity' | 'you';
 
 const TABS: { key: TMainTab | 'chi'; icon?: TIconsName; label: string; route: string }[] = [
 	{ key: 'home', icon: 'home', label: 'Home', route: 'RoomsListView' },
-	{ key: 'dms', icon: 'message', label: 'DMs', route: 'DMsView' },
+	{ key: 'dms', icon: 'message', label: 'Chats', route: 'DMsView' },
 	{ key: 'chi', label: 'Chi', route: 'ChiOrbView' },
-	{ key: 'activity', icon: 'notification', label: 'Activity', route: 'ActivityView' },
+	{ key: 'activity', icon: 'mention', label: 'Activity', route: 'ActivityView' },
 	{ key: 'you', icon: 'user', label: 'You', route: 'SettingsStackNavigator' }
 ];
 
-const BAR_HEIGHT = 54;
-const CHI_SIZE = 50;
+const PAD_TOP = 12;
+const PAD_BOTTOM = 14;
+const ICON = 25;
+// The icon row is taller than the icons so the raised orb has somewhere to land: it clears the
+// dock by 26px and still stops short of the label line every tab shares.
+const ICON_SLOT = 34;
+const LABEL_GAP = 3;
+const LABEL_H = 14;
+const CONTENT_H = ICON_SLOT + LABEL_GAP + LABEL_H;
+const DOCK_H = PAD_TOP + CONTENT_H + PAD_BOTTOM;
+const ORB = 56;
+const RAISE = 26;
+
+/** The dock floats over content, so scrollable screens must reserve this much at the bottom. */
+export const DOCK_CLEARANCE = DOCK_H + 30;
 
 const styles = StyleSheet.create({
 	wrap: {
+		position: 'absolute',
+		left: 14,
+		right: 14,
+		zIndex: 8
+	},
+	dock: {
 		flexDirection: 'row',
-		alignItems: 'flex-end',
-		borderTopWidth: StyleSheet.hairlineWidth
+		paddingTop: PAD_TOP,
+		paddingBottom: PAD_BOTTOM,
+		paddingHorizontal: 10,
+		...Platform.select({
+			ios: {
+				shadowColor: '#000',
+				shadowOffset: { width: 0, height: 18 },
+				shadowRadius: 22,
+				shadowOpacity: 0.55
+			},
+			android: { elevation: 16 }
+		})
 	},
 	item: {
 		flex: 1,
-		height: BAR_HEIGHT,
-		alignItems: 'center',
-		justifyContent: 'center',
-		gap: 3
+		alignItems: 'center'
 	},
-	iconPill: {
-		width: 46,
-		height: 26,
-		borderRadius: 13,
+	iconSlot: {
+		width: 54,
+		height: ICON_SLOT,
 		alignItems: 'center',
 		justifyContent: 'center'
 	},
-	label: {
-		fontFamily: fontFamily.mono,
-		fontSize: 9,
-		letterSpacing: 0.6
-	},
-	labelActive: {
-		fontFamily: fontFamily.monoBold
-	},
-	// The tile rises out of the rail; the label below it stays on the shared baseline.
-	chiTile: {
-		position: 'absolute',
-		top: -(CHI_SIZE / 2) + 4,
-		width: CHI_SIZE,
-		height: CHI_SIZE,
-		borderRadius: 17,
-		alignItems: 'center',
-		justifyContent: 'center',
+	// The selected tab is a glass key pressed forward out of the pane: a lighter fill, a lit top
+	// edge and a shadow under it. Everything else stays flush with the dock.
+	key: {
+		...StyleSheet.absoluteFillObject,
+		borderRadius: 12,
+		backgroundColor: 'rgba(255,255,255,0.18)',
+		borderWidth: 1,
+		borderColor: 'rgba(255,255,255,0.30)',
+		overflow: 'hidden',
 		...Platform.select({
 			ios: {
-				shadowColor: '#0D8F5F',
-				shadowOpacity: 0.38,
-				shadowRadius: 10,
-				shadowOffset: { width: 0, height: 6 }
+				shadowColor: '#03130A',
+				shadowOffset: { width: 0, height: 3 },
+				shadowRadius: 6,
+				shadowOpacity: 0.5
 			},
-			android: { elevation: 8 }
+			android: { elevation: 4 }
 		})
 	},
-	// the web CTA's inset top highlight, which is what makes it read as lit
-	chiSheen: {
+	keySheen: {
 		position: 'absolute',
 		top: 0,
-		left: 12,
-		right: 12,
+		left: 8,
+		right: 8,
 		height: 1,
-		backgroundColor: 'rgba(255,255,255,0.30)'
+		backgroundColor: 'rgba(255,255,255,0.55)'
 	},
-	chiEnso: {
-		width: 28,
-		height: 28
+	// Relief: every glyph casts a little shadow onto the pane, so the icons sit on the glass
+	// rather than being printed into it.
+	glyph: {
+		...Platform.select({
+			ios: {
+				shadowColor: '#020C06',
+				shadowOffset: { width: 0, height: 2 },
+				shadowRadius: 5,
+				shadowOpacity: 0.55
+			},
+			android: {}
+		})
 	},
-	chiLabelSlot: {
-		marginTop: CHI_SIZE / 2 + 6
+	label: {
+		marginTop: LABEL_GAP,
+		height: LABEL_H,
+		fontSize: 11,
+		lineHeight: LABEL_H,
+		fontWeight: '600',
+		color: onSky.primary,
+		textShadowColor: 'rgba(2,12,6,0.55)',
+		textShadowRadius: 4,
+		textShadowOffset: { width: 0, height: 1 }
+	},
+	labelActive: {
+		fontWeight: '800'
+	},
+	inactive: {
+		opacity: 0.62
+	},
+	// The orb lives outside the glass so the pane's radius can't clip it and its shadow can fall
+	// past the dock's edge onto the sky.
+	orbSlot: {
+		position: 'absolute',
+		top: PAD_TOP - RAISE,
+		alignItems: 'center',
+		justifyContent: 'center'
+	},
+	badge: {
+		position: 'absolute',
+		top: -3,
+		minWidth: 17,
+		height: 17,
+		borderRadius: 9,
+		paddingHorizontal: 4,
+		alignItems: 'center',
+		justifyContent: 'center',
+		backgroundColor: paper.sheet
+	},
+	badgeText: {
+		fontSize: 10,
+		fontWeight: '800',
+		color: paper.accent
 	}
 });
 
-const MainTabBar = ({ active }: { active: TMainTab }) => {
-	const { colors } = useTheme();
+const MainTabBar = ({ active, badges }: { active: TMainTab; badges?: Partial<Record<TMainTab, number>> }) => {
 	const { bottom } = useSafeAreaInsets();
 	const navigation = useNavigation<any>();
 
-	return (
-		<View
-			style={[
-				styles.wrap,
-				{
-					backgroundColor: colors.surfaceLight,
-					borderTopColor: colors.strokeLight,
-					paddingBottom: Math.max(bottom, 8)
-				}
-			]}>
-			{TABS.map(tab => {
-				if (tab.key === 'chi') {
-					return (
-						<View key='chi' style={styles.item} pointerEvents='box-none'>
-							<TouchableOpacity
-								style={styles.chiTile}
-								activeOpacity={0.88}
-								accessibilityRole='button'
-								accessibilityLabel='Chi assistant'
-								onPress={() => navigation.navigate('ChiOrbView')}>
-								<LinearGradient
-									colors={gradients.emerald as unknown as string[]}
-									locations={[0, 0.6, 1]}
-									start={{ x: 0, y: 0 }}
-									end={{ x: 1, y: 1 }}
-									style={[StyleSheet.absoluteFill, { borderRadius: 17 }]}
-								/>
-								<View style={styles.chiSheen} />
-								<Image source={require('../../static/images/enso_brush_white.png')} style={styles.chiEnso} resizeMode='contain' />
-							</TouchableOpacity>
-							{/* Chi is an action, not a destination — keep its label neutral so it never
-							    competes with the selected tab's marker. */}
-							<Text style={[styles.label, styles.chiLabelSlot, { color: colors.fontSecondaryInfo }]}>Chi</Text>
-						</View>
-					);
-				}
+	const go = (route: string, isActive: boolean) => {
+		if (isActive) {
+			return;
+		}
+		// A dock press is a place-change; it deserves the same physical acknowledgement iOS gives
+		// its own tab bars.
+		Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light).catch(() => {});
+		navigation.navigate(route);
+	};
 
-				const isActive = tab.key === active;
-				const tint = isActive ? colors.fontInfo : colors.fontSecondaryInfo;
-				return (
-					<TouchableOpacity
-						key={tab.key}
-						style={styles.item}
-						activeOpacity={0.7}
-						accessibilityRole='button'
-						accessibilityState={{ selected: isActive }}
-						accessibilityLabel={tab.label}
-						onPress={() => {
-							if (!isActive) {
-								navigation.navigate(tab.route);
-							}
-						}}>
-						<View style={[styles.iconPill, isActive ? { backgroundColor: colors.statusBackgroundInfo } : null]}>
-							<CustomIcon name={tab.icon!} size={21} color={tint} />
-						</View>
-						<Text style={[styles.label, isActive ? styles.labelActive : null, { color: tint }]}>{tab.label}</Text>
-					</TouchableOpacity>
-				);
-			})}
+	return (
+		<View style={[styles.wrap, { bottom: Math.max(bottom - 12, 12) }]} pointerEvents='box-none'>
+			<Glass variant='dock' radius={34} style={styles.dock}>
+				{TABS.map(tab => {
+					if (tab.key === 'chi') {
+						// A spacer that owns nothing but the label's slot — the orb is drawn over it.
+						return (
+							<View key='chi' style={styles.item} pointerEvents='none'>
+								<View style={styles.iconSlot} />
+								<Text style={[styles.label, styles.labelActive]}>Chi</Text>
+							</View>
+						);
+					}
+
+					const isActive = tab.key === active;
+					const badge = badges?.[tab.key];
+					return (
+						<TouchableOpacity
+							key={tab.key}
+							style={[styles.item, isActive ? null : styles.inactive]}
+							activeOpacity={0.6}
+							accessibilityRole='button'
+							accessibilityState={{ selected: isActive }}
+							accessibilityLabel={tab.label}
+							onPress={() => go(tab.route, isActive)}>
+							<View style={styles.iconSlot}>
+								{isActive ? (
+									<View style={styles.key}>
+										<View style={styles.keySheen} />
+									</View>
+								) : null}
+								<View style={styles.glyph}>
+									<CustomIcon name={tab.icon!} size={ICON} color={onSky.primary} />
+								</View>
+							</View>
+							{badge ? (
+								<View style={[styles.badge, { right: 22 }]}>
+									<Text style={styles.badgeText}>{badge > 99 ? '99+' : badge}</Text>
+								</View>
+							) : null}
+							<Text style={[styles.label, isActive ? styles.labelActive : null]}>{tab.label}</Text>
+						</TouchableOpacity>
+					);
+				})}
+			</Glass>
+			<View style={[styles.orbSlot, { left: 0, right: 0 }]} pointerEvents='box-none'>
+				<TouchableOpacity
+					activeOpacity={0.85}
+					accessibilityRole='button'
+					accessibilityLabel='Chi assistant'
+					onPress={() => {
+						Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+						navigation.navigate('ChiOrbView');
+					}}>
+					<ChiOrb size={ORB} />
+				</TouchableOpacity>
+			</View>
 		</View>
 	);
 };

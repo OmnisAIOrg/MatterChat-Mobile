@@ -1,12 +1,16 @@
-import { ScrollView, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
+import Glass from '../../../containers/Glass';
 import I18n from '../../../i18n';
-import { useTheme } from '../../../theme';
+import { onSky, paper } from '../../../lib/constants/paperSky';
 
 /**
- * Reskin: the Home filter chips (All / Unreads / Channels / Matters).
- * Pure client-side filters over the already-subscribed rooms list — no new data.
- * Active chip = inverted (ink background, surface text); inactive = neutral pill.
+ * The Home filter chips (All / Unreads / Channels / Matters) — pure client-side filters over the
+ * already-subscribed rooms, no new data.
+ *
+ * They sit on the sky, so they follow the chip rule: the selected chip becomes **paper** (it has
+ * been pulled forward into the content layer), the rest stay glass. That inversion is what makes
+ * the selection obvious without a single extra colour.
  */
 export type THomeFilter = 'all' | 'unreads' | 'channels' | 'matters';
 
@@ -23,16 +27,18 @@ const styles = StyleSheet.create({
 	},
 	content: {
 		paddingHorizontal: 16,
-		paddingTop: 4,
-		paddingBottom: 10,
+		paddingTop: 0,
+		paddingBottom: 12,
 		gap: 8
 	},
 	chip: {
 		height: 34,
-		borderRadius: 17,
-		paddingHorizontal: 14,
+		paddingHorizontal: 15,
 		alignItems: 'center',
 		justifyContent: 'center'
+	},
+	chipPaper: {
+		backgroundColor: paper.sheet
 	},
 	label: {
 		fontSize: 13,
@@ -40,32 +46,35 @@ const styles = StyleSheet.create({
 	}
 });
 
-const HomeFilters = ({ active, onChange }: { active: THomeFilter; onChange: (f: THomeFilter) => void }) => {
-	const { colors } = useTheme();
-
-	return (
-		<ScrollView
-			horizontal
-			showsHorizontalScrollIndicator={false}
-			style={styles.row}
-			contentContainerStyle={styles.content}
-			keyboardShouldPersistTaps='always'>
-			{FILTERS.map(f => {
-				const isActive = f.key === active;
-				return (
-					<TouchableOpacity
-						key={f.key}
-						style={[styles.chip, { backgroundColor: isActive ? colors.fontTitlesLabels : colors.surfaceNeutral }]}
-						onPress={() => onChange(f.key)}
-						accessibilityRole='button'
-						accessibilityState={{ selected: isActive }}
-						accessibilityLabel={f.label}>
-						<Text style={[styles.label, { color: isActive ? colors.surfaceLight : colors.fontDefault }]}>{f.label}</Text>
-					</TouchableOpacity>
-				);
-			})}
-		</ScrollView>
-	);
-};
+const HomeFilters = ({ active, onChange }: { active: THomeFilter; onChange: (f: THomeFilter) => void }) => (
+	<ScrollView
+		horizontal
+		showsHorizontalScrollIndicator={false}
+		style={styles.row}
+		contentContainerStyle={styles.content}
+		keyboardShouldPersistTaps='always'>
+		{FILTERS.map(f => {
+			const isActive = f.key === active;
+			const label = <Text style={[styles.label, { color: isActive ? paper.accent : onSky.primary }]}>{f.label}</Text>;
+			return (
+				<TouchableOpacity
+					key={f.key}
+					onPress={() => onChange(f.key)}
+					activeOpacity={0.75}
+					accessibilityRole='button'
+					accessibilityState={{ selected: isActive }}
+					accessibilityLabel={f.label}>
+					{isActive ? (
+						<View style={[styles.chip, styles.chipPaper, { borderRadius: 17 }]}>{label}</View>
+					) : (
+						<Glass variant='clear' radius={17} style={styles.chip} pointerEvents='none'>
+							{label}
+						</Glass>
+					)}
+				</TouchableOpacity>
+			);
+		})}
+	</ScrollView>
+);
 
 export default HomeFilters;

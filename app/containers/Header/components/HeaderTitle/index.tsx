@@ -2,7 +2,7 @@ import { memo, type ReactNode } from 'react';
 import { Text, View } from 'react-native';
 
 import { isAndroid } from '../../../../lib/methods/helpers';
-import { useTheme } from '../../../../theme';
+import { onSky } from '../../../../lib/constants/paperSky';
 import { styles } from './styles';
 
 interface IHeaderTitle {
@@ -12,7 +12,6 @@ interface IHeaderTitle {
 const HeaderTitle = memo(({ headerTitle }: IHeaderTitle) => {
 	'use memo';
 
-	const { colors } = useTheme();
 	if (!headerTitle) {
 		return null;
 	}
@@ -24,7 +23,7 @@ const HeaderTitle = memo(({ headerTitle }: IHeaderTitle) => {
 					numberOfLines={1}
 					style={{
 						...styles.androidTitle,
-						color: colors.fontTitlesLabels
+						color: onSky.primary
 					}}>
 					{headerTitle}
 				</Text>
@@ -36,7 +35,7 @@ const HeaderTitle = memo(({ headerTitle }: IHeaderTitle) => {
 					numberOfLines={1}
 					style={{
 						...styles.title,
-						color: colors.fontTitlesLabels
+						color: onSky.primary
 					}}>
 					{headerTitle}
 				</Text>
@@ -44,7 +43,7 @@ const HeaderTitle = memo(({ headerTitle }: IHeaderTitle) => {
 		);
 	}
 
-	return headerTitle({ children: '', tintColor: colors.fontTitlesLabels });
+	return headerTitle({ children: '', tintColor: onSky.primary });
 });
 
 export default HeaderTitle;

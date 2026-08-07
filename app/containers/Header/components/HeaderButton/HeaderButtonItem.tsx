@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { CustomIcon, type TIconsName } from '../../../CustomIcon';
-import { useTheme } from '../../../../theme';
+import { onSky } from '../../../../lib/constants/paperSky';
 import sharedStyles from '../../../../views/Styles';
 
 export interface IHeaderButtonItem {
@@ -50,7 +50,6 @@ const Item = memo(
 	}: IHeaderButtonItem): ReactElement => {
 		'use memo';
 
-		const { colors } = useTheme();
 		return (
 			<BorderlessButton onPress={onPress} testID={testID} hitSlop={BUTTON_HIT_SLOP} enabled={!disabled} style={styles.container}>
 				<View
@@ -60,9 +59,9 @@ const Item = memo(
 						opacity: disabled ? 0.5 : 1
 					}}>
 					{iconName ? (
-						<CustomIcon name={iconName} size={24} color={color} {...props} />
+						<CustomIcon name={iconName} size={24} color={color || onSky.primary} {...props} />
 					) : (
-						<Text style={[styles.title, { color: color || colors.fontInfo }]} {...props}>
+						<Text style={[styles.title, { color: color || onSky.primary }]} {...props}>
 							{title}
 						</Text>
 					)}

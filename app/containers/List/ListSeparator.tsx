@@ -19,7 +19,7 @@ const ListSeparator = memo(({ style }: IListSeparator) => {
 
 	const { theme } = useTheme();
 
-	return <View style={[styles.separator, style, { backgroundColor: themes[theme].strokeLight }]} />;
+	return <View style={[styles.separator, style, { backgroundColor: themes[theme].strokeExtraLight }]} />;
 });
 
 ListSeparator.displayName = 'List.Separator';

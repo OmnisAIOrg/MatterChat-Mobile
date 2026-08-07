@@ -3,7 +3,7 @@ import { createNativeStackNavigator, createNativeStackScreen } from '@react-navi
 import { type StaticParamList } from '@react-navigation/native';
 
 import { ThemeContext } from '../theme';
-import { defaultHeader, HEADER_GREEN, themedHeader } from '../lib/methods/helpers/navigation';
+import { defaultHeader, themedHeader } from '../lib/methods/helpers/navigation';
 import NewServerView from '../views/NewServerView';
 import WorkspaceView from '../views/WorkspaceView';
 import LoginView from '../views/LoginView';
@@ -27,9 +27,9 @@ const Outside = createNativeStackNavigator({
 	'use memo';
 
 	const { theme } = useContext(ThemeContext);
-	// The auth flow is framed in brand green edge to edge — no neutral strip behind the
-	// status bar or between transitions.
-	return <Navigator screenOptions={{ ...themedHeader(theme), contentStyle: { backgroundColor: HEADER_GREEN } }} />;
+	// The auth flow sits on the same living sky as the rest of the app — transparent all the way
+	// down, so signing in and being signed in feel like one continuous place.
+	return <Navigator screenOptions={{ ...themedHeader(theme), contentStyle: { backgroundColor: 'transparent' } }} />;
 });
 
 export type OutsideParamList = StaticParamList<typeof Outside>;

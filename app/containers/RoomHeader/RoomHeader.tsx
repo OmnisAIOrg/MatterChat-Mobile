@@ -12,7 +12,7 @@ import RoomTypeIcon from '../RoomTypeIcon';
 import { CustomIcon } from '../CustomIcon';
 import { type TUserStatus, type IOmnichannelSource, type ISubscription } from '../../definitions';
 import { formatStatusExpiry } from '../../lib/methods/helpers/formatStatusExpiry';
-import { useTheme } from '../../theme';
+import { onSky } from '../../lib/constants/paperSky';
 import { useMasterDetail } from '../../lib/hooks/useMasterDetail';
 import useStatusAccessibilityLabel from '../../lib/hooks/useStatusAccessibilityLabel';
 import { type IUsersTyping } from '../../reducers/usersTyping';
@@ -96,7 +96,6 @@ interface IRoomHeader {
 type IRoomHeaderProps = IRoomHeader;
 
 const SubTitle = memo(({ usersTyping, subtitle, formattedStatusExpiry, renderFunc, scale }: TRoomHeaderSubTitle) => {
-	const { colors } = useTheme();
 	const fontSize = getSubTitleSize(scale);
 	// typing
 	if (usersTyping.length) {
@@ -107,7 +106,7 @@ const SubTitle = memo(({ usersTyping, subtitle, formattedStatusExpiry, renderFun
 			usersText = usersTyping.join(', ');
 		}
 		return (
-			<Text style={[styles.subtitle, { fontSize, color: colors.fontSecondaryInfo }]} numberOfLines={1}>
+			<Text style={[styles.subtitle, { fontSize, color: 'rgba(255,255,255,0.82)' }]} numberOfLines={1}>
 				<Text style={styles.typingUsers}>{usersText} </Text>
 				{usersTyping.length > 1 ? I18n.t('are_typing') : I18n.t('is_typing')}...
 			</Text>
@@ -124,22 +123,21 @@ const SubTitle = memo(({ usersTyping, subtitle, formattedStatusExpiry, renderFun
 		if (formattedStatusExpiry) {
 			return (
 				<View style={styles.titleContainer}>
-					<CustomIcon name='clock' size={fontSize} color={colors.fontSecondaryInfo} style={styles.clockIcon} />
-					<MarkdownPreview msg={subtitle} style={[styles.subtitle, { fontSize, color: colors.fontSecondaryInfo }]} />
+					<CustomIcon name='clock' size={fontSize} color={'rgba(255,255,255,0.82)'} style={styles.clockIcon} />
+					<MarkdownPreview msg={subtitle} style={[styles.subtitle, { fontSize, color: 'rgba(255,255,255,0.82)' }]} />
 				</View>
 			);
 		}
-		return <MarkdownPreview msg={subtitle} style={[styles.subtitle, { fontSize, color: colors.fontSecondaryInfo }]} />;
+		return <MarkdownPreview msg={subtitle} style={[styles.subtitle, { fontSize, color: 'rgba(255,255,255,0.82)' }]} />;
 	}
 
 	return null;
 });
 
 const HeaderTitle = memo(({ title, tmid, prid, scale, testID }: TRoomHeaderHeaderTitle) => {
-	const { colors } = useTheme();
 	const { isLargeFontScale } = useResponsiveLayout();
 
-	const titleStyle = { fontSize: TITLE_SIZE * scale, color: colors.fontTitlesLabels };
+	const titleStyle = { fontSize: TITLE_SIZE * scale, color: onSky.primary };
 	if (!tmid && !prid) {
 		return (
 			<Text style={[styles.title, titleStyle]} numberOfLines={isLargeFontScale ? 2 : 1} testID={testID}>
@@ -182,7 +180,6 @@ const Header = ({
 		teamMain,
 		type
 	});
-	const { colors } = useTheme();
 	const { fontScale } = useWindowDimensions();
 	const portrait = height > width;
 	let scale = 1;
@@ -218,7 +215,7 @@ const Header = ({
 					teamMain={teamMain}
 					abacAttributes={abacAttributes}
 				/>
-				<Text style={[styles.subtitle, { color: colors.fontSecondaryInfo }]} numberOfLines={1}>
+				<Text style={[styles.subtitle, { color: 'rgba(255,255,255,0.82)' }]} numberOfLines={1}>
 					{parentTitle}
 				</Text>
 			</View>

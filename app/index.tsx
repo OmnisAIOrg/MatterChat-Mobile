@@ -12,8 +12,9 @@ import { appInit, appInitLocalSettings } from './actions/app';
 import { deepLinkingOpen } from './actions/deepLinking';
 import { ActionSheetProvider } from './containers/ActionSheet';
 import InAppNotification from './containers/InAppNotification';
+import BootOverlay from './containers/BootOverlay';
 import Loading from './containers/Loading';
-import FrameTopStrip from './containers/FrameTopStrip';
+import Sky, { SkyProvider } from './containers/Sky';
 import StatusBar from './containers/StatusBar';
 import ThemeContextProvider from './containers/ThemeContextProvider';
 import Toast from './containers/Toast';
@@ -159,26 +160,34 @@ export default class Root extends Component<{}, IState> {
 
 	render() {
 		const { themePreferences, theme } = this.state;
-		// The frame (status-bar strip, header, tab bar) is MatterChat green on every screen.
+		// Paper & Sky: the living sky is mounted once, here, behind everything. Every navigator is
+		// transparent on top of it, so the background is continuous through pushes, tab switches
+		// and modals — it never re-mounts and never cuts. Screens float paper over it.
 		return (
 			<SafeAreaProvider style={{ backgroundColor: FRAME_GREEN }}>
 				<Provider store={store}>
 					<ThemeContextProvider theme={theme} themePreferences={themePreferences} setTheme={this.setTheme}>
 						<ResponsiveLayoutProvider>
 							<GestureHandlerRootView style={{ flex: 1, backgroundColor: FRAME_GREEN }}>
-								<KeyboardProvider>
-									<ActionSheetProvider>
-										<StatusBar backgroundColor={FRAME_GREEN} />
-										<AppContainer />
-										<FrameTopStrip />
-										<TwoFactor />
-										<ScreenLockedView />
-										<ChangePasscodeView />
-										<InAppNotification />
-										<Toast />
-										<Loading />
-									</ActionSheetProvider>
-								</KeyboardProvider>
+								<SkyProvider>
+									{/* The sky is the first child of the root view on purpose: the providers below it
+									    inset their children by the safe area, and the sky has to run edge to edge —
+									    under the status bar and the home indicator both. */}
+									<Sky />
+									<KeyboardProvider>
+										<ActionSheetProvider>
+											<StatusBar />
+											<AppContainer />
+											<TwoFactor />
+											<ScreenLockedView />
+											<ChangePasscodeView />
+											<InAppNotification />
+											<Toast />
+											<Loading />
+											<BootOverlay />
+										</ActionSheetProvider>
+									</KeyboardProvider>
+								</SkyProvider>
 							</GestureHandlerRootView>
 						</ResponsiveLayoutProvider>
 					</ThemeContextProvider>

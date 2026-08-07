@@ -1,42 +1,20 @@
 import { memo, type ReactElement } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
-import EnsoLoader from '../containers/EnsoLoader';
-import { fontFamily } from '../lib/constants/typography';
-import { useAppSelector } from '../lib/hooks/useAppSelector';
+import { StyleSheet, View } from 'react-native';
 
 /**
- * The startup screen — the app's counterpart to the web's initializing state: a green
- * particle ensō turning on the deep ground, with a wide-tracked INITIALIZING caption beneath.
- * Any status text the boot reports (server name, migration step) replaces the caption.
+ * The loading root.
+ *
+ * The opening animation itself lives in `BootOverlay`, mounted at the app root so it can outlive
+ * the root switch that ends the boot and ignite *over* the revealed app. All this screen has to be
+ * is the ground beneath it — same colour, so there is no seam when the overlay burns away.
  */
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		// the ground the web initializes on — near-black with a green cast
-		backgroundColor: '#0B120D'
-	},
-	caption: {
-		fontFamily: fontFamily.mono,
-		fontSize: 11,
-		letterSpacing: 3.2,
-		color: 'rgba(215, 239, 227, 0.72)',
-		textAlign: 'center',
-		marginTop: 44,
-		textTransform: 'uppercase'
+		backgroundColor: '#030E07'
 	}
 });
 
-const AuthLoadingView = memo((): ReactElement => {
-	const text = useAppSelector(state => state.app.text);
-	return (
-		<View style={styles.container}>
-			<EnsoLoader size={96} />
-			<Text style={styles.caption}>{text || 'Initializing'}</Text>
-		</View>
-	);
-});
+const AuthLoadingView = memo((): ReactElement => <View style={styles.container} />);
 
 export default AuthLoadingView;

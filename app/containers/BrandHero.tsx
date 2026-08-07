@@ -14,9 +14,10 @@ const styles = StyleSheet.create({
 		alignItems: 'center',
 		paddingHorizontal: 26
 	},
+	// The real wordmark at its native 1286:210 ratio.
 	wordmark: {
 		width: 236,
-		height: 40
+		height: Math.round((236 * 210) / 1286)
 	},
 	eyebrow: {
 		...eyebrow,
@@ -89,7 +90,7 @@ const TrustBadge = ({ label, caption }: { label: string; caption: string }) => (
 const BrandHero = () => (
 	<View style={styles.wrap}>
 		<Image
-			source={require('../static/images/matterchat_wordmark.png')}
+			source={require('../static/images/matterchat_wordmark_light.png')}
 			style={styles.wordmark}
 			resizeMode='contain'
 			accessibilityLabel='MatterChat'

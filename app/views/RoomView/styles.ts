@@ -6,6 +6,16 @@ export default StyleSheet.create({
 	container: {
 		flex: 1
 	},
+	transparent: {
+		flex: 1,
+		backgroundColor: 'transparent'
+	},
+	// The reading surface. ScreenSheet's `attached` variant: rounded only at the top, so the
+	// conversation slides up out of the sky and keeps going down past the composer — scrolling
+	// never reveals an edge.
+	conversationSheet: {
+		flex: 1
+	},
 	safeAreaView: {
 		flex: 1
 	},

@@ -40,6 +40,7 @@ import { Review } from '../../lib/methods/helpers/review';
 import RoomClass from '../../lib/methods/subscriptions/room';
 import { getUserSelector } from '../../selectors/login';
 import Navigation from '../../lib/navigation/appNavigation';
+import { ScreenSheet } from '../../containers/Paper';
 import SafeAreaView from '../../containers/SafeAreaView';
 import { withDimensions } from '../../lib/hooks/withDimensions';
 import { withMasterDetail } from '../../lib/hooks/useMasterDetail';
@@ -1608,7 +1609,7 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 			const { title, description, inviter, accept, reject } = getInvitationData(room);
 
 			return (
-				<SafeAreaView style={{ backgroundColor: themes[theme].surfaceRoom }} testID='room-view-invited'>
+				<SafeAreaView testID='room-view-invited'>
 					<InvitedRoom title={title} description={description} inviter={inviter} onAccept={accept} onReject={reject} />
 				</SafeAreaView>
 			);
@@ -1644,55 +1645,61 @@ class RoomView extends Component<IRoomViewProps, IRoomViewState> {
 				onSendMessage={this.handleSendMessage}
 				setQuotesAndText={this.setQuotesAndText}
 				getText={this.getText}>
-				<SafeAreaView style={{ backgroundColor: themes[theme].surfaceRoom }} testID='room-view'>
-					{!this.tmid ? (
-						<Banner
-							title={I18n.t('Announcement')}
-							text={announcement}
-							bannerClosed={bannerClosed}
-							closeBanner={this.closeBanner}
-						/>
-					) : null}
-					<MessageRoomProvider
-						navToRoomInfo={this.navToRoomInfo}
-						showAttachment={this.showAttachment}
-						blockAction={this.blockAction}
-						handleEnterCall={this.handleEnterCall}
-						fetchThreadName={this.fetchThreadName}
-						toggleFollowThread={this.toggleFollowThread}
-						jumpToMessage={this.jumpToMessageByUrl}
-						closeEmojiAndAction={this.handleCloseEmoji}
-						onReactionPress={this.onReactionPress}
-						onReactionLongPress={this.onReactionLongPress}
-						reactionInit={this.onReactionInit}
-						onDiscussionPress={this.onDiscussionPress}
-						onThreadPress={this.onThreadPress}
-						replyBroadcast={this.replyBroadcast}
-						errorActionsShow={this.errorActionsShow}
-						onAnswerButtonPress={this.handleSendMessage}
-						onEncryptedPress={this.onEncryptedPress}
-						archived={'id' in room && room.archived}
-						isReadReceiptEnabled={Message_Read_Receipt_Enabled && !federated}
-						rid={rid}
-						user={user}
-						baseUrl={baseUrl}
-						broadcast={'id' in room && room.broadcast}
-						isThreadRoom={!!this.tmid}
-						Message_GroupingPeriod={Message_GroupingPeriod}
-						autoTranslateRoom={canAutoTranslate && 'id' in room && room.autoTranslate}
-						autoTranslateLanguage={'id' in room ? room.autoTranslateLanguage : undefined}>
-						<List
-							ref={this.list}
-							listRef={this.flatList}
+				<SafeAreaView plain style={styles.transparent} testID='room-view'>
+					{/* Paper & Sky: the conversation is a sheet. Its top corners round away under the
+					    transparent header so the living sky shows in the band above it, and it runs to
+					    the composer at the bottom — one continuous reading surface, never a stack of
+					    bubbles. */}
+					<ScreenSheet attached style={styles.conversationSheet}>
+						{!this.tmid ? (
+							<Banner
+								title={I18n.t('Announcement')}
+								text={announcement}
+								bannerClosed={bannerClosed}
+								closeBanner={this.closeBanner}
+							/>
+						) : null}
+						<MessageRoomProvider
+							navToRoomInfo={this.navToRoomInfo}
+							showAttachment={this.showAttachment}
+							blockAction={this.blockAction}
+							handleEnterCall={this.handleEnterCall}
+							fetchThreadName={this.fetchThreadName}
+							toggleFollowThread={this.toggleFollowThread}
+							jumpToMessage={this.jumpToMessageByUrl}
+							closeEmojiAndAction={this.handleCloseEmoji}
+							onReactionPress={this.onReactionPress}
+							onReactionLongPress={this.onReactionLongPress}
+							reactionInit={this.onReactionInit}
+							onDiscussionPress={this.onDiscussionPress}
+							onThreadPress={this.onThreadPress}
+							replyBroadcast={this.replyBroadcast}
+							errorActionsShow={this.errorActionsShow}
+							onAnswerButtonPress={this.handleSendMessage}
+							onEncryptedPress={this.onEncryptedPress}
+							archived={'id' in room && room.archived}
+							isReadReceiptEnabled={Message_Read_Receipt_Enabled && !federated}
 							rid={rid}
-							t={t as RoomType}
-							tmid={this.tmid}
-							renderRow={this.renderItem}
-							hideSystemMessages={this.hideSystemMessages}
-							showMessageInMainThread={user.showMessageInMainThread ?? false}
-							serverVersion={serverVersion}
-						/>
-					</MessageRoomProvider>
+							user={user}
+							baseUrl={baseUrl}
+							broadcast={'id' in room && room.broadcast}
+							isThreadRoom={!!this.tmid}
+							Message_GroupingPeriod={Message_GroupingPeriod}
+							autoTranslateRoom={canAutoTranslate && 'id' in room && room.autoTranslate}
+							autoTranslateLanguage={'id' in room ? room.autoTranslateLanguage : undefined}>
+							<List
+								ref={this.list}
+								listRef={this.flatList}
+								rid={rid}
+								t={t as RoomType}
+								tmid={this.tmid}
+								renderRow={this.renderItem}
+								hideSystemMessages={this.hideSystemMessages}
+								showMessageInMainThread={user.showMessageInMainThread ?? false}
+								serverVersion={serverVersion}
+							/>
+						</MessageRoomProvider>
+					</ScreenSheet>
 					{this.renderFooter()}
 					{this.renderActions()}
 					<UploadProgress rid={rid} user={user} baseUrl={baseUrl} width={width} />

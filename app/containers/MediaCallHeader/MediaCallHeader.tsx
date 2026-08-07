@@ -50,8 +50,12 @@ const MediaCallHeader = () => {
 		paddingTop: insets.top
 	};
 
+	// With no call in progress this view is nothing but the app's status-bar spacer — every screen
+	// below relies on it to consume the top inset. It must stay in the tree, but it must not paint:
+	// in Paper & Sky the living sky runs behind it, and an opaque band here is the one thing that
+	// would cut the sky off at the top of every screen in the app.
 	if (!call) {
-		return <View style={defaultHeaderStyle} testID='media-call-header-empty' />;
+		return <View style={{ paddingTop: insets.top, backgroundColor: 'transparent' }} testID='media-call-header-empty' />;
 	}
 
 	return (

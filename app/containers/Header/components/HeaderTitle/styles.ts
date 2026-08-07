@@ -18,7 +18,12 @@ export const styles = StyleSheet.create({
 		fontSize: 17,
 		flex: 1,
 		lineHeight: 24,
-		paddingVertical: 6
+		paddingVertical: 6,
+		// Just enough cast to keep white legible over the pale top of the sky — any more and the
+		// title reads as embossed rather than as printed on air.
+		textShadowColor: 'rgba(8,32,18,0.30)',
+		textShadowRadius: 6,
+		textShadowOffset: { width: 0, height: 1 }
 	},
 	androidTitle: {
 		...sharedStyles.textBold,
