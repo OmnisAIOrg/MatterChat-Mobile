@@ -23,7 +23,10 @@ concurrency: { group: matterchat-testflight, cancel-in-progress: false }
 
 jobs:
   testflight:
-    runs-on: macos-15
+    # Xcode 26+ is a hard requirement, not a preference: App Store Connect rejects any upload
+    # built against an SDK older than iOS 26. macos-15 ships Xcode 16.4 / iOS 18.5, so the
+    # archive succeeds and then altool refuses it at the very last step.
+    runs-on: macos-26
     timeout-minutes: 120
     env:
       # Centralised so every step (archive, export, altool) reads the same values.
@@ -40,6 +43,23 @@ jobs:
         run: |
           if [ -n "$BUILD_NUMBER" ] && ! printf '%s' "$BUILD_NUMBER" | grep -qE '^[0-9]+([.][0-9]+)*$'; then
             echo "::error::build_number must be numeric (e.g. 42 or 1.2.3), got: $BUILD_NUMBER"
+            exit 1
+          fi
+
+      - name: Select Xcode 26+ (App Store Connect rejects older SDKs)
+        # Fail in seconds rather than after a 40-minute archive that can never be uploaded.
+        run: |
+          latest=$(ls -d /Applications/Xcode*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$latest" ]; then
+            echo "::error::no Xcode found on the runner"
+            exit 1
+          fi
+          sudo xcode-select -s "$latest/Contents/Developer"
+          xcodebuild -version
+          sdk=$(xcrun --sdk iphoneos --show-sdk-version)
+          echo "iOS SDK: $sdk"
+          if [ "${sdk%%.*}" -lt 26 ]; then
+            echo "::error::iOS SDK $sdk is too old — App Store Connect requires 26 or later. Runner image needs Xcode 26+."
             exit 1
           fi
 
