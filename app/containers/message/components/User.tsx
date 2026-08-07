@@ -9,7 +9,13 @@ import MessageTime from './Time';
 import { useResponsiveLayout } from '../../../lib/hooks/useResponsiveLayout/useResponsiveLayout';
 import { useSetting } from '../../../lib/hooks/useSetting';
 import { usePaper } from '../../Paper';
-import { useIsOwnMessage, useMessageAuthor, useMessageGrouping, useMessageHeaderMeta, useMessageTone } from '../stores/MessageStore';
+import {
+	useIsOwnMessage,
+	useMessageAuthor,
+	useMessageGrouping,
+	useMessageHeaderMeta,
+	useMessageTone
+} from '../stores/MessageStore';
 import { useNavToRoomInfo } from '../stores/MessageRoomStore';
 
 const styles = StyleSheet.create({
@@ -99,17 +105,13 @@ const User = () => {
 		return (
 			<View style={styles.container}>
 				<Pressable testID={`username-header-${username}`} style={styles.titleContainer} onPress={onUserPress}>
-					<Text
-						style={[styles.username, { color: tone === 'assistant' ? p.accent : colors.fontTitlesLabels }]}
-						numberOfLines={1}>
+					<Text style={[styles.username, { color: tone === 'assistant' ? p.accent : colors.fontTitlesLabels }]} numberOfLines={1}>
 						{textContent}
 					</Text>
 					{tone === 'assistant' ? (
 						<Text style={[styles.badge, { backgroundColor: p.accentSoft, color: p.accent }]}>ASSISTANT</Text>
 					) : null}
-					{tone === 'own' ? (
-						<Text style={[styles.badge, { backgroundColor: p.ownBadge, color: p.inkSoft }]}>YOU</Text>
-					) : null}
+					{tone === 'own' ? <Text style={[styles.badge, { backgroundColor: p.ownBadge, color: p.inkSoft }]}>YOU</Text> : null}
 					{isLargeFontScale ? null : <MessageTime />}
 				</Pressable>
 				<RightIcons />
